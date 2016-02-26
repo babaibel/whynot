@@ -1,0 +1,26 @@
+{
+  "name": "icases-bower",
+  "version": "1.0.0",
+  "authors": [
+    "Babai"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "magnific-popup": "~1.0.0",
+    "modernizr": "~2.8.3",
+    "normalize.css": "~3.0.3",
+    "slick-carousel": "~1.5.8",
+    "nouislider": "latest",
+    "malihu-custom-scrollbar-plugin": "latest",
+    "air-datepicker": "latest",
+    "nselect": "latest",
+    "jquery-touchswipe": "~1.6.12",
+    "jquery-validation": "~1.14.0"
+  }
+}

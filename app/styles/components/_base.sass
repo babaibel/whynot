@@ -1,0 +1,57 @@
+// ----------------------------------------------------------------------
+// General styles
+// ----------------------------------------------------------------------
+*,
+*:after,
+*:before
+    box-sizing: border-box
+
+::selection
+    background: red
+    color: #fff
+    text-shadow: none
+    
+::-webkit-scrollbar-track
+    background: transparent
+    
+::-webkit-scrollbar
+    width: 12px
+
+::-webkit-scrollbar-thumb
+    background-color: red
+    cursor: pointer 
+
+
+html,
+body
+    height: 100%
+    min-width: 320px
+
+INPUT,
+BUTTON
+    outline: none 
+    
+    &:focus
+        outline: none 
+
+// 1024px
+@media only screen and (max-width: $screenL)
+    .wrapper
+        width: $wrapperL
+
+// 768px
+@media only screen and (max-width: $screenM)
+    .wrapper
+        width: $wrapperM
+
+
+// 480px
+@media only screen and (max-width: $screenS)
+    .wrapper
+        width: $wrapperS
+
+// 320px
+@media only screen and (max-width: $screenXS)
+    .wrapper
+        width: $wrapperXS
+
