@@ -81,8 +81,8 @@ module.exports = function() {
      */
     config.getPHPServerOptions = function() {
         var options = {
-            bin: 'C:/wamp/bin/php/php5.5.12/php.exe',
-            ini: 'C:/wamp/bin/php/php5.5.12/php.ini',
+            bin: 'D:/wamp/bin/php/php5.5.12/php.exe',
+            ini: 'D:/wamp/bin/php/php5.5.12/php.ini',
             base: './',
             port: 8010, 
             keepalive: true

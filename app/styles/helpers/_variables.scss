@@ -21,5 +21,56 @@ $wrapperXS: 290px;
 // ----------------------------------------------------------------------
 // Colors
 // ----------------------------------------------------------------------
-$cGreen: #18e28f;   // Main green
-$cBlue: #16171a;   // Main dark blue
+$cGreen-btn: #19d997;    // Btn green
+$cGreen-text: #088e60;  // Text green
+$cGreen-icon: #19d997;  // Icon green
+$cYellow-btn: #dcf187;   // Btn yellow
+$cYellow-icon: #ffc71e; // Icon yellow
+$cRed-text: #e34235;      // Text red
+
+// ----------------------------------------------------------------------
+// Fonts
+// ----------------------------------------------------------------------
+$lh: 'LifehackItalic-Regular';
+
+$hn: 'helveticaneuecyrroman';
+$hn-bl: 'helveticaneuecyrblack';
+$hn-bli: 'helveticaneuecyrblack_italic';
+$hn-b: 'helveticaneuecyrbold';
+$hn-bi: 'helveticaneuecyrbold_italic';
+$hn-l: 'helveticaneuecyrlight';
+$hn-li: 'helveticaneuecyrlight_italic';
+$hn-m: 'helveticaneuecyrmedium';
+$hn-i: 'helveticaneuecyritalic';
+
+
+// ----------------------------------------------------------------------
+// Icons font-size
+// ----------------------------------------------------------------------
+.iconic--elephant{
+	font-size: 16px;
+}
+
+.iconic--mail{
+	font-size: 13px;
+}
+
+.iconic--bookmark{
+	font-size: 21px;
+}
+
+.iconic--search{
+	font-size: 18px;
+}
+
+.iconic--calendar{
+	font-size: 12px;
+}
+
+.iconic--pin{
+	font-size: 12px;
+}
+
+.iconic--star{
+	font-size: 15px;
+}

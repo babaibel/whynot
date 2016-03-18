@@ -28,8 +28,41 @@
 @function iconic-char($filename) {
     $char: "";
 
-    @if $filename == cross {
+    @if $filename == arrow-left {
     $char: "\E001";
+}
+    @if $filename == arrow-right {
+    $char: "\E002";
+}
+    @if $filename == bookmark {
+    $char: "\E003";
+}
+    @if $filename == calendar {
+    $char: "\E004";
+}
+    @if $filename == cross {
+    $char: "\E005";
+}
+    @if $filename == elephant {
+    $char: "\E006";
+}
+    @if $filename == favorite {
+    $char: "\E007";
+}
+    @if $filename == mail {
+    $char: "\E008";
+}
+    @if $filename == pin {
+    $char: "\E009";
+}
+    @if $filename == search {
+    $char: "\E00A";
+}
+    @if $filename == star {
+    $char: "\E00B";
+}
+    @if $filename == target {
+    $char: "\E00C";
 }
 
 @return $char;
@@ -42,6 +75,39 @@
 }
 }
 
+.iconic--arrow-left {
+    @include iconic(arrow-left);
+}
+.iconic--arrow-right {
+    @include iconic(arrow-right);
+}
+.iconic--bookmark {
+    @include iconic(bookmark);
+}
+.iconic--calendar {
+    @include iconic(calendar);
+}
 .iconic--cross {
     @include iconic(cross);
+}
+.iconic--elephant {
+    @include iconic(elephant);
+}
+.iconic--favorite {
+    @include iconic(favorite);
+}
+.iconic--mail {
+    @include iconic(mail);
+}
+.iconic--pin {
+    @include iconic(pin);
+}
+.iconic--search {
+    @include iconic(search);
+}
+.iconic--star {
+    @include iconic(star);
+}
+.iconic--target {
+    @include iconic(target);
 }

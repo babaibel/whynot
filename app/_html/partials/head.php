@@ -4,6 +4,7 @@
     <title>Новый проект</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     
     <!-- favicon -->
 <!--     <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
