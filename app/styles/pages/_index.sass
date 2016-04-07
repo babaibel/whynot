@@ -1,5 +1,409 @@
+h1,h2,h3,h4,h5,h6
+	margin: 0
+
+body
+	font: 14px/1.5 $hn
+
+.h2
+	font: 66px/1.3 $lh
+	margin-bottom: 35px
+	text-align: center
+	@extend .lh
+
+	+max-screen($screenMM)
+		font-size: 56px
+
+	+max-screen($screenXS)
+		font-size: 40px
+
+.h3
+	font: 20px/1.2 $hn-bl
+	margin-bottom: 25px
+
+.h4
+	font: 15px/1.2 $hn-bl
+	margin-bottom: 15px
+	text-transform: uppercase
+
+a
+	text-decoration: none
+
+.text
+
+	&--big
+		font: 20px/1.3 $hn-l
+
+.bg
+	
+	&--gray
+		background: $cGray
+
+.layout
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+
+.header,
+.footer
+	flex: 0 0 auto
+
+MAIN
+	flex: 1 0 auto
+
 .wr
 	max-width: 1280px
 	padding: 0 40px
 	margin: 0 auto
 	position: relative
+	+max-screen($screenM)
+		padding: 0 20px
+	+max-screen($screenSS)
+		padding: 0 15px
+
+MAIN
+	padding-bottom: 40px
+
+.title-header
+	text-align: center
+	margin-bottom: 30px
+	& > h2,
+	& > span
+		display: inline-block
+		vertical-align: middle
+		margin-bottom: 0
+	.btn
+		margin: 25px 0 0 35px
+
+		+max-screen($screenMM)
+			margin-top: 20px
+
+.index-about
+	padding: 30px 0 60px
+
+	+max-screen($screenSS)
+		padding-bottom: 0
+
+.about-cols
+	@extend .cf
+	padding-bottom: 55px
+	box-shadow: 0 30px 5px -32px rgba(0,0,0,0.6)
+	position: relative
+	margin: 0 -1%
+
+	+max-screen($screenSS)
+		padding-bottom: 0
+		box-shadow: none
+
+	&__item
+		@extend .cf
+		width: 31.3333%
+		margin: 0 1%
+		float: left
+
+		+max-screen($screenLL)
+			padding: 0 1%
+
+		+max-screen($screenSS)
+			width: 100%
+			margin: 0 0 35px
+			float: none
+
+	&__icon
+		float: left
+		.icon
+			width: 77px
+			height: 77px
+			background: #ebebeb
+			border-radius: 50%
+
+		+max-screen($screenLL)
+			float: none
+			text-align: center
+
+	&__inner
+		padding: 8px 0 0 110px
+
+		+max-screen($screenLL)
+			padding: 30px 10px 0
+			text-align: center
+
+		+max-screen($screenSM)
+			padding: 20px 0 0
+			max-width: 300px
+			margin: 0 auto
+
+	.h4
+		border-bottom: 1px solid #dadada
+		padding-bottom: 15px
+
+		+max-screen($screenLL)
+			border: 0
+			padding-bottom: 0
+
+	&__text
+		font: 15px/1.3 Arial, sans-serif
+
+		+max-screen($screenLL)
+			display: none
+
+	
+
+
+.about-info
+	padding: 10px 0
+	margin-top: 50px
+	position: relative
+
+	+max-screen($screenSS)
+		margin-top: 0
+
+	+max-screen($screenXS)
+
+		.btn--green
+			padding-right: 0
+			padding-left: 0
+			width: 100%
+
+	&__inner
+		max-width: 520px
+
+		+max-screen($screenMM)
+			max-width: none
+			padding-right: 270px
+
+		+max-screen($screenSS)
+			padding-right: 0
+
+	&__bg
+		background-position: 568px center
+		background-repeat: no-repeat
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+
+		+max-screen($screenMM)
+			width: 230px
+			left: auto
+			background-position: left center
+
+		+max-screen($screenSS)
+			position: static
+			margin: 0 auto
+			height: 370px
+			margin-bottom: 20px
+
+	P
+		margin: 0 0 25px 0
+
+	.text--big
+		margin: 45px 0 10px
+
+		+max-screen($screenSS)
+			margin-top: 25px
+
+.index-map
+	padding: 30px 0
+
+	&__container
+		height: 625px
+
+		// .ymaps-2-1-35-ground-pane
+		// 	filter: hue-rotate(28deg)
+
+.index-cards
+	padding: 45px 0
+
+	&__row
+		align-items: stretch
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -1%
+
+	&__title
+		font: 700 32px/1 $pt
+		text-transform: uppercase
+		margin-bottom: 35px
+		color: $cBlack-d
+
+		A
+			display: inline-block
+			color: $cGreen-d
+			border-bottom: 1px dashed $cGreen-d
+			margin: 0 5px
+			transition: background $t150 ease-out, border-color $t150 ease-out, color $t150 ease-out,
+
+			&:hover
+				border-color: transparent
+
+			&.active
+				padding: 0 5px
+				margin: 0
+				background: $cLime
+				line-height: 1.2
+				color: $cBlack-d
+				border-color: transparent
+				border-radius: 4px
+
+
+.card
+	display: flex
+	flex-flow: column nowrap
+	justify-content: space-between
+	width: 23%
+	margin: 0 1% 30px
+	background: #fff
+	box-shadow: 0 12px 18px -14px rgba(0,0,0,0.3), 0 16px 16px -20px rgba(220,241,135,0.7)
+	border-radius: 4px
+	overflow: hidden
+	position: relative
+	padding: 0 15px
+
+	&:hover
+		.card__title
+			text-decoration: none
+
+	&__img
+		height: 195px
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		background-size: cover
+		margin: 0 -15px
+
+	&__bookmark
+		position: absolute
+		right: 8px
+		top: 8px
+		height: 30px
+		width: 30px
+		background: #fff
+		border-radius: 50%
+		text-align: center
+		line-height: 28px
+		transition: all $t150 ease-out
+
+		&:hover,
+		&.active
+			background: $cGreen
+			.icon
+				color: #fff
+
+		.icon
+			font-size: 18px
+			color: #bdbdbd
+			transition: all $t150 ease-out
+
+	&__title
+		font: 20px/1.1 $pt
+		margin: 15px 0
+		color: $cGreen-d
+		text-decoration: underline
+
+	&__text
+		font: 13px/1.3 $hn
+		color: #7b7b7b
+
+	&__date,
+	&__place
+		color: $cBlack
+		font: 12px/1.3 $hn
+		margin-top: 5px
+		.icon
+			margin-bottom: 2px
+			color: $cBlack
+			font-size: 13px
+			width: 18px
+			margin-right: 3px
+			text-align: center
+			vertical-align: middle
+			line-height: 1
+
+	&__bottom
+		margin: 15px 0 20px
+
+	&__rating
+		padding-top: 10px
+		color: #737373
+		font: 12px/1.3 $hn
+
+		.rating
+			display: inline-block
+			vertical-align: middle
+			margin: 0 8px 4px 4px
+		.icon
+			color: $cYellow
+			font-size: 13px
+			line-height: 1
+
+.index-slider
+	margin-bottom: 30px
+	position: relative
+	box-shadow: 0 12px 18px -14px rgba(0,0,0,0.5), 0 16px 16px -20px rgba(220,241,135,0.7)
+
+	&__item
+		display: block
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		background-size: cover
+		padding: 60px 70px
+		min-height: 360px
+		color: $cBlack
+
+		&:hover
+			.index-slider__title
+				SPAN
+					border-color: transparent
+
+	&__title
+		font: 32px/1.3 $hn-b
+		margin-bottom: 25px
+
+		SPAN
+			transition: border-color $t150 ease-out
+			border-bottom: 1px solid rgba(0,0,0,0.2)
+
+	&__subtitle
+		font: 18px/1.3 $hn-b
+		margin-bottom: 25px
+
+	&__place
+		font: 15px/1.3 $hn
+		margin-bottom: 25px
+
+	&__price
+		font: 30px/1.3 $hn-bl
+		color: $cRed
+
+	.slick-prev,
+	.slick-next
+		width: 39px
+		height: 39px
+		border-radius: 50%
+		background: #fff
+		bottom: 15px
+		top: auto
+		right: 15px
+		left: auto
+		transform: none
+		z-index: 2
+		transition: all $t150 ease-out
+
+		&:hover
+			background: $cGreen
+			&:before
+				color: #fff
+				transition: all $t150 ease-out
+
+		&:before
+			content: "\E002"
+			@extend .iconic
+			opacity: 1
+			font-size: 23px
+			margin-left: 5px
+
+	.slick-prev
+		right: 60px
+		&:before
+			content: "\E001"
+			margin-left: -5px

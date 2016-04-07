@@ -8,30 +8,37 @@ $t600: 600ms;
 // ----------------------------------------------------------------------
 // Sizes
 // ----------------------------------------------------------------------
-$screenL: 1287px;
-$screenM: 1288px;
+$screenXXL: 1920px;
+$screenXL: 1599px;
+$screenXX: 1500px;
+$screenLX: 1400px;
+$screenL: 1279px;
+$screenLL: 1099px;
+$screenM: 979px;
+$screenMM: 859px;
 $screenS: 767px;
-$screenXS: 480px;
-
-$wrapperL: 1248px;
-$wrapperM: 725px;
-$wrapperS: 448px;
-$wrapperXS: 290px;
+$screenSM: 669px;
+$screenSS: 579px;
+$screenXS: 479px;
+$screenXXS: 320px;
 
 // ----------------------------------------------------------------------
 // Colors
 // ----------------------------------------------------------------------
-$cGreen-btn: #19d997;    // Btn green
-$cGreen-text: #088e60;  // Text green
-$cGreen-icon: #19d997;  // Icon green
-$cYellow-btn: #dcf187;   // Btn yellow
-$cYellow-icon: #ffc71e; // Icon yellow
-$cRed-text: #e34235;      // Text red
-
+$cGreen: #16ca8c;     // Btn green
+$cGreen-d: #088e60;   // Text green
+$cLime: #dcf187;      // Btn yellow
+$cYellow: #ffc71e;    // Icon yellow
+$cRed: #fe101f;       // Text red
+$cBlack: #333;        // Text black
+$cBlack-d: #201f21;   // Text black dark
+$cGray: #f9f9f9;      // Bg gray
 // ----------------------------------------------------------------------
 // Fonts
 // ----------------------------------------------------------------------
 $lh: 'LifehackItalic-Regular';
+
+$pt: 'PT Sans Narrow';
 
 $hn: 'helveticaneuecyrroman';
 $hn-bl: 'helveticaneuecyrblack';
@@ -73,4 +80,8 @@ $hn-i: 'helveticaneuecyritalic';
 
 .iconic--star{
 	font-size: 15px;
+}
+
+.iconic--target{
+	font-size: 28px;
 }

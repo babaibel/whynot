@@ -15,19 +15,47 @@
 	text-align: left
 	display: inline-block
 	position: relative
+	text-decoration: none
+	color: $cBlack
+	font: 14px/1.2 $hn
 	.icon
 		vertical-align: middle
-		right: 10px
-		color: $cGreen-icon
+		margin-right: 10px
+		color: $cGreen
+		font-size: 21px
+		line-height: 1
 
 .link
-	text-decoration: none
+	border-bottom-style: solid
+	border-bottom-width: 1px
+	border-color: transparent
+	transition: border-color $t150 ease-out
+
+	&:hover
+		border-color: #fff
+
+	&--green
+		color: $cGreen
+		&:hover
+			border-color: $cGreen
+
+	&--white
+		color: #fff
+		&:hover
+			color: $cGreen
+
+	&--upper
+		text-transform: uppercase
+
+.link-underline
+	border-bottom-style: solid
+	border-bottom-width: 1px
 
 	&:hover
 		border-color: transparent
 
-	&--green
-		color: $cGreen-text
+	&--green-d
+		color: $cGreen-d
 		border-bottom: 1px dotted #b2b2b2
 		&:hover
 			border-color: transparent

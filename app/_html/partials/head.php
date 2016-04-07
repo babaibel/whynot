@@ -1,7 +1,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Новый проект</title>
+    <?php if (!isset($pageTitle)){
+        $pageTitle = "верстка";
+    } ?>
+    <title><?php echo "Why not - ".$pageTitle; ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>

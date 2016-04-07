@@ -1,27 +1,68 @@
 .btn
-    display: inline-block
-    box-sizing: border-box
-    vertical-align: middle
-    text-align: center
-    cursor: pointer
-    border: none
-    background: transparent
-    margin: 0
-    outline: 0
-    white-space: nowrap
-    text-decoration: none
-    position: relative
-    user-select: none
-    transition: $t150
-    font-size: 13px 
-    padding: 10px 26px 12px 26px
-    border-radius: 25px 
-    
-    & > SPAN
-        border-bottom: 1px solid transparent
-        padding: 0 0 2px 0 
-        transition: border-color $t300
-        
-    &:hover
-        & > SPAN
-            border-color: transparent
+	display: inline-block
+	box-sizing: border-box
+	vertical-align: middle
+	text-align: center
+	cursor: pointer
+	border: none
+	background: transparent
+	margin: 0
+	outline: 0
+	white-space: nowrap
+	text-decoration: none
+	position: relative
+	user-select: none
+	transition: $t150
+
+	.h2 &
+		margin-bottom: 10px
+
+
+	&--white
+		border: 1px solid #dcdcdc
+		border-radius: 4px
+		padding: 12px 25px
+		color: #000
+		font: 14px/1 $hn
+
+		.iconic
+			&--target
+				color: $cGreen
+
+	&--green
+		font: 20px/1 $hn-l
+		color: #fff
+		background: $cGreen
+		border-radius: 4px
+		padding: 12px 25px
+
+		&:hover
+			background: $cGreen-d
+	
+	&--dark
+		font: 14px/1 $hn-b
+		color: $cGreen
+		border: 1px solid #4a4a4a
+		padding: 16px 18px 14px
+		border-radius: 25px
+
+		&:hover
+			border-color: #fff
+			color: $cGreen-d
+			background: #fff
+
+	&--dark-fix
+		margin: -15px 0 0 -18px
+
+	&--icon
+		padding-left: 10px
+		.icon
+			vertical-align: middle
+			margin-right: 10px
+			line-height: 1
+
+	&--fix-h
+		height: 44px
+		line-height: 44px
+		padding-top: 0
+		padding-bottom: 0

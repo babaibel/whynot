@@ -1,3 +1,4 @@
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <!-- build:js ../scripts/lib.js -->
 <!-- bower:js -->
 <script src="../../bower_components/jquery/dist/jquery.js"></script>

@@ -49,20 +49,29 @@
     @if $filename == favorite {
     $char: "\E007";
 }
-    @if $filename == mail {
+    @if $filename == fb {
     $char: "\E008";
 }
-    @if $filename == pin {
+    @if $filename == mail {
     $char: "\E009";
 }
-    @if $filename == search {
+    @if $filename == pin {
     $char: "\E00A";
 }
-    @if $filename == star {
+    @if $filename == search {
     $char: "\E00B";
 }
-    @if $filename == target {
+    @if $filename == star {
     $char: "\E00C";
+}
+    @if $filename == target {
+    $char: "\E00D";
+}
+    @if $filename == tw {
+    $char: "\E00E";
+}
+    @if $filename == vk {
+    $char: "\E00F";
 }
 
 @return $char;
@@ -96,6 +105,9 @@
 .iconic--favorite {
     @include iconic(favorite);
 }
+.iconic--fb {
+    @include iconic(fb);
+}
 .iconic--mail {
     @include iconic(mail);
 }
@@ -110,4 +122,10 @@
 }
 .iconic--target {
     @include iconic(target);
+}
+.iconic--tw {
+    @include iconic(tw);
+}
+.iconic--vk {
+    @include iconic(vk);
 }
