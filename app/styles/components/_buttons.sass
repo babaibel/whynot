@@ -17,20 +17,27 @@
 	.h2 &
 		margin-bottom: 10px
 
+	.iconic
+		font-size: inherit
+		vertical-align: middle
+		color: inherit
 
 	&--white
 		border: 1px solid #dcdcdc
 		border-radius: 4px
 		padding: 12px 25px
 		color: #000
-		font: 14px/1 $hn
+		font: 14px/1 $baseFont
+
 
 		.iconic
 			&--target
 				color: $cGreen
 
+
+
 	&--green
-		font: 20px/1 $hn-l
+		font: 300 20px/1 $baseFont
 		color: #fff
 		background: $cGreen
 		border-radius: 4px
@@ -40,7 +47,7 @@
 			background: $cGreen-d
 	
 	&--dark
-		font: 14px/1 $hn-b
+		font: bold 14px/1 $baseFont
 		color: $cGreen
 		border: 1px solid #4a4a4a
 		padding: 16px 18px 14px
@@ -56,13 +63,24 @@
 
 	&--icon
 		padding-left: 10px
-		.icon
+		.icon, .iconic
 			vertical-align: middle
 			margin-right: 10px
 			line-height: 1
+
+		.iconic--target
+			font-size: 26px
+
 
 	&--fix-h
 		height: 44px
 		line-height: 44px
 		padding-top: 0
 		padding-bottom: 0
+
+	&--arr
+		padding-left: 55px
+		padding-right: 55px
+		.iconic
+			&--arr-r-light
+				margin: 0 -40px 0 35px

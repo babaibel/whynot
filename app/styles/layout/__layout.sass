@@ -1,0 +1,30 @@
+@import _header
+@import _footer
+
+
+.layout
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    position: relative
+    overflow: hidden
+
+.header,
+.footer
+    flex: 0 0 auto
+
+.wr
+    max-width: 1280px
+    padding: 0 $wrapper-padd
+    margin: 0 auto
+    position: relative
+
+    +max-screen($screenM)
+        padding: 0 $wrapper-padd-md
+
+    +max-screen($screenSS)
+        padding: 0 $wrapper-padd-sm
+
+MAIN
+    padding-bottom: 40px
+    flex: 1 0 auto

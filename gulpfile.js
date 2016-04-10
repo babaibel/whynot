@@ -30,7 +30,7 @@ gulp.task('optimize', ['inject'], function () {
         .pipe($.if('*.css', $.minifyCss()))
         .pipe(assets.restore())
         .pipe($.useref())
-        .pipe(gulp.dest('./_html'));
+        .pipe(gulp.dest(config.dist + '_html'));
 });
 
 gulp.task('styles', ['clean-styles'], function() {
@@ -121,7 +121,7 @@ gulp.task('images', function() {
             // as hooks for embedding and styling
             svgoPlugins: [{cleanupIDs: false}]
         }))
-        .pipe(gulp.dest('./images'));
+        .pipe(gulp.dest(config.dist + 'images'));
 });
 
 gulp.task('fonts', function() {
@@ -129,7 +129,7 @@ gulp.task('fonts', function() {
 
     return gulp
         .src(config.fonts)
-        .pipe(gulp.dest('./fonts'));
+        .pipe(gulp.dest(config.dist + 'fonts'));
 });
 
 gulp.task('iconfont', function(){
@@ -169,7 +169,9 @@ gulp.task('extras', ['index-list', 'data'], function() {
         
     ], {
         dot: true
-    }).pipe(gulp.dest('./_html'));
+    }).pipe(
+        gulp.dest(config.dist + '_html')
+    );
 });
 
 gulp.task('index-list', function() {
@@ -177,7 +179,9 @@ gulp.task('index-list', function() {
 
     return gulp
         .src('app/index.html')
-        .pipe(gulp.dest('./'));
+        .pipe(
+            gulp.dest(config.dist)
+        );
 });
 
 gulp.task('data', function() {
@@ -185,7 +189,9 @@ gulp.task('data', function() {
 
     return gulp
         .src('app/_data/*.json')
-        .pipe(gulp.dest('./_data'));
+        .pipe(
+            gulp.dest(config.dist + '_data')
+        );
 });
 
 // gulp.task('clean-dist', function(done) {
@@ -243,11 +249,11 @@ gulp.task('build', ['optimize', 'images', 'fonts', 'extras'], function() {
     log('Gzipp all files in ' + $.util.colors.yellow('./') + ' folder');
 
     return gulp.src([
-        './_html/**/*',
-        './fonts/**/*',
-        './images/**/*',
-        './scripts/**/*',
-        './styles/**/*',
+        config.dist + '_html/**/*',
+        config.dist + 'fonts/**/*',
+        config.dist + 'images/**/*',
+        config.dist + 'scripts/**/*',
+        config.dist + 'styles/**/*',
         ]).pipe($.size({title: 'build', gzip: true}));
 }).help = 'to build your webapp for production';
 

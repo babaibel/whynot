@@ -1,7 +1,7 @@
 module.exports = function() {
     var app = 'app/',
         temp = './.tmp/',
-        dist = './';
+        dist = 'prod/';
 
     var config = {
         /**
@@ -12,10 +12,10 @@ module.exports = function() {
             './*.js'
         ],
         injectInput: [
-            './app/_html/partials/head.php', 
-            './app/_html/partials/scripts.php'
+            './app/_html/base/head.php',
+            './app/_html/base/scripts.php'
         ],
-        injectOutput: app + '_html/partials',
+        injectOutput: app + '_html/base',
         allsass: [
             app + 'styles/**/*.sass',
             app + 'styles/**/*.scss'
@@ -31,7 +31,7 @@ module.exports = function() {
         fonts: app + 'fonts/**/*.*',
         images: [
             app + 'images/**/*.*',
-            './images/**/*.*'
+            dist + 'images/**/*.*'
         ],
         dist: dist,
         client: app,

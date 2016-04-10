@@ -4,11 +4,14 @@
 .icon
 	position: relative
 	margin: 0 auto
-	display: inline-block
-	vertical-align: middle
 	font-style: normal
 	@extend .iconic
-	
+	transition: $t150
+
+.iconic, .icon
+	display: inline-block
+	vertical-align: middle
+	transition: $t150
 
 // Добавляет у шрифта хвосты
 .lh

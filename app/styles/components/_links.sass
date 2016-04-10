@@ -1,30 +1,3 @@
-.subscribe-link
-	text-align: left
-	display: inline-block
-	position: relative
-	.icon
-		color: #696969
-		position: absolute
-		left: -35px
-		top: 0
-
-	&__text
-		font: 14px/1 $hn
-
-.bookmark-link
-	text-align: left
-	display: inline-block
-	position: relative
-	text-decoration: none
-	color: $cBlack
-	font: 14px/1.2 $hn
-	.icon
-		vertical-align: middle
-		margin-right: 10px
-		color: $cGreen
-		font-size: 21px
-		line-height: 1
-
 .link
 	border-bottom-style: solid
 	border-bottom-width: 1px
@@ -44,18 +17,77 @@
 		&:hover
 			color: $cGreen
 
+	&--black
+		color: $cBlack
+		border-bottom-color: rgba($cBlack, 0.3)
+		&:hover
+			border-bottom: none
+
 	&--upper
 		text-transform: uppercase
 
-.link-underline
+	&--dotted
+		border-style: dotted
+
+
+.link-und
 	border-bottom-style: solid
 	border-bottom-width: 1px
+	transition: border-color $t150 ease-out
 
 	&:hover
 		border-color: transparent
 
 	&--green-d
 		color: $cGreen-d
-		border-bottom: 1px dotted #b2b2b2
+		border-bottom: 1px solid rgba($cGreen-d,0.3) //#b2b2b2
 		&:hover
 			border-color: transparent
+
+	&--green2-d
+		color: $cGreen-d
+		border-bottom: 1px solid rgba($cGreen-d,0.3) //#b2b2b2
+		&:hover
+			border-color: transparent
+
+	&--dotted
+		border-bottom-style: dotted
+
+
+
+.subscribe-link
+	text-align: left
+	display: inline-block
+	position: relative
+	.icon
+		color: #696969
+		position: absolute
+		left: -35px
+		top: 0
+
+	&__text
+		display: inline-block
+		font: 14px/16px $baseFont
+		color: $cPrimary
+		//border-bottom-color: #b2b2b2
+		//border-bottom-style: dotted
+
+
+
+.bookmark-link
+	text-align: left
+	display: inline-block
+	position: relative
+	text-decoration: none
+	color: $cBlack
+	font: 14px/1.2 $baseFont
+	.iconic
+		vertical-align: middle
+		margin-right: 10px
+		color: $cGreen
+		font-size: 21px
+		line-height: 1
+
+	&:hover
+		.icon
+			transform: translateY(-2px)

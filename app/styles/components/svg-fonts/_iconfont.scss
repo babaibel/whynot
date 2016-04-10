@@ -28,50 +28,71 @@
 @function iconic-char($filename) {
     $char: "";
 
-    @if $filename == arrow-left {
+    @if $filename == arr-l-light {
     $char: "\E001";
 }
-    @if $filename == arrow-right {
+    @if $filename == arr-r-light {
     $char: "\E002";
 }
-    @if $filename == bookmark {
+    @if $filename == arrow-left {
     $char: "\E003";
 }
-    @if $filename == calendar {
+    @if $filename == arrow-right {
     $char: "\E004";
 }
-    @if $filename == cross {
+    @if $filename == attraction {
     $char: "\E005";
 }
-    @if $filename == elephant {
+    @if $filename == bookmark {
     $char: "\E006";
 }
-    @if $filename == favorite {
+    @if $filename == calendar {
     $char: "\E007";
 }
-    @if $filename == fb {
+    @if $filename == coctail {
     $char: "\E008";
 }
-    @if $filename == mail {
+    @if $filename == cross {
     $char: "\E009";
 }
-    @if $filename == pin {
+    @if $filename == elephant {
     $char: "\E00A";
 }
-    @if $filename == search {
+    @if $filename == favorite {
     $char: "\E00B";
 }
-    @if $filename == star {
+    @if $filename == fb {
     $char: "\E00C";
 }
-    @if $filename == target {
+    @if $filename == lion {
     $char: "\E00D";
 }
-    @if $filename == tw {
+    @if $filename == mail--old {
     $char: "\E00E";
 }
-    @if $filename == vk {
+    @if $filename == mail {
     $char: "\E00F";
+}
+    @if $filename == pin {
+    $char: "\E010";
+}
+    @if $filename == search {
+    $char: "\E011";
+}
+    @if $filename == star {
+    $char: "\E012";
+}
+    @if $filename == target {
+    $char: "\E013";
+}
+    @if $filename == tw {
+    $char: "\E014";
+}
+    @if $filename == vk-v {
+    $char: "\E015";
+}
+    @if $filename == vk {
+    $char: "\E016";
 }
 
 @return $char;
@@ -84,17 +105,29 @@
 }
 }
 
+.iconic--arr-l-light {
+    @include iconic(arr-l-light);
+}
+.iconic--arr-r-light {
+    @include iconic(arr-r-light);
+}
 .iconic--arrow-left {
     @include iconic(arrow-left);
 }
 .iconic--arrow-right {
     @include iconic(arrow-right);
 }
+.iconic--attraction {
+    @include iconic(attraction);
+}
 .iconic--bookmark {
     @include iconic(bookmark);
 }
 .iconic--calendar {
     @include iconic(calendar);
+}
+.iconic--coctail {
+    @include iconic(coctail);
 }
 .iconic--cross {
     @include iconic(cross);
@@ -107,6 +140,12 @@
 }
 .iconic--fb {
     @include iconic(fb);
+}
+.iconic--lion {
+    @include iconic(lion);
+}
+.iconic--mail--old {
+    @include iconic(mail--old);
 }
 .iconic--mail {
     @include iconic(mail);
@@ -125,6 +164,9 @@
 }
 .iconic--tw {
     @include iconic(tw);
+}
+.iconic--vk-v {
+    @include iconic(vk-v);
 }
 .iconic--vk {
     @include iconic(vk);

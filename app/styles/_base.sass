@@ -1,0 +1,43 @@
+// ----------------------------------------------------------------------
+// General styles
+// ----------------------------------------------------------------------
+*,
+*:after,
+*:before
+    box-sizing: border-box
+
+::selection
+    background: $cGreen-d
+    color: #fff
+    text-shadow: none
+    
+::-webkit-scrollbar-track
+    background: transparent
+    
+::-webkit-scrollbar
+    width: 12px
+
+::-webkit-scrollbar-thumb
+    background-color: $cGreen-d
+    cursor: pointer 
+
+
+html,
+body
+    height: 100%
+    min-width: $minW
+    font: 14px/1.5 $baseFont
+
+INPUT,
+BUTTON,
+TEXTAREA
+    outline: none 
+    -webkit-appearance: none
+    &:focus
+        outline: none
+
+input[type="search"]
+    -webkit-appearance: none
+
+a
+    text-decoration: none

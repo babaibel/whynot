@@ -22,6 +22,13 @@ $screenSS: 579px;
 $screenXS: 479px;
 $screenXXS: 320px;
 
+$minW: $screenXXS;
+//$maxW:;
+
+$wrapper-padd: 30px;
+$wrapper-padd-md: 20px;
+$wrapper-padd-sm: 15px;
+
 // ----------------------------------------------------------------------
 // Colors
 // ----------------------------------------------------------------------
@@ -33,22 +40,19 @@ $cRed: #fe101f;       // Text red
 $cBlack: #333;        // Text black
 $cBlack-d: #201f21;   // Text black dark
 $cGray: #f9f9f9;      // Bg gray
+
+$cPrimary: $cGreen-d;
+$cPrimaryL: $cGreen;
+$cSecondary: $cLime;
+
 // ----------------------------------------------------------------------
 // Fonts
 // ----------------------------------------------------------------------
-$lh: 'LifehackItalic-Regular';
 
-$pt: 'PT Sans Narrow';
-
-$hn: 'helveticaneuecyrroman';
-$hn-bl: 'helveticaneuecyrblack';
-$hn-bli: 'helveticaneuecyrblack_italic';
-$hn-b: 'helveticaneuecyrbold';
-$hn-bi: 'helveticaneuecyrbold_italic';
-$hn-l: 'helveticaneuecyrlight';
-$hn-li: 'helveticaneuecyrlight_italic';
-$hn-m: 'helveticaneuecyrmedium';
-$hn-i: 'helveticaneuecyritalic';
+$ffLh: 'LifehackItalic-Regular', sans-serif;
+$ffNarrow: 'PT Sans Narrow', sans-serif;
+$ffHelvetica: 'Helvetica Neue', sans-serif;
+$baseFont: $ffHelvetica;
 
 
 // ----------------------------------------------------------------------
