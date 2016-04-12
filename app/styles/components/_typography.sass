@@ -18,6 +18,14 @@ h1,h2,h3,h4,h5,h6
 	font: 24px/1.2 $ffNarrow
 	margin-bottom: 15px
 
+.h2-bold
+	font: 700 40px/1.2 $ffNarrow
+	margin-bottom: 20px
+	text-transform: uppercase
+
+	+max-screen($screenSS)
+		font-size: 32px
+
 .h3
 	font: 900 20px/1.2 $baseFont
 	margin-bottom: 25px
@@ -33,6 +41,9 @@ h1,h2,h3,h4,h5,h6
 
 	&--big
 		font: 300 20px/1.3 $baseFont
+
+	&--center
+		text-align: center
 
 
 .typography
