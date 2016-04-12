@@ -2396,7 +2396,19 @@ h1, h2, h3, h4, h5, h6 {
 .org-enter {
   padding: 110px 0 100px;
 }
-/* line 7, ../styles/pages/_org-enter.sass */
+@media screen and (max-width: 1099px) {
+  /* line 1, ../styles/pages/_org-enter.sass */
+  .org-enter {
+    padding: 40px 0 30px;
+  }
+}
+@media screen and (max-width: 579px) {
+  /* line 1, ../styles/pages/_org-enter.sass */
+  .org-enter {
+    padding: 0 0 20px;
+  }
+}
+/* line 13, ../styles/pages/_org-enter.sass */
 .org-enter__inner {
   position: relative;
   height: 380px;
@@ -2405,27 +2417,88 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(to right, #16ca8c 0%, #16ca8c 50%, #171718 50%, #171718 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ca8c', endColorstr='#171718',GradientType=1 );
 }
-/* line 16, ../styles/pages/_org-enter.sass */
+@media screen and (max-width: 579px) {
+  /* line 13, ../styles/pages/_org-enter.sass */
+  .org-enter__inner {
+    height: auto;
+    background: none;
+  }
+}
+/* line 25, ../styles/pages/_org-enter.sass */
 .org-enter__left {
   float: left;
   width: 25%;
+  padding-top: 55px;
 }
-/* line 20, ../styles/pages/_org-enter.sass */
+@media screen and (max-width: 1099px) {
+  /* line 25, ../styles/pages/_org-enter.sass */
+  .org-enter__left {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 25, ../styles/pages/_org-enter.sass */
+  .org-enter__left {
+    width: 50%;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 579px) {
+  /* line 25, ../styles/pages/_org-enter.sass */
+  .org-enter__left {
+    width: auto;
+    padding: 35px 15px 15px;
+    margin: 0 -15px;
+    float: none;
+    background: #16ca8c;
+  }
+}
+/* line 43, ../styles/pages/_org-enter.sass */
 .org-enter__bg {
   float: left;
   width: 50%;
   min-height: 1px;
   text-align: center;
 }
-/* line 26, ../styles/pages/_org-enter.sass */
+@media screen and (max-width: 1099px) {
+  /* line 43, ../styles/pages/_org-enter.sass */
+  .org-enter__bg {
+    display: none;
+  }
+}
+/* line 51, ../styles/pages/_org-enter.sass */
 .org-enter__bg IMG {
   max-width: 100%;
   margin-top: -120px;
   display: inline-block;
 }
-/* line 31, ../styles/pages/_org-enter.sass */
+/* line 56, ../styles/pages/_org-enter.sass */
 .org-enter__right {
-  float: left;
+  float: right;
   width: 25%;
+  padding-top: 55px;
   color: #fff;
+}
+@media screen and (max-width: 1099px) {
+  /* line 56, ../styles/pages/_org-enter.sass */
+  .org-enter__right {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 56, ../styles/pages/_org-enter.sass */
+  .org-enter__right {
+    width: 50%;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 579px) {
+  /* line 56, ../styles/pages/_org-enter.sass */
+  .org-enter__right {
+    width: auto;
+    padding: 35px 15px 15px;
+    margin: 0 -15px;
+    float: none;
+    background: #171718;
+  }
 }
