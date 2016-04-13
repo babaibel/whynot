@@ -49,53 +49,65 @@
     @if $filename == calendar {
     $char: "\E007";
 }
-    @if $filename == coctail {
+    @if $filename == closed-eye {
     $char: "\E008";
 }
-    @if $filename == cross {
+    @if $filename == coctail {
     $char: "\E009";
 }
-    @if $filename == elephant {
+    @if $filename == cross {
     $char: "\E00A";
 }
-    @if $filename == favorite {
+    @if $filename == elephant {
     $char: "\E00B";
 }
-    @if $filename == fb {
+    @if $filename == eye {
     $char: "\E00C";
 }
-    @if $filename == lion {
+    @if $filename == favorite {
     $char: "\E00D";
 }
-    @if $filename == mail--old {
+    @if $filename == fb {
     $char: "\E00E";
 }
-    @if $filename == mail {
+    @if $filename == lion {
     $char: "\E00F";
 }
-    @if $filename == person {
+    @if $filename == mail--old {
     $char: "\E010";
 }
-    @if $filename == pin {
+    @if $filename == mail {
     $char: "\E011";
 }
-    @if $filename == search {
+    @if $filename == person {
     $char: "\E012";
 }
-    @if $filename == star {
+    @if $filename == pin {
     $char: "\E013";
 }
-    @if $filename == target {
+    @if $filename == search {
     $char: "\E014";
 }
-    @if $filename == tw {
+    @if $filename == soc-gplus {
     $char: "\E015";
 }
-    @if $filename == vk-v {
+    @if $filename == soc-mail {
     $char: "\E016";
 }
-    @if $filename == vk {
+    @if $filename == star {
     $char: "\E017";
+}
+    @if $filename == target {
+    $char: "\E018";
+}
+    @if $filename == tw {
+    $char: "\E019";
+}
+    @if $filename == vk-v {
+    $char: "\E01A";
+}
+    @if $filename == vk {
+    $char: "\E01B";
 }
 
 @return $char;
@@ -129,6 +141,9 @@
 .iconic--calendar {
     @include iconic(calendar);
 }
+.iconic--closed-eye {
+    @include iconic(closed-eye);
+}
 .iconic--coctail {
     @include iconic(coctail);
 }
@@ -137,6 +152,9 @@
 }
 .iconic--elephant {
     @include iconic(elephant);
+}
+.iconic--eye {
+    @include iconic(eye);
 }
 .iconic--favorite {
     @include iconic(favorite);
@@ -161,6 +179,12 @@
 }
 .iconic--search {
     @include iconic(search);
+}
+.iconic--soc-gplus {
+    @include iconic(soc-gplus);
+}
+.iconic--soc-mail {
+    @include iconic(soc-mail);
 }
 .iconic--star {
     @include iconic(star);

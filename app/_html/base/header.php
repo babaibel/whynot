@@ -20,7 +20,7 @@
 					</a>
 				</div>
 				<div class="header-top__item header-top__item--center">
-					<a href="#!" class="subscribe-link link">
+					<a href="#!" class="subscribe-link link js-popup-btn" data-popup-name="subscribe">
 						<span class="subscribe-link__icon icon iconic--mail"></span>
 						<span class="subscribe-link__text">
 							<span class="link link-und link-und--dotted link-und--green2-d">Подписаться <br>на обновления</span>
@@ -32,7 +32,7 @@
 
 					<div class="header-cabinet">
 						<div class="header-cabinet__main">
-							<a href="#!" class="link link--black link--dotted">Вход</a>
+							<a href="#!" class="link link--black link--dotted js-popup-btn" data-popup-name="login">Вход</a>
 							<span class="header-cabinet__sep">/</span>
 							<a href="#!" class="link link--black link--dotted">Регистрация</a>
 						</div>

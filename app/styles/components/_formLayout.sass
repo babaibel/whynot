@@ -1,6 +1,6 @@
 $form-row-name-w: 165px
 $field-name-line-height: $input__height
-$form-row-bottom-mrg: 12px
+$form-row-bottom-mrg: 15px
 
 
 =form-row-inline-adapt
@@ -32,8 +32,8 @@ $form-row-bottom-mrg: 12px
         position: relative
         overflow: hidden
         text-overflow: ellipsis
-        font-size: 15px
-        line-height: 20px
+        font-size: 13px
+        line-height: normal
 
     &__name-col
         margin-bottom: 7px
@@ -154,6 +154,31 @@ $form-row-bottom-mrg: 12px
 
     & + .checkbox-label
         margin-top: 13px
+
+    & + .link
+        margin-top: 2px
+        display: inline-block
+        font-size: 13px
+
+    &--eye
+        .iconic
+            position: absolute
+            top: 50%
+            right: 9px
+            transform: translateY(-50%)
+            color: #6f6f6f
+            font-size: 9px
+            cursor: pointer
+            transition: color $t150
+            &:hover
+                color: #000
+
+
+        &._pass-visible
+            .iconic
+                @extend .iconic--eye
+                font-size: 10px
+
 
 .input-wr
 

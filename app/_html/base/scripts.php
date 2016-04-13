@@ -31,5 +31,7 @@
 
 <script src="../scripts/sliders.js"></script>
 
+<script src="../scripts/popupsController.js"></script>
+
 <!-- endinject -->
 <!-- endbuild -->

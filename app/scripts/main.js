@@ -2,6 +2,7 @@ var $W = $(window),
 	$D = $(document),
 	$H = $('html'),
 	$B = $('body'),
+	_POPUPS = {},
     _GLOB = {
 		breakpoints: {
 			'xxl':1920,

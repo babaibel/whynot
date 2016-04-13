@@ -1,1 +1,226 @@
 @import "find-event"
+
+.social
+	@extend .cf
+
+	&__item
+		float: left
+		margin-right: 8px
+
+		.icon
+			width: 32px
+			height: 32px
+			line-height: 32px
+			background: $cBlack-d
+			border-radius: 50%
+			text-align: center
+			color: #fff
+			font-size: 15px
+
+.soc-rounds
+	margin-left: -3px
+	margin-right: -3px
+	margin-bottom: 10px
+
+	&__li
+		margin: 0 3px 5px
+		display: inline-block
+		vertical-align: top
+		width: 40px
+		height:  40px
+		line-height: 40px
+		border-radius: 50%
+		font-size: 19px
+		text-align: center
+		transition: $t300
+		@extend .iconic
+
+		&:hover
+			transform: translateY(-3px)
+		&:active
+			transform: translateY(-3px) scale(0.94)
+
+		&--vk
+			background-color: #4c75a3
+			font-size: 18px
+			color: #fff
+			@extend .iconic--vk
+		&--tw
+			background-color: #2aa9e0
+			font-size: 17px
+			color: #fff
+			@extend .iconic--tw
+		&--fb
+			background-color: #3b5998
+			color: #fff
+			@extend .iconic--fb
+		&--gplus
+			background-color: #df4a32
+			color: #fff
+			@extend .iconic--soc-gplus
+		&--mail
+			background-color: #134785
+			color: #fff
+			@extend .iconic--soc-mail
+
+
+
+.grid-right-fix
+	@extend .cf
+
+	&__left
+		float: left
+		width: 100%
+
+	&__left-inner
+		margin-right: 300px
+
+		+max-screen($screenMM)
+			margin-right: 0
+
+	&__right
+		width: 300px
+		padding-left: 35px
+		float: left
+		margin-left: -300px
+
+		+max-screen($screenMM)
+			padding: 15px 0 0
+			width: 100%
+			margin-left: 0
+
+.comments
+	
+	&__header
+		display: flex
+		justify-content: space-between
+		margin-bottom: 15px
+
+		H1,H2,H3
+			margin-bottom: 0
+			line-height: 35px
+
+		+max-screen($screenXS)
+			display: block
+
+	&__header-title
+		padding: 0 20px 0 5px
+		flex-grow: 1
+
+		+max-screen($screenXS)
+			padding: 0 0 10px 0
+
+	&__header-btn
+		flex-shrink: 0
+
+		+max-screen($screenXS)
+			margin-bottom: 15px
+
+	&__body
+		background: #fff
+
+.comment
+	padding: 12px 20px 18px
+	border-bottom: 1px solid #f4f4f4
+	margin-bottom: 6px
+	@extend .cf
+
+	&__img
+		float: left
+		width: 44px
+
+		IMG
+			display: block
+			max-width: 100%
+
+	&__inner
+		padding-left: 60px
+
+	&__title
+		font: 700 16px/1.3 $baseFont
+
+	&__rating
+		margin-bottom: 15px
+
+	&__text
+		font: 14px/1.3 $baseFont
+		margin-bottom: 2px
+
+	&__date
+		font: 300 12px/1.3 $baseFont
+		color: #7c7c7c
+
+.rating-wrap
+	line-height: 20px
+	.rating, .link
+		display: inline-block
+		vertical-align: middle
+		margin-right: 5px
+	.link
+		line-height: normal
+		font-size: 14px
+		position: relative
+		top: 1px
+
+$star-size: 16px
+.rating
+	font-size: 0
+	line-height: 0
+	position: relative
+	z-index: 1
+	@extend .cf
+
+	&__star
+		float: left
+		width: $star-size + 3px
+		height: $star-size
+		font-size: $star-size
+		line-height: $star-size
+		position: relative
+		display: inline-block
+		vertical-align: top
+		padding-right: 3px
+		cursor: pointer
+
+		.iconic--star
+			transition: all $t300
+
+		.iconic--star, INPUT
+			position: absolute
+			top: 0
+			left: 0
+
+		INPUT
+			height: $star-size + 3px
+			width: $star-size
+			top: 0
+			opacity: 0
+			z-index: 2
+			cursor: pointer
+
+		&-inactive
+			color: #c4c6c7
+		&-active
+			color: #f8af00
+
+	&__active-stars
+		height: $star-size
+		width: 0
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 0
+		transition: opacity $t300
+		overflow: hidden
+		white-space: nowrap
+		z-index: 1
+
+	@for $i from 1 through 5
+		.rating__star#{$i}:hover
+			& ~ .rating__active-stars
+				opacity: 1
+				width: ($star-size + 3px) * $i
+		&--#{$i}
+			.rating__active-stars
+				opacity: 1
+				width: ($star-size + 3px) * $i

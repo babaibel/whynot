@@ -15,3 +15,27 @@ $(function () {
     })
 
 });
+
+$(function () {
+    var $passToggle = $('.js-passw-input');
+    if(!$passToggle.length) return;
+
+    $passToggle.each(function(){
+        var $this = $(this),
+            $btn = $this.find('.js-password-toggle'),
+            $input = $(this).find('input');
+
+        $btn.bind('click',function(){
+            var status = $this.hasClass('_pass-visible');
+
+            if(status){
+                $this.removeClass('_pass-visible');
+                $input.attr('type','password');
+            }else{
+                $this.addClass('_pass-visible');
+                $input.attr('type','text');
+            }
+        })
+    })
+
+});

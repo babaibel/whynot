@@ -34,6 +34,8 @@
 			&--target
 				color: $cGreen
 
+
+
 	&--green
 		font: 300 20px/1 $baseFont
 		color: #fff
@@ -43,7 +45,7 @@
 
 		&:hover
 			background: $cGreen-d
-	
+
 	&--dark
 		font: bold 14px/1 $baseFont
 		color: $cGreen
@@ -87,6 +89,7 @@
 		.iconic--target
 			font-size: 26px
 
+
 	&--fix-h
 		height: 44px
 		line-height: 44px
@@ -100,15 +103,15 @@
 			&--arr-r-light
 				margin: 0 -40px 0 35px
 
-	.tooltip
-		+max-screen($screenSM)
-			position: static !important
-			display: inline !important
-			font-size: inherit  !important
-			line-height: inherit !important
-			border: none  !important
-			background-color: transparent !important
-			padding: 0 !important
-			margin: 0 !important
-			color: inherit !important
-			font-weight: inherit !important
+	&--md
+		font-size: 15px
+		padding: 10px 20px
+
+.btn-flex-wr
+	display: flex
+	.btn
+		flex-shrink: 0
+		flex-grow: 0
+
+	.form-tip
+		padding-left: 13px
