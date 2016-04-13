@@ -8,6 +8,7 @@ $input__padd-rl: 13px
 // $input__shadow: inset 1px 1.732px 5px 0px rgba(55, 54, 55, 0.1)
 $input__shadow: none
 
+$input-smd__height: 42px
 $input-lg__height: 60px
 
 
@@ -37,11 +38,26 @@ $input-lg__height: 60px
         &.input--lg
             line-height: $input-lg__height - 4px
 
+
+    &--brd
+        border: 1px solid #d8d8d8
+        box-shadow: inset 1px 1.732px 5px 0px rgba(55, 54, 55, 0.1)
+        border-radius: 3px
+        line-height: $input__height - 2px
+
+
     &--ta-cent
         text-align: center
 
     &--ta-right
         text-align: right
+
+
+    &--smd
+        height: $input-smd__height
+        line-height: $input-smd__height
+        &.input--brd
+            line-height: $input-smd__height - 2px
 
     &--lg
         line-height: $input-lg__height - 2px
@@ -53,6 +69,9 @@ $input-lg__height: 60px
 
         &--80perc
             width: 80%
+
+
+
 
 .textarea
     display: block

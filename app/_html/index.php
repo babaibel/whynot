@@ -86,6 +86,7 @@
 
 		<?php include 'base/footer.php'; ?>
 	</div>
+	<?php include 'base/popups.php'; ?>
 	<?php include 'base/scripts.php'; ?>
 </body>
 </html>
