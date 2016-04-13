@@ -1,0 +1,117 @@
+.contacts
+	
+	.wr
+		padding-top: 50px
+		padding-bottom: 70px
+
+		+max-screen($screenLL)
+			background: none!important
+			padding-top: 30px
+			padding-bottom: 50px
+
+		+max-screen($screenSS)
+			padding-top: 20px
+			padding-bottom: 30px
+
+	.h2
+		text-align: left
+		margin-bottom: 55px
+
+		+max-screen($screenLL)
+			font-size: 56px
+
+		+max-screen($screenS)
+			font-size: 40px
+			margin-bottom: 30px
+
+		+max-screen($screenSS)
+			font-size: 30px
+
+	&__row
+		@extend .cf
+
+	&__info
+		float: left
+		width: 275px
+
+		+max-screen($screenSS)
+			float: none
+			width: auto
+			padding-bottom: 25px
+
+	&__info-text
+		font: 13px/1.45 $baseFont
+		color: #7b7b7b
+		margin-bottom: 20px
+
+	&__info-phone
+		font: 21px/1.3 $baseFont
+		margin-bottom: 25px
+
+		A
+			color: $cPrimary
+
+	&__info-soc
+
+		> SPAN
+			font: 15px/1.4 $baseFont
+
+		.social
+			margin: 10px 0
+
+	&__emails
+		padding: 0 360px 0 300px
+		@extend .cf
+
+		+max-screen($screenLL)
+			padding-right: 0
+
+		+max-screen($screenSS)
+			padding-left: 0
+
+	&__emails-row
+		padding-bottom: 12px
+		margin-bottom: 12px
+		border-bottom: 1px solid #ececec
+
+		&:last-child
+			border-bottom: 0
+
+	&__emails-email
+		float: left
+		width: 210px
+		font: 15px/1.3 $baseFont
+
+		+screen($screenLL+1, $screenL)
+			float: none
+
+		+screen($screenSS+1, $screenS)
+			float: none
+
+		+max-screen($screenXS)
+			float: none
+
+
+	&__emails-text
+		padding-left: 220px
+
+		+screen($screenLL+1, $screenL)
+			padding: 10px 0 0 0
+
+		+screen($screenSS+1, $screenS)
+			padding: 10px 0 0 0
+
+		+max-screen($screenXS)
+			padding: 10px 0 0 0
+
+.contacts-comments
+	padding: 50px 0 70px
+
+	&__header
+		display: flex
+
+	&__header-title
+		padding-right: 20px
+
+	&__header-btn
+		
