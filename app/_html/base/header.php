@@ -1,7 +1,13 @@
 <header class="header">
-	<div class="header-top__wr">
+	<div class="header-top-wr">
 		<div class="wr">
 			<div class="header-top">
+				<div class="header-top__menu-toggle js-header-menu-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+
 				<div class="header-top__item header-top__item--left">
 					<a class="logo" href="#!">
 						<div class="logo-question">
@@ -17,26 +23,37 @@
 					<a href="#!" class="subscribe-link link">
 						<span class="subscribe-link__icon icon iconic--mail"></span>
 						<span class="subscribe-link__text">
-							<span class="link link-und link-und--green2-d">Подписаться <br>на обновления</span>
+							<span class="link link-und link-und--dotted link-und--green2-d">Подписаться <br>на обновления</span>
 						</span>
 					</a>
 				</div>
 				<div class="header-top__item header-top__item--right">
 					<a href="#!" class="bookmark-link"><span class="icon iconic--bookmark"></span>Избранное</a>
+
 					<div class="header-cabinet">
-						<a href="#!" class="link link--black link--dotted">Вход</a>
-						<span class="header-cabinet__sep">/</span>
-						<a href="#!" class="link link--black link--dotted">Регистрация</a>
+						<div class="header-cabinet__main">
+							<a href="#!" class="link link--black link--dotted">Вход</a>
+							<span class="header-cabinet__sep">/</span>
+							<a href="#!" class="link link--black link--dotted">Регистрация</a>
+						</div>
+
+						<div class="header-cabinet__hidden">
+							<span class="header-cabinet__ico-link header-cabinet__ico-link--round">
+								<span class="iconic iconic--person"></span>
+							</span>
+						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="header-bot__wr">
+
+	<div class="header-bot-wr">
 		<div class="wr">
 			<div class="header-bot">
-				<div class="header-bot__item">
-					<nav class="header-nav">
+				<div class="header-bot__nav">
+					<nav class="header-nav js-header-menu">
 						<ul class="list-clear">
 							<li><a href="#!">Погулять</a></li>
 							<li><a href="#!">Посмотреть</a></li>
@@ -47,8 +64,8 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="header-bot__item">
-					<div class="header-search">
+				<div class="header-bot__search-wr">
+					<div class="header-search js-header-search">
 						<form>
 							<input class="header-search__input" type="text" placeholder="Например, открытый каток" name="search">
 							<button class="header-search__btn header-search__btn--submit" type="submit">

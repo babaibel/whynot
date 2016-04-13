@@ -34,6 +34,7 @@
 	border-bottom-style: solid
 	border-bottom-width: 1px
 	transition: border-color $t150 ease-out
+	cursor: pointer
 
 	&:hover
 		border-color: transparent
@@ -46,7 +47,7 @@
 
 	&--green2-d
 		color: $cGreen-d
-		border-bottom: 1px solid rgba($cGreen-d,0.3) //#b2b2b2
+		border-bottom: 1px solid #b2b2b2
 		&:hover
 			border-color: transparent
 
@@ -59,10 +60,12 @@
 	text-align: left
 	display: inline-block
 	position: relative
+	padding-left: 35px
+
 	.icon
 		color: #696969
 		position: absolute
-		left: -35px
+		left: 0
 		top: 0
 
 	&__text

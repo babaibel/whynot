@@ -10,7 +10,7 @@
 
 			<?php include "blocks/findEvents.php";?>
 
-			<?php include "blocks/indexCards.php";?>
+			<?php include "blocks/indexCards-mob.php";?>
 
 			<section class="index-map">
 				<div class="wr">

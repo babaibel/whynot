@@ -34,8 +34,6 @@
 			&--target
 				color: $cGreen
 
-
-
 	&--green
 		font: 300 20px/1 $baseFont
 		color: #fff
@@ -71,7 +69,6 @@
 		.iconic--target
 			font-size: 26px
 
-
 	&--fix-h
 		height: 44px
 		line-height: 44px
@@ -84,3 +81,16 @@
 		.iconic
 			&--arr-r-light
 				margin: 0 -40px 0 35px
+
+	.tooltip
+		+max-screen($screenSM)
+			position: static !important
+			display: inline !important
+			font-size: inherit  !important
+			line-height: inherit !important
+			border: none  !important
+			background-color: transparent !important
+			padding: 0 !important
+			margin: 0 !important
+			color: inherit !important
+			font-weight: inherit !important

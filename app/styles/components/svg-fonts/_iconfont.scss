@@ -73,26 +73,29 @@
     @if $filename == mail {
     $char: "\E00F";
 }
-    @if $filename == pin {
+    @if $filename == person {
     $char: "\E010";
 }
-    @if $filename == search {
+    @if $filename == pin {
     $char: "\E011";
 }
-    @if $filename == star {
+    @if $filename == search {
     $char: "\E012";
 }
-    @if $filename == target {
+    @if $filename == star {
     $char: "\E013";
 }
-    @if $filename == tw {
+    @if $filename == target {
     $char: "\E014";
 }
-    @if $filename == vk-v {
+    @if $filename == tw {
     $char: "\E015";
 }
-    @if $filename == vk {
+    @if $filename == vk-v {
     $char: "\E016";
+}
+    @if $filename == vk {
+    $char: "\E017";
 }
 
 @return $char;
@@ -149,6 +152,9 @@
 }
 .iconic--mail {
     @include iconic(mail);
+}
+.iconic--person {
+    @include iconic(person);
 }
 .iconic--pin {
     @include iconic(pin);

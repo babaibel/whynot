@@ -1,0 +1,226 @@
+// **************************************************
+// Find Events
+// **************************************************
+
+.f-events
+	padding: 22px 0 30px
+	background: url("../images/f-events-bg.jpg") no-repeat center
+	background-repeat: no-repeat
+	text-align: center
+
+	+max-screen($screenSM)
+		padding: 10px 0
+
+	.h2
+		font-size: 50px
+		margin-bottom: 30px
+		+max-screen($screenSM)
+			font-size: 40px
+			margin-bottom: 23px
+
+	+min-screen($screenSM)
+		.chkb-dropdown
+			margin-left: 40px
+			margin-right: 40px
+
+	+max-screen($screenMM)
+		.weekrange
+			margin-left: -10px
+			margin-right: -10px
+
+	.chkb-dropdown--weekchange
+		margin: 20px 0 30px
+		.chkb-dropdown__title
+			margin-bottom: 3px
+
+		+max-screen($screenSM)
+			display: none
+
+	.chkb-dropdown--dates
+		display: none
+		+max-screen($screenSM)
+			display: block
+
+	&__inner-wr
+		max-width: 740px
+		margin: 0 auto
+
+	&__btn-wr
+		display: table
+		margin: 10px auto
+		position: relative
+
+		.btn
+			min-width: 170px
+
+			+max-screen($screenSM)
+				margin-top: 10px
+
+			+max-screen(380px)
+				font-size: 16px
+
+
+$weekrange-h: 34px
+$weekrange-bradius: 4px
+$weekrange-color: #dcdcdc
+
+$rangeUiHeight: 30px
+$rangeUiHandleHeight: 40px
+
+.weekrange
+	position: relative
+	padding: 0 ($weekrange-h + 4px)
+
+	&__arr
+		border-radius: $weekrange-bradius
+		border: 1px solid $weekrange-color
+		width: $weekrange-h
+		height: $weekrange-h
+		line-height: $weekrange-h - 2px
+		text-align: center
+		background-color: #fff
+		font-size: 10px
+		color: #4c4c4c
+		margin: 10px 0
+		transition: $t150
+		cursor: pointer
+		position: absolute
+
+		&:hover
+			border-color: darken($weekrange-color,30%)
+
+		&._disabled
+			opacity: 0.5
+			border-color: $weekrange-color !important
+			cursor: default
+
+		&--left
+			left: 0
+
+		&--right
+			right: 0
+
+	&__line-wr
+		position: relative
+		overflow: hidden
+		padding: 10px 0
+
+	&__line
+		position: relative
+		border-radius: $weekrange-bradius
+		border: 1px solid $weekrange-color
+		height: $weekrange-h
+		line-height: $weekrange-h - 2px
+		font-size: 16px
+
+		small
+			font-size: 13px
+
+		+max-screen($screenMM)
+			font-size: 15px
+			small
+				font-size: 11px
+
+	&__line
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 0 5px
+		overflow: hidden
+
+	&__line-tracker
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+
+	&__line-item
+		flex-shrink: 0
+		flex-grow: 1
+		width: (100%/7)
+		color: #a1a1a1
+		text-align: center
+		position: relative
+
+		& + &:after
+			content: ''
+			position: absolute
+			left: -2px
+			top: 50%
+			margin-top: -2px
+			border-radius: 50%
+			background-color: #c3c3c3
+			height: 4px
+			width: 4px
+
+
+
+	&__visual-line
+		position: absolute
+		left: 0
+		width: 100% - (100%/7)*2
+		top: 2px
+		bottom: 2px
+		margin: 0 45px
+		background-color: $cSecondary
+		opacity: 0.65
+		z-index: 1
+
+	&__ui
+		position: absolute
+		left: 0
+		top: 12px
+		height: $rangeUiHeight
+		box-shadow: none
+		border: 0
+		background-color: transparent
+
+		.noUi-tooltip
+			white-space: nowrap
+
+		.noUi-base
+			position: absolute
+			left: 4%
+			right: 4%
+			width: auto
+
+		.noUi-handle
+			height: $rangeUiHandleHeight
+			width: 95px
+			border: 0
+			box-shadow: none
+			margin-left: -47.5px
+			left: 0
+			top: -5px
+			background-position: center
+			background-repeat: no-repeat
+			background-size: cover
+
+			&:after,&:before
+				display: none
+
+			.noUi-tooltip
+				position: static
+				border: 0
+				box-shadow: none
+				background: transparent
+				padding: 0
+				line-height: $rangeUiHandleHeight
+				width: 100%
+				text-align: inherit
+				font-size: 16px
+				color: #000
+				small
+					font-size: 13px
+
+
+			&-lower
+				padding: 0 10px
+				text-align: left
+				background: url('../images/range-handle-l.png') center no-repeat
+
+			&-upper
+				padding: 0 10px
+				text-align: right
+				background: url('../images/range-handle-r.png') center no-repeat
+

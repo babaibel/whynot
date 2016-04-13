@@ -19,6 +19,12 @@
 <!-- build:js ../scripts/app.js -->
 <!-- inject:js -->
 
+<script src="../scripts/fEvent.js"></script>
+
+<script src="../scripts/formElements.js"></script>
+
+<script src="../scripts/headerController.js"></script>
+
 <script src="../scripts/main.js"></script>
 
 <script src="../scripts/mapsController.js"></script>

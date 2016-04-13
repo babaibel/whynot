@@ -1,9 +1,34 @@
+$header-h-sm: 118px
+$header-top-h: 86px
+$header-top-h-sm: 48px
+
+BODY
+	+max-screen($screenSS)
+		padding-top: $header-top-h-sm //$header-h-sm
+
+.header
+	background-color: #fff
+	position: relative
+	z-index: 100
+
+	+max-screen($screenSS)
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+
+.header-top-wr
+	background-color: #fff
+	position: relative
+	z-index: 10
+
 .header-top
 	display: flex
 	flex-flow: row nowrap
 	justify-content: space-between
 	align-items: center
-	height: 86px
+	height: $header-top-h
+	position: relative
 
 	&__item
 
@@ -12,11 +37,51 @@
 
 		&--center
 			text-align: center
-			margin-left: 70px
+			margin: 0 25px
+			+max-screen($screenS)
+				display: none
 
 		&--right
 			text-align: right
 
+	&__menu-toggle
+		display: none
+		height: $header-top-h-sm
+		width: $header-top-h-sm
+		background-color: $cPrimary
+		color: #fff
+		transition: $t150
+		position: absolute
+		left: 0
+		top: 0
+		align-items: center
+		justify-content: center
+		flex-direction: column
+
+		&:hover
+			background-color: darken($cPrimary,10%)
+
+		span
+			display: block
+			width: 22px
+			height: 2px
+			background-color: #fff
+
+			& + span
+				margin-top: 4px
+
+
+	+max-screen($screenSM)
+		.bookmark-link
+			display: none
+
+	+max-screen($screenSS)
+		height: $header-top-h-sm
+		margin-left: -$wrapper-padd-sm
+		padding-left: $header-top-h-sm + 15px
+
+		&__menu-toggle
+			display: flex
 
 
 .logo
@@ -26,6 +91,10 @@
 		font: 32px/1.3 $ffLh
 		color: #000
 		letter-spacing: -1px
+
+		+max-screen($screenSS)
+			font-size: 26px
+			white-space: nowrap
 
 .logo-question
 	text-align: center
@@ -40,6 +109,9 @@
 	.icon
 		color: #a2a2a2
 
+	+max-screen($screenSS)
+		display: none
+
 .header-cabinet
 	display: inline-block
 	margin-left: 35px
@@ -52,24 +124,95 @@
 		color: $cBlack
 		margin: 0 2px
 
+	&__ico-link
+		margin-left: 12px
+		line-height: 28px
+
+		.iconic
+			font-size: 19px
+			line-height: normal
+
+		&--round
+			display: inline-block
+			text-align: center
+			height: 28px
+			width: 28px
+			background-color: #dcf187
+			border-radius: 50%
+			.iconic--person
+				vertical-align: top
+				margin-top: 2px
+
+	&__main
+		display: block
+		+max-screen($screenSS)
+			display: none
+
+	&__hidden
+		display: none
+		+max-screen($screenSS)
+			display: block
+
+
+
+.header-bot-wr
+	background: #000
+	border-bottom: 1px solid #e6e6e6
+	position: relative
+	z-index: 1
+
+	+max-screen($screenSS)
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+
 
 .header-bot
-
 	display: flex
 	flex-flow: row nowrap
 	justify-content: space-between
 	align-items: center
 	height: 68px
+	position: relative
 
-	&__wr
-		background: #000
-		border-bottom: 1px solid #e6e6e6
-
-	&__item
+	&__nav
 		flex-grow: 1
-		max-width: 695px
+
+	&__search-wr
+		width: auto
+		flex-shrink: 1
+		padding-left: 40px
+
+	+screen($screenSS + 1,$screenMM)
+		&__nav
+			padding-right: 60px
+
+		&__search-wr
+			width: 0
+			padding-left: 0
+
+	+max-screen($screenSS)
+		height: 0
+		display: block
+
+		&__search-wr
+			display: block
+			padding: 15px $wrapper-padd-sm
+			margin: 0 (-$wrapper-padd-sm)
+			background-color: #000
+			transition: transform $t600
+			transform: translateY(-100%)
+
+			BODY._search-open &
+				transform: translateY(0%)
+
+
 
 .header-nav
+	margin-left: -7px
+	margin-right: -7px
+
 	UL
 		display: flex
 		flex-flow: row nowrap
@@ -87,28 +230,121 @@
 		&:hover
 			border-color: transparent
 
+		+max-screen($screenS)
+			font-size: 20px
+		+max-screen($screenSM)
+			font-size: 18px
+
+	+max-screen($screenSS)
+		display: none
+		position: fixed
+		top: $header-top-h-sm
+		left: 0
+		right: 0
+		background-color: #000
+		padding: 15px $wrapper-padd-sm
+		z-index: 10
+
+
+		UL
+			flex-wrap: wrap
+
+			LI
+				width: 50%
+				padding-right: 15px
+				margin: 6px 0
+				+max-screen(400px)
+					width: 100%
+
+			//display: block
+
+		BODY._header-menu-open &
+			display: block
+
+
+
+$hsearch-size: 39px
+$hsearch-br: 4px
+$hsearch-padd: 0 48px 0 10px
+
 .header-search
 	width: 100%
-	padding-left: 18%
 	position: relative
+	overflow: hidden
+	border-radius: $hsearch-br
 
 	&__input
 		width: 100%
-		border-radius: 4px
+		border-radius: $hsearch-br
 		background: #fff
-		padding: 0 48px 0 10px
-		height: 39px
+		padding: $hsearch-padd
+		height: $hsearch-size
 		font: 500 14px/39px $baseFont
 		border: 0
+		&::placeholder
+			color: #b5b5b5
 
 	&__btn
 		position: absolute
-		right: 6px
+		right: 0
 		top: 0
-		width: 39px
-		height: 39px
-		background: none
+		width: $hsearch-size
+		height: $hsearch-size
+		background: #fff
 		border: 0
+
 		&--trigger
 			opacity: 0
 			visibility: hidden
+
+	+screen($screenSS + 1,$screenMM)
+		position: absolute
+		right: 0
+		top: 50%
+		margin-top: -($hsearch-size/2)
+		width: $hsearch-size
+		border-radius: 50%
+		transition: width $t600, border-radius 0.8s ease-out
+
+		&__input
+			border-radius: 50%
+			width: $hsearch-size
+			padding-left: 0
+			padding-right: 0
+			color: transparent
+			transition: width $t600, border-radius 0.8s ease-out, padding $t300, color $t300, placeholder $t300
+
+			&::placeholder
+				color: transparent
+
+		&__btn
+
+			&--submit
+				opacity: 0
+				visibility: hidden
+
+			&--trigger
+				visibility: visible
+				opacity: 1
+
+		&._expanded
+			transition: width $t600, border-radius $t300 ease-out
+
+			&,.header-search__input
+				width: 300px
+				border-radius: $hsearch-br
+
+			.header-search__input
+				color: #000
+				padding: $hsearch-padd
+				transition: width $t600, border-radius $t300 ease-out, padding $t600, color $t600, placeholder $t600
+
+				&::placeholder
+					color: #b5b5b5
+
+
+	+max-screen($screenSS)
+
+
+
+//+max-screen()
