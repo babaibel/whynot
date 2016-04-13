@@ -177,6 +177,10 @@ BODY
 	position: relative
 
 	&__nav
+	&__wr
+		background: #000
+
+	&__item
 		flex-grow: 1
 
 	&__search-wr
@@ -342,6 +346,14 @@ $hsearch-padd: 0 48px 0 10px
 				&::placeholder
 					color: #b5b5b5
 
+			.header-search__btn
+				&--submit
+					visibility: visible
+					opacity: 1
+
+				&--trigger
+					opacity: 0
+					visibility: hidden
 
 	+max-screen($screenSS)
 

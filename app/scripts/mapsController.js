@@ -7,9 +7,10 @@ $(function () {
         myMap,
         myPlacemark,
         geolocation,
-        userCoordinates;
+        userCoordinates,
+        clusterIcon,
+        clusterer;
 
-    /* todo сделать запрос с определением соседних точек */
 
     function setCenter(pCoords) {
         myPlacemark = new ymaps.Placemark(pCoords,
@@ -26,7 +27,6 @@ $(function () {
         myMap.geoObjects.add(myPlacemark);
         myMap.setCenter(pCoords);
 
-        console.log(pCoords);
 
         $.ajax({
             type: 'GET',
@@ -40,36 +40,10 @@ $(function () {
     }
 
     function setEventMarks(eventsArray) {
-        console.log(eventsArray);
 
-        var eventPlacemarks = [],
-            clusterIcon = function(){
-                return ymaps.templateLayoutFactory.createClass(
-                    '<div class="eventsCluster">{{ properties.geoObjects.length }}</div>');
-            },
-            clusterer;
+        var eventPlacemarks = [];
 
-
-
-        clusterer = new ymaps.Clusterer({
-            //preset: 'twirl#invertedGreenClusterIcons',
-            groupByCoordinates: false,
-            clusterHideIconOnBalloonOpen: false,
-            geoObjectHideIconOnBalloonOpen: false,
-            clusterIcons: [
-                {
-                    href: '../images/svg/marker.svg',
-                    size: [44, 44],
-                    offset: [-22, -22]
-                }
-            ],
-            clusterIconContentLayout: clusterIcon(),
-            clusterBalloonItemContentLayout: ymaps.templateLayoutFactory.createClass(
-                //'<h2>{{ properties.balloonContentHeader|raw }}</h2>' +
-                '<div class="ballon_body">{{ properties.balloonContentBody|raw }}</div>' +
-                '<div class="ballon_footer">{{ properties.balloonContentFooter|raw }}</div>'
-            )
-        });
+        clusterer.removeAll();
 
         $.each(eventsArray, function (i, elem) {
             var item,
@@ -162,9 +136,6 @@ console.log(markHref)
     function init() {
         geolocation = ymaps.geolocation;
 
-        //var location = getUserLocation();
-
-
         myMap = new ymaps.Map(mapId, {
             center: initCoords,
             zoom: 15,
@@ -174,10 +145,32 @@ console.log(markHref)
         myMap.controls.add('zoomControl', {float: 'none', position: {top: 215, right: 20}});
         myMap.behaviors.disable('scrollZoom');
 
+        clusterIcon = function(){
+            return ymaps.templateLayoutFactory.createClass(
+                '<div class="eventsCluster">{{ properties.geoObjects.length }}</div>');
+        };
 
-        //setCenter(initCoords);
+        clusterer = new ymaps.Clusterer({
+            //preset: 'twirl#invertedGreenClusterIcons',
+            groupByCoordinates: false,
+            clusterHideIconOnBalloonOpen: false,
+            geoObjectHideIconOnBalloonOpen: false,
+            clusterIcons: [
+                {
+                    href: '../images/svg/marker.svg',
+                    size: [44, 44],
+                    offset: [-22, -22]
+                }
+            ],
+            clusterIconContentLayout: clusterIcon(),
+            clusterBalloonItemContentLayout: ymaps.templateLayoutFactory.createClass(
+                //'<h2>{{ properties.balloonContentHeader|raw }}</h2>' +
+                '<div class="ballon_body">{{ properties.balloonContentBody|raw }}</div>' +
+                '<div class="ballon_footer">{{ properties.balloonContentFooter|raw }}</div>'
+            )
+        });
+
         setUserLocation();
-
     }
 
     ymaps.ready(init);
