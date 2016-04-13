@@ -18,7 +18,7 @@
     "slick-carousel": "~1.5.8",
     "nouislider": "latest",
     "malihu-custom-scrollbar-plugin": "latest",
-    "air-datepicker": "latest",
+    "air-datepicker": "^1.2.3",
     "nselect": "latest",
     "jquery-touchswipe": "~1.6.12",
     "jquery-validation": "~1.14.0"

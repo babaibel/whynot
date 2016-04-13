@@ -3,7 +3,79 @@
 @import buttons
 @import links
 @import typography
+
 @import formElements
 @import formLayout
-@import blocks
+
+@import blocks/_blocks
+
+
+.tooltip
+    position: absolute
+
+    margin: 10px
+    background-color: #fff
+    border: 1px solid #dcdcdc
+    border-radius: 4px
+    color: #000
+    font-size: 13px
+    line-height: normal
+
+    padding: 8px 12px
+
+    &:after, &:before
+        content: ''
+        position: absolute
+        border-style: solid
+        border-color: transparent
+
+    &:after
+        border-width: 5px
+    &:before
+        border-width: 6px
+
+    &--right
+        left: 100%
+
+
+        &:before,
+        &:after
+            right:  100%
+            //margin-right: -1px
+
+        &:after
+            border-color: transparent #fff transparent transparent
+
+        &:before
+            border-color: transparent #dcdcdc transparent transparent
+
+    &--left
+        right: 100%
+
+    &--vcenter
+        top: 50%
+        transform: translateY(-50%)
+        margin-top: 0
+        margin-bottom: 0
+        &:before,
+        &:after
+            top: 50%
+        &:after
+            margin-top: -5px
+        &:before
+            margin-top: -6px
+
+
+
+// todo
+// map
+
+.eventsCluster
+    text-align: center
+    color: #fff
+    line-height: 44px
+    font-weight: bold
+    //background-color: $cGreen
+
+
 
