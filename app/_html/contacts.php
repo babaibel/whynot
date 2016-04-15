@@ -6,7 +6,7 @@
 	<div class="layout">
 		<?php include 'base/header.php'; ?>
 
-		<main class="index">
+		<main class="page-body">
 
 			<section class="contacts">
 				<div class="wr"
@@ -24,13 +24,13 @@
 								<span>Мы в соц. сетях:</span>
 								<div class="social">
 									<a class="social__item" href="#!">
-										<span class="icon iconic--vk-v"></span>
+										<span class="icon iconic--soc-vk-v"></span>
 									</a>
 									<a class="social__item" href="#!">
-										<span class="icon iconic--fb"></span>
+										<span class="icon iconic--soc-fb"></span>
 									</a>
 									<a class="social__item" href="#!">
-										<span class="icon iconic--tw"></span>
+										<span class="icon iconic--soc-tw"></span>
 									</a>
 								</div>
 							</div>

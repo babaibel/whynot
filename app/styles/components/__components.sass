@@ -66,6 +66,92 @@
         &:before
             margin-top: -6px
 
+.ya-share2
+    line-height: 22px
+
+    &__item
+        margin: 5px 12px !important
+
+    &__icon
+        display: inline-block
+        vertical-align: middle !important
+        height: auto !important
+        width: auto !important
+
+    &__counter
+        display: inline-block
+        vertical-align: middle
+        background-color: #eef1f4
+        border-radius: 3px
+        padding: 0!important
+        width: auto !important
+        min-width: 28px !important
+        height: 22px !important
+        line-height: 22px !important
+        text-align: center
+        font-size: 13px !important
+        color: #24313a
+        font-family: 'Helvetica Neue',Helvetica,'Open Sans', sans-serif
+        position: relative
+        margin-left: 12px
+
+        &:before
+            height: 0
+            width: 0
+            position: absolute
+            right: 100%
+            left: auto
+            bottom: auto
+            top: 50% !important
+            margin-top: -4px
+            border: 4px solid transparent
+            border-right-color: #eef1f4
+
+    &__badge
+        background-color: transparent !important
+        line-height: 22px !important
+
+    &__item_service_vkontakte
+
+        .ya-share2__icon
+            background-image: none !important
+            @extend .iconic
+            @extend .iconic--soc-vk
+            color: #3395c7
+            font-size: 22px
+
+
+    &__item_service_facebook
+        .ya-share2__icon
+            background-image: none !important
+            @extend .iconic
+            @extend .iconic--soc-fb
+            color: #3669a3
+            font-size: 20px
+
+    &__item_service_twitter
+        .ya-share2__icon
+            background-image: none !important
+            @extend .iconic
+            @extend .iconic--soc-tw
+            color: #6bc1e9
+            font-size: 18px
+
+    &__item_service_moimir
+        .ya-share2__icon
+            background-image: none !important
+            @extend .iconic
+            @extend .iconic--soc-mail
+            color: #2856b3
+            font-size: 20px
+
+    &__item_service_gplus
+        .ya-share2__icon
+            background-image: none !important
+            @extend .iconic
+            @extend .iconic--soc-gplus
+            color: #db5a50
+            font-size: 20px
 
 
 // todo

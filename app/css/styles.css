@@ -1,41 +1,41 @@
 @charset "UTF-8";
 @import url("//hello.myfonts.net/count/303803");
-/* line 62, ../styles/helpers/_variables.scss */
+/* line 64, ../styles/helpers/_variables.scss */
 .iconic--elephant {
   font-size: 16px;
 }
 
-/* line 66, ../styles/helpers/_variables.scss */
+/* line 68, ../styles/helpers/_variables.scss */
 .iconic--mail {
   font-size: 13px;
 }
 
-/* line 70, ../styles/helpers/_variables.scss */
+/* line 72, ../styles/helpers/_variables.scss */
 .iconic--bookmark {
   font-size: 21px;
 }
 
-/* line 74, ../styles/helpers/_variables.scss */
+/* line 76, ../styles/helpers/_variables.scss */
 .iconic--search {
   font-size: 18px;
 }
 
-/* line 78, ../styles/helpers/_variables.scss */
+/* line 80, ../styles/helpers/_variables.scss */
 .iconic--calendar {
   font-size: 12px;
 }
 
-/* line 82, ../styles/helpers/_variables.scss */
+/* line 84, ../styles/helpers/_variables.scss */
 .iconic--pin {
   font-size: 12px;
 }
 
-/* line 86, ../styles/helpers/_variables.scss */
+/* line 88, ../styles/helpers/_variables.scss */
 .iconic--star {
   font-size: 15px;
 }
 
-/* line 90, ../styles/helpers/_variables.scss */
+/* line 92, ../styles/helpers/_variables.scss */
 .iconic--target {
   font-size: 28px;
 }
@@ -437,7 +437,7 @@ a {
   line-height: 28px;
 }
 /* line 130, ../styles/layout/_header.sass */
-.header-cabinet__ico-link .iconic, .header-cabinet__ico-link .icon, .header-cabinet__ico-link .popup-closer, .header-cabinet__ico-link .soc-rounds__li, .header-cabinet__ico-link .actions-sl .slick-prev:after, .actions-sl .header-cabinet__ico-link .slick-prev:after,
+.header-cabinet__ico-link .iconic, .header-cabinet__ico-link .icon, .header-cabinet__ico-link .link--bookmark:before, .header-cabinet__ico-link .popup-closer, .header-cabinet__ico-link .soc-rounds__li, .header-cabinet__ico-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .actions-sl .slick-prev:after, .actions-sl .header-cabinet__ico-link .slick-prev:after,
 .header-cabinet__ico-link .actions-sl .slick-next:after,
 .actions-sl .header-cabinet__ico-link .slick-next:after, .header-cabinet__ico-link .recom-sl .slick-next, .recom-sl .header-cabinet__ico-link .slick-next, .header-cabinet__ico-link .recom-sl .slick-prev, .recom-sl .header-cabinet__ico-link .slick-prev {
   font-size: 19px;
@@ -1170,8 +1170,12 @@ a {
 .page-body {
   padding-top: 25px;
 }
-
 /* line 31, ../styles/layout/__layout.sass */
+.page-body--gray-l {
+  background: #f9f9f9;
+}
+
+/* line 34, ../styles/layout/__layout.sass */
 MAIN {
   padding-bottom: 40px;
   -webkit-box-flex: 1;
@@ -1186,7 +1190,7 @@ MAIN {
   src: url("../fonts/iconic.eot?#iefix") format("eot"), url("../fonts/iconic.woff") format("woff"), url("../fonts/iconic.ttf") format("truetype"), url("../fonts/iconic.svg#iconic") format("svg");
 }
 /* line 24, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic, .icon, .popup-closer, .soc-rounds__li, .actions-sl .slick-prev:after,
+.iconic, .icon, .link--bookmark:before, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .actions-sl .slick-prev:after,
 .actions-sl .slick-next:after, .recom-sl .slick-next, .recom-sl .slick-prev {
   font-family: "iconic";
   -webkit-font-smoothing: antialiased;
@@ -1255,7 +1259,7 @@ MAIN {
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--eye:after, .input-cont--eye._pass-visible .iconic:after, .input-cont--eye._pass-visible .icon:after, .input-cont--eye._pass-visible .popup-closer:after, .input-cont--eye._pass-visible .soc-rounds__li:after, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
+.iconic--eye:after, .input-cont--eye._pass-visible .iconic:after, .input-cont--eye._pass-visible .icon:after, .input-cont--eye._pass-visible .popup-closer:after, .input-cont--eye._pass-visible .soc-rounds__li:after, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon:after, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon:after, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon:after, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon:after, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon:after, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
 .input-cont--eye._pass-visible .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next:after, .recom-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-prev:after, .recom-sl .input-cont--eye._pass-visible .slick-prev:after {
   content: "";
@@ -1267,72 +1271,72 @@ MAIN {
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--fb:after, .soc-rounds__li--fb:after {
+.iconic--lion:after {
   content: "";
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--lion:after {
+.iconic--mail--old:after {
   content: "";
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--mail--old:after {
+.iconic--mail:after {
   content: "";
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--mail:after {
+.iconic--person:after {
   content: "";
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--person:after {
+.iconic--pin:after {
   content: "";
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--pin:after {
+.iconic--search:after {
   content: "";
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--search:after {
+.iconic--soc-fb:after, .soc-rounds__li--fb:after, .ya-share2__item_service_facebook .ya-share2__icon:after {
   content: "";
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-gplus:after, .soc-rounds__li--gplus:after {
+.iconic--soc-gplus:after, .soc-rounds__li--gplus:after, .ya-share2__item_service_gplus .ya-share2__icon:after {
   content: "";
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-mail:after, .soc-rounds__li--mail:after {
+.iconic--soc-mail:after, .soc-rounds__li--mail:after, .ya-share2__item_service_moimir .ya-share2__icon:after {
   content: "";
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--star:after {
+.iconic--soc-tw:after, .soc-rounds__li--tw:after, .ya-share2__item_service_twitter .ya-share2__icon:after {
   content: "";
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--target:after {
+.iconic--soc-vk-v:after {
   content: "";
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--tw:after, .soc-rounds__li--tw:after {
+.iconic--soc-vk:after, .soc-rounds__li--vk:after, .ya-share2__item_service_vkontakte .ya-share2__icon:after {
   content: "";
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--vk-v:after {
+.iconic--star:after {
   content: "";
 }
 
 /* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--vk:after, .soc-rounds__li--vk:after {
+.iconic--target:after {
   content: "";
 }
 
@@ -1346,7 +1350,7 @@ MAIN {
 }
 
 /* line 11, ../styles/components/_icons.sass */
-.iconic, .icon, .popup-closer, .soc-rounds__li, .actions-sl .slick-prev:after,
+.iconic, .icon, .link--bookmark:before, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .actions-sl .slick-prev:after,
 .actions-sl .slick-next:after, .recom-sl .slick-next, .recom-sl .slick-prev, .icon {
   display: inline-block;
   vertical-align: middle;
@@ -1387,7 +1391,7 @@ MAIN {
   margin-bottom: 10px;
 }
 /* line 20, ../styles/components/_buttons.sass */
-.btn .iconic, .btn .icon, .btn .popup-closer, .btn .soc-rounds__li, .btn .actions-sl .slick-prev:after, .actions-sl .btn .slick-prev:after,
+.btn .iconic, .btn .icon, .btn .link--bookmark:before, .btn .popup-closer, .btn .soc-rounds__li, .btn .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn .ya-share2__icon, .btn .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn .ya-share2__icon, .btn .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn .ya-share2__icon, .btn .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn .ya-share2__icon, .btn .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn .ya-share2__icon, .btn .actions-sl .slick-prev:after, .actions-sl .btn .slick-prev:after,
 .btn .actions-sl .slick-next:after,
 .actions-sl .btn .slick-next:after, .btn .recom-sl .slick-next, .recom-sl .btn .slick-next, .btn .recom-sl .slick-prev, .recom-sl .btn .slick-prev {
   font-size: inherit;
@@ -1463,7 +1467,7 @@ MAIN {
   padding-left: 10px;
 }
 /* line 84, ../styles/components/_buttons.sass */
-.btn--icon .icon, .btn--icon .iconic, .btn--icon .icon, .btn--icon .popup-closer, .btn--icon .soc-rounds__li, .btn--icon .actions-sl .slick-prev:after, .actions-sl .btn--icon .slick-prev:after,
+.btn--icon .icon, .btn--icon .iconic, .btn--icon .icon, .btn--icon .link--bookmark:before, .btn--icon .popup-closer, .btn--icon .soc-rounds__li, .btn--icon .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn--icon .ya-share2__icon, .btn--icon .actions-sl .slick-prev:after, .actions-sl .btn--icon .slick-prev:after,
 .btn--icon .actions-sl .slick-next:after,
 .actions-sl .btn--icon .slick-next:after, .btn--icon .recom-sl .slick-next, .recom-sl .btn--icon .slick-next, .btn--icon .recom-sl .slick-prev, .recom-sl .btn--icon .slick-prev {
   vertical-align: middle;
@@ -1491,19 +1495,27 @@ MAIN {
   margin: 0 -40px 0 35px;
 }
 /* line 106, ../styles/components/_buttons.sass */
+.btn--bold {
+  font-weight: bold;
+}
+/* line 109, ../styles/components/_buttons.sass */
 .btn--md {
   font-size: 15px;
   padding: 10px 20px;
 }
+/* line 113, ../styles/components/_buttons.sass */
+.btn--nr {
+  border-radius: 0;
+}
 
-/* line 110, ../styles/components/_buttons.sass */
+/* line 116, ../styles/components/_buttons.sass */
 .btn-flex-wr {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 112, ../styles/components/_buttons.sass */
+/* line 118, ../styles/components/_buttons.sass */
 .btn-flex-wr .btn {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -1513,7 +1525,7 @@ MAIN {
       -ms-flex-positive: 0;
           flex-grow: 0;
 }
-/* line 116, ../styles/components/_buttons.sass */
+/* line 122, ../styles/components/_buttons.sass */
 .btn-flex-wr .form-tip {
   padding-left: 13px;
 }
@@ -1563,8 +1575,56 @@ MAIN {
 .link--dotted {
   border-bottom-style: dotted;
 }
-
 /* line 33, ../styles/components/_links.sass */
+.link--icon:hover {
+  border-color: transparent;
+}
+/* line 36, ../styles/components/_links.sass */
+.link--icon > SPAN {
+  border-color: #fff;
+}
+/* line 40, ../styles/components/_links.sass */
+.link--bookmark {
+  color: #18a471;
+}
+/* line 43, ../styles/components/_links.sass */
+.link--bookmark SPAN {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: transparent;
+  -webkit-transition: border-color 150ms ease-out;
+          transition: border-color 150ms ease-out;
+}
+/* line 49, ../styles/components/_links.sass */
+.link--bookmark:hover {
+  border-color: transparent;
+}
+/* line 52, ../styles/components/_links.sass */
+.link--bookmark:hover SPAN {
+  border-color: #18a471;
+}
+/* line 55, ../styles/components/_links.sass */
+.link--bookmark:before {
+  content: "";
+  font-size: 16px;
+  font-style: normal;
+  -webkit-transition: 150ms;
+          transition: 150ms;
+  width: 32px;
+  height: 32px;
+  margin-right: 14px;
+  line-height: 32px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  text-align: center;
+  color: #a7a7a7;
+}
+/* line 71, ../styles/components/_links.sass */
+.link--bookmark:hover:before {
+  color: #18a471;
+}
+
+/* line 76, ../styles/components/_links.sass */
 .link-und {
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -1572,55 +1632,55 @@ MAIN {
           transition: border-color 150ms ease-out;
   cursor: pointer;
 }
-/* line 39, ../styles/components/_links.sass */
+/* line 82, ../styles/components/_links.sass */
 .link-und:hover {
   border-color: transparent;
 }
-/* line 42, ../styles/components/_links.sass */
+/* line 85, ../styles/components/_links.sass */
 .link-und--green-d {
   color: #088e60;
   border-bottom: 1px solid rgba(8, 142, 96, 0.3);
 }
-/* line 45, ../styles/components/_links.sass */
+/* line 88, ../styles/components/_links.sass */
 .link-und--green-d:hover {
   border-color: transparent;
 }
-/* line 48, ../styles/components/_links.sass */
+/* line 91, ../styles/components/_links.sass */
 .link-und--green2-d {
   color: #088e60;
   border-bottom: 1px solid #b2b2b2;
 }
-/* line 51, ../styles/components/_links.sass */
+/* line 94, ../styles/components/_links.sass */
 .link-und--green2-d:hover {
   border-color: transparent;
 }
-/* line 54, ../styles/components/_links.sass */
+/* line 97, ../styles/components/_links.sass */
 .link-und--dotted {
   border-bottom-style: dotted;
 }
 
-/* line 59, ../styles/components/_links.sass */
+/* line 102, ../styles/components/_links.sass */
 .subscribe-link {
   text-align: left;
   display: inline-block;
   position: relative;
   padding-left: 35px;
 }
-/* line 65, ../styles/components/_links.sass */
+/* line 108, ../styles/components/_links.sass */
 .subscribe-link .icon {
   color: #696969;
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 71, ../styles/components/_links.sass */
+/* line 114, ../styles/components/_links.sass */
 .subscribe-link__text {
   display: inline-block;
   font: 14px/16px "Helvetica Neue", sans-serif;
   color: #088e60;
 }
 
-/* line 80, ../styles/components/_links.sass */
+/* line 123, ../styles/components/_links.sass */
 .bookmark-link {
   text-align: left;
   display: inline-block;
@@ -1629,8 +1689,8 @@ MAIN {
   color: #333;
   font: 14px/1.2 "Helvetica Neue", sans-serif;
 }
-/* line 87, ../styles/components/_links.sass */
-.bookmark-link .iconic, .bookmark-link .icon, .bookmark-link .popup-closer, .bookmark-link .soc-rounds__li, .bookmark-link .actions-sl .slick-prev:after, .actions-sl .bookmark-link .slick-prev:after,
+/* line 130, ../styles/components/_links.sass */
+.bookmark-link .iconic, .bookmark-link .icon, .bookmark-link .link--bookmark:before, .bookmark-link .popup-closer, .bookmark-link .soc-rounds__li, .bookmark-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .bookmark-link .ya-share2__icon, .bookmark-link .actions-sl .slick-prev:after, .actions-sl .bookmark-link .slick-prev:after,
 .bookmark-link .actions-sl .slick-next:after,
 .actions-sl .bookmark-link .slick-next:after, .bookmark-link .recom-sl .slick-next, .recom-sl .bookmark-link .slick-next, .bookmark-link .recom-sl .slick-prev, .recom-sl .bookmark-link .slick-prev {
   vertical-align: middle;
@@ -1639,7 +1699,7 @@ MAIN {
   font-size: 21px;
   line-height: 1;
 }
-/* line 95, ../styles/components/_links.sass */
+/* line 138, ../styles/components/_links.sass */
 .bookmark-link:hover .icon {
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
@@ -1700,36 +1760,67 @@ h1, h2, h3, h4, h5, h6 {
   left: -4px;
   top: -0.6em;
 }
+
+/* line 40, ../styles/components/_typography.sass */
+.h4-bold {
+  font: 700 20px/1.2 "Helvetica Neue", sans-serif;
+  margin-bottom: 15px;
+}
+/* line 44, ../styles/components/_typography.sass */
+.h4-bold SUP {
+  font-weight: 500;
+  font-size: 14px;
+  left: -4px;
+  top: -0.6em;
+}
 @media screen and (max-width: 579px) {
-  /* line 30, ../styles/components/_typography.sass */
-  .h3-bold {
+  /* line 40, ../styles/components/_typography.sass */
+  .h4-bold {
     font-size: 24px;
   }
 }
 
-/* line 43, ../styles/components/_typography.sass */
+/* line 53, ../styles/components/_typography.sass */
 .h3, .typography h3 {
   font: 900 20px/1.2 "Helvetica Neue", sans-serif;
   margin-bottom: 25px;
 }
 
-/* line 47, ../styles/components/_typography.sass */
+/* line 57, ../styles/components/_typography.sass */
+.h3-narrow {
+  font: 24px/1.2 "PT Sans Narrow", sans-serif;
+  margin-bottom: 15px;
+}
+
+/* line 61, ../styles/components/_typography.sass */
 .h4, .typography h4 {
   font: 900 15px/1.2 "Helvetica Neue", sans-serif;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
-/* line 56, ../styles/components/_typography.sass */
+/* line 70, ../styles/components/_typography.sass */
 .text--big {
   font: 300 20px/1.3 "Helvetica Neue", sans-serif;
 }
-/* line 59, ../styles/components/_typography.sass */
+/* line 73, ../styles/components/_typography.sass */
+.text--big-b {
+  font: 700 20px/1.3 "Helvetica Neue", sans-serif;
+}
+/* line 76, ../styles/components/_typography.sass */
 .text--center {
   text-align: center;
 }
+/* line 79, ../styles/components/_typography.sass */
+.text--sm {
+  font: 300 13px/1.3 "Helvetica Neue", sans-serif;
+}
+/* line 82, ../styles/components/_typography.sass */
+.text--gray {
+  color: #7b7b7b;
+}
 
-/* line 63, ../styles/components/_typography.sass */
+/* line 86, ../styles/components/_typography.sass */
 .typography {
   /* todo no rdy */
 }
@@ -2404,7 +2495,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
 }
 /* line 164, ../styles/components/_formLayout.sass */
-.input-cont--eye .iconic, .input-cont--eye .icon, .input-cont--eye .popup-closer, .input-cont--eye .soc-rounds__li, .input-cont--eye .actions-sl .slick-prev:after, .actions-sl .input-cont--eye .slick-prev:after,
+.input-cont--eye .iconic, .input-cont--eye .icon, .input-cont--eye .link--bookmark:before, .input-cont--eye .popup-closer, .input-cont--eye .soc-rounds__li, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon, .input-cont--eye .actions-sl .slick-prev:after, .actions-sl .input-cont--eye .slick-prev:after,
 .input-cont--eye .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye .slick-next:after, .input-cont--eye .recom-sl .slick-next, .recom-sl .input-cont--eye .slick-next, .input-cont--eye .recom-sl .slick-prev, .recom-sl .input-cont--eye .slick-prev {
   position: absolute;
@@ -2419,13 +2510,13 @@ h1, h2, h3, h4, h5, h6 {
           transition: color 150ms;
 }
 /* line 173, ../styles/components/_formLayout.sass */
-.input-cont--eye .iconic:hover, .input-cont--eye .icon:hover, .input-cont--eye .popup-closer:hover, .input-cont--eye .soc-rounds__li:hover, .input-cont--eye .actions-sl .slick-prev:hover:after, .actions-sl .input-cont--eye .slick-prev:hover:after,
+.input-cont--eye .iconic:hover, .input-cont--eye .icon:hover, .input-cont--eye .link--bookmark:hover:before, .input-cont--eye .popup-closer:hover, .input-cont--eye .soc-rounds__li:hover, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon:hover, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon:hover, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon:hover, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon:hover, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon:hover, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .actions-sl .slick-prev:hover:after, .actions-sl .input-cont--eye .slick-prev:hover:after,
 .input-cont--eye .actions-sl .slick-next:hover:after,
 .actions-sl .input-cont--eye .slick-next:hover:after, .input-cont--eye .recom-sl .slick-next:hover, .recom-sl .input-cont--eye .slick-next:hover, .input-cont--eye .recom-sl .slick-prev:hover, .recom-sl .input-cont--eye .slick-prev:hover {
   color: #000;
 }
 /* line 178, ../styles/components/_formLayout.sass */
-.input-cont--eye._pass-visible .iconic, .input-cont--eye._pass-visible .icon, .input-cont--eye._pass-visible .popup-closer, .input-cont--eye._pass-visible .soc-rounds__li, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
+.input-cont--eye._pass-visible .iconic, .input-cont--eye._pass-visible .icon, .input-cont--eye._pass-visible .link--bookmark:before, .input-cont--eye._pass-visible .popup-closer, .input-cont--eye._pass-visible .soc-rounds__li, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
 .input-cont--eye._pass-visible .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next, .recom-sl .input-cont--eye._pass-visible .slick-next, .input-cont--eye._pass-visible .recom-sl .slick-prev, .recom-sl .input-cont--eye._pass-visible .slick-prev {
   font-size: 10px;
@@ -3089,7 +3180,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 75, ../styles/components/blocks/_blocks.sass */
 .grid-right-fix__left-inner {
-  margin-right: 300px;
+  margin-right: 320px;
 }
 @media screen and (max-width: 859px) {
   /* line 75, ../styles/components/blocks/_blocks.sass */
@@ -3099,10 +3190,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 81, ../styles/components/blocks/_blocks.sass */
 .grid-right-fix__right {
-  width: 300px;
-  padding-left: 35px;
+  width: 320px;
+  padding-left: 40px;
   float: left;
-  margin-left: -300px;
+  margin-left: -320px;
 }
 @media screen and (max-width: 859px) {
   /* line 81, ../styles/components/blocks/_blocks.sass */
@@ -3126,7 +3217,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 15px;
 }
 /* line 99, ../styles/components/blocks/_blocks.sass */
-.comments__header H1, .comments__header H2, .comments__header H3 {
+.comments__header H1, .comments__header H2, .comments__header H3, .comments__header H4 {
   margin-bottom: 0;
   line-height: 35px;
 }
@@ -3170,7 +3261,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 122, ../styles/components/blocks/_blocks.sass */
 .comment {
   padding: 12px 20px 18px;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 3px solid #f9f9f9;
   margin-bottom: 6px;
 }
 /* line 128, ../styles/components/blocks/_blocks.sass */
@@ -3224,14 +3315,27 @@ h1, h2, h3, h4, h5, h6 {
   top: 1px;
 }
 
-/* line 166, ../styles/components/blocks/_blocks.sass */
+/* line 165, ../styles/components/blocks/_blocks.sass */
+.rating-static {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 8px 4px 4px;
+}
+/* line 170, ../styles/components/blocks/_blocks.sass */
+.rating-static .icon {
+  color: #ffc71e;
+  font-size: 13px;
+  line-height: 1;
+}
+
+/* line 176, ../styles/components/blocks/_blocks.sass */
 .rating {
   font-size: 0;
   line-height: 0;
   position: relative;
   z-index: 1;
 }
-/* line 173, ../styles/components/blocks/_blocks.sass */
+/* line 183, ../styles/components/blocks/_blocks.sass */
 .rating__star {
   float: left;
   width: 19px;
@@ -3244,18 +3348,18 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 3px;
   cursor: pointer;
 }
-/* line 185, ../styles/components/blocks/_blocks.sass */
+/* line 195, ../styles/components/blocks/_blocks.sass */
 .rating__star .iconic--star {
   -webkit-transition: all 300ms;
           transition: all 300ms;
 }
-/* line 188, ../styles/components/blocks/_blocks.sass */
+/* line 198, ../styles/components/blocks/_blocks.sass */
 .rating__star .iconic--star, .rating__star INPUT {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 193, ../styles/components/blocks/_blocks.sass */
+/* line 203, ../styles/components/blocks/_blocks.sass */
 .rating__star INPUT {
   height: 19px;
   width: 16px;
@@ -3264,15 +3368,15 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   cursor: pointer;
 }
-/* line 201, ../styles/components/blocks/_blocks.sass */
+/* line 211, ../styles/components/blocks/_blocks.sass */
 .rating__star-inactive {
   color: #c4c6c7;
 }
-/* line 203, ../styles/components/blocks/_blocks.sass */
+/* line 213, ../styles/components/blocks/_blocks.sass */
 .rating__star-active {
   color: #f8af00;
 }
-/* line 206, ../styles/components/blocks/_blocks.sass */
+/* line 216, ../styles/components/blocks/_blocks.sass */
 .rating__active-stars {
   height: 16px;
   width: 0;
@@ -3286,55 +3390,89 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   z-index: 1;
 }
-/* line 220, ../styles/components/blocks/_blocks.sass */
+/* line 230, ../styles/components/blocks/_blocks.sass */
 .rating .rating__star1:hover ~ .rating__active-stars {
   opacity: 1;
   width: 19px;
 }
-/* line 224, ../styles/components/blocks/_blocks.sass */
+/* line 234, ../styles/components/blocks/_blocks.sass */
 .rating--1 .rating__active-stars {
   opacity: 1;
   width: 19px;
 }
-/* line 220, ../styles/components/blocks/_blocks.sass */
+/* line 230, ../styles/components/blocks/_blocks.sass */
 .rating .rating__star2:hover ~ .rating__active-stars {
   opacity: 1;
   width: 38px;
 }
-/* line 224, ../styles/components/blocks/_blocks.sass */
+/* line 234, ../styles/components/blocks/_blocks.sass */
 .rating--2 .rating__active-stars {
   opacity: 1;
   width: 38px;
 }
-/* line 220, ../styles/components/blocks/_blocks.sass */
+/* line 230, ../styles/components/blocks/_blocks.sass */
 .rating .rating__star3:hover ~ .rating__active-stars {
   opacity: 1;
   width: 57px;
 }
-/* line 224, ../styles/components/blocks/_blocks.sass */
+/* line 234, ../styles/components/blocks/_blocks.sass */
 .rating--3 .rating__active-stars {
   opacity: 1;
   width: 57px;
 }
-/* line 220, ../styles/components/blocks/_blocks.sass */
+/* line 230, ../styles/components/blocks/_blocks.sass */
 .rating .rating__star4:hover ~ .rating__active-stars {
   opacity: 1;
   width: 76px;
 }
-/* line 224, ../styles/components/blocks/_blocks.sass */
+/* line 234, ../styles/components/blocks/_blocks.sass */
 .rating--4 .rating__active-stars {
   opacity: 1;
   width: 76px;
 }
-/* line 220, ../styles/components/blocks/_blocks.sass */
+/* line 230, ../styles/components/blocks/_blocks.sass */
 .rating .rating__star5:hover ~ .rating__active-stars {
   opacity: 1;
   width: 95px;
 }
-/* line 224, ../styles/components/blocks/_blocks.sass */
+/* line 234, ../styles/components/blocks/_blocks.sass */
 .rating--5 .rating__active-stars {
   opacity: 1;
   width: 95px;
+}
+
+/* line 238, ../styles/components/blocks/_blocks.sass */
+.sidebar {
+  margin-bottom: 40px;
+  background: #fff;
+}
+/* line 242, ../styles/components/blocks/_blocks.sass */
+.sidebar--green {
+  border: 5px solid #dcf187;
+}
+/* line 245, ../styles/components/blocks/_blocks.sass */
+.sidebar__item {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 15px 25px;
+}
+/* line 249, ../styles/components/blocks/_blocks.sass */
+.sidebar__item:last-child {
+  border-bottom: 0;
+}
+/* line 253, ../styles/components/blocks/_blocks.sass */
+.sidebar__img IMG {
+  max-width: 100%;
+}
+
+/* line 258, ../styles/components/blocks/_blocks.sass */
+.sidebar-text__inner {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* line 262, ../styles/components/blocks/_blocks.sass */
+.social-share {
+  margin-top: 40px;
 }
 
 /* line 14, ../styles/components/__components.sass */
@@ -3405,7 +3543,89 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -6px;
 }
 
-/* line 74, ../styles/components/__components.sass */
+/* line 69, ../styles/components/__components.sass */
+.ya-share2 {
+  line-height: 22px;
+}
+/* line 72, ../styles/components/__components.sass */
+.ya-share2__item {
+  margin: 5px 12px !important;
+}
+/* line 75, ../styles/components/__components.sass */
+.ya-share2__icon {
+  display: inline-block;
+  vertical-align: middle !important;
+  height: auto !important;
+  width: auto !important;
+}
+/* line 81, ../styles/components/__components.sass */
+.ya-share2__counter {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #eef1f4;
+  border-radius: 3px;
+  padding: 0 !important;
+  width: auto !important;
+  min-width: 28px !important;
+  height: 22px !important;
+  line-height: 22px !important;
+  text-align: center;
+  font-size: 13px !important;
+  color: #24313a;
+  font-family: "Helvetica Neue", Helvetica, "Open Sans", sans-serif;
+  position: relative;
+  margin-left: 12px;
+}
+/* line 98, ../styles/components/__components.sass */
+.ya-share2__counter:before {
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 100%;
+  left: auto;
+  bottom: auto;
+  top: 50% !important;
+  margin-top: -4px;
+  border: 4px solid transparent;
+  border-right-color: #eef1f4;
+}
+/* line 110, ../styles/components/__components.sass */
+.ya-share2__badge {
+  background-color: transparent !important;
+  line-height: 22px !important;
+}
+/* line 116, ../styles/components/__components.sass */
+.ya-share2__item_service_vkontakte .ya-share2__icon {
+  background-image: none !important;
+  color: #3395c7;
+  font-size: 22px;
+}
+/* line 125, ../styles/components/__components.sass */
+.ya-share2__item_service_facebook .ya-share2__icon {
+  background-image: none !important;
+  color: #3669a3;
+  font-size: 20px;
+}
+/* line 133, ../styles/components/__components.sass */
+.ya-share2__item_service_twitter .ya-share2__icon {
+  background-image: none !important;
+  color: #6bc1e9;
+  font-size: 18px;
+}
+/* line 141, ../styles/components/__components.sass */
+.ya-share2__item_service_moimir .ya-share2__icon {
+  background-image: none !important;
+  color: #2856b3;
+  font-size: 20px;
+}
+/* line 149, ../styles/components/__components.sass */
+.ya-share2__item_service_gplus .ya-share2__icon {
+  background-image: none !important;
+  color: #db5a50;
+  font-size: 20px;
+}
+
+/* line 160, ../styles/components/__components.sass */
 .eventsCluster {
   text-align: center;
   color: #fff;
@@ -3981,6 +4201,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #fe101f;
 }
 /* line 429, ../styles/pages/_index.sass */
+.actions-sl--inner .actions-sl__item {
+  height: 420px;
+}
+/* line 432, ../styles/pages/_index.sass */
 .actions-sl .slick-prev,
 .actions-sl .slick-next {
   width: 39px;
@@ -3999,40 +4223,58 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all 150ms ease-out;
           transition: all 150ms ease-out;
 }
-/* line 445, ../styles/pages/_index.sass */
+/* line 448, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:before,
 .actions-sl .slick-next:before {
   display: none;
 }
-/* line 448, ../styles/pages/_index.sass */
+/* line 451, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:hover,
 .actions-sl .slick-next:hover {
   background: #16ca8c;
 }
-/* line 450, ../styles/pages/_index.sass */
+/* line 453, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:hover:after,
 .actions-sl .slick-next:hover:after {
   color: #fff;
   -webkit-transition: all 150ms ease-out;
           transition: all 150ms ease-out;
 }
-/* line 454, ../styles/pages/_index.sass */
+/* line 457, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:after,
 .actions-sl .slick-next:after {
   opacity: 1;
   font-size: 23px;
 }
-/* line 461, ../styles/pages/_index.sass */
+/* line 464, ../styles/pages/_index.sass */
 .actions-sl .slick-prev {
   right: 60px;
 }
-/* line 464, ../styles/pages/_index.sass */
+/* line 467, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:after {
   margin-left: -5px;
 }
-/* line 469, ../styles/pages/_index.sass */
+/* line 472, ../styles/pages/_index.sass */
 .actions-sl .slick-next:after {
   margin-left: 5px;
+}
+/* line 475, ../styles/pages/_index.sass */
+.actions-sl .slick-dots {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* line 483, ../styles/pages/_index.sass */
+.actions-sl .slick-dots LI BUTTON:before {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 9px;
+  opacity: 1;
+}
+/* line 490, ../styles/pages/_index.sass */
+.actions-sl .slick-dots LI.slick-active BUTTON:before {
+  color: #34d761;
+  font-size: 11px;
 }
 @media screen and (max-width: 859px) {
   /* line 390, ../styles/pages/_index.sass */
@@ -4040,12 +4282,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: -20px;
     margin-right: -20px;
   }
-  /* line 476, ../styles/pages/_index.sass */
+  /* line 499, ../styles/pages/_index.sass */
   .actions-sl__item {
     padding: 60px 120px 50px 50px;
     min-height: 340px;
   }
-  /* line 480, ../styles/pages/_index.sass */
+  /* line 503, ../styles/pages/_index.sass */
   .actions-sl__title {
     margin-bottom: 20px;
   }
@@ -4056,54 +4298,54 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: -15px;
     margin-right: -15px;
   }
-  /* line 487, ../styles/pages/_index.sass */
+  /* line 510, ../styles/pages/_index.sass */
   .actions-sl__item {
     padding: 40px 30px 85px 20px;
   }
-  /* line 490, ../styles/pages/_index.sass */
+  /* line 513, ../styles/pages/_index.sass */
   .actions-sl__title {
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 10px;
   }
-  /* line 495, ../styles/pages/_index.sass */
+  /* line 518, ../styles/pages/_index.sass */
   .actions-sl__subtitle {
     font-size: 15px;
     line-height: 24px;
     margin-bottom: 20px;
   }
-  /* line 500, ../styles/pages/_index.sass */
+  /* line 523, ../styles/pages/_index.sass */
   .actions-sl .slick-prev {
     right: auto;
     left: 20px;
   }
-  /* line 504, ../styles/pages/_index.sass */
+  /* line 527, ../styles/pages/_index.sass */
   .actions-sl .slick-next {
     right: auto;
     left: 65px;
   }
 }
 
-/* line 534, ../styles/pages/_index.sass */
+/* line 557, ../styles/pages/_index.sass */
 .recom-sl-wr {
   padding: 0 65px 40px;
   position: relative;
 }
 @media screen and (max-width: 669px) {
-  /* line 534, ../styles/pages/_index.sass */
+  /* line 557, ../styles/pages/_index.sass */
   .recom-sl-wr {
     padding: 0 0 20px;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 534, ../styles/pages/_index.sass */
+  /* line 557, ../styles/pages/_index.sass */
   .recom-sl-wr {
     margin-left: -15px;
     margin-right: -15px;
   }
 }
 
-/* line 546, ../styles/pages/_index.sass */
+/* line 569, ../styles/pages/_index.sass */
 .recom-sl {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4119,13 +4361,13 @@ h1, h2, h3, h4, h5, h6 {
   background: #f9f9f9;
 }
 @media screen and (max-width: 669px) {
-  /* line 546, ../styles/pages/_index.sass */
+  /* line 569, ../styles/pages/_index.sass */
   .recom-sl {
     max-width: 400px;
     display: block;
   }
 }
-/* line 558, ../styles/pages/_index.sass */
+/* line 581, ../styles/pages/_index.sass */
 .recom-sl__col {
   width: 50%;
   -webkit-box-flex: 0;
@@ -4143,33 +4385,33 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 15px;
   padding-bottom: 10px;
 }
-/* line 567, ../styles/pages/_index.sass */
+/* line 590, ../styles/pages/_index.sass */
 .recom-sl__col .card {
   margin-bottom: 0;
 }
 @media screen and (max-width: 669px) {
-  /* line 558, ../styles/pages/_index.sass */
+  /* line 581, ../styles/pages/_index.sass */
   .recom-sl__col {
     width: 100%;
   }
 }
-/* line 573, ../styles/pages/_index.sass */
+/* line 596, ../styles/pages/_index.sass */
 .recom-sl .slick-list {
   z-index: 2;
 }
-/* line 576, ../styles/pages/_index.sass */
+/* line 599, ../styles/pages/_index.sass */
 .recom-sl .slick-track {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 579, ../styles/pages/_index.sass */
+/* line 602, ../styles/pages/_index.sass */
 .recom-sl .slick-slide {
   float: none;
   height: auto;
 }
-/* line 583, ../styles/pages/_index.sass */
+/* line 606, ../styles/pages/_index.sass */
 .recom-sl .slick-arrow2 {
   top: 50%;
   border-radius: 50%;
@@ -4186,7 +4428,7 @@ h1, h2, h3, h4, h5, h6 {
           transition: 300ms;
   z-index: 1;
 }
-/* line 599, ../styles/pages/_index.sass */
+/* line 622, ../styles/pages/_index.sass */
 .recom-sl .slick-arrow2:before {
   content: "";
   position: absolute;
@@ -4194,38 +4436,38 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   background: #f9f9f9;
 }
-/* line 607, ../styles/pages/_index.sass */
+/* line 630, ../styles/pages/_index.sass */
 .recom-sl .slick-arrow2:hover {
   background-color: #c8e942;
 }
-/* line 610, ../styles/pages/_index.sass */
+/* line 633, ../styles/pages/_index.sass */
 .recom-sl .slick-next {
   left: auto;
   right: -85px;
   padding-left: 105px;
 }
-/* line 616, ../styles/pages/_index.sass */
+/* line 639, ../styles/pages/_index.sass */
 .recom-sl .slick-next:before {
   right: 105px;
   left: 0;
 }
-/* line 620, ../styles/pages/_index.sass */
+/* line 643, ../styles/pages/_index.sass */
 .recom-sl .slick-prev {
   left: -85px;
   padding-right: 105px;
 }
-/* line 625, ../styles/pages/_index.sass */
+/* line 648, ../styles/pages/_index.sass */
 .recom-sl .slick-prev:after {
   left: 105px;
   right: 0;
 }
-/* line 515, ../styles/pages/_index.sass */
+/* line 538, ../styles/pages/_index.sass */
 .recom-sl .slick-dots {
   text-align: center;
   margin: 12px 0;
   line-height: 0;
 }
-/* line 519, ../styles/pages/_index.sass */
+/* line 542, ../styles/pages/_index.sass */
 .recom-sl .slick-dots LI {
   vertical-align: middle;
   width: 10px;
@@ -4236,15 +4478,15 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 300ms;
           transition: 300ms;
 }
-/* line 527, ../styles/pages/_index.sass */
+/* line 550, ../styles/pages/_index.sass */
 .recom-sl .slick-dots LI button {
   display: none;
 }
-/* line 530, ../styles/pages/_index.sass */
+/* line 553, ../styles/pages/_index.sass */
 .recom-sl .slick-dots LI.slick-active {
   box-shadow: 0 0 0 6px #dcf187;
 }
-/* line 631, ../styles/pages/_index.sass */
+/* line 654, ../styles/pages/_index.sass */
 .recom-sl .slick-dots {
   position: relative;
   left: 0;
@@ -4541,7 +4783,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 3, ../styles/pages/_contacts.sass */
 .contacts .wr {
-  padding-top: 50px;
+  padding-top: 25px;
   padding-bottom: 70px;
 }
 @media screen and (max-width: 1099px) {
@@ -4695,4 +4937,9 @@ h1, h2, h3, h4, h5, h6 {
 /* line 107, ../styles/pages/_contacts.sass */
 .contacts-comments {
   padding: 50px 0 70px;
+}
+
+/* line 1, ../styles/pages/_organizator.sass */
+.organizator {
+  padding: 10px 0 60px;
 }

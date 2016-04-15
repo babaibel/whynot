@@ -44,16 +44,16 @@
 			background-color: #4c75a3
 			font-size: 18px
 			color: #fff
-			@extend .iconic--vk
+			@extend .iconic--soc-vk
 		&--tw
 			background-color: #2aa9e0
 			font-size: 17px
 			color: #fff
-			@extend .iconic--tw
+			@extend .iconic--soc-tw
 		&--fb
 			background-color: #3b5998
 			color: #fff
-			@extend .iconic--fb
+			@extend .iconic--soc-fb
 		&--gplus
 			background-color: #df4a32
 			color: #fff
@@ -73,16 +73,16 @@
 		width: 100%
 
 	&__left-inner
-		margin-right: 300px
+		margin-right: 320px
 
 		+max-screen($screenMM)
 			margin-right: 0
 
 	&__right
-		width: 300px
-		padding-left: 35px
+		width: 320px
+		padding-left: 40px
 		float: left
-		margin-left: -300px
+		margin-left: -320px
 
 		+max-screen($screenMM)
 			padding: 15px 0 0
@@ -96,7 +96,7 @@
 		justify-content: space-between
 		margin-bottom: 15px
 
-		H1,H2,H3
+		H1,H2,H3, H4
 			margin-bottom: 0
 			line-height: 35px
 
@@ -121,7 +121,7 @@
 
 .comment
 	padding: 12px 20px 18px
-	border-bottom: 1px solid #f4f4f4
+	border-bottom: 3px solid #f9f9f9
 	margin-bottom: 6px
 	@extend .cf
 
@@ -161,6 +161,16 @@
 		font-size: 14px
 		position: relative
 		top: 1px
+
+.rating-static
+	display: inline-block
+	vertical-align: middle
+	margin: 0 8px 4px 4px
+
+	.icon
+		color: $cYellow
+		font-size: 13px
+		line-height: 1
 
 $star-size: 16px
 .rating
@@ -224,3 +234,30 @@ $star-size: 16px
 			.rating__active-stars
 				opacity: 1
 				width: ($star-size + 3px) * $i
+
+.sidebar
+	margin-bottom: 40px
+	background: #fff
+	
+	&--green
+		border: 5px solid $cSecondary
+
+	&__item
+		border-bottom: 1px solid #e3e3e3
+		padding: 15px 25px
+
+		&:last-child
+			border-bottom: 0
+
+	&__img
+		IMG
+			max-width: 100%
+
+.sidebar-text
+
+	&__inner
+		margin-bottom: 20px
+		color: #333333
+
+.social-share
+	margin-top: 40px
