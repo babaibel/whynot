@@ -260,4 +260,53 @@ $star-size: 16px
 		color: #333333
 
 .social-share
-	margin-top: 40px
+	&--mrg
+		margin: 40px 0 0
+
+		+max-screen($screenMM)
+			margin: 20px 0 0
+
+.materials-row
+	padding: 40px 0
+
+	+max-screen($screenMM)
+		padding: 20px 0
+
+.materials-header
+	margin: 0 0 20px
+
+.materials-nav
+	list-style: none
+	padding: 0
+	margin: 0
+
+	&__item
+		display: inline-block
+		margin-right: 30px
+
+		+max-screen($screenSS)
+			margin-bottom: 5px
+
+		&:last-child
+			margin-right: 0
+
+		A
+			font: 24px/1.2 $ffNarrow
+			color: $cPrimary
+			border-bottom: 1px dotted rgba($cGreen-d,0.3)
+			transition: border-color $t150 ease-out
+
+			+max-screen($screenSS)
+				font: 20px/1.2 $ffNarrow
+
+			&:hover
+				border-color: transparent
+
+		&.active
+
+			A
+				color: #000
+				border-color: transparent
+
+
+

@@ -429,6 +429,13 @@
 		.actions-sl__item
 			height: 420px
 
+			+max-screen($screenMM)
+				height: 320px
+				min-height: 0
+
+			+max-screen($screenXS)
+				height: 240px
+
 	.slick-prev,
 	.slick-next
 		width: 39px
@@ -477,6 +484,9 @@
 		left: 0
 		bottom: 0
 		right: 0
+
+		+max-screen($screenMM)
+			display: none!important
 
 		LI
 			BUTTON
