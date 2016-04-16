@@ -21,12 +21,12 @@ var $W = $(window),
 		}
 	};
 
-/* Обнуляет действие заглушек в ссылках */
+/* Обнуляет действие заглушек в ссылках
 $(function () {
 	var $link = $('a[href="#!"]');
 	if (!$link.length) return;
 	$link.on('click', function() {return false});
-});
+});*/
 
 
 

@@ -67,6 +67,40 @@
             margin-top: -6px
 
 
+.filter-tags
+    margin: 15px -1.5px
+
+.filter-tag
+    margin: 5px 1.5px
+    display: inline-block
+    vertical-align: top
+    color: $cBlack
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+    padding: 1px 30px 1px 9px
+    background-color: $cLime
+    border: 1px solid #cfe578
+    border-radius: 4px
+    position: relative
+
+    &__cross
+        @extend .iconic
+        @extend .iconic--cross
+        color: #b2b97b
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        width: 26px
+        line-height: 26px
+        font-size: 12px
+        text-align: center
+        cursor: pointer
+        transition: $t300
+        &:hover
+            color: $cBlack
+
 
 // todo
 // map

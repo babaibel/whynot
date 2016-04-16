@@ -29,9 +29,9 @@
 
 <script src="../scripts/mapsController.js"></script>
 
-<script src="../scripts/sliders.js"></script>
-
 <script src="../scripts/popupsController.js"></script>
+
+<script src="../scripts/sliders.js"></script>
 
 <!-- endinject -->
 <!-- endbuild -->

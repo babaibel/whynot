@@ -437,7 +437,7 @@ a {
   line-height: 28px;
 }
 /* line 130, ../styles/layout/_header.sass */
-.header-cabinet__ico-link .iconic, .header-cabinet__ico-link .icon, .header-cabinet__ico-link .popup-closer, .header-cabinet__ico-link .soc-rounds__li, .header-cabinet__ico-link .actions-sl .slick-prev:after, .actions-sl .header-cabinet__ico-link .slick-prev:after,
+.header-cabinet__ico-link .iconic, .header-cabinet__ico-link .icon, .header-cabinet__ico-link .popup-closer, .header-cabinet__ico-link .soc-rounds__li, .header-cabinet__ico-link .filter-tag__cross, .header-cabinet__ico-link .actions-sl .slick-prev:after, .actions-sl .header-cabinet__ico-link .slick-prev:after,
 .header-cabinet__ico-link .actions-sl .slick-next:after,
 .actions-sl .header-cabinet__ico-link .slick-next:after, .header-cabinet__ico-link .recom-sl .slick-next, .recom-sl .header-cabinet__ico-link .slick-next, .header-cabinet__ico-link .recom-sl .slick-prev, .recom-sl .header-cabinet__ico-link .slick-prev {
   font-size: 19px;
@@ -1186,7 +1186,7 @@ MAIN {
   src: url("../fonts/iconic.eot?#iefix") format("eot"), url("../fonts/iconic.woff") format("woff"), url("../fonts/iconic.ttf") format("truetype"), url("../fonts/iconic.svg#iconic") format("svg");
 }
 /* line 24, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic, .icon, .popup-closer, .soc-rounds__li, .actions-sl .slick-prev:after,
+.iconic, .icon, .popup-closer, .soc-rounds__li, .filter-tag__cross, .actions-sl .slick-prev:after,
 .actions-sl .slick-next:after, .recom-sl .slick-next, .recom-sl .slick-prev {
   font-family: "iconic";
   -webkit-font-smoothing: antialiased;
@@ -1199,141 +1199,151 @@ MAIN {
   color: #000;
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arr-l-light:after, .recom-sl .slick-prev:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arr-r-light:after, .recom-sl .slick-next:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arrow-left:after, .actions-sl .slick-prev:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arrow-right:after, .actions-sl .slick-next:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--attraction:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--bookmark:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--calendar:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--closed-eye:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--coctail:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--cross:after, .popup-closer:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--cross:after, .popup-closer:after, .filter-tag__cross:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--elephant:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--eye:after, .input-cont--eye._pass-visible .iconic:after, .input-cont--eye._pass-visible .icon:after, .input-cont--eye._pass-visible .popup-closer:after, .input-cont--eye._pass-visible .soc-rounds__li:after, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--eye:after, .input-cont--eye._pass-visible .iconic:after, .input-cont--eye._pass-visible .icon:after, .input-cont--eye._pass-visible .popup-closer:after, .input-cont--eye._pass-visible .soc-rounds__li:after, .input-cont--eye._pass-visible .filter-tag__cross:after, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
 .input-cont--eye._pass-visible .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next:after, .recom-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-prev:after, .recom-sl .input-cont--eye._pass-visible .slick-prev:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--favorite:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--fb:after, .soc-rounds__li--fb:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--lion:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--grid:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--mail--old:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--lion:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--mail:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--mail--old:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--person:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--mail:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--pin:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--person:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--search:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--pin:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-gplus:after, .soc-rounds__li--gplus:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--placemark:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-mail:after, .soc-rounds__li--mail:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--search:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--star:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-gplus:after, .soc-rounds__li--gplus:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--target:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-mail:after, .soc-rounds__li--mail:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--tw:after, .soc-rounds__li--tw:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--star:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--vk-v:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--target:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--vk:after, .soc-rounds__li--vk:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--tw:after, .soc-rounds__li--tw:after {
   content: "";
+}
+
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--vk-v:after {
+  content: "";
+}
+
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--vk:after, .soc-rounds__li--vk:after {
+  content: "";
 }
 
 /* line 4, ../styles/components/_icons.sass */
@@ -1346,7 +1356,7 @@ MAIN {
 }
 
 /* line 11, ../styles/components/_icons.sass */
-.iconic, .icon, .popup-closer, .soc-rounds__li, .actions-sl .slick-prev:after,
+.iconic, .icon, .popup-closer, .soc-rounds__li, .filter-tag__cross, .actions-sl .slick-prev:after,
 .actions-sl .slick-next:after, .recom-sl .slick-next, .recom-sl .slick-prev, .icon {
   display: inline-block;
   vertical-align: middle;
@@ -1387,7 +1397,7 @@ MAIN {
   margin-bottom: 10px;
 }
 /* line 20, ../styles/components/_buttons.sass */
-.btn .iconic, .btn .icon, .btn .popup-closer, .btn .soc-rounds__li, .btn .actions-sl .slick-prev:after, .actions-sl .btn .slick-prev:after,
+.btn .iconic, .btn .icon, .btn .popup-closer, .btn .soc-rounds__li, .btn .filter-tag__cross, .btn .actions-sl .slick-prev:after, .actions-sl .btn .slick-prev:after,
 .btn .actions-sl .slick-next:after,
 .actions-sl .btn .slick-next:after, .btn .recom-sl .slick-next, .recom-sl .btn .slick-next, .btn .recom-sl .slick-prev, .recom-sl .btn .slick-prev {
   font-size: inherit;
@@ -1402,11 +1412,11 @@ MAIN {
   color: #000;
   font: 14px/1 "Helvetica Neue", sans-serif;
 }
-/* line 34, ../styles/components/_buttons.sass */
+/* line 33, ../styles/components/_buttons.sass */
 .btn--white .iconic--target {
   color: #16ca8c;
 }
-/* line 39, ../styles/components/_buttons.sass */
+/* line 36, ../styles/components/_buttons.sass */
 .btn--green {
   font: 300 20px/1 "Helvetica Neue", sans-serif;
   color: #fff;
@@ -1414,11 +1424,11 @@ MAIN {
   border-radius: 4px;
   padding: 12px 25px;
 }
-/* line 46, ../styles/components/_buttons.sass */
+/* line 43, ../styles/components/_buttons.sass */
 .btn--green:hover {
   background: #088e60;
 }
-/* line 49, ../styles/components/_buttons.sass */
+/* line 46, ../styles/components/_buttons.sass */
 .btn--dark {
   font: bold 14px/1 "Helvetica Neue", sans-serif;
   color: #16ca8c;
@@ -1426,13 +1436,13 @@ MAIN {
   padding: 16px 18px 14px;
   border-radius: 25px;
 }
-/* line 56, ../styles/components/_buttons.sass */
+/* line 53, ../styles/components/_buttons.sass */
 .btn--dark:hover {
   border-color: #fff;
   color: #088e60;
   background: #fff;
 }
-/* line 61, ../styles/components/_buttons.sass */
+/* line 58, ../styles/components/_buttons.sass */
 .btn--light {
   font: bold 14px/1 "Helvetica Neue", sans-serif;
   color: #201f21;
@@ -1440,70 +1450,85 @@ MAIN {
   padding: 16px 18px 14px;
   border-radius: 25px;
 }
-/* line 68, ../styles/components/_buttons.sass */
+/* line 65, ../styles/components/_buttons.sass */
 .btn--light:hover {
   border-color: #fff;
   color: #088e60;
   background: #fff;
 }
-/* line 73, ../styles/components/_buttons.sass */
+/* line 70, ../styles/components/_buttons.sass */
 .btn--dark-fix {
   margin: -15px 0 0 -18px;
 }
-/* line 76, ../styles/components/_buttons.sass */
+/* line 73, ../styles/components/_buttons.sass */
 .btn--padd {
   padding: 16px 30px 14px;
 }
-/* line 79, ../styles/components/_buttons.sass */
+/* line 76, ../styles/components/_buttons.sass */
 .btn--upper {
   text-transform: uppercase;
 }
-/* line 82, ../styles/components/_buttons.sass */
+/* line 79, ../styles/components/_buttons.sass */
 .btn--icon {
   padding-left: 10px;
 }
-/* line 84, ../styles/components/_buttons.sass */
-.btn--icon .icon, .btn--icon .iconic, .btn--icon .icon, .btn--icon .popup-closer, .btn--icon .soc-rounds__li, .btn--icon .actions-sl .slick-prev:after, .actions-sl .btn--icon .slick-prev:after,
+/* line 81, ../styles/components/_buttons.sass */
+.btn--icon .icon, .btn--icon .iconic, .btn--icon .icon, .btn--icon .popup-closer, .btn--icon .soc-rounds__li, .btn--icon .filter-tag__cross, .btn--icon .actions-sl .slick-prev:after, .actions-sl .btn--icon .slick-prev:after,
 .btn--icon .actions-sl .slick-next:after,
 .actions-sl .btn--icon .slick-next:after, .btn--icon .recom-sl .slick-next, .recom-sl .btn--icon .slick-next, .btn--icon .recom-sl .slick-prev, .recom-sl .btn--icon .slick-prev {
   vertical-align: middle;
   margin-right: 10px;
   line-height: 1;
 }
-/* line 89, ../styles/components/_buttons.sass */
+/* line 86, ../styles/components/_buttons.sass */
 .btn--icon .iconic--target {
   font-size: 26px;
 }
-/* line 93, ../styles/components/_buttons.sass */
+/* line 89, ../styles/components/_buttons.sass */
 .btn--fix-h {
   height: 44px;
   line-height: 44px;
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 99, ../styles/components/_buttons.sass */
+/* line 95, ../styles/components/_buttons.sass */
 .btn--arr {
   padding-left: 55px;
   padding-right: 55px;
 }
-/* line 103, ../styles/components/_buttons.sass */
+/* line 99, ../styles/components/_buttons.sass */
 .btn--arr .iconic--arr-r-light, .btn--arr .recom-sl .slick-next, .recom-sl .btn--arr .slick-next {
   margin: 0 -40px 0 35px;
 }
-/* line 106, ../styles/components/_buttons.sass */
+/* line 102, ../styles/components/_buttons.sass */
 .btn--md {
   font-size: 15px;
   padding: 10px 20px;
 }
+@media screen and (max-width: 669px) {
+  /* line 106, ../styles/components/_buttons.sass */
+  .btn .tooltip {
+    position: static !important;
+    display: inline !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: inherit !important;
+    font-weight: inherit !important;
+  }
+}
 
-/* line 110, ../styles/components/_buttons.sass */
+/* line 119, ../styles/components/_buttons.sass */
 .btn-flex-wr {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 112, ../styles/components/_buttons.sass */
+/* line 121, ../styles/components/_buttons.sass */
 .btn-flex-wr .btn {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -1513,7 +1538,7 @@ MAIN {
       -ms-flex-positive: 0;
           flex-grow: 0;
 }
-/* line 116, ../styles/components/_buttons.sass */
+/* line 125, ../styles/components/_buttons.sass */
 .btn-flex-wr .form-tip {
   padding-left: 13px;
 }
@@ -1630,7 +1655,7 @@ MAIN {
   font: 14px/1.2 "Helvetica Neue", sans-serif;
 }
 /* line 87, ../styles/components/_links.sass */
-.bookmark-link .iconic, .bookmark-link .icon, .bookmark-link .popup-closer, .bookmark-link .soc-rounds__li, .bookmark-link .actions-sl .slick-prev:after, .actions-sl .bookmark-link .slick-prev:after,
+.bookmark-link .iconic, .bookmark-link .icon, .bookmark-link .popup-closer, .bookmark-link .soc-rounds__li, .bookmark-link .filter-tag__cross, .bookmark-link .actions-sl .slick-prev:after, .actions-sl .bookmark-link .slick-prev:after,
 .bookmark-link .actions-sl .slick-next:after,
 .actions-sl .bookmark-link .slick-next:after, .bookmark-link .recom-sl .slick-next, .recom-sl .bookmark-link .slick-next, .bookmark-link .recom-sl .slick-prev, .recom-sl .bookmark-link .slick-prev {
   vertical-align: middle;
@@ -1997,26 +2022,96 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-/* line 294, ../styles/components/_formElements.sass */
+/* line 218, ../styles/components/_formElements.sass */
+.sort-chkb-wr {
+  font-size: 0;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+/* line 223, ../styles/components/_formElements.sass */
+.sort-chkb-wr .sort-chkb {
+  margin: 4px;
+}
+
+/* line 226, ../styles/components/_formElements.sass */
+.sort-chkb {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+}
+/* line 232, ../styles/components/_formElements.sass */
+.sort-chkb input {
+  display: none;
+}
+/* line 236, ../styles/components/_formElements.sass */
+.sort-chkb input:checked + .sort-chkb__main {
+  background: #000;
+  color: #16ca8c;
+  border-color: transparent;
+}
+/* line 240, ../styles/components/_formElements.sass */
+.sort-chkb input:checked + .sort-chkb__main .iconic, .sort-chkb input:checked + .sort-chkb__main .icon, .sort-chkb input:checked + .sort-chkb__main .popup-closer, .sort-chkb input:checked + .sort-chkb__main .soc-rounds__li, .sort-chkb input:checked + .sort-chkb__main .filter-tag__cross, .sort-chkb input:checked + .sort-chkb__main .actions-sl .slick-prev:after, .actions-sl .sort-chkb input:checked + .sort-chkb__main .slick-prev:after,
+.sort-chkb input:checked + .sort-chkb__main .actions-sl .slick-next:after,
+.actions-sl .sort-chkb input:checked + .sort-chkb__main .slick-next:after, .sort-chkb input:checked + .sort-chkb__main .recom-sl .slick-next, .recom-sl .sort-chkb input:checked + .sort-chkb__main .slick-next, .sort-chkb input:checked + .sort-chkb__main .recom-sl .slick-prev, .recom-sl .sort-chkb input:checked + .sort-chkb__main .slick-prev {
+  color: #fff;
+}
+/* line 244, ../styles/components/_formElements.sass */
+.sort-chkb__main {
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  background: #fff;
+  color: #878787;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px;
+  -webkit-transition: 300ms;
+          transition: 300ms;
+}
+/* line 254, ../styles/components/_formElements.sass */
+.sort-chkb__main .iconic, .sort-chkb__main .icon, .sort-chkb__main .popup-closer, .sort-chkb__main .soc-rounds__li, .sort-chkb__main .filter-tag__cross, .sort-chkb__main .actions-sl .slick-prev:after, .actions-sl .sort-chkb__main .slick-prev:after,
+.sort-chkb__main .actions-sl .slick-next:after,
+.actions-sl .sort-chkb__main .slick-next:after, .sort-chkb__main .recom-sl .slick-next, .recom-sl .sort-chkb__main .slick-next, .sort-chkb__main .recom-sl .slick-prev, .recom-sl .sort-chkb__main .slick-prev {
+  color: #ababab;
+  margin: 0 3px 0 7px;
+  font-size: 11px;
+}
+/* line 258, ../styles/components/_formElements.sass */
+.sort-chkb__main .iconic--placemark {
+  font-size: 13px;
+  margin: 0 7px 0 4px;
+}
+/* line 262, ../styles/components/_formElements.sass */
+.sort-chkb__main:hover {
+  border-color: #000;
+}
+/* line 265, ../styles/components/_formElements.sass */
+.sort-chkb .iconic, .sort-chkb .icon, .sort-chkb .popup-closer, .sort-chkb .soc-rounds__li, .sort-chkb .filter-tag__cross, .sort-chkb .actions-sl .slick-prev:after, .actions-sl .sort-chkb .slick-prev:after,
+.sort-chkb .actions-sl .slick-next:after,
+.actions-sl .sort-chkb .slick-next:after, .sort-chkb .recom-sl .slick-next, .recom-sl .sort-chkb .slick-next, .sort-chkb .recom-sl .slick-prev, .recom-sl .sort-chkb .slick-prev, .sort-chkb__main-txt {
+  vertical-align: middle;
+}
+
+/* line 270, ../styles/components/_formElements.sass */
 .txt-chbox {
   display: inline-block;
 }
-/* line 297, ../styles/components/_formElements.sass */
+/* line 273, ../styles/components/_formElements.sass */
 .txt-chbox input {
   display: none;
 }
-/* line 300, ../styles/components/_formElements.sass */
+/* line 276, ../styles/components/_formElements.sass */
 .txt-chbox._active .txt-chbox__visual, .txt-chbox:hover .txt-chbox__visual,
 .txt-chbox input:checked + .txt-chbox__visual {
   background: #dcf187;
 }
-/* line 304, ../styles/components/_formElements.sass */
+/* line 280, ../styles/components/_formElements.sass */
 .txt-chbox._active .txt-chbox__visual .link, .txt-chbox:hover .txt-chbox__visual .link,
 .txt-chbox input:checked + .txt-chbox__visual .link {
   border-bottom-color: transparent;
   color: #000;
 }
-/* line 308, ../styles/components/_formElements.sass */
+/* line 284, ../styles/components/_formElements.sass */
 .txt-chbox__visual {
   display: block;
   padding: 2px 3px;
@@ -2026,38 +2121,38 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 150ms;
           transition: 150ms;
 }
-/* line 316, ../styles/components/_formElements.sass */
+/* line 292, ../styles/components/_formElements.sass */
 .txt-chbox__visual--md {
   padding: 6px;
   font-size: 18px;
 }
 
-/* line 423, ../styles/components/_formElements.sass */
+/* line 399, ../styles/components/_formElements.sass */
 .chkb-dropdown {
   position: relative;
   margin-bottom: 17px;
 }
-/* line 427, ../styles/components/_formElements.sass */
+/* line 403, ../styles/components/_formElements.sass */
 .chkb-dropdown__title {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 432, ../styles/components/_formElements.sass */
+/* line 408, ../styles/components/_formElements.sass */
 .chkb-dropdown__title--lg-hide {
   display: none;
 }
-/* line 435, ../styles/components/_formElements.sass */
+/* line 411, ../styles/components/_formElements.sass */
 .chkb-dropdown__options-gr {
   position: relative;
 }
-/* line 441, ../styles/components/_formElements.sass */
+/* line 417, ../styles/components/_formElements.sass */
 .chkb-dropdown--dates__options-gr {
   background-color: transparent !important;
   padding: 0 !important;
   border: 0 !important;
 }
-/* line 447, ../styles/components/_formElements.sass */
+/* line 423, ../styles/components/_formElements.sass */
 .chkb-dropdown--dates .datepicker {
   position: relative;
   left: 0 !important;
@@ -2068,14 +2163,14 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
 }
 @media screen and (max-width: 669px) {
-  /* line 423, ../styles/components/_formElements.sass */
+  /* line 399, ../styles/components/_formElements.sass */
   .chkb-dropdown {
     text-align: left;
     position: relative;
     z-index: 1;
     margin-bottom: 15px;
   }
-  /* line 330, ../styles/components/_formElements.sass */
+  /* line 306, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title {
     font-weight: normal;
     display: block !important;
@@ -2088,7 +2183,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 300ms;
             transition: 300ms;
   }
-  /* line 341, ../styles/components/_formElements.sass */
+  /* line 317, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title:after {
     content: "";
     position: absolute;
@@ -2099,11 +2194,11 @@ h1, h2, h3, h4, h5, h6 {
     border-width: 7px 4px;
     border-style: solid;
   }
-  /* line 351, ../styles/components/_formElements.sass */
+  /* line 327, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title:hover {
     border-color: #676767;
   }
-  /* line 354, ../styles/components/_formElements.sass */
+  /* line 330, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr {
     position: absolute;
     top: 100%;
@@ -2125,24 +2220,24 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 300ms;
             transition: 300ms;
   }
-  /* line 374, ../styles/components/_formElements.sass */
+  /* line 350, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar-track {
     background: transparent;
   }
-  /* line 377, ../styles/components/_formElements.sass */
+  /* line 353, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar {
     width: 9px;
   }
-  /* line 380, ../styles/components/_formElements.sass */
+  /* line 356, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar-thumb {
     background-color: #cdeb55;
     cursor: pointer;
   }
-  /* line 385, ../styles/components/_formElements.sass */
+  /* line 361, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title, .chkb-dropdown .txt-chbox__visual {
     padding: 8px 50px 8px 12px;
   }
-  /* line 389, ../styles/components/_formElements.sass */
+  /* line 365, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox {
     display: block;
     margin: 0;
@@ -2150,16 +2245,16 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 150ms;
             transition: 150ms;
   }
-  /* line 395, ../styles/components/_formElements.sass */
+  /* line 371, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox__visual {
     font-size: 15px;
   }
-  /* line 398, ../styles/components/_formElements.sass */
+  /* line 374, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox .link {
     color: #000;
     border-bottom: 0;
   }
-  /* line 405, ../styles/components/_formElements.sass */
+  /* line 381, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox._active .txt-chbox__visual:after, .chkb-dropdown .txt-chbox:hover .txt-chbox__visual:after,
   .chkb-dropdown .txt-chbox input:checked + .txt-chbox__visual:after {
     content: "";
@@ -2169,11 +2264,11 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     border-bottom: 1px solid #e5f5a7;
   }
-  /* line 416, ../styles/components/_formElements.sass */
+  /* line 392, ../styles/components/_formElements.sass */
   .chkb-dropdown._active {
     z-index: 10;
   }
-  /* line 418, ../styles/components/_formElements.sass */
+  /* line 394, ../styles/components/_formElements.sass */
   .chkb-dropdown._active .chkb-dropdown__options-gr {
     opacity: 1;
     visibility: visible;
@@ -2182,7 +2277,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* line 464, ../styles/components/_formElements.sass */
+/* line 440, ../styles/components/_formElements.sass */
 .form-tip {
   font-size: 13px;
   line-height: normal;
@@ -2404,7 +2499,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
 }
 /* line 164, ../styles/components/_formLayout.sass */
-.input-cont--eye .iconic, .input-cont--eye .icon, .input-cont--eye .popup-closer, .input-cont--eye .soc-rounds__li, .input-cont--eye .actions-sl .slick-prev:after, .actions-sl .input-cont--eye .slick-prev:after,
+.input-cont--eye .iconic, .input-cont--eye .icon, .input-cont--eye .popup-closer, .input-cont--eye .soc-rounds__li, .input-cont--eye .filter-tag__cross, .input-cont--eye .actions-sl .slick-prev:after, .actions-sl .input-cont--eye .slick-prev:after,
 .input-cont--eye .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye .slick-next:after, .input-cont--eye .recom-sl .slick-next, .recom-sl .input-cont--eye .slick-next, .input-cont--eye .recom-sl .slick-prev, .recom-sl .input-cont--eye .slick-prev {
   position: absolute;
@@ -2419,13 +2514,13 @@ h1, h2, h3, h4, h5, h6 {
           transition: color 150ms;
 }
 /* line 173, ../styles/components/_formLayout.sass */
-.input-cont--eye .iconic:hover, .input-cont--eye .icon:hover, .input-cont--eye .popup-closer:hover, .input-cont--eye .soc-rounds__li:hover, .input-cont--eye .actions-sl .slick-prev:hover:after, .actions-sl .input-cont--eye .slick-prev:hover:after,
+.input-cont--eye .iconic:hover, .input-cont--eye .icon:hover, .input-cont--eye .popup-closer:hover, .input-cont--eye .soc-rounds__li:hover, .input-cont--eye .filter-tag__cross:hover, .input-cont--eye .actions-sl .slick-prev:hover:after, .actions-sl .input-cont--eye .slick-prev:hover:after,
 .input-cont--eye .actions-sl .slick-next:hover:after,
 .actions-sl .input-cont--eye .slick-next:hover:after, .input-cont--eye .recom-sl .slick-next:hover, .recom-sl .input-cont--eye .slick-next:hover, .input-cont--eye .recom-sl .slick-prev:hover, .recom-sl .input-cont--eye .slick-prev:hover {
   color: #000;
 }
 /* line 178, ../styles/components/_formLayout.sass */
-.input-cont--eye._pass-visible .iconic, .input-cont--eye._pass-visible .icon, .input-cont--eye._pass-visible .popup-closer, .input-cont--eye._pass-visible .soc-rounds__li, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
+.input-cont--eye._pass-visible .iconic, .input-cont--eye._pass-visible .icon, .input-cont--eye._pass-visible .popup-closer, .input-cont--eye._pass-visible .soc-rounds__li, .input-cont--eye._pass-visible .filter-tag__cross, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
 .input-cont--eye._pass-visible .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next, .recom-sl .input-cont--eye._pass-visible .slick-next, .input-cont--eye._pass-visible .recom-sl .slick-prev, .recom-sl .input-cont--eye._pass-visible .slick-prev {
   font-size: 10px;
@@ -2799,12 +2894,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* line 70, ../styles/components/blocks/_find-event.sass */
+/* line 72, ../styles/components/blocks/_find-event.sass */
 .weekrange {
   position: relative;
   padding: 0 38px;
 }
-/* line 74, ../styles/components/blocks/_find-event.sass */
+/* line 76, ../styles/components/blocks/_find-event.sass */
 .weekrange__arr {
   border-radius: 4px;
   border: 1px solid #dcdcdc;
@@ -2821,31 +2916,31 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   position: absolute;
 }
-/* line 89, ../styles/components/blocks/_find-event.sass */
+/* line 91, ../styles/components/blocks/_find-event.sass */
 .weekrange__arr:hover {
   border-color: #909090;
 }
-/* line 92, ../styles/components/blocks/_find-event.sass */
+/* line 94, ../styles/components/blocks/_find-event.sass */
 .weekrange__arr._disabled {
   opacity: 0.5;
   border-color: #dcdcdc !important;
   cursor: default;
 }
-/* line 97, ../styles/components/blocks/_find-event.sass */
+/* line 99, ../styles/components/blocks/_find-event.sass */
 .weekrange__arr--left {
   left: 0;
 }
-/* line 100, ../styles/components/blocks/_find-event.sass */
+/* line 102, ../styles/components/blocks/_find-event.sass */
 .weekrange__arr--right {
   right: 0;
 }
-/* line 103, ../styles/components/blocks/_find-event.sass */
+/* line 105, ../styles/components/blocks/_find-event.sass */
 .weekrange__line-wr {
   position: relative;
   overflow: hidden;
   padding: 10px 0;
 }
-/* line 108, ../styles/components/blocks/_find-event.sass */
+/* line 110, ../styles/components/blocks/_find-event.sass */
 .weekrange__line {
   position: relative;
   border-radius: 4px;
@@ -2854,21 +2949,21 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 32px;
   font-size: 16px;
 }
-/* line 116, ../styles/components/blocks/_find-event.sass */
+/* line 118, ../styles/components/blocks/_find-event.sass */
 .weekrange__line small {
   font-size: 13px;
 }
 @media screen and (max-width: 859px) {
-  /* line 108, ../styles/components/blocks/_find-event.sass */
+  /* line 110, ../styles/components/blocks/_find-event.sass */
   .weekrange__line {
     font-size: 15px;
   }
-  /* line 121, ../styles/components/blocks/_find-event.sass */
+  /* line 123, ../styles/components/blocks/_find-event.sass */
   .weekrange__line small {
     font-size: 11px;
   }
 }
-/* line 124, ../styles/components/blocks/_find-event.sass */
+/* line 126, ../styles/components/blocks/_find-event.sass */
 .weekrange__line {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2885,7 +2980,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 5px;
   overflow: hidden;
 }
-/* line 131, ../styles/components/blocks/_find-event.sass */
+/* line 133, ../styles/components/blocks/_find-event.sass */
 .weekrange__line-tracker {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2901,7 +2996,7 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
   position: relative;
 }
-/* line 137, ../styles/components/blocks/_find-event.sass */
+/* line 139, ../styles/components/blocks/_find-event.sass */
 .weekrange__line-item {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -2915,7 +3010,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   position: relative;
 }
-/* line 145, ../styles/components/blocks/_find-event.sass */
+/* line 147, ../styles/components/blocks/_find-event.sass */
 .weekrange__line-item + .weekrange__line-item:after {
   content: "";
   position: absolute;
@@ -2927,7 +3022,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 4px;
   width: 4px;
 }
-/* line 158, ../styles/components/blocks/_find-event.sass */
+/* line 160, ../styles/components/blocks/_find-event.sass */
 .weekrange__visual-line {
   position: absolute;
   left: 0;
@@ -2939,7 +3034,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.65;
   z-index: 1;
 }
-/* line 169, ../styles/components/blocks/_find-event.sass */
+/* line 171, ../styles/components/blocks/_find-event.sass */
 .weekrange__ui {
   position: absolute;
   left: 0;
@@ -2949,18 +3044,18 @@ h1, h2, h3, h4, h5, h6 {
   border: 0;
   background-color: transparent;
 }
-/* line 178, ../styles/components/blocks/_find-event.sass */
+/* line 180, ../styles/components/blocks/_find-event.sass */
 .weekrange__ui .noUi-tooltip {
   white-space: nowrap;
 }
-/* line 181, ../styles/components/blocks/_find-event.sass */
+/* line 183, ../styles/components/blocks/_find-event.sass */
 .weekrange__ui .noUi-base {
   position: absolute;
   left: 4%;
   right: 4%;
   width: auto;
 }
-/* line 187, ../styles/components/blocks/_find-event.sass */
+/* line 189, ../styles/components/blocks/_find-event.sass */
 .weekrange__ui .noUi-handle {
   height: 40px;
   width: 95px;
@@ -2973,11 +3068,11 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 199, ../styles/components/blocks/_find-event.sass */
+/* line 201, ../styles/components/blocks/_find-event.sass */
 .weekrange__ui .noUi-handle:after, .weekrange__ui .noUi-handle:before {
   display: none;
 }
-/* line 202, ../styles/components/blocks/_find-event.sass */
+/* line 204, ../styles/components/blocks/_find-event.sass */
 .weekrange__ui .noUi-handle .noUi-tooltip {
   position: static;
   border: 0;
@@ -2990,17 +3085,17 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   color: #000;
 }
-/* line 213, ../styles/components/blocks/_find-event.sass */
+/* line 215, ../styles/components/blocks/_find-event.sass */
 .weekrange__ui .noUi-handle .noUi-tooltip small {
   font-size: 13px;
 }
-/* line 217, ../styles/components/blocks/_find-event.sass */
+/* line 219, ../styles/components/blocks/_find-event.sass */
 .weekrange__ui .noUi-handle-lower {
   padding: 0 10px;
   text-align: left;
   background: url("../images/range-handle-l.png") center no-repeat;
 }
-/* line 222, ../styles/components/blocks/_find-event.sass */
+/* line 224, ../styles/components/blocks/_find-event.sass */
 .weekrange__ui .noUi-handle-upper {
   padding: 0 10px;
   text-align: right;
@@ -3405,7 +3500,47 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -6px;
 }
 
-/* line 74, ../styles/components/__components.sass */
+/* line 70, ../styles/components/__components.sass */
+.filter-tags {
+  margin: 15px -1.5px;
+}
+
+/* line 73, ../styles/components/__components.sass */
+.filter-tag {
+  margin: 5px 1.5px;
+  display: inline-block;
+  vertical-align: top;
+  color: #333;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 1px 30px 1px 9px;
+  background-color: #dcf187;
+  border: 1px solid #cfe578;
+  border-radius: 4px;
+  position: relative;
+}
+/* line 87, ../styles/components/__components.sass */
+.filter-tag__cross {
+  color: #b2b97b;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 26px;
+  line-height: 26px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+          transition: 300ms;
+}
+/* line 101, ../styles/components/__components.sass */
+.filter-tag__cross:hover {
+  color: #333;
+}
+
+/* line 108, ../styles/components/__components.sass */
 .eventsCluster {
   text-align: center;
   color: #fff;
@@ -4251,6 +4386,66 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   top: 0;
   right: 0;
+}
+
+/* line 3, ../styles/pages/_catalog.sass */
+.catalog-wr {
+  position: relative;
+  z-index: 1;
+}
+/* line 8, ../styles/pages/_catalog.sass */
+.catalog-wr__bg-img {
+  position: absolute;
+  z-index: 10;
+}
+/* line 13, ../styles/pages/_catalog.sass */
+.catalog-wr__bg-img--left {
+  right: 50%;
+  top: 55px;
+  margin-right: 640px;
+}
+/* line 18, ../styles/pages/_catalog.sass */
+.catalog-wr__bg-img--right {
+  left: 50%;
+  top: 30px;
+  margin-left: 640px;
+}
+
+/* line 31, ../styles/pages/_catalog.sass */
+.filter-main {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+}
+/* line 35, ../styles/pages/_catalog.sass */
+.filter-main .wr {
+  height: 82px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: static;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* line 45, ../styles/pages/_catalog.sass */
+.filter-main__info {
+  width: 25%;
+  padding: 10px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999;
+  text-align: center;
 }
 
 /* line 1, ../styles/pages/_org-enter.sass */

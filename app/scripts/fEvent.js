@@ -40,6 +40,7 @@ $(function () {
     //$wrInputMax = $weekrange.find('.js-f-events-date-max'),
     //initDate = new Date(),
         datesLength = $wrDates.length,
+        currentRange = [0, 5],
         currentStepFrom = 0,
     //currentStepTo = 5,
         stepValue = 100 / 7,
@@ -50,7 +51,7 @@ $(function () {
     $rangeUI.css('width', (stepValue * datesLength) + '%');
 
     noUiSlider.create($rangeUI[0], {
-        start: [0, 5],
+        start: currentRange,
         connect: false,
         range: {
             'min': 0,
@@ -63,40 +64,7 @@ $(function () {
     noUiObject = $rangeUI[0].noUiSlider;
     $tooltips = $('.noUi-tooltip');
 
-
-    function arrClick(arrowType, jObj) {
-        //var values = noUiObject.get();
-
-        if (jObj.hasClass('_disabled')) return;
-
-        /* if(arrowType == 'prev'){
-         if( values[0] > 0) values[0] -= 1;
-
-         if( values[0] )
-         }
-
-         if(arrowType == 'next'){
-         if( values[1] < 6) values[1] += 1;
-         }*/
-
-        //console.log(values)
-        // noUiObject.set(values);
-
-        // Шаг влево
-        if (arrowType == 'prev' && currentStepFrom != 0) {
-            currentStepFrom -= 1;
-            //$wrTracker.css('left', -(currentStepFrom * stepValue) + '%');
-        }
-
-        // Шаг вправо
-        if (arrowType == 'next' && currentStepFrom != datesLength - 7) {
-            currentStepFrom += 1;
-        }
-
-        // Движение
-        $wrTracker.css('left', -(currentStepFrom * stepValue) + '%');
-        $rangeUI.css('left', -(currentStepFrom * stepValue) + '%');
-
+    function  arrowsClass(){
         // Регулятор класса
         if (currentStepFrom != 0) {
             $arrL.removeClass('_disabled');
@@ -109,7 +77,29 @@ $(function () {
         } else {
             $arrR.removeClass('_disabled');
         }
+    }
 
+    function arrClick(arrowType, jObj) {
+        var $arrow = (arrowType == 'prev') ? $arrL : $arrR ;
+
+        if ($arrow.hasClass('_disabled')) return;
+
+
+        // Шаг влево
+        if (arrowType == 'prev' && currentStepFrom != 0) {
+            currentStepFrom -= 1;
+        }
+
+        // Шаг вправо
+        if (arrowType == 'next' && currentStepFrom != datesLength - 7) {
+            currentStepFrom += 1;
+        }
+
+        // Движение
+        $wrTracker.css('left', -(currentStepFrom * stepValue) + '%');
+        $rangeUI.css('left', -(currentStepFrom * stepValue) + '%');
+
+        arrowsClass();
     }
 
     function dateFormating(pDate) {
@@ -277,10 +267,45 @@ $(function () {
 
     }
 
-    noUiObject.on('slide', function () {
+    noUiObject.on('slide', function (values,handleNumb,numbValues) {
+        //var handleType = handleNumb ? 'next' : 'prev',
+        /*var  vector;
+
+        if(numbValues[0] > currentRange[0] || numbValues[1] > currentRange[1]){
+            vector = 'next';
+        }
+        if(numbValues[0] < currentRange[0] || numbValues[1] < currentRange[1]){
+            vector = 'prev';
+        }*/
+
         setDate();
         setVline();
+        arrowsClass();
         _GLOB.refreshFindEventCounter();
+
+
+
+        // 2 handler
+        if(handleNumb){
+            if(numbValues[1] > currentStepFrom + 6 ){
+                arrClick('next');
+
+            }else if( numbValues[1] < currentStepFrom   ){
+                arrClick('prev');
+            }
+            return;
+        }
+        if(!handleNumb){
+            if(numbValues[0] > currentStepFrom + 6 ){
+                arrClick('next');
+
+            }else if( numbValues[0] < currentStepFrom   ){
+                arrClick('prev');
+            }
+            return;
+        }
+
+        currentRange = numbValues;
     });
 
     setDate();

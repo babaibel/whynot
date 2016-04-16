@@ -1,0 +1,52 @@
+.catalog-page
+
+.catalog-wr
+	position: relative
+	//overflow: hidden
+	z-index: 1
+
+	&__bg-img
+		position: absolute
+
+		z-index: 10
+
+		&--left
+			right: 50%
+			top: 55px
+			margin-right: ($maxW/2)
+
+		&--right
+			left: 50%
+			top: 30px
+			margin-left: ($maxW/2)
+
+
+// ----------------------------------------------------------------------
+// Filter
+// ----------------------------------------------------------------------
+$filter_h: 82px
+
+.filter
+
+.filter-main
+	background-color: #fff
+	border: 1px solid #e6e6e6
+
+	.wr
+		height: $filter_h
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: static
+		padding-top: 15px
+		padding-bottom: 15px
+
+
+	&__info
+		width: 25%
+		padding: 10px
+		flex-shrink: 0
+		font-size: 14px
+		line-height: 24px
+		color: #999
+		text-align: center

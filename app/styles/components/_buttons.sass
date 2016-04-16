@@ -1,117 +1,126 @@
 .btn
-	display: inline-block
-	box-sizing: border-box
-	vertical-align: middle
-	text-align: center
-	cursor: pointer
-	border: none
-	background: transparent
-	margin: 0
-	outline: 0
-	white-space: nowrap
-	text-decoration: none
-	position: relative
-	user-select: none
-	transition: $t150
+    display: inline-block
+    box-sizing: border-box
+    vertical-align: middle
+    text-align: center
+    cursor: pointer
+    border: none
+    background: transparent
+    margin: 0
+    outline: 0
+    white-space: nowrap
+    text-decoration: none
+    position: relative
+    user-select: none
+    transition: $t150
 
-	.h2 &
-		margin-bottom: 10px
+    .h2 &
+        margin-bottom: 10px
 
-	.iconic
-		font-size: inherit
-		vertical-align: middle
-		color: inherit
+    .iconic
+        font-size: inherit
+        vertical-align: middle
+        color: inherit
 
-	&--white
-		border: 1px solid #dcdcdc
-		border-radius: 4px
-		padding: 12px 25px
-		color: #000
-		font: 14px/1 $baseFont
+    &--white
+        border: 1px solid #dcdcdc
+        border-radius: 4px
+        padding: 12px 25px
+        color: #000
+        font: 14px/1 $baseFont
 
+        .iconic
+            &--target
+                color: $cGreen
 
-		.iconic
-			&--target
-				color: $cGreen
+    &--green
+        font: 300 20px/1 $baseFont
+        color: #fff
+        background: $cGreen
+        border-radius: 4px
+        padding: 12px 25px
 
+        &:hover
+            background: $cGreen-d
 
+    &--dark
+        font: bold 14px/1 $baseFont
+        color: $cGreen
+        border: 1px solid #4a4a4a
+        padding: 16px 18px 14px
+        border-radius: 25px
 
-	&--green
-		font: 300 20px/1 $baseFont
-		color: #fff
-		background: $cGreen
-		border-radius: 4px
-		padding: 12px 25px
+        &:hover
+            border-color: #fff
+            color: $cGreen-d
+            background: #fff
 
-		&:hover
-			background: $cGreen-d
+    &--light
+        font: bold 14px/1 $baseFont
+        color: $cBlack-d
+        border: 1px solid #fff
+        padding: 16px 18px 14px
+        border-radius: 25px
 
-	&--dark
-		font: bold 14px/1 $baseFont
-		color: $cGreen
-		border: 1px solid #4a4a4a
-		padding: 16px 18px 14px
-		border-radius: 25px
+        &:hover
+            border-color: #fff
+            color: $cGreen-d
+            background: #fff
 
-		&:hover
-			border-color: #fff
-			color: $cGreen-d
-			background: #fff
+    &--dark-fix
+        margin: -15px 0 0 -18px
 
-	&--light
-		font: bold 14px/1 $baseFont
-		color: $cBlack-d
-		border: 1px solid #fff
-		padding: 16px 18px 14px
-		border-radius: 25px
+    &--padd
+        padding: 16px 30px 14px
 
-		&:hover
-			border-color: #fff
-			color: $cGreen-d
-			background: #fff
+    &--upper
+        text-transform: uppercase
 
-	&--dark-fix
-		margin: -15px 0 0 -18px
+    &--icon
+        padding-left: 10px
+        .icon, .iconic
+            vertical-align: middle
+            margin-right: 10px
+            line-height: 1
 
-	&--padd
-		padding: 16px 30px 14px
+        .iconic--target
+            font-size: 26px
 
-	&--upper
-		text-transform: uppercase
+    &--fix-h
+        height: 44px
+        line-height: 44px
+        padding-top: 0
+        padding-bottom: 0
 
-	&--icon
-		padding-left: 10px
-		.icon, .iconic
-			vertical-align: middle
-			margin-right: 10px
-			line-height: 1
+    &--arr
+        padding-left: 55px
+        padding-right: 55px
+        .iconic
+            &--arr-r-light
+                margin: 0 -40px 0 35px
 
-		.iconic--target
-			font-size: 26px
+    &--md
+        font-size: 15px
+        padding: 10px 20px
 
-
-	&--fix-h
-		height: 44px
-		line-height: 44px
-		padding-top: 0
-		padding-bottom: 0
-
-	&--arr
-		padding-left: 55px
-		padding-right: 55px
-		.iconic
-			&--arr-r-light
-				margin: 0 -40px 0 35px
-
-	&--md
-		font-size: 15px
-		padding: 10px 20px
+    .tooltip
+        +max-screen($screenSM)
+            position: static !important
+            display: inline !important
+            font-size: inherit !important
+            line-height: inherit !important
+            border: none !important
+            background-color: transparent !important
+            padding: 0 !important
+            margin: 0 !important
+            color: inherit !important
+            font-weight: inherit !important
 
 .btn-flex-wr
-	display: flex
-	.btn
-		flex-shrink: 0
-		flex-grow: 0
+    display: flex
+    .btn
+        flex-shrink: 0
+        flex-grow: 0
 
-	.form-tip
-		padding-left: 13px
+    .form-tip
+        padding-left: 13px
