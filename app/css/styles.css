@@ -41,7 +41,7 @@
 }
 
 /* line 4, ../styles/helpers/_helpers.sass */
-.cf:before, .social:before, .grid-right-fix:before, .comment:before, .rating:before, .about-cols:before, .about-cols__item:before, .org-enter .wr:before, .team__row:before, .contacts__row:before, .contacts__emails:before,
+.cf:before, .social:before, .grid-right-fix:before, .comment:before, .rating:before, .about-cols:before, .about-cols__item:before, .org-enter .wr:before, .team__row:before, .contacts__row:before, .contacts__emails:before, .lk-settings__row:before,
 .cf:after,
 .social:after,
 .grid-right-fix:after,
@@ -52,13 +52,14 @@
 .org-enter .wr:after,
 .team__row:after,
 .contacts__row:after,
-.contacts__emails:after {
+.contacts__emails:after,
+.lk-settings__row:after {
   content: " ";
   display: table;
 }
 
 /* line 9, ../styles/helpers/_helpers.sass */
-.cf:after, .social:after, .grid-right-fix:after, .comment:after, .rating:after, .about-cols:after, .about-cols__item:after, .org-enter .wr:after, .team__row:after, .contacts__row:after, .contacts__emails:after {
+.cf:after, .social:after, .grid-right-fix:after, .comment:after, .rating:after, .about-cols:after, .about-cols__item:after, .org-enter .wr:after, .team__row:after, .contacts__row:after, .contacts__emails:after, .lk-settings__row:after {
   clear: both;
 }
 
@@ -437,7 +438,7 @@ a {
   line-height: 28px;
 }
 /* line 130, ../styles/layout/_header.sass */
-.header-cabinet__ico-link .iconic, .header-cabinet__ico-link .icon, .header-cabinet__ico-link .link--bookmark:before, .header-cabinet__ico-link .checkbox__view, .header-cabinet__ico-link .popup-closer, .header-cabinet__ico-link .soc-rounds__li, .header-cabinet__ico-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .actions-sl .slick-prev:after, .actions-sl .header-cabinet__ico-link .slick-prev:after,
+.header-cabinet__ico-link .iconic, .header-cabinet__ico-link .icon, .header-cabinet__ico-link .link--bookmark:before, .header-cabinet__ico-link .checkbox__view, .header-cabinet__ico-link .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .header-cabinet__ico-link .input-cont:after, .header-cabinet__ico-link .popup-closer, .header-cabinet__ico-link .soc-rounds__li, .header-cabinet__ico-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .actions-sl .slick-prev:after, .actions-sl .header-cabinet__ico-link .slick-prev:after,
 .header-cabinet__ico-link .actions-sl .slick-next:after,
 .actions-sl .header-cabinet__ico-link .slick-next:after, .header-cabinet__ico-link .recom-sl .slick-next, .recom-sl .header-cabinet__ico-link .slick-next, .header-cabinet__ico-link .recom-sl .slick-prev, .recom-sl .header-cabinet__ico-link .slick-prev {
   font-size: 19px;
@@ -1194,7 +1195,7 @@ MAIN {
   src: url("../fonts/iconic.eot?#iefix") format("eot"), url("../fonts/iconic.woff") format("woff"), url("../fonts/iconic.ttf") format("truetype"), url("../fonts/iconic.svg#iconic") format("svg");
 }
 /* line 24, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic, .icon, .link--bookmark:before, .checkbox__view, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .actions-sl .slick-prev:after,
+.iconic, .icon, .link--bookmark:before, .checkbox__view, .form-row__content--divided .input-wr + .input-wr .input-cont:after, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .actions-sl .slick-prev:after,
 .actions-sl .slick-next:after, .recom-sl .slick-next, .recom-sl .slick-prev {
   font-family: "iconic";
   -webkit-font-smoothing: antialiased;
@@ -1207,146 +1208,151 @@ MAIN {
   color: #000;
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arr-l-light:after, .recom-sl .slick-prev:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arr-r-light:after, .recom-sl .slick-next:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arrow-left:after, .actions-sl .slick-prev:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arrow-right:after, .actions-sl .slick-next:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--attraction:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--bookmark:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--calendar:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--closed-eye:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--chevron2-r:after, .form-row__content--divided .input-wr + .input-wr .input-cont:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--coctail:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--closed-eye:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--cross:after, .popup-closer:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--coctail:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--elephant:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--cross:after, .popup-closer:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--eye:after, .input-cont--eye._pass-visible .iconic:after, .input-cont--eye._pass-visible .icon:after, .input-cont--eye._pass-visible .checkbox__view:after, .input-cont--eye._pass-visible .popup-closer:after, .input-cont--eye._pass-visible .soc-rounds__li:after, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon:after, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon:after, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon:after, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon:after, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon:after, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
-.input-cont--eye._pass-visible .actions-sl .slick-next:after,
-.actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next:after, .recom-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-prev:after, .recom-sl .input-cont--eye._pass-visible .slick-prev:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--elephant:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--favorite:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--eye:after, .input-cont--eye._pass-visible .iconic:after, .input-cont--eye._pass-visible .icon:after, .input-cont--eye._pass-visible .checkbox__view:after, .input-cont--eye._pass-visible .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye._pass-visible .input-cont:after, .input-cont--eye._pass-visible .popup-closer:after, .input-cont--eye._pass-visible .soc-rounds__li:after, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon:after, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon:after, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon:after, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon:after, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon:after, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
+.input-cont--eye._pass-visible .actions-sl .slick-next:after,
+.actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next:after, .recom-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-prev:after, .recom-sl .input-cont--eye._pass-visible .slick-prev:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--lion:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--favorite:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--mail--old:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--lion:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--mail:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--mail--old:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--person:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--mail:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--pin:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--person:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--search:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--pin:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-fb:after, .soc-rounds__li--fb:after, .ya-share2__item_service_facebook .ya-share2__icon:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--search:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-gplus:after, .soc-rounds__li--gplus:after, .ya-share2__item_service_gplus .ya-share2__icon:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-fb:after, .soc-rounds__li--fb:after, .ya-share2__item_service_facebook .ya-share2__icon:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-mail:after, .soc-rounds__li--mail:after, .ya-share2__item_service_moimir .ya-share2__icon:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-gplus:after, .soc-rounds__li--gplus:after, .ya-share2__item_service_gplus .ya-share2__icon:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-tw:after, .soc-rounds__li--tw:after, .ya-share2__item_service_twitter .ya-share2__icon:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-mail:after, .soc-rounds__li--mail:after, .ya-share2__item_service_moimir .ya-share2__icon:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-vk-v:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-tw:after, .soc-rounds__li--tw:after, .ya-share2__item_service_twitter .ya-share2__icon:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-vk:after, .soc-rounds__li--vk:after, .ya-share2__item_service_vkontakte .ya-share2__icon:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-vk-v:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--star:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-vk:after, .soc-rounds__li--vk:after, .ya-share2__item_service_vkontakte .ya-share2__icon:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--target:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--star:after {
   content: "";
 }
 
-/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--tick:after, .checkbox__view:after {
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--target:after {
   content: "";
+}
+
+/* line 123, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--tick:after, .checkbox__view:after {
+  content: "";
 }
 
 /* line 4, ../styles/components/_icons.sass */
@@ -1359,7 +1365,7 @@ MAIN {
 }
 
 /* line 11, ../styles/components/_icons.sass */
-.iconic, .icon, .link--bookmark:before, .checkbox__view, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .actions-sl .slick-prev:after,
+.iconic, .icon, .link--bookmark:before, .checkbox__view, .form-row__content--divided .input-wr + .input-wr .input-cont:after, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .actions-sl .slick-prev:after,
 .actions-sl .slick-next:after, .recom-sl .slick-next, .recom-sl .slick-prev, .icon {
   display: inline-block;
   vertical-align: middle;
@@ -1400,7 +1406,7 @@ MAIN {
   margin-bottom: 10px;
 }
 /* line 20, ../styles/components/_buttons.sass */
-.btn .iconic, .btn .icon, .btn .link--bookmark:before, .btn .checkbox__view, .btn .popup-closer, .btn .soc-rounds__li, .btn .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn .ya-share2__icon, .btn .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn .ya-share2__icon, .btn .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn .ya-share2__icon, .btn .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn .ya-share2__icon, .btn .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn .ya-share2__icon, .btn .actions-sl .slick-prev:after, .actions-sl .btn .slick-prev:after,
+.btn .iconic, .btn .icon, .btn .link--bookmark:before, .btn .checkbox__view, .btn .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .btn .input-cont:after, .btn .popup-closer, .btn .soc-rounds__li, .btn .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn .ya-share2__icon, .btn .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn .ya-share2__icon, .btn .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn .ya-share2__icon, .btn .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn .ya-share2__icon, .btn .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn .ya-share2__icon, .btn .actions-sl .slick-prev:after, .actions-sl .btn .slick-prev:after,
 .btn .actions-sl .slick-next:after,
 .actions-sl .btn .slick-next:after, .btn .recom-sl .slick-next, .recom-sl .btn .slick-next, .btn .recom-sl .slick-prev, .recom-sl .btn .slick-prev {
   font-size: inherit;
@@ -1476,7 +1482,7 @@ MAIN {
   padding-left: 10px;
 }
 /* line 83, ../styles/components/_buttons.sass */
-.btn--icon .icon, .btn--icon .iconic, .btn--icon .icon, .btn--icon .link--bookmark:before, .btn--icon .checkbox__view, .btn--icon .popup-closer, .btn--icon .soc-rounds__li, .btn--icon .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn--icon .ya-share2__icon, .btn--icon .actions-sl .slick-prev:after, .actions-sl .btn--icon .slick-prev:after,
+.btn--icon .icon, .btn--icon .iconic, .btn--icon .icon, .btn--icon .link--bookmark:before, .btn--icon .checkbox__view, .btn--icon .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .btn--icon .input-cont:after, .btn--icon .popup-closer, .btn--icon .soc-rounds__li, .btn--icon .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn--icon .ya-share2__icon, .btn--icon .actions-sl .slick-prev:after, .actions-sl .btn--icon .slick-prev:after,
 .btn--icon .actions-sl .slick-next:after,
 .actions-sl .btn--icon .slick-next:after, .btn--icon .recom-sl .slick-next, .recom-sl .btn--icon .slick-next, .btn--icon .recom-sl .slick-prev, .recom-sl .btn--icon .slick-prev {
   vertical-align: middle;
@@ -1714,7 +1720,7 @@ MAIN {
   font: 14px/1.2 "Helvetica Neue", sans-serif;
 }
 /* line 130, ../styles/components/_links.sass */
-.bookmark-link .iconic, .bookmark-link .icon, .bookmark-link .link--bookmark:before, .bookmark-link .checkbox__view, .bookmark-link .popup-closer, .bookmark-link .soc-rounds__li, .bookmark-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .bookmark-link .ya-share2__icon, .bookmark-link .actions-sl .slick-prev:after, .actions-sl .bookmark-link .slick-prev:after,
+.bookmark-link .iconic, .bookmark-link .icon, .bookmark-link .link--bookmark:before, .bookmark-link .checkbox__view, .bookmark-link .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .bookmark-link .input-cont:after, .bookmark-link .popup-closer, .bookmark-link .soc-rounds__li, .bookmark-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .bookmark-link .ya-share2__icon, .bookmark-link .actions-sl .slick-prev:after, .actions-sl .bookmark-link .slick-prev:after,
 .bookmark-link .actions-sl .slick-next:after,
 .actions-sl .bookmark-link .slick-next:after, .bookmark-link .recom-sl .slick-next, .recom-sl .bookmark-link .slick-next, .bookmark-link .recom-sl .slick-prev, .recom-sl .bookmark-link .slick-prev {
   vertical-align: middle;
@@ -1849,11 +1855,11 @@ h1, h2, h3, h4, h5, h6 {
   /* todo no rdy */
 }
 
-/* line 31, ../styles/components/_formElements.sass */
+/* line 30, ../styles/components/_formElements.sass */
 .input {
   display: block;
   width: 100%;
-  border: 1px solid #fff;
+  border: 1px solid #d8d8d8;
   border-radius: 3px;
   padding: 0 13px;
   background-color: #fff;
@@ -1861,9 +1867,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 47px;
   line-height: 45px;
   font-size: 16px;
-  box-shadow: none;
+  box-shadow: inset 1px 1.732px 5px 0px rgba(55, 54, 55, 0.1);
 }
-/* line 28, ../styles/components/_formElements.sass */
+/* line 27, ../styles/components/_formElements.sass */
 .input::-webkit-input-placeholder {
   color: #000;
 }
@@ -1876,65 +1882,65 @@ h1, h2, h3, h4, h5, h6 {
 .input::placeholder {
   color: #000;
 }
-/* line 34, ../styles/components/_formElements.sass */
+/* line 33, ../styles/components/_formElements.sass */
 .input--special {
   border: 2px solid #fe101f;
   line-height: 43px;
   font-size: 24px;
 }
-/* line 39, ../styles/components/_formElements.sass */
+/* line 38, ../styles/components/_formElements.sass */
 .input--special.input--lg {
   line-height: 56px;
 }
-/* line 43, ../styles/components/_formElements.sass */
+/* line 42, ../styles/components/_formElements.sass */
 .input--brd {
   border: 1px solid #d8d8d8;
   box-shadow: inset 1px 1.732px 5px 0px rgba(55, 54, 55, 0.1);
   border-radius: 3px;
   line-height: 45px;
 }
-/* line 50, ../styles/components/_formElements.sass */
+/* line 49, ../styles/components/_formElements.sass */
 .input--ta-cent {
   text-align: center;
 }
-/* line 53, ../styles/components/_formElements.sass */
+/* line 52, ../styles/components/_formElements.sass */
 .input--ta-right {
   text-align: right;
 }
-/* line 57, ../styles/components/_formElements.sass */
+/* line 56, ../styles/components/_formElements.sass */
 .input--smd {
   height: 42px;
   line-height: 42px;
 }
-/* line 60, ../styles/components/_formElements.sass */
+/* line 59, ../styles/components/_formElements.sass */
 .input--smd.input--brd {
   line-height: 40px;
 }
-/* line 63, ../styles/components/_formElements.sass */
+/* line 62, ../styles/components/_formElements.sass */
 .input--lg {
   line-height: 58px;
   height: 60px;
 }
-/* line 68, ../styles/components/_formElements.sass */
+/* line 67, ../styles/components/_formElements.sass */
 .input--size--115 {
   width: 115px;
 }
-/* line 71, ../styles/components/_formElements.sass */
+/* line 70, ../styles/components/_formElements.sass */
 .input--size--80perc {
   width: 80%;
 }
 
-/* line 77, ../styles/components/_formElements.sass */
+/* line 76, ../styles/components/_formElements.sass */
 .textarea {
   display: block;
   width: 100%;
-  border: 1px solid #fff;
+  border: 1px solid #d8d8d8;
   background-color: #fff;
   font-size: 13px;
   line-height: 22px;
   padding: 8px 9px;
 }
-/* line 86, ../styles/components/_formElements.sass */
+/* line 85, ../styles/components/_formElements.sass */
 .textarea::-webkit-input-placeholder {
   color: #9b9b9b;
 }
@@ -1948,30 +1954,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #9b9b9b;
 }
 
-/* line 90, ../styles/components/_formElements.sass */
+/* line 89, ../styles/components/_formElements.sass */
 .img-input {
   display: block;
   max-width: 400px;
 }
 @media screen and (max-width: 767px) {
-  /* line 90, ../styles/components/_formElements.sass */
+  /* line 89, ../styles/components/_formElements.sass */
   .img-input {
     max-width: 200px;
   }
 }
-/* line 96, ../styles/components/_formElements.sass */
+/* line 95, ../styles/components/_formElements.sass */
 .img-input__main {
-  display: block;
-  width: 100%;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  padding: 0 13px;
-  background-color: #fff;
-  color: #000;
-  height: 47px;
-  line-height: 45px;
-  font-size: 16px;
-  box-shadow: none;
+  border: 1px solid #dbdbdb;
   padding-bottom: 100%;
   height: auto;
   max-width: 400px;
@@ -1984,24 +1980,11 @@ h1, h2, h3, h4, h5, h6 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-/* line 28, ../styles/components/_formElements.sass */
-.img-input__main::-webkit-input-placeholder {
-  color: #000;
-}
-.img-input__main::-moz-placeholder {
-  color: #000;
-}
-.img-input__main:-ms-input-placeholder {
-  color: #000;
-}
-.img-input__main::placeholder {
-  color: #000;
-}
-/* line 111, ../styles/components/_formElements.sass */
+/* line 110, ../styles/components/_formElements.sass */
 .img-input__main._loaded .img-input__txt {
   color: transparent;
 }
-/* line 114, ../styles/components/_formElements.sass */
+/* line 113, ../styles/components/_formElements.sass */
 .img-input__main INPUT {
   position: absolute;
   top: 0;
@@ -2011,7 +1994,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   cursor: pointer;
 }
-/* line 123, ../styles/components/_formElements.sass */
+/* line 122, ../styles/components/_formElements.sass */
 .img-input__txt {
   position: absolute;
   top: 50%;
@@ -2027,19 +2010,19 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 150ms;
           transition: 150ms;
 }
-/* line 136, ../styles/components/_formElements.sass */
+/* line 135, ../styles/components/_formElements.sass */
 .img-input:hover {
   border-color: #5b5b5b;
 }
 
-/* line 140, ../styles/components/_formElements.sass */
+/* line 139, ../styles/components/_formElements.sass */
 .input-error {
   display: block;
   color: #fe101f;
-  margin: 2px 2px 5px;
+  margin: 3px 2px 5px;
 }
 
-/* line 153, ../styles/components/_formElements.sass */
+/* line 152, ../styles/components/_formElements.sass */
 .checkbox-label {
   display: table;
   white-space: nowrap;
@@ -2047,17 +2030,17 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   padding: 4px 0;
 }
-/* line 160, ../styles/components/_formElements.sass */
+/* line 159, ../styles/components/_formElements.sass */
 .checkbox-label .checkbox, .checkbox-label__txt {
   display: inline-block;
   vertical-align: top;
 }
-/* line 164, ../styles/components/_formElements.sass */
+/* line 163, ../styles/components/_formElements.sass */
 .checkbox-label .checkbox {
   margin-top: 2px;
   margin-right: -14px;
 }
-/* line 168, ../styles/components/_formElements.sass */
+/* line 167, ../styles/components/_formElements.sass */
 .checkbox-label__txt {
   font-size: 13px;
   line-height: 20px;
@@ -2067,17 +2050,17 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 23px;
 }
 
-/* line 176, ../styles/components/_formElements.sass */
+/* line 175, ../styles/components/_formElements.sass */
 .checkbox {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 180, ../styles/components/_formElements.sass */
+/* line 179, ../styles/components/_formElements.sass */
 .checkbox INPUT {
   display: none;
 }
-/* line 183, ../styles/components/_formElements.sass */
+/* line 182, ../styles/components/_formElements.sass */
 .checkbox__view {
   display: block;
   width: 14px;
@@ -2088,7 +2071,7 @@ h1, h2, h3, h4, h5, h6 {
           transition: 150ms;
   position: relative;
 }
-/* line 194, ../styles/components/_formElements.sass */
+/* line 193, ../styles/components/_formElements.sass */
 .checkbox__view:after {
   color: #000;
   font-size: 15px;
@@ -2102,37 +2085,37 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 150ms;
           transition: 150ms;
 }
-/* line 205, ../styles/components/_formElements.sass */
+/* line 204, ../styles/components/_formElements.sass */
 .checkbox__view:hover, .checkbox__view._active, .checkbox-label:hover .checkbox__view, .checkbox__view._active, input:checked + .checkbox__view {
   background-color: #ebff9b;
 }
-/* line 214, ../styles/components/_formElements.sass */
+/* line 213, ../styles/components/_formElements.sass */
 .checkbox__view._active:after, input:checked + .checkbox__view:after {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
 }
 
-/* line 295, ../styles/components/_formElements.sass */
+/* line 294, ../styles/components/_formElements.sass */
 .txt-chbox {
   display: inline-block;
 }
-/* line 298, ../styles/components/_formElements.sass */
+/* line 297, ../styles/components/_formElements.sass */
 .txt-chbox input {
   display: none;
 }
-/* line 301, ../styles/components/_formElements.sass */
+/* line 300, ../styles/components/_formElements.sass */
 .txt-chbox._active .txt-chbox__visual, .txt-chbox:hover .txt-chbox__visual,
 .txt-chbox input:checked + .txt-chbox__visual {
   background: #dcf187;
 }
-/* line 305, ../styles/components/_formElements.sass */
+/* line 304, ../styles/components/_formElements.sass */
 .txt-chbox._active .txt-chbox__visual .link, .txt-chbox:hover .txt-chbox__visual .link,
 .txt-chbox input:checked + .txt-chbox__visual .link {
   border-bottom-color: transparent;
   color: #000;
 }
-/* line 309, ../styles/components/_formElements.sass */
+/* line 308, ../styles/components/_formElements.sass */
 .txt-chbox__visual {
   display: block;
   padding: 2px 3px;
@@ -2142,38 +2125,38 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 150ms;
           transition: 150ms;
 }
-/* line 317, ../styles/components/_formElements.sass */
+/* line 316, ../styles/components/_formElements.sass */
 .txt-chbox__visual--md {
   padding: 6px;
   font-size: 18px;
 }
 
-/* line 424, ../styles/components/_formElements.sass */
+/* line 423, ../styles/components/_formElements.sass */
 .chkb-dropdown {
   position: relative;
   margin-bottom: 17px;
 }
-/* line 428, ../styles/components/_formElements.sass */
+/* line 427, ../styles/components/_formElements.sass */
 .chkb-dropdown__title {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 433, ../styles/components/_formElements.sass */
+/* line 432, ../styles/components/_formElements.sass */
 .chkb-dropdown__title--lg-hide {
   display: none;
 }
-/* line 436, ../styles/components/_formElements.sass */
+/* line 435, ../styles/components/_formElements.sass */
 .chkb-dropdown__options-gr {
   position: relative;
 }
-/* line 442, ../styles/components/_formElements.sass */
+/* line 441, ../styles/components/_formElements.sass */
 .chkb-dropdown--dates__options-gr {
   background-color: transparent !important;
   padding: 0 !important;
   border: 0 !important;
 }
-/* line 448, ../styles/components/_formElements.sass */
+/* line 447, ../styles/components/_formElements.sass */
 .chkb-dropdown--dates .datepicker {
   position: relative;
   left: 0 !important;
@@ -2184,14 +2167,14 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
 }
 @media screen and (max-width: 669px) {
-  /* line 424, ../styles/components/_formElements.sass */
+  /* line 423, ../styles/components/_formElements.sass */
   .chkb-dropdown {
     text-align: left;
     position: relative;
     z-index: 1;
     margin-bottom: 15px;
   }
-  /* line 331, ../styles/components/_formElements.sass */
+  /* line 330, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title {
     font-weight: normal;
     display: block !important;
@@ -2204,7 +2187,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 300ms;
             transition: 300ms;
   }
-  /* line 342, ../styles/components/_formElements.sass */
+  /* line 341, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title:after {
     content: "";
     position: absolute;
@@ -2215,11 +2198,11 @@ h1, h2, h3, h4, h5, h6 {
     border-width: 7px 4px;
     border-style: solid;
   }
-  /* line 352, ../styles/components/_formElements.sass */
+  /* line 351, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title:hover {
     border-color: #676767;
   }
-  /* line 355, ../styles/components/_formElements.sass */
+  /* line 354, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr {
     position: absolute;
     top: 100%;
@@ -2241,24 +2224,24 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 300ms;
             transition: 300ms;
   }
-  /* line 375, ../styles/components/_formElements.sass */
+  /* line 374, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar-track {
     background: transparent;
   }
-  /* line 378, ../styles/components/_formElements.sass */
+  /* line 377, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar {
     width: 9px;
   }
-  /* line 381, ../styles/components/_formElements.sass */
+  /* line 380, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar-thumb {
     background-color: #cdeb55;
     cursor: pointer;
   }
-  /* line 386, ../styles/components/_formElements.sass */
+  /* line 385, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title, .chkb-dropdown .txt-chbox__visual {
     padding: 8px 50px 8px 12px;
   }
-  /* line 390, ../styles/components/_formElements.sass */
+  /* line 389, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox {
     display: block;
     margin: 0;
@@ -2266,16 +2249,16 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 150ms;
             transition: 150ms;
   }
-  /* line 396, ../styles/components/_formElements.sass */
+  /* line 395, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox__visual {
     font-size: 15px;
   }
-  /* line 399, ../styles/components/_formElements.sass */
+  /* line 398, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox .link {
     color: #000;
     border-bottom: 0;
   }
-  /* line 406, ../styles/components/_formElements.sass */
+  /* line 405, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox._active .txt-chbox__visual:after, .chkb-dropdown .txt-chbox:hover .txt-chbox__visual:after,
   .chkb-dropdown .txt-chbox input:checked + .txt-chbox__visual:after {
     content: "";
@@ -2285,11 +2268,11 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     border-bottom: 1px solid #e5f5a7;
   }
-  /* line 417, ../styles/components/_formElements.sass */
+  /* line 416, ../styles/components/_formElements.sass */
   .chkb-dropdown._active {
     z-index: 10;
   }
-  /* line 419, ../styles/components/_formElements.sass */
+  /* line 418, ../styles/components/_formElements.sass */
   .chkb-dropdown._active .chkb-dropdown__options-gr {
     opacity: 1;
     visibility: visible;
@@ -2298,7 +2281,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* line 465, ../styles/components/_formElements.sass */
+/* line 464, ../styles/components/_formElements.sass */
 .form-tip {
   font-size: 13px;
   line-height: normal;
@@ -2311,7 +2294,16 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin: 5px 0 15px;
 }
-/* line 30, ../styles/components/_formLayout.sass */
+/* line 31, ../styles/components/_formLayout.sass */
+.form-row--clear .form-row__name {
+  color: #000;
+}
+/* line 34, ../styles/components/_formLayout.sass */
+.form-row--clear .input {
+  box-shadow: none !important;
+  border: none 0 !important;
+}
+/* line 38, ../styles/components/_formLayout.sass */
 .form-row__name {
   display: block;
   position: relative;
@@ -2319,8 +2311,9 @@ h1, h2, h3, h4, h5, h6 {
   text-overflow: ellipsis;
   font-size: 13px;
   line-height: normal;
+  color: #7f7f7f;
 }
-/* line 38, ../styles/components/_formLayout.sass */
+/* line 47, ../styles/components/_formLayout.sass */
 .form-row__name-col {
   margin-bottom: 7px;
   padding-right: 30px;
@@ -2329,7 +2322,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-item-align: start;
           align-self: flex-start;
 }
-/* line 46, ../styles/components/_formLayout.sass */
+/* line 55, ../styles/components/_formLayout.sass */
 .form-row__content--divided {
   display: -webkit-box !important;
   display: -webkit-flex !important;
@@ -2337,9 +2330,15 @@ h1, h2, h3, h4, h5, h6 {
   display: flex !important;
   margin-left: -20px;
   margin-right: -20px;
-  width: auto !important;
+  width: 90% !important;
 }
-/* line 52, ../styles/components/_formLayout.sass */
+@media screen and (max-width: 1099px) {
+  /* line 55, ../styles/components/_formLayout.sass */
+  .form-row__content--divided {
+    width: 100% !important;
+  }
+}
+/* line 63, ../styles/components/_formLayout.sass */
 .form-row__content--divided .input-wr {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -2348,7 +2347,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 20px;
   margin-right: 20px;
 }
-/* line 57, ../styles/components/_formLayout.sass */
+/* line 68, ../styles/components/_formLayout.sass */
 .form-row__content--divided .input-wr + .input-wr .input-cont:after {
   position: absolute;
   top: 0;
@@ -2356,57 +2355,57 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 47px;
 }
 @media screen and (max-width: 479px) {
-  /* line 46, ../styles/components/_formLayout.sass */
+  /* line 55, ../styles/components/_formLayout.sass */
   .form-row__content--divided {
     display: block !important;
   }
-  /* line 69, ../styles/components/_formLayout.sass */
+  /* line 80, ../styles/components/_formLayout.sass */
   .form-row__content--divided .input-wr .input-cont:after {
     display: none;
   }
 }
-/* line 72, ../styles/components/_formLayout.sass */
+/* line 83, ../styles/components/_formLayout.sass */
 .form-row__content-col {
   width: 100%;
 }
-/* line 75, ../styles/components/_formLayout.sass */
+/* line 86, ../styles/components/_formLayout.sass */
 .form-row__content-col .checkbox-label {
   margin-left: 2px;
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
 }
-/* line 79, ../styles/components/_formLayout.sass */
+/* line 90, ../styles/components/_formLayout.sass */
 .form-row__content-col--w80 {
   padding-right: 20%;
 }
 @media screen and (max-width: 579px) {
-  /* line 83, ../styles/components/_formLayout.sass */
+  /* line 94, ../styles/components/_formLayout.sass */
   .form-cols .form-row__content-col {
     padding-right: 0;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 72, ../styles/components/_formLayout.sass */
+  /* line 83, ../styles/components/_formLayout.sass */
   .form-row__content-col {
     padding-right: 0;
   }
 }
-/* line 97, ../styles/components/_formLayout.sass */
+/* line 108, ../styles/components/_formLayout.sass */
 .form-row--inline {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 103, ../styles/components/_formLayout.sass */
+/* line 114, ../styles/components/_formLayout.sass */
 .form-row--inline .form-row__name, .form-row--inline .form-row__content {
   width: 100%;
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
 }
-/* line 110, ../styles/components/_formLayout.sass */
+/* line 121, ../styles/components/_formLayout.sass */
 .form-row--inline .form-row__name-col {
   margin-bottom: 0;
   -webkit-flex-shrink: 0;
@@ -2419,7 +2418,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 165px;
   line-height: 47px;
 }
-/* line 117, ../styles/components/_formLayout.sass */
+/* line 128, ../styles/components/_formLayout.sass */
 .form-row--inline .form-row__content-col {
   line-height: 47px;
   -webkit-box-flex: 1;
@@ -2427,17 +2426,17 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-/* line 124, ../styles/components/_formLayout.sass */
+/* line 135, ../styles/components/_formLayout.sass */
 .form-row--inline.form-row--multi .form-row__name-col {
   margin-top: 23px;
 }
 @media screen and (max-width: 669px) {
-  /* line 123, ../styles/components/_formLayout.sass */
+  /* line 134, ../styles/components/_formLayout.sass */
   .form-row--inline.form-row--multi {
     display: block;
     margin-top: 0;
   }
-  /* line 128, ../styles/components/_formLayout.sass */
+  /* line 139, ../styles/components/_formLayout.sass */
   .form-row--inline.form-row--multi .form-row__name-col {
     margin-top: 0px;
   }
@@ -2459,7 +2458,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 97, ../styles/components/_formLayout.sass */
+  /* line 108, ../styles/components/_formLayout.sass */
   .form-row--inline {
     display: block;
     margin-top: 0;
@@ -2481,46 +2480,46 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 20px;
   }
 }
-/* line 138, ../styles/components/_formLayout.sass */
+/* line 149, ../styles/components/_formLayout.sass */
 .form-row--submit {
   margin-top: 25px;
 }
-/* line 140, ../styles/components/_formLayout.sass */
+/* line 151, ../styles/components/_formLayout.sass */
 .form-row--submit .btn--md {
   padding-left: 20px;
   padding-right: 20px;
 }
 @media screen and (max-width: 579px) {
-  /* line 138, ../styles/components/_formLayout.sass */
+  /* line 149, ../styles/components/_formLayout.sass */
   .form-row--submit {
     margin-top: 30px;
   }
-  /* line 146, ../styles/components/_formLayout.sass */
+  /* line 157, ../styles/components/_formLayout.sass */
   .form-row--submit .form-row__name-col {
     display: none;
   }
 }
 
-/* line 150, ../styles/components/_formLayout.sass */
+/* line 161, ../styles/components/_formLayout.sass */
 .input-cont {
   position: relative;
 }
-/* line 152, ../styles/components/_formLayout.sass */
+/* line 163, ../styles/components/_formLayout.sass */
 .input-cont .input {
   width: 100%;
 }
-/* line 155, ../styles/components/_formLayout.sass */
+/* line 166, ../styles/components/_formLayout.sass */
 .input-cont + .checkbox-label {
   margin-top: 13px;
 }
-/* line 158, ../styles/components/_formLayout.sass */
+/* line 169, ../styles/components/_formLayout.sass */
 .input-cont + .link {
   margin-top: 2px;
   display: inline-block;
   font-size: 13px;
 }
-/* line 164, ../styles/components/_formLayout.sass */
-.input-cont--eye .iconic, .input-cont--eye .icon, .input-cont--eye .link--bookmark:before, .input-cont--eye .checkbox__view, .input-cont--eye .popup-closer, .input-cont--eye .soc-rounds__li, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon, .input-cont--eye .actions-sl .slick-prev:after, .actions-sl .input-cont--eye .slick-prev:after,
+/* line 175, ../styles/components/_formLayout.sass */
+.input-cont--eye .iconic, .input-cont--eye .icon, .input-cont--eye .link--bookmark:before, .input-cont--eye .checkbox__view, .input-cont--eye .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye .input-cont:after, .input-cont--eye .popup-closer, .input-cont--eye .soc-rounds__li, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon, .input-cont--eye .actions-sl .slick-prev:after, .actions-sl .input-cont--eye .slick-prev:after,
 .input-cont--eye .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye .slick-next:after, .input-cont--eye .recom-sl .slick-next, .recom-sl .input-cont--eye .slick-next, .input-cont--eye .recom-sl .slick-prev, .recom-sl .input-cont--eye .slick-prev {
   position: absolute;
@@ -2534,20 +2533,20 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: color 150ms;
           transition: color 150ms;
 }
-/* line 173, ../styles/components/_formLayout.sass */
-.input-cont--eye .iconic:hover, .input-cont--eye .icon:hover, .input-cont--eye .link--bookmark:hover:before, .input-cont--eye .checkbox__view:hover, .input-cont--eye .popup-closer:hover, .input-cont--eye .soc-rounds__li:hover, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon:hover, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon:hover, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon:hover, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon:hover, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon:hover, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .actions-sl .slick-prev:hover:after, .actions-sl .input-cont--eye .slick-prev:hover:after,
+/* line 184, ../styles/components/_formLayout.sass */
+.input-cont--eye .iconic:hover, .input-cont--eye .icon:hover, .input-cont--eye .link--bookmark:hover:before, .input-cont--eye .checkbox__view:hover, .input-cont--eye .form-row__content--divided .input-wr + .input-wr .input-cont:hover:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye .input-cont:hover:after, .input-cont--eye .popup-closer:hover, .input-cont--eye .soc-rounds__li:hover, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon:hover, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon:hover, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon:hover, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon:hover, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon:hover, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .actions-sl .slick-prev:hover:after, .actions-sl .input-cont--eye .slick-prev:hover:after,
 .input-cont--eye .actions-sl .slick-next:hover:after,
 .actions-sl .input-cont--eye .slick-next:hover:after, .input-cont--eye .recom-sl .slick-next:hover, .recom-sl .input-cont--eye .slick-next:hover, .input-cont--eye .recom-sl .slick-prev:hover, .recom-sl .input-cont--eye .slick-prev:hover {
   color: #000;
 }
-/* line 178, ../styles/components/_formLayout.sass */
-.input-cont--eye._pass-visible .iconic, .input-cont--eye._pass-visible .icon, .input-cont--eye._pass-visible .link--bookmark:before, .input-cont--eye._pass-visible .checkbox__view, .input-cont--eye._pass-visible .popup-closer, .input-cont--eye._pass-visible .soc-rounds__li, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
+/* line 189, ../styles/components/_formLayout.sass */
+.input-cont--eye._pass-visible .iconic, .input-cont--eye._pass-visible .icon, .input-cont--eye._pass-visible .link--bookmark:before, .input-cont--eye._pass-visible .checkbox__view, .input-cont--eye._pass-visible .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye._pass-visible .input-cont:after, .input-cont--eye._pass-visible .popup-closer, .input-cont--eye._pass-visible .soc-rounds__li, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
 .input-cont--eye._pass-visible .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next, .recom-sl .input-cont--eye._pass-visible .slick-next, .input-cont--eye._pass-visible .recom-sl .slick-prev, .recom-sl .input-cont--eye._pass-visible .slick-prev {
   font-size: 10px;
 }
 
-/* line 185, ../styles/components/_formLayout.sass */
+/* line 196, ../styles/components/_formLayout.sass */
 .input-wr__name {
   font-size: 13px;
   line-height: 20px;
@@ -2555,40 +2554,40 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 3px;
   display: block;
 }
-@media screen and (max-width: 579px) {
-  /* line 195, ../styles/components/_formLayout.sass */
+@media screen and (max-width: 479px) {
+  /* line 206, ../styles/components/_formLayout.sass */
   .input-wr + .input-wr {
     margin-top: 15px;
   }
 }
 
-/* line 201, ../styles/components/_formLayout.sass */
+/* line 212, ../styles/components/_formLayout.sass */
 .form-gr {
   margin-bottom: 40px;
 }
-/* line 204, ../styles/components/_formLayout.sass */
+/* line 215, ../styles/components/_formLayout.sass */
 .form-gr .h3, .form-gr .typography h3, .typography .form-gr h3 {
   line-height: 24px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 579px) {
-  /* line 201, ../styles/components/_formLayout.sass */
+  /* line 212, ../styles/components/_formLayout.sass */
   .form-gr {
     margin-bottom: 25px;
   }
-  /* line 211, ../styles/components/_formLayout.sass */
+  /* line 222, ../styles/components/_formLayout.sass */
   .form-gr .h3, .form-gr .typography h3, .typography .form-gr h3 {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 579px) {
-  /* line 218, ../styles/components/_formLayout.sass */
+  /* line 229, ../styles/components/_formLayout.sass */
   .form-pair {
     margin-left: -10px;
     margin-right: -10px;
   }
-  /* line 222, ../styles/components/_formLayout.sass */
+  /* line 233, ../styles/components/_formLayout.sass */
   .form-pair .form-row {
     display: inline-block;
     vertical-align: top;
@@ -2597,7 +2596,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* line 229, ../styles/components/_formLayout.sass */
+/* line 240, ../styles/components/_formLayout.sass */
 .form-cols {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2613,7 +2612,7 @@ h1, h2, h3, h4, h5, h6 {
           align-items: flex-start;
   margin: 0px -30px 14px;
 }
-/* line 235, ../styles/components/_formLayout.sass */
+/* line 246, ../styles/components/_formLayout.sass */
 .form-cols__col {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -2625,32 +2624,32 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 30px;
   padding-right: 30px;
 }
-/* line 241, ../styles/components/_formLayout.sass */
+/* line 252, ../styles/components/_formLayout.sass */
 .form-cols__col--65 {
   width: 65%;
 }
-/* line 243, ../styles/components/_formLayout.sass */
+/* line 254, ../styles/components/_formLayout.sass */
 .form-cols__col--35 {
   width: 35%;
 }
 @media screen and (max-width: 669px) {
-  /* line 229, ../styles/components/_formLayout.sass */
+  /* line 240, ../styles/components/_formLayout.sass */
   .form-cols {
     margin-left: -15px;
     margin-right: -15px;
   }
-  /* line 249, ../styles/components/_formLayout.sass */
+  /* line 260, ../styles/components/_formLayout.sass */
   .form-cols__col {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 229, ../styles/components/_formLayout.sass */
+  /* line 240, ../styles/components/_formLayout.sass */
   .form-cols {
     display: block;
   }
-  /* line 255, ../styles/components/_formLayout.sass */
+  /* line 266, ../styles/components/_formLayout.sass */
   .form-cols__col {
     width: auto;
   }
@@ -3470,80 +3469,81 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar {
   margin-bottom: 40px;
   background: #fff;
+  display: block;
 }
-/* line 242, ../styles/components/blocks/_blocks.sass */
+/* line 243, ../styles/components/blocks/_blocks.sass */
 .sidebar--green {
   border: 5px solid #dcf187;
 }
-/* line 245, ../styles/components/blocks/_blocks.sass */
+/* line 246, ../styles/components/blocks/_blocks.sass */
 .sidebar__item {
   border-bottom: 1px solid #e3e3e3;
   padding: 15px 25px;
 }
-/* line 249, ../styles/components/blocks/_blocks.sass */
+/* line 250, ../styles/components/blocks/_blocks.sass */
 .sidebar__item:last-child {
   border-bottom: 0;
 }
-/* line 253, ../styles/components/blocks/_blocks.sass */
+/* line 254, ../styles/components/blocks/_blocks.sass */
 .sidebar__img IMG {
   max-width: 100%;
 }
 
-/* line 258, ../styles/components/blocks/_blocks.sass */
+/* line 259, ../styles/components/blocks/_blocks.sass */
 .sidebar-text__inner {
   margin-bottom: 20px;
   color: #333333;
 }
 
-/* line 263, ../styles/components/blocks/_blocks.sass */
+/* line 264, ../styles/components/blocks/_blocks.sass */
 .social-share--mrg {
   margin: 40px 0 0;
 }
 @media screen and (max-width: 859px) {
-  /* line 263, ../styles/components/blocks/_blocks.sass */
+  /* line 264, ../styles/components/blocks/_blocks.sass */
   .social-share--mrg {
     margin: 20px 0 0;
   }
 }
 
-/* line 269, ../styles/components/blocks/_blocks.sass */
+/* line 270, ../styles/components/blocks/_blocks.sass */
 .materials-row {
   padding: 40px 0;
 }
 @media screen and (max-width: 859px) {
-  /* line 269, ../styles/components/blocks/_blocks.sass */
+  /* line 270, ../styles/components/blocks/_blocks.sass */
   .materials-row {
     padding: 20px 0;
   }
 }
 
-/* line 275, ../styles/components/blocks/_blocks.sass */
+/* line 276, ../styles/components/blocks/_blocks.sass */
 .materials-header {
   margin: 0 0 20px;
 }
 
-/* line 278, ../styles/components/blocks/_blocks.sass */
+/* line 279, ../styles/components/blocks/_blocks.sass */
 .materials-nav {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 283, ../styles/components/blocks/_blocks.sass */
+/* line 284, ../styles/components/blocks/_blocks.sass */
 .materials-nav__item {
   display: inline-block;
   margin-right: 30px;
 }
 @media screen and (max-width: 579px) {
-  /* line 283, ../styles/components/blocks/_blocks.sass */
+  /* line 284, ../styles/components/blocks/_blocks.sass */
   .materials-nav__item {
     margin: 0 15px 5px 0;
   }
 }
-/* line 290, ../styles/components/blocks/_blocks.sass */
+/* line 291, ../styles/components/blocks/_blocks.sass */
 .materials-nav__item:last-child {
   margin-right: 0;
 }
-/* line 293, ../styles/components/blocks/_blocks.sass */
+/* line 294, ../styles/components/blocks/_blocks.sass */
 .materials-nav__item A {
   font: 24px/1.2 "PT Sans Narrow", sans-serif;
   color: #088e60;
@@ -3552,28 +3552,28 @@ h1, h2, h3, h4, h5, h6 {
           transition: border-color 150ms ease-out;
 }
 @media screen and (max-width: 579px) {
-  /* line 293, ../styles/components/blocks/_blocks.sass */
+  /* line 294, ../styles/components/blocks/_blocks.sass */
   .materials-nav__item A {
     font: 20px/1.2 "PT Sans Narrow", sans-serif;
   }
 }
-/* line 302, ../styles/components/blocks/_blocks.sass */
+/* line 303, ../styles/components/blocks/_blocks.sass */
 .materials-nav__item A:hover {
   border-color: transparent;
 }
-/* line 307, ../styles/components/blocks/_blocks.sass */
+/* line 308, ../styles/components/blocks/_blocks.sass */
 .materials-nav__item.active A {
   color: #000;
   border-color: transparent;
 }
 
-/* line 312, ../styles/components/blocks/_blocks.sass */
+/* line 313, ../styles/components/blocks/_blocks.sass */
 .lk-menu {
   background: #fff;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 }
-/* line 317, ../styles/components/blocks/_blocks.sass */
+/* line 318, ../styles/components/blocks/_blocks.sass */
 .lk-menu__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3584,7 +3584,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-/* line 321, ../styles/components/blocks/_blocks.sass */
+/* line 322, ../styles/components/blocks/_blocks.sass */
 .lk-menu__nav {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -3592,12 +3592,12 @@ h1, h2, h3, h4, h5, h6 {
           flex-grow: 1;
 }
 @media screen and (max-width: 579px) {
-  /* line 321, ../styles/components/blocks/_blocks.sass */
+  /* line 322, ../styles/components/blocks/_blocks.sass */
   .lk-menu__nav {
     margin-left: -15px;
   }
 }
-/* line 327, ../styles/components/blocks/_blocks.sass */
+/* line 328, ../styles/components/blocks/_blocks.sass */
 .lk-menu__btn {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -3605,41 +3605,53 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 50px;
 }
 
-/* line 331, ../styles/components/blocks/_blocks.sass */
+/* line 332, ../styles/components/blocks/_blocks.sass */
 .lk-nav {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 336, ../styles/components/blocks/_blocks.sass */
+/* line 337, ../styles/components/blocks/_blocks.sass */
 .lk-nav__item {
   float: left;
   border-right: 1px solid #e6e6e6;
 }
-/* line 340, ../styles/components/blocks/_blocks.sass */
+/* line 341, ../styles/components/blocks/_blocks.sass */
 .lk-nav__item:first-child {
   border-left: 1px solid #e6e6e6;
 }
 @media screen and (max-width: 579px) {
-  /* line 340, ../styles/components/blocks/_blocks.sass */
+  /* line 341, ../styles/components/blocks/_blocks.sass */
   .lk-nav__item:first-child {
     border-left: 0;
   }
 }
-/* line 346, ../styles/components/blocks/_blocks.sass */
+/* line 347, ../styles/components/blocks/_blocks.sass */
 .lk-nav__item A {
   font: 18px/1.2 "Helvetica Neue", sans-serif;
   padding: 15px 25px;
   display: block;
   color: #000;
+  -webkit-transition: background 150ms ease-out;
+          transition: background 150ms ease-out;
+}
+/* line 354, ../styles/components/blocks/_blocks.sass */
+.lk-nav__item A:hover {
+  background-color: rgba(235, 255, 155, 0.5);
 }
 @media screen and (max-width: 579px) {
-  /* line 346, ../styles/components/blocks/_blocks.sass */
+  /* line 347, ../styles/components/blocks/_blocks.sass */
   .lk-nav__item A {
     padding: 15px;
   }
 }
-/* line 357, ../styles/components/blocks/_blocks.sass */
+@media screen and (max-width: 479px) {
+  /* line 347, ../styles/components/blocks/_blocks.sass */
+  .lk-nav__item A {
+    font: 16px/1.3 "Helvetica Neue", sans-serif;
+  }
+}
+/* line 365, ../styles/components/blocks/_blocks.sass */
 .lk-nav__item.active A {
   background-color: #ebff9b;
 }
@@ -4850,6 +4862,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 55px;
   color: #fff;
 }
+/* line 63, ../styles/pages/_org-enter.sass */
+.org-enter__right .form-row__name {
+  color: #fff;
+}
 @media screen and (max-width: 1099px) {
   /* line 57, ../styles/pages/_org-enter.sass */
   .org-enter__right {
@@ -5225,5 +5241,32 @@ h1, h2, h3, h4, h5, h6 {
   /* line 7, ../styles/pages/_organizator.sass */
   .organizator-comments {
     padding: 20px 0;
+  }
+}
+
+/* line 1, ../styles/pages/_lk-user.sass */
+.lk-settings {
+  padding: 25px 0 40px;
+}
+/* line 7, ../styles/pages/_lk-user.sass */
+.lk-settings__avatar {
+  float: left;
+  width: 145px;
+}
+@media screen and (max-width: 669px) {
+  /* line 7, ../styles/pages/_lk-user.sass */
+  .lk-settings__avatar {
+    float: none;
+    margin-bottom: 20px;
+  }
+}
+/* line 15, ../styles/pages/_lk-user.sass */
+.lk-settings__form {
+  margin-left: 175px;
+}
+@media screen and (max-width: 669px) {
+  /* line 15, ../styles/pages/_lk-user.sass */
+  .lk-settings__form {
+    margin-left: 0;
   }
 }

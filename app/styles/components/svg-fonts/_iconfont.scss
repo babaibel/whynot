@@ -49,68 +49,71 @@
     @if $filename == calendar {
     $char: "\E007";
 }
-    @if $filename == closed-eye {
+    @if $filename == chevron2-r {
     $char: "\E008";
 }
-    @if $filename == coctail {
+    @if $filename == closed-eye {
     $char: "\E009";
 }
-    @if $filename == cross {
+    @if $filename == coctail {
     $char: "\E00A";
 }
-    @if $filename == elephant {
+    @if $filename == cross {
     $char: "\E00B";
 }
-    @if $filename == eye {
+    @if $filename == elephant {
     $char: "\E00C";
 }
-    @if $filename == favorite {
+    @if $filename == eye {
     $char: "\E00D";
 }
-    @if $filename == lion {
+    @if $filename == favorite {
     $char: "\E00E";
 }
-    @if $filename == mail--old {
+    @if $filename == lion {
     $char: "\E00F";
 }
-    @if $filename == mail {
+    @if $filename == mail--old {
     $char: "\E010";
 }
-    @if $filename == person {
+    @if $filename == mail {
     $char: "\E011";
 }
-    @if $filename == pin {
+    @if $filename == person {
     $char: "\E012";
 }
-    @if $filename == search {
+    @if $filename == pin {
     $char: "\E013";
 }
-    @if $filename == soc-fb {
+    @if $filename == search {
     $char: "\E014";
 }
-    @if $filename == soc-gplus {
+    @if $filename == soc-fb {
     $char: "\E015";
 }
-    @if $filename == soc-mail {
+    @if $filename == soc-gplus {
     $char: "\E016";
 }
-    @if $filename == soc-tw {
+    @if $filename == soc-mail {
     $char: "\E017";
 }
-    @if $filename == soc-vk-v {
+    @if $filename == soc-tw {
     $char: "\E018";
 }
-    @if $filename == soc-vk {
+    @if $filename == soc-vk-v {
     $char: "\E019";
 }
-    @if $filename == star {
+    @if $filename == soc-vk {
     $char: "\E01A";
 }
-    @if $filename == target {
+    @if $filename == star {
     $char: "\E01B";
 }
-    @if $filename == tick {
+    @if $filename == target {
     $char: "\E01C";
+}
+    @if $filename == tick {
+    $char: "\E01D";
 }
 
 @return $char;
@@ -143,6 +146,9 @@
 }
 .iconic--calendar {
     @include iconic(calendar);
+}
+.iconic--chevron2-r {
+    @include iconic(chevron2-r);
 }
 .iconic--closed-eye {
     @include iconic(closed-eye);

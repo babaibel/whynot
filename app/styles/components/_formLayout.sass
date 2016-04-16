@@ -27,6 +27,14 @@ $form-row-bottom-mrg: 15px
     display: block
     margin: 5px 0 $form-row-bottom-mrg
 
+    &--clear
+        .form-row__name
+            color: #000
+
+        .input
+            box-shadow: none!important
+            border: none 0!important
+
     &__name
         display: block
         position: relative
@@ -34,6 +42,7 @@ $form-row-bottom-mrg: 15px
         text-overflow: ellipsis
         font-size: 13px
         line-height: normal
+        color: #7f7f7f
 
     &__name-col
         margin-bottom: 7px
@@ -47,7 +56,9 @@ $form-row-bottom-mrg: 15px
             display: flex !important
             margin-left: -20px
             margin-right: -20px
-            width: auto !important
+            width: 90% !important
+            +max-screen($screenLL)
+                width: 100% !important
 
             .input-wr
                 flex-grow: 1
@@ -55,8 +66,8 @@ $form-row-bottom-mrg: 15px
                 margin-right: 20px
                 & + .input-wr .input-cont
                     &:after
-                        // @extend .iconic
-                        // @extend .iconic--chevron2-r
+                        @extend .iconic
+                        @extend .iconic--chevron2-r
                         position: absolute
                         top: 0
                         left: -23px
@@ -191,7 +202,7 @@ $form-row-bottom-mrg: 15px
         margin-bottom: 3px
         display: block
 
-    +max-screen($screenSS)
+    +max-screen($screenXS)
         & + &
             margin-top: $form-row-bottom-mrg
 

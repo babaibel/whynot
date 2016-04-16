@@ -16,7 +16,7 @@
 							<form>
 								<h2 class="h2-inner">Войти</h2>
 								<div class="form-gr">
-									<div class="form-row">
+									<div class="form-row form-row--clear">
 										<div class="form-row__name-col">
 											<div class="form-row__name">Email</div>
 										</div>
@@ -28,7 +28,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="form-row">
+									<div class="form-row form-row--clear">
 										<div class="form-row__name-col">
 											<div class="form-row__name">Пароль</div>
 										</div>
@@ -53,7 +53,7 @@
 							<form>
 								<div class="form-gr">
 									<h2 class="h2-inner">Зарегистрироваться</h2>
-									<div class="form-row">
+									<div class="form-row form-row--clear">
 										<div class="form-row__name-col">
 											<div class="form-row__name">Email</div>
 										</div>
@@ -65,7 +65,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="form-row">
+									<div class="form-row form-row--clear">
 										<div class="form-row__name-col">
 											<div class="form-row__name">Пароль</div>
 										</div>
