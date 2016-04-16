@@ -22,12 +22,11 @@ var $W = $(window),
 	};
 
 /* Обнуляет действие заглушек в ссылках */
-$(function () {
-	var $link = $('a[href="#!"]');
-	if (!$link.length) return;
-	$link.on('click', function() {return false});
-});
-
+// $(function () {
+// 	var $link = $('a[href="#!"]');
+// 	if (!$link.length) return;
+// 	$link.on('click', function() {return false});
+// });
 
 
 $(function () {
@@ -36,6 +35,24 @@ $(function () {
 
 	$btn.on('click', function() {
 		$(this).toggleClass('active');
+	});
+});
+
+$(function () {
+	var $btn = $('.js-bookmark-remove');
+	if (!$btn.length) return;
+
+	$btn.on('click', function() {
+		$(this).next('.js-bookmark-tooltip').fadeIn(50);
+	});
+});
+
+$(function () {
+	var $btn = $('.js-close-tooltip');
+	if (!$btn.length) return;
+
+	$btn.on('click', function() {
+		$(this).closest('.js-bookmark-tooltip').fadeOut(50);
 	});
 });
 

@@ -109,6 +109,9 @@
     @if $filename == target {
     $char: "\E01B";
 }
+    @if $filename == tick {
+    $char: "\E01C";
+}
 
 @return $char;
 }
@@ -200,4 +203,7 @@
 }
 .iconic--target {
     @include iconic(target);
+}
+.iconic--tick {
+    @include iconic(tick);
 }

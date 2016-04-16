@@ -437,7 +437,7 @@ a {
   line-height: 28px;
 }
 /* line 130, ../styles/layout/_header.sass */
-.header-cabinet__ico-link .iconic, .header-cabinet__ico-link .icon, .header-cabinet__ico-link .link--bookmark:before, .header-cabinet__ico-link .popup-closer, .header-cabinet__ico-link .soc-rounds__li, .header-cabinet__ico-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .actions-sl .slick-prev:after, .actions-sl .header-cabinet__ico-link .slick-prev:after,
+.header-cabinet__ico-link .iconic, .header-cabinet__ico-link .icon, .header-cabinet__ico-link .link--bookmark:before, .header-cabinet__ico-link .checkbox__view, .header-cabinet__ico-link .popup-closer, .header-cabinet__ico-link .soc-rounds__li, .header-cabinet__ico-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .actions-sl .slick-prev:after, .actions-sl .header-cabinet__ico-link .slick-prev:after,
 .header-cabinet__ico-link .actions-sl .slick-next:after,
 .actions-sl .header-cabinet__ico-link .slick-next:after, .header-cabinet__ico-link .recom-sl .slick-next, .recom-sl .header-cabinet__ico-link .slick-next, .header-cabinet__ico-link .recom-sl .slick-prev, .recom-sl .header-cabinet__ico-link .slick-prev {
   font-size: 19px;
@@ -1194,7 +1194,7 @@ MAIN {
   src: url("../fonts/iconic.eot?#iefix") format("eot"), url("../fonts/iconic.woff") format("woff"), url("../fonts/iconic.ttf") format("truetype"), url("../fonts/iconic.svg#iconic") format("svg");
 }
 /* line 24, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic, .icon, .link--bookmark:before, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .actions-sl .slick-prev:after,
+.iconic, .icon, .link--bookmark:before, .checkbox__view, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .actions-sl .slick-prev:after,
 .actions-sl .slick-next:after, .recom-sl .slick-next, .recom-sl .slick-prev {
   font-family: "iconic";
   -webkit-font-smoothing: antialiased;
@@ -1207,141 +1207,146 @@ MAIN {
   color: #000;
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arr-l-light:after, .recom-sl .slick-prev:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arr-r-light:after, .recom-sl .slick-next:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arrow-left:after, .actions-sl .slick-prev:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arrow-right:after, .actions-sl .slick-next:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--attraction:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--bookmark:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--calendar:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--closed-eye:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--coctail:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--cross:after, .popup-closer:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--elephant:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--eye:after, .input-cont--eye._pass-visible .iconic:after, .input-cont--eye._pass-visible .icon:after, .input-cont--eye._pass-visible .popup-closer:after, .input-cont--eye._pass-visible .soc-rounds__li:after, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon:after, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon:after, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon:after, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon:after, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon:after, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--eye:after, .input-cont--eye._pass-visible .iconic:after, .input-cont--eye._pass-visible .icon:after, .input-cont--eye._pass-visible .checkbox__view:after, .input-cont--eye._pass-visible .popup-closer:after, .input-cont--eye._pass-visible .soc-rounds__li:after, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon:after, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon:after, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon:after, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon:after, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon:after, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
 .input-cont--eye._pass-visible .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next:after, .recom-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-prev:after, .recom-sl .input-cont--eye._pass-visible .slick-prev:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--favorite:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--lion:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--mail--old:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--mail:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--person:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--pin:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--search:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--soc-fb:after, .soc-rounds__li--fb:after, .ya-share2__item_service_facebook .ya-share2__icon:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--soc-gplus:after, .soc-rounds__li--gplus:after, .ya-share2__item_service_gplus .ya-share2__icon:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--soc-mail:after, .soc-rounds__li--mail:after, .ya-share2__item_service_moimir .ya-share2__icon:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--soc-tw:after, .soc-rounds__li--tw:after, .ya-share2__item_service_twitter .ya-share2__icon:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--soc-vk-v:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--soc-vk:after, .soc-rounds__li--vk:after, .ya-share2__item_service_vkontakte .ya-share2__icon:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--star:after {
   content: "";
 }
 
-/* line 117, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--target:after {
   content: "";
+}
+
+/* line 120, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--tick:after, .checkbox__view:after {
+  content: "";
 }
 
 /* line 4, ../styles/components/_icons.sass */
@@ -1354,7 +1359,7 @@ MAIN {
 }
 
 /* line 11, ../styles/components/_icons.sass */
-.iconic, .icon, .link--bookmark:before, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .actions-sl .slick-prev:after,
+.iconic, .icon, .link--bookmark:before, .checkbox__view, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .actions-sl .slick-prev:after,
 .actions-sl .slick-next:after, .recom-sl .slick-next, .recom-sl .slick-prev, .icon {
   display: inline-block;
   vertical-align: middle;
@@ -1395,7 +1400,7 @@ MAIN {
   margin-bottom: 10px;
 }
 /* line 20, ../styles/components/_buttons.sass */
-.btn .iconic, .btn .icon, .btn .link--bookmark:before, .btn .popup-closer, .btn .soc-rounds__li, .btn .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn .ya-share2__icon, .btn .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn .ya-share2__icon, .btn .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn .ya-share2__icon, .btn .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn .ya-share2__icon, .btn .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn .ya-share2__icon, .btn .actions-sl .slick-prev:after, .actions-sl .btn .slick-prev:after,
+.btn .iconic, .btn .icon, .btn .link--bookmark:before, .btn .checkbox__view, .btn .popup-closer, .btn .soc-rounds__li, .btn .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn .ya-share2__icon, .btn .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn .ya-share2__icon, .btn .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn .ya-share2__icon, .btn .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn .ya-share2__icon, .btn .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn .ya-share2__icon, .btn .actions-sl .slick-prev:after, .actions-sl .btn .slick-prev:after,
 .btn .actions-sl .slick-next:after,
 .actions-sl .btn .slick-next:after, .btn .recom-sl .slick-next, .recom-sl .btn .slick-next, .btn .recom-sl .slick-prev, .recom-sl .btn .slick-prev {
   font-size: inherit;
@@ -1471,7 +1476,7 @@ MAIN {
   padding-left: 10px;
 }
 /* line 83, ../styles/components/_buttons.sass */
-.btn--icon .icon, .btn--icon .iconic, .btn--icon .icon, .btn--icon .link--bookmark:before, .btn--icon .popup-closer, .btn--icon .soc-rounds__li, .btn--icon .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn--icon .ya-share2__icon, .btn--icon .actions-sl .slick-prev:after, .actions-sl .btn--icon .slick-prev:after,
+.btn--icon .icon, .btn--icon .iconic, .btn--icon .icon, .btn--icon .link--bookmark:before, .btn--icon .checkbox__view, .btn--icon .popup-closer, .btn--icon .soc-rounds__li, .btn--icon .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn--icon .ya-share2__icon, .btn--icon .actions-sl .slick-prev:after, .actions-sl .btn--icon .slick-prev:after,
 .btn--icon .actions-sl .slick-next:after,
 .actions-sl .btn--icon .slick-next:after, .btn--icon .recom-sl .slick-next, .recom-sl .btn--icon .slick-next, .btn--icon .recom-sl .slick-prev, .recom-sl .btn--icon .slick-prev {
   vertical-align: middle;
@@ -1709,7 +1714,7 @@ MAIN {
   font: 14px/1.2 "Helvetica Neue", sans-serif;
 }
 /* line 130, ../styles/components/_links.sass */
-.bookmark-link .iconic, .bookmark-link .icon, .bookmark-link .link--bookmark:before, .bookmark-link .popup-closer, .bookmark-link .soc-rounds__li, .bookmark-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .bookmark-link .ya-share2__icon, .bookmark-link .actions-sl .slick-prev:after, .actions-sl .bookmark-link .slick-prev:after,
+.bookmark-link .iconic, .bookmark-link .icon, .bookmark-link .link--bookmark:before, .bookmark-link .checkbox__view, .bookmark-link .popup-closer, .bookmark-link .soc-rounds__li, .bookmark-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .bookmark-link .ya-share2__icon, .bookmark-link .actions-sl .slick-prev:after, .actions-sl .bookmark-link .slick-prev:after,
 .bookmark-link .actions-sl .slick-next:after,
 .actions-sl .bookmark-link .slick-next:after, .bookmark-link .recom-sl .slick-next, .recom-sl .bookmark-link .slick-next, .bookmark-link .recom-sl .slick-prev, .recom-sl .bookmark-link .slick-prev {
   vertical-align: middle;
@@ -2038,39 +2043,41 @@ h1, h2, h3, h4, h5, h6 {
 .checkbox-label {
   display: table;
   white-space: nowrap;
-  margin: 4px 0;
   line-height: 20px;
+  cursor: pointer;
+  padding: 4px 0;
 }
-/* line 159, ../styles/components/_formElements.sass */
+/* line 160, ../styles/components/_formElements.sass */
 .checkbox-label .checkbox, .checkbox-label__txt {
   display: inline-block;
   vertical-align: top;
 }
-/* line 163, ../styles/components/_formElements.sass */
+/* line 164, ../styles/components/_formElements.sass */
 .checkbox-label .checkbox {
-  margin-top: 3px;
+  margin-top: 2px;
   margin-right: -14px;
 }
-/* line 167, ../styles/components/_formElements.sass */
+/* line 168, ../styles/components/_formElements.sass */
 .checkbox-label__txt {
   font-size: 13px;
   line-height: 20px;
   white-space: normal;
   width: 100%;
+  color: #000;
   padding-left: 23px;
 }
 
-/* line 174, ../styles/components/_formElements.sass */
+/* line 176, ../styles/components/_formElements.sass */
 .checkbox {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 178, ../styles/components/_formElements.sass */
+/* line 180, ../styles/components/_formElements.sass */
 .checkbox INPUT {
   display: none;
 }
-/* line 181, ../styles/components/_formElements.sass */
+/* line 183, ../styles/components/_formElements.sass */
 .checkbox__view {
   display: block;
   width: 14px;
@@ -2081,52 +2088,51 @@ h1, h2, h3, h4, h5, h6 {
           transition: 150ms;
   position: relative;
 }
-/* line 192, ../styles/components/_formElements.sass */
+/* line 194, ../styles/components/_formElements.sass */
 .checkbox__view:after {
   color: #000;
   font-size: 15px;
   line-height: normal;
   position: absolute;
   left: 3px;
-  bottom: 3px;
+  bottom: 1px;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   opacity: 0;
   -webkit-transition: 150ms;
           transition: 150ms;
 }
-/* line 203, ../styles/components/_formElements.sass */
+/* line 205, ../styles/components/_formElements.sass */
 .checkbox__view:hover, .checkbox__view._active, .checkbox-label:hover .checkbox__view, .checkbox__view._active, input:checked + .checkbox__view {
-  background-color: #16ca8c;
-  border-color: #16ca8c;
+  background-color: #ebff9b;
 }
-/* line 213, ../styles/components/_formElements.sass */
+/* line 214, ../styles/components/_formElements.sass */
 .checkbox__view._active:after, input:checked + .checkbox__view:after {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
 }
 
-/* line 294, ../styles/components/_formElements.sass */
+/* line 295, ../styles/components/_formElements.sass */
 .txt-chbox {
   display: inline-block;
 }
-/* line 297, ../styles/components/_formElements.sass */
+/* line 298, ../styles/components/_formElements.sass */
 .txt-chbox input {
   display: none;
 }
-/* line 300, ../styles/components/_formElements.sass */
+/* line 301, ../styles/components/_formElements.sass */
 .txt-chbox._active .txt-chbox__visual, .txt-chbox:hover .txt-chbox__visual,
 .txt-chbox input:checked + .txt-chbox__visual {
   background: #dcf187;
 }
-/* line 304, ../styles/components/_formElements.sass */
+/* line 305, ../styles/components/_formElements.sass */
 .txt-chbox._active .txt-chbox__visual .link, .txt-chbox:hover .txt-chbox__visual .link,
 .txt-chbox input:checked + .txt-chbox__visual .link {
   border-bottom-color: transparent;
   color: #000;
 }
-/* line 308, ../styles/components/_formElements.sass */
+/* line 309, ../styles/components/_formElements.sass */
 .txt-chbox__visual {
   display: block;
   padding: 2px 3px;
@@ -2136,38 +2142,38 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 150ms;
           transition: 150ms;
 }
-/* line 316, ../styles/components/_formElements.sass */
+/* line 317, ../styles/components/_formElements.sass */
 .txt-chbox__visual--md {
   padding: 6px;
   font-size: 18px;
 }
 
-/* line 423, ../styles/components/_formElements.sass */
+/* line 424, ../styles/components/_formElements.sass */
 .chkb-dropdown {
   position: relative;
   margin-bottom: 17px;
 }
-/* line 427, ../styles/components/_formElements.sass */
+/* line 428, ../styles/components/_formElements.sass */
 .chkb-dropdown__title {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 432, ../styles/components/_formElements.sass */
+/* line 433, ../styles/components/_formElements.sass */
 .chkb-dropdown__title--lg-hide {
   display: none;
 }
-/* line 435, ../styles/components/_formElements.sass */
+/* line 436, ../styles/components/_formElements.sass */
 .chkb-dropdown__options-gr {
   position: relative;
 }
-/* line 441, ../styles/components/_formElements.sass */
+/* line 442, ../styles/components/_formElements.sass */
 .chkb-dropdown--dates__options-gr {
   background-color: transparent !important;
   padding: 0 !important;
   border: 0 !important;
 }
-/* line 447, ../styles/components/_formElements.sass */
+/* line 448, ../styles/components/_formElements.sass */
 .chkb-dropdown--dates .datepicker {
   position: relative;
   left: 0 !important;
@@ -2178,14 +2184,14 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
 }
 @media screen and (max-width: 669px) {
-  /* line 423, ../styles/components/_formElements.sass */
+  /* line 424, ../styles/components/_formElements.sass */
   .chkb-dropdown {
     text-align: left;
     position: relative;
     z-index: 1;
     margin-bottom: 15px;
   }
-  /* line 330, ../styles/components/_formElements.sass */
+  /* line 331, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title {
     font-weight: normal;
     display: block !important;
@@ -2198,7 +2204,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 300ms;
             transition: 300ms;
   }
-  /* line 341, ../styles/components/_formElements.sass */
+  /* line 342, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title:after {
     content: "";
     position: absolute;
@@ -2209,11 +2215,11 @@ h1, h2, h3, h4, h5, h6 {
     border-width: 7px 4px;
     border-style: solid;
   }
-  /* line 351, ../styles/components/_formElements.sass */
+  /* line 352, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title:hover {
     border-color: #676767;
   }
-  /* line 354, ../styles/components/_formElements.sass */
+  /* line 355, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr {
     position: absolute;
     top: 100%;
@@ -2235,24 +2241,24 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 300ms;
             transition: 300ms;
   }
-  /* line 374, ../styles/components/_formElements.sass */
+  /* line 375, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar-track {
     background: transparent;
   }
-  /* line 377, ../styles/components/_formElements.sass */
+  /* line 378, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar {
     width: 9px;
   }
-  /* line 380, ../styles/components/_formElements.sass */
+  /* line 381, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar-thumb {
     background-color: #cdeb55;
     cursor: pointer;
   }
-  /* line 385, ../styles/components/_formElements.sass */
+  /* line 386, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title, .chkb-dropdown .txt-chbox__visual {
     padding: 8px 50px 8px 12px;
   }
-  /* line 389, ../styles/components/_formElements.sass */
+  /* line 390, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox {
     display: block;
     margin: 0;
@@ -2260,16 +2266,16 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 150ms;
             transition: 150ms;
   }
-  /* line 395, ../styles/components/_formElements.sass */
+  /* line 396, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox__visual {
     font-size: 15px;
   }
-  /* line 398, ../styles/components/_formElements.sass */
+  /* line 399, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox .link {
     color: #000;
     border-bottom: 0;
   }
-  /* line 405, ../styles/components/_formElements.sass */
+  /* line 406, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox._active .txt-chbox__visual:after, .chkb-dropdown .txt-chbox:hover .txt-chbox__visual:after,
   .chkb-dropdown .txt-chbox input:checked + .txt-chbox__visual:after {
     content: "";
@@ -2279,11 +2285,11 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     border-bottom: 1px solid #e5f5a7;
   }
-  /* line 416, ../styles/components/_formElements.sass */
+  /* line 417, ../styles/components/_formElements.sass */
   .chkb-dropdown._active {
     z-index: 10;
   }
-  /* line 418, ../styles/components/_formElements.sass */
+  /* line 419, ../styles/components/_formElements.sass */
   .chkb-dropdown._active .chkb-dropdown__options-gr {
     opacity: 1;
     visibility: visible;
@@ -2292,7 +2298,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* line 464, ../styles/components/_formElements.sass */
+/* line 465, ../styles/components/_formElements.sass */
 .form-tip {
   font-size: 13px;
   line-height: normal;
@@ -2514,7 +2520,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
 }
 /* line 164, ../styles/components/_formLayout.sass */
-.input-cont--eye .iconic, .input-cont--eye .icon, .input-cont--eye .link--bookmark:before, .input-cont--eye .popup-closer, .input-cont--eye .soc-rounds__li, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon, .input-cont--eye .actions-sl .slick-prev:after, .actions-sl .input-cont--eye .slick-prev:after,
+.input-cont--eye .iconic, .input-cont--eye .icon, .input-cont--eye .link--bookmark:before, .input-cont--eye .checkbox__view, .input-cont--eye .popup-closer, .input-cont--eye .soc-rounds__li, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon, .input-cont--eye .actions-sl .slick-prev:after, .actions-sl .input-cont--eye .slick-prev:after,
 .input-cont--eye .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye .slick-next:after, .input-cont--eye .recom-sl .slick-next, .recom-sl .input-cont--eye .slick-next, .input-cont--eye .recom-sl .slick-prev, .recom-sl .input-cont--eye .slick-prev {
   position: absolute;
@@ -2529,13 +2535,13 @@ h1, h2, h3, h4, h5, h6 {
           transition: color 150ms;
 }
 /* line 173, ../styles/components/_formLayout.sass */
-.input-cont--eye .iconic:hover, .input-cont--eye .icon:hover, .input-cont--eye .link--bookmark:hover:before, .input-cont--eye .popup-closer:hover, .input-cont--eye .soc-rounds__li:hover, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon:hover, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon:hover, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon:hover, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon:hover, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon:hover, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .actions-sl .slick-prev:hover:after, .actions-sl .input-cont--eye .slick-prev:hover:after,
+.input-cont--eye .iconic:hover, .input-cont--eye .icon:hover, .input-cont--eye .link--bookmark:hover:before, .input-cont--eye .checkbox__view:hover, .input-cont--eye .popup-closer:hover, .input-cont--eye .soc-rounds__li:hover, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon:hover, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon:hover, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon:hover, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon:hover, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon:hover, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .actions-sl .slick-prev:hover:after, .actions-sl .input-cont--eye .slick-prev:hover:after,
 .input-cont--eye .actions-sl .slick-next:hover:after,
 .actions-sl .input-cont--eye .slick-next:hover:after, .input-cont--eye .recom-sl .slick-next:hover, .recom-sl .input-cont--eye .slick-next:hover, .input-cont--eye .recom-sl .slick-prev:hover, .recom-sl .input-cont--eye .slick-prev:hover {
   color: #000;
 }
 /* line 178, ../styles/components/_formLayout.sass */
-.input-cont--eye._pass-visible .iconic, .input-cont--eye._pass-visible .icon, .input-cont--eye._pass-visible .link--bookmark:before, .input-cont--eye._pass-visible .popup-closer, .input-cont--eye._pass-visible .soc-rounds__li, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
+.input-cont--eye._pass-visible .iconic, .input-cont--eye._pass-visible .icon, .input-cont--eye._pass-visible .link--bookmark:before, .input-cont--eye._pass-visible .checkbox__view, .input-cont--eye._pass-visible .popup-closer, .input-cont--eye._pass-visible .soc-rounds__li, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
 .input-cont--eye._pass-visible .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next, .recom-sl .input-cont--eye._pass-visible .slick-next, .input-cont--eye._pass-visible .recom-sl .slick-prev, .recom-sl .input-cont--eye._pass-visible .slick-prev {
   font-size: 10px;
@@ -3338,7 +3344,7 @@ h1, h2, h3, h4, h5, h6 {
 .rating-static {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 8px 4px 4px;
+  margin: 0 8px 4px 0;
 }
 /* line 170, ../styles/components/blocks/_blocks.sass */
 .rating-static .icon {
@@ -3705,23 +3711,88 @@ h1, h2, h3, h4, h5, h6 {
 .tooltip--vcenter:before {
   margin-top: -6px;
 }
-
 /* line 69, ../styles/components/__components.sass */
+.tooltip--bookmark {
+  padding: 40px 20px 25px;
+  border-radius: 0;
+  border: 0 none;
+  box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.25);
+  left: 55px;
+  top: 50px;
+  margin: 0;
+  right: -35px;
+  z-index: 3;
+}
+@media screen and (max-width: 1400px) {
+  /* line 69, ../styles/components/__components.sass */
+  .tooltip--bookmark {
+    right: -20px;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 979px) {
+  /* line 69, ../styles/components/__components.sass */
+  .tooltip--bookmark {
+    right: -10px;
+  }
+}
+/* line 87, ../styles/components/__components.sass */
+.tooltip--bookmark:after {
+  border-color: transparent transparent #fff transparent;
+  top: -16px;
+  right: 50px;
+  border-width: 8px;
+}
+@media screen and (max-width: 1400px) {
+  /* line 87, ../styles/components/__components.sass */
+  .tooltip--bookmark:after {
+    right: 35px;
+  }
+}
+@media screen and (max-width: 979px) {
+  /* line 87, ../styles/components/__components.sass */
+  .tooltip--bookmark:after {
+    right: 25px;
+  }
+}
+/* line 99, ../styles/components/__components.sass */
+.tooltip__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0.4;
+}
+/* line 105, ../styles/components/__components.sass */
+.tooltip__close .icon:before {
+  font-size: 11px;
+}
+/* line 108, ../styles/components/__components.sass */
+.tooltip__close:hover {
+  opacity: 1;
+}
+/* line 111, ../styles/components/__components.sass */
+.tooltip__text {
+  font: 13px/1.3 "Helvetica Neue", sans-serif;
+  color: #757575;
+  margin-bottom: 10px;
+}
+
+/* line 117, ../styles/components/__components.sass */
 .ya-share2 {
   line-height: 22px;
 }
-/* line 72, ../styles/components/__components.sass */
+/* line 120, ../styles/components/__components.sass */
 .ya-share2__item {
   margin: 5px 12px !important;
 }
-/* line 75, ../styles/components/__components.sass */
+/* line 123, ../styles/components/__components.sass */
 .ya-share2__icon {
   display: inline-block;
   vertical-align: middle !important;
   height: auto !important;
   width: auto !important;
 }
-/* line 81, ../styles/components/__components.sass */
+/* line 129, ../styles/components/__components.sass */
 .ya-share2__counter {
   display: inline-block;
   vertical-align: middle;
@@ -3739,7 +3810,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin-left: 12px;
 }
-/* line 98, ../styles/components/__components.sass */
+/* line 146, ../styles/components/__components.sass */
 .ya-share2__counter:before {
   height: 0;
   width: 0;
@@ -3752,43 +3823,43 @@ h1, h2, h3, h4, h5, h6 {
   border: 4px solid transparent;
   border-right-color: #eef1f4;
 }
-/* line 110, ../styles/components/__components.sass */
+/* line 158, ../styles/components/__components.sass */
 .ya-share2__badge {
   background-color: transparent !important;
   line-height: 22px !important;
 }
-/* line 116, ../styles/components/__components.sass */
+/* line 164, ../styles/components/__components.sass */
 .ya-share2__item_service_vkontakte .ya-share2__icon {
   background-image: none !important;
   color: #3395c7;
   font-size: 22px;
 }
-/* line 125, ../styles/components/__components.sass */
+/* line 173, ../styles/components/__components.sass */
 .ya-share2__item_service_facebook .ya-share2__icon {
   background-image: none !important;
   color: #3669a3;
   font-size: 20px;
 }
-/* line 133, ../styles/components/__components.sass */
+/* line 181, ../styles/components/__components.sass */
 .ya-share2__item_service_twitter .ya-share2__icon {
   background-image: none !important;
   color: #6bc1e9;
   font-size: 18px;
 }
-/* line 141, ../styles/components/__components.sass */
+/* line 189, ../styles/components/__components.sass */
 .ya-share2__item_service_moimir .ya-share2__icon {
   background-image: none !important;
   color: #2856b3;
   font-size: 20px;
 }
-/* line 149, ../styles/components/__components.sass */
+/* line 197, ../styles/components/__components.sass */
 .ya-share2__item_service_gplus .ya-share2__icon {
   background-image: none !important;
   color: #db5a50;
   font-size: 20px;
 }
 
-/* line 160, ../styles/components/__components.sass */
+/* line 208, ../styles/components/__components.sass */
 .eventsCluster {
   text-align: center;
   color: #fff;
@@ -4147,7 +4218,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   box-shadow: 0 12px 18px -14px rgba(0, 0, 0, 0.3), 0 16px 16px -20px rgba(220, 241, 135, 0.7);
   border-radius: 4px;
-  overflow: hidden;
   position: relative;
   padding: 0 15px;
   -webkit-transition: 150ms;
@@ -4166,14 +4236,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 /* line 276, ../styles/pages/_index.sass */
+.page-body--lk .card:active {
+  -webkit-transform: none;
+          transform: none;
+  box-shadow: 0 12px 18px -14px rgba(0, 0, 0, 0.3), 0 16px 16px -20px rgba(220, 241, 135, 0.7);
+}
+/* line 280, ../styles/pages/_index.sass */
 .card__img {
   height: 195px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   margin: 0 -15px;
+  border-radius: 4px 4px 0 0;
 }
-/* line 283, ../styles/pages/_index.sass */
+/* line 288, ../styles/pages/_index.sass */
 .card__bookmark {
   position: absolute;
   right: 8px;
@@ -4187,39 +4264,47 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all 150ms ease-out;
           transition: all 150ms ease-out;
 }
-/* line 295, ../styles/pages/_index.sass */
-.card__bookmark:hover, .card__bookmark._active {
+/* line 300, ../styles/pages/_index.sass */
+.card__bookmark:hover, .card__bookmark.active {
   background: #16ca8c;
 }
-/* line 298, ../styles/pages/_index.sass */
-.card__bookmark:hover .icon, .card__bookmark._active .icon {
+/* line 303, ../styles/pages/_index.sass */
+.card__bookmark:hover .icon, .card__bookmark.active .icon {
   color: #fff;
 }
-/* line 301, ../styles/pages/_index.sass */
+/* line 306, ../styles/pages/_index.sass */
 .card__bookmark .icon {
   font-size: 18px;
   color: #bdbdbd;
   -webkit-transition: all 150ms ease-out;
           transition: all 150ms ease-out;
 }
-/* line 306, ../styles/pages/_index.sass */
+/* line 311, ../styles/pages/_index.sass */
 .card__title {
   font: 20px/1.1 "PT Sans Narrow", sans-serif;
   margin: 15px 0;
   color: #088e60;
 }
-/* line 312, ../styles/pages/_index.sass */
+/* line 317, ../styles/pages/_index.sass */
 .card__text {
   font: 13px/18px "Helvetica Neue", sans-serif;
   color: #7b7b7b;
 }
-/* line 316, ../styles/pages/_index.sass */
+/* line 321, ../styles/pages/_index.sass */
+.card__tooltip {
+  display: none;
+}
+/* line 324, ../styles/pages/_index.sass */
+.card__subscribe {
+  padding-top: 10px;
+}
+/* line 327, ../styles/pages/_index.sass */
 .card__date, .card__place {
   color: #333;
   font: 12px/1.3 "Helvetica Neue", sans-serif;
   margin-top: 5px;
 }
-/* line 321, ../styles/pages/_index.sass */
+/* line 332, ../styles/pages/_index.sass */
 .card__date .icon, .card__place .icon {
   margin-bottom: 2px;
   color: #333;
@@ -4230,30 +4315,30 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
   line-height: 1;
 }
-/* line 331, ../styles/pages/_index.sass */
+/* line 342, ../styles/pages/_index.sass */
 .card__bottom {
   margin: 15px 0 20px;
 }
-/* line 334, ../styles/pages/_index.sass */
+/* line 345, ../styles/pages/_index.sass */
 .card__rating {
   padding-top: 10px;
   color: #737373;
   font: 12px/1.3 "Helvetica Neue", sans-serif;
 }
-/* line 339, ../styles/pages/_index.sass */
+/* line 350, ../styles/pages/_index.sass */
 .card__rating .rating {
   display: inline-block;
   vertical-align: middle;
   margin: 0 8px 4px 4px;
 }
-/* line 343, ../styles/pages/_index.sass */
+/* line 354, ../styles/pages/_index.sass */
 .card__rating .icon {
   color: #ffc71e;
   font-size: 13px;
   line-height: 1;
 }
 
-/* line 350, ../styles/pages/_index.sass */
+/* line 361, ../styles/pages/_index.sass */
 .materials-grid {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4269,7 +4354,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: -15px;
   margin-right: -15px;
 }
-/* line 357, ../styles/pages/_index.sass */
+/* line 368, ../styles/pages/_index.sass */
 .materials-grid__col {
   width: 25%;
   -webkit-box-flex: 0;
@@ -4287,43 +4372,43 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 @media screen and (max-width: 1099px) {
-  /* line 350, ../styles/pages/_index.sass */
+  /* line 361, ../styles/pages/_index.sass */
   .materials-grid {
     margin-left: -8px;
     margin-right: -8px;
   }
-  /* line 368, ../styles/pages/_index.sass */
+  /* line 379, ../styles/pages/_index.sass */
   .materials-grid__col {
     padding-left: 8px;
     padding-right: 8px;
   }
 }
 @media screen and (max-width: 979px) {
-  /* line 373, ../styles/pages/_index.sass */
+  /* line 384, ../styles/pages/_index.sass */
   .materials-grid__col {
     width: 33.33333%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 377, ../styles/pages/_index.sass */
+  /* line 388, ../styles/pages/_index.sass */
   .materials-grid__col {
     width: 50%;
   }
 }
 @media screen and (max-width: 479px) {
-  /* line 381, ../styles/pages/_index.sass */
+  /* line 392, ../styles/pages/_index.sass */
   .materials-grid__col {
     width: 100%;
   }
 }
 
-/* line 390, ../styles/pages/_index.sass */
+/* line 401, ../styles/pages/_index.sass */
 .actions-sl {
   margin-bottom: 30px;
   position: relative;
   box-shadow: 0 12px 18px -14px rgba(0, 0, 0, 0.5), 0 16px 16px -20px rgba(220, 241, 135, 0.7);
 }
-/* line 395, ../styles/pages/_index.sass */
+/* line 406, ../styles/pages/_index.sass */
 .actions-sl__item {
   display: block;
   background-repeat: no-repeat;
@@ -4333,54 +4418,54 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 360px;
   color: #333;
 }
-/* line 405, ../styles/pages/_index.sass */
+/* line 416, ../styles/pages/_index.sass */
 .actions-sl__item:hover .index-slider__title SPAN {
   border-color: transparent;
 }
-/* line 408, ../styles/pages/_index.sass */
+/* line 419, ../styles/pages/_index.sass */
 .actions-sl__title {
   font: bold 32px/1.3 "Helvetica Neue", sans-serif;
   margin-bottom: 25px;
 }
-/* line 412, ../styles/pages/_index.sass */
+/* line 423, ../styles/pages/_index.sass */
 .actions-sl__title SPAN {
   -webkit-transition: border-color 150ms ease-out;
           transition: border-color 150ms ease-out;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-/* line 416, ../styles/pages/_index.sass */
+/* line 427, ../styles/pages/_index.sass */
 .actions-sl__subtitle {
   font: bold 18px/1.3 "Helvetica Neue", sans-serif;
   margin-bottom: 25px;
 }
-/* line 420, ../styles/pages/_index.sass */
+/* line 431, ../styles/pages/_index.sass */
 .actions-sl__place {
   font: 15px/1.3 "Helvetica Neue", sans-serif;
   margin-bottom: 25px;
 }
-/* line 424, ../styles/pages/_index.sass */
+/* line 435, ../styles/pages/_index.sass */
 .actions-sl__price {
   font: 900 30px/1.3 "Helvetica Neue", sans-serif;
   color: #fe101f;
 }
-/* line 429, ../styles/pages/_index.sass */
+/* line 440, ../styles/pages/_index.sass */
 .actions-sl--inner .actions-sl__item {
   height: 420px;
 }
 @media screen and (max-width: 859px) {
-  /* line 429, ../styles/pages/_index.sass */
+  /* line 440, ../styles/pages/_index.sass */
   .actions-sl--inner .actions-sl__item {
     height: 320px;
     min-height: 0;
   }
 }
 @media screen and (max-width: 479px) {
-  /* line 429, ../styles/pages/_index.sass */
+  /* line 440, ../styles/pages/_index.sass */
   .actions-sl--inner .actions-sl__item {
     height: 240px;
   }
 }
-/* line 439, ../styles/pages/_index.sass */
+/* line 450, ../styles/pages/_index.sass */
 .actions-sl .slick-prev,
 .actions-sl .slick-next {
   width: 39px;
@@ -4399,42 +4484,42 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all 150ms ease-out;
           transition: all 150ms ease-out;
 }
-/* line 455, ../styles/pages/_index.sass */
+/* line 466, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:before,
 .actions-sl .slick-next:before {
   display: none;
 }
-/* line 458, ../styles/pages/_index.sass */
+/* line 469, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:hover,
 .actions-sl .slick-next:hover {
   background: #16ca8c;
 }
-/* line 460, ../styles/pages/_index.sass */
+/* line 471, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:hover:after,
 .actions-sl .slick-next:hover:after {
   color: #fff;
   -webkit-transition: all 150ms ease-out;
           transition: all 150ms ease-out;
 }
-/* line 464, ../styles/pages/_index.sass */
+/* line 475, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:after,
 .actions-sl .slick-next:after {
   opacity: 1;
   font-size: 23px;
 }
-/* line 471, ../styles/pages/_index.sass */
+/* line 482, ../styles/pages/_index.sass */
 .actions-sl .slick-prev {
   right: 60px;
 }
-/* line 474, ../styles/pages/_index.sass */
+/* line 485, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:after {
   margin-left: -5px;
 }
-/* line 479, ../styles/pages/_index.sass */
+/* line 490, ../styles/pages/_index.sass */
 .actions-sl .slick-next:after {
   margin-left: 5px;
 }
-/* line 482, ../styles/pages/_index.sass */
+/* line 493, ../styles/pages/_index.sass */
 .actions-sl .slick-dots {
   position: absolute;
   left: 0;
@@ -4442,92 +4527,92 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 @media screen and (max-width: 859px) {
-  /* line 482, ../styles/pages/_index.sass */
+  /* line 493, ../styles/pages/_index.sass */
   .actions-sl .slick-dots {
     display: none !important;
   }
 }
-/* line 493, ../styles/pages/_index.sass */
+/* line 504, ../styles/pages/_index.sass */
 .actions-sl .slick-dots LI BUTTON:before {
   color: rgba(255, 255, 255, 0.65);
   font-size: 9px;
   opacity: 1;
 }
-/* line 500, ../styles/pages/_index.sass */
+/* line 511, ../styles/pages/_index.sass */
 .actions-sl .slick-dots LI.slick-active BUTTON:before {
   color: #34d761;
   font-size: 11px;
 }
 @media screen and (max-width: 859px) {
-  /* line 390, ../styles/pages/_index.sass */
+  /* line 401, ../styles/pages/_index.sass */
   .actions-sl {
     margin-left: -20px;
     margin-right: -20px;
   }
-  /* line 509, ../styles/pages/_index.sass */
+  /* line 520, ../styles/pages/_index.sass */
   .actions-sl__item {
     padding: 60px 120px 50px 50px;
     min-height: 340px;
   }
-  /* line 513, ../styles/pages/_index.sass */
+  /* line 524, ../styles/pages/_index.sass */
   .actions-sl__title {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 390, ../styles/pages/_index.sass */
+  /* line 401, ../styles/pages/_index.sass */
   .actions-sl {
     margin-left: -15px;
     margin-right: -15px;
   }
-  /* line 520, ../styles/pages/_index.sass */
+  /* line 531, ../styles/pages/_index.sass */
   .actions-sl__item {
     padding: 40px 30px 85px 20px;
   }
-  /* line 523, ../styles/pages/_index.sass */
+  /* line 534, ../styles/pages/_index.sass */
   .actions-sl__title {
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 10px;
   }
-  /* line 528, ../styles/pages/_index.sass */
+  /* line 539, ../styles/pages/_index.sass */
   .actions-sl__subtitle {
     font-size: 15px;
     line-height: 24px;
     margin-bottom: 20px;
   }
-  /* line 533, ../styles/pages/_index.sass */
+  /* line 544, ../styles/pages/_index.sass */
   .actions-sl .slick-prev {
     right: auto;
     left: 20px;
   }
-  /* line 537, ../styles/pages/_index.sass */
+  /* line 548, ../styles/pages/_index.sass */
   .actions-sl .slick-next {
     right: auto;
     left: 65px;
   }
 }
 
-/* line 567, ../styles/pages/_index.sass */
+/* line 578, ../styles/pages/_index.sass */
 .recom-sl-wr {
   padding: 0 65px 40px;
   position: relative;
 }
 @media screen and (max-width: 669px) {
-  /* line 567, ../styles/pages/_index.sass */
+  /* line 578, ../styles/pages/_index.sass */
   .recom-sl-wr {
     padding: 0 0 20px;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 567, ../styles/pages/_index.sass */
+  /* line 578, ../styles/pages/_index.sass */
   .recom-sl-wr {
     margin-left: -15px;
     margin-right: -15px;
   }
 }
 
-/* line 579, ../styles/pages/_index.sass */
+/* line 590, ../styles/pages/_index.sass */
 .recom-sl {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4543,13 +4628,13 @@ h1, h2, h3, h4, h5, h6 {
   background: #f9f9f9;
 }
 @media screen and (max-width: 669px) {
-  /* line 579, ../styles/pages/_index.sass */
+  /* line 590, ../styles/pages/_index.sass */
   .recom-sl {
     max-width: 400px;
     display: block;
   }
 }
-/* line 591, ../styles/pages/_index.sass */
+/* line 602, ../styles/pages/_index.sass */
 .recom-sl__col {
   width: 50%;
   -webkit-box-flex: 0;
@@ -4567,33 +4652,33 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 15px;
   padding-bottom: 10px;
 }
-/* line 600, ../styles/pages/_index.sass */
+/* line 611, ../styles/pages/_index.sass */
 .recom-sl__col .card {
   margin-bottom: 0;
 }
 @media screen and (max-width: 669px) {
-  /* line 591, ../styles/pages/_index.sass */
+  /* line 602, ../styles/pages/_index.sass */
   .recom-sl__col {
     width: 100%;
   }
 }
-/* line 606, ../styles/pages/_index.sass */
+/* line 617, ../styles/pages/_index.sass */
 .recom-sl .slick-list {
   z-index: 2;
 }
-/* line 609, ../styles/pages/_index.sass */
+/* line 620, ../styles/pages/_index.sass */
 .recom-sl .slick-track {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 612, ../styles/pages/_index.sass */
+/* line 623, ../styles/pages/_index.sass */
 .recom-sl .slick-slide {
   float: none;
   height: auto;
 }
-/* line 616, ../styles/pages/_index.sass */
+/* line 627, ../styles/pages/_index.sass */
 .recom-sl .slick-arrow2 {
   top: 50%;
   border-radius: 50%;
@@ -4610,7 +4695,7 @@ h1, h2, h3, h4, h5, h6 {
           transition: 300ms;
   z-index: 1;
 }
-/* line 632, ../styles/pages/_index.sass */
+/* line 643, ../styles/pages/_index.sass */
 .recom-sl .slick-arrow2:before {
   content: "";
   position: absolute;
@@ -4618,38 +4703,38 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   background: #f9f9f9;
 }
-/* line 640, ../styles/pages/_index.sass */
+/* line 651, ../styles/pages/_index.sass */
 .recom-sl .slick-arrow2:hover {
   background-color: #c8e942;
 }
-/* line 643, ../styles/pages/_index.sass */
+/* line 654, ../styles/pages/_index.sass */
 .recom-sl .slick-next {
   left: auto;
   right: -85px;
   padding-left: 105px;
 }
-/* line 649, ../styles/pages/_index.sass */
+/* line 660, ../styles/pages/_index.sass */
 .recom-sl .slick-next:before {
   right: 105px;
   left: 0;
 }
-/* line 653, ../styles/pages/_index.sass */
+/* line 664, ../styles/pages/_index.sass */
 .recom-sl .slick-prev {
   left: -85px;
   padding-right: 105px;
 }
-/* line 658, ../styles/pages/_index.sass */
+/* line 669, ../styles/pages/_index.sass */
 .recom-sl .slick-prev:after {
   left: 105px;
   right: 0;
 }
-/* line 548, ../styles/pages/_index.sass */
+/* line 559, ../styles/pages/_index.sass */
 .recom-sl .slick-dots {
   text-align: center;
   margin: 12px 0;
   line-height: 0;
 }
-/* line 552, ../styles/pages/_index.sass */
+/* line 563, ../styles/pages/_index.sass */
 .recom-sl .slick-dots LI {
   vertical-align: middle;
   width: 10px;
@@ -4660,15 +4745,15 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 300ms;
           transition: 300ms;
 }
-/* line 560, ../styles/pages/_index.sass */
+/* line 571, ../styles/pages/_index.sass */
 .recom-sl .slick-dots LI button {
   display: none;
 }
-/* line 563, ../styles/pages/_index.sass */
+/* line 574, ../styles/pages/_index.sass */
 .recom-sl .slick-dots LI.slick-active {
   box-shadow: 0 0 0 6px #dcf187;
 }
-/* line 664, ../styles/pages/_index.sass */
+/* line 675, ../styles/pages/_index.sass */
 .recom-sl .slick-dots {
   position: relative;
   left: 0;

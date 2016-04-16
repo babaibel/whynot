@@ -153,15 +153,16 @@ $checkbox-size: 14px
 .checkbox-label
     display: table
     white-space: nowrap
-    margin: 4px 0
     line-height: 20px
+    cursor: pointer
+    padding: 4px 0
 
     .checkbox, &__txt
         display: inline-block
         vertical-align: top
 
     .checkbox
-        margin-top: 3px
+        margin-top: 2px
         margin-right: -$checkbox-size
 
     &__txt
@@ -169,6 +170,7 @@ $checkbox-size: 14px
         line-height: 20px
         white-space: normal
         width: 100%
+        color: #000
         padding-left: $checkbox-size + 9px
 
 .checkbox
@@ -186,8 +188,8 @@ $checkbox-size: 14px
         border-radius: 3px
         transition: $t150
         position: relative
-        // @extend .iconic
-        // @extend .iconic--tick
+        @extend .iconic
+        @extend .iconic--tick
 
         &:after
             color: #000
@@ -195,7 +197,7 @@ $checkbox-size: 14px
             line-height: normal
             position: absolute
             left: 3px
-            bottom: 3px
+            bottom: 1px
             transform: translateY(-3px)
             opacity: 0
             transition: $t150
@@ -205,8 +207,7 @@ $checkbox-size: 14px
         .checkbox-label:hover &,
         &._active,
         input:checked +  &
-            background-color: $cGreen
-            border-color: $cGreen
+            background-color: $cLime-l
 
         &._active,
         input:checked +  &
