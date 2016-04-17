@@ -1,4 +1,6 @@
 .catalog-page
+	background-color: $cGray
+
 
 .catalog-wr
 	position: relative
@@ -22,11 +24,32 @@
 
 
 // ----------------------------------------------------------------------
+// catalog
+// ----------------------------------------------------------------------
+
+.catalog
+
+
+
+	&__footer
+		text-align: center
+		margin: 20px 0
+
+
+// ----------------------------------------------------------------------
 // Filter
 // ----------------------------------------------------------------------
 $filter_h: 82px
 
 .filter
+	position: relative
+
+	&__bottom
+		+max-screen($screenM)
+			padding-bottom: 43px
+
+	+max-screen($screenM)
+		margin-bottom: 15px
 
 .filter-main
 	background-color: #fff
@@ -50,3 +73,18 @@ $filter_h: 82px
 		line-height: 24px
 		color: #999
 		text-align: center
+
+	&__sort-gr
+		flex-shrink: 0
+
+		+max-screen($screenM)
+			position: absolute
+			bottom: 7px
+			left: $wrapper-padd-md
+			right: $wrapper-padd-md
+
+			.sort-chkb-wr
+				display: flex
+
+			.selector
+				flex-grow: 1

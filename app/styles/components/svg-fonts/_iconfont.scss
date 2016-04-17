@@ -46,28 +46,28 @@
     @if $filename == bookmark {
     $char: "\E006";
 }
-    @if $filename == calendar {
+    @if $filename == bug {
     $char: "\E007";
 }
-    @if $filename == closed-eye {
+    @if $filename == calendar {
     $char: "\E008";
 }
-    @if $filename == coctail {
+    @if $filename == closed-eye {
     $char: "\E009";
 }
-    @if $filename == cross {
+    @if $filename == coctail {
     $char: "\E00A";
 }
-    @if $filename == elephant {
+    @if $filename == cross {
     $char: "\E00B";
 }
-    @if $filename == eye {
+    @if $filename == elephant {
     $char: "\E00C";
 }
-    @if $filename == favorite {
+    @if $filename == eye {
     $char: "\E00D";
 }
-    @if $filename == fb {
+    @if $filename == favorite {
     $char: "\E00E";
 }
     @if $filename == grid {
@@ -91,29 +91,38 @@
     @if $filename == placemark {
     $char: "\E015";
 }
-    @if $filename == search {
+    @if $filename == plus {
     $char: "\E016";
 }
-    @if $filename == soc-gplus {
+    @if $filename == search {
     $char: "\E017";
 }
-    @if $filename == soc-mail {
+    @if $filename == soc-fb {
     $char: "\E018";
 }
-    @if $filename == star {
+    @if $filename == soc-gplus {
     $char: "\E019";
 }
-    @if $filename == target {
+    @if $filename == soc-mail {
     $char: "\E01A";
 }
-    @if $filename == tw {
+    @if $filename == soc-tw {
     $char: "\E01B";
 }
-    @if $filename == vk-v {
+    @if $filename == soc-vk-v {
     $char: "\E01C";
 }
-    @if $filename == vk {
+    @if $filename == soc-vk {
     $char: "\E01D";
+}
+    @if $filename == star {
+    $char: "\E01E";
+}
+    @if $filename == target {
+    $char: "\E01F";
+}
+    @if $filename == tick {
+    $char: "\E020";
 }
 
 @return $char;
@@ -144,6 +153,9 @@
 .iconic--bookmark {
     @include iconic(bookmark);
 }
+.iconic--bug {
+    @include iconic(bug);
+}
 .iconic--calendar {
     @include iconic(calendar);
 }
@@ -164,9 +176,6 @@
 }
 .iconic--favorite {
     @include iconic(favorite);
-}
-.iconic--fb {
-    @include iconic(fb);
 }
 .iconic--grid {
     @include iconic(grid);
@@ -189,8 +198,14 @@
 .iconic--placemark {
     @include iconic(placemark);
 }
+.iconic--plus {
+    @include iconic(plus);
+}
 .iconic--search {
     @include iconic(search);
+}
+.iconic--soc-fb {
+    @include iconic(soc-fb);
 }
 .iconic--soc-gplus {
     @include iconic(soc-gplus);
@@ -198,18 +213,21 @@
 .iconic--soc-mail {
     @include iconic(soc-mail);
 }
+.iconic--soc-tw {
+    @include iconic(soc-tw);
+}
+.iconic--soc-vk-v {
+    @include iconic(soc-vk-v);
+}
+.iconic--soc-vk {
+    @include iconic(soc-vk);
+}
 .iconic--star {
     @include iconic(star);
 }
 .iconic--target {
     @include iconic(target);
 }
-.iconic--tw {
-    @include iconic(tw);
-}
-.iconic--vk-v {
-    @include iconic(vk-v);
-}
-.iconic--vk {
-    @include iconic(vk);
+.iconic--tick {
+    @include iconic(tick);
 }

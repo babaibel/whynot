@@ -153,15 +153,16 @@ $checkbox-size: 14px
 .checkbox-label
     display: table
     white-space: nowrap
-    margin: 4px 0
     line-height: 20px
+    cursor: pointer
+    padding: 4px 0
 
     .checkbox, &__txt
         display: inline-block
         vertical-align: top
 
     .checkbox
-        margin-top: 3px
+        margin-top: 2px
         margin-right: -$checkbox-size
 
     &__txt
@@ -169,6 +170,7 @@ $checkbox-size: 14px
         line-height: 20px
         white-space: normal
         width: 100%
+        color: #000
         padding-left: $checkbox-size + 9px
 
 .checkbox
@@ -186,8 +188,8 @@ $checkbox-size: 14px
         border-radius: 3px
         transition: $t150
         position: relative
-        // @extend .iconic
-        // @extend .iconic--tick
+        @extend .iconic
+        @extend .iconic--tick
 
         &:after
             color: #000
@@ -195,7 +197,7 @@ $checkbox-size: 14px
             line-height: normal
             position: absolute
             left: 3px
-            bottom: 3px
+            bottom: 1px
             transform: translateY(-3px)
             opacity: 0
             transition: $t150
@@ -205,8 +207,7 @@ $checkbox-size: 14px
         .checkbox-label:hover &,
         &._active,
         input:checked +  &
-            background-color: $cGreen
-            border-color: $cGreen
+            background-color: $cLime-l
 
         &._active,
         input:checked +  &
@@ -242,13 +243,15 @@ $checkbox-size: 14px
 
 
     &__main
+        display: block
         border: 1px solid #dfdfdf
         border-radius: 5px
         background: #fff
         color: #878787
         font-size: 14px
-        line-height: 20px
-        padding: 8px
+        line-height: 32px
+        height: 34px
+        padding: 0px 8px
         transition: $t300
 
         .iconic
@@ -264,6 +267,20 @@ $checkbox-size: 14px
 
     .iconic, &__main-txt
         vertical-align: middle
+
+    +max-screen($screenXS)
+        text-align: center
+        .iconic
+            margin: 0
+
+        &__main
+            width: 42px
+            padding-left: 5px
+            padding-right: 5px
+
+        &__main-txt
+            display: none
+
 
 
 
@@ -432,6 +449,82 @@ $checkbox-size: 14px
 
     +max-screen($screenSM)
         +chkb-dropdown-adapt
+
+
+// ----------------------------------------------------------------------
+// Selectors
+// ----------------------------------------------------------------------
+
+.selector
+    position: relative
+    font-size: 12px
+    line-height: 20px
+    min-width: 150px
+    text-align: left
+    &._open
+        z-index: 10
+
+    &__option, &__option-current
+        padding: 6px 30px 6px 15px
+        display: block
+        cursor: pointer
+        transition: $t150
+        &:hover
+            background-color: #f1f1f1
+
+    &__option-current
+        position: relative
+        border: 1px solid #ddd
+        font-weight: bold
+        background-color: #fff
+        &:after
+            content: ''
+            position: absolute
+            top: 50%
+            right: 11px
+            border-width: 7px 4px
+            border-style: solid
+            border-color: #959595 transparent transparent transparent
+            margin-top: -3px
+
+            .selector._open &
+                margin-top: -10px
+                border-color: transparent transparent #959595 transparent
+
+    &__options-list
+        display: none
+        position: absolute
+        left: 0
+        top: 100%
+        width: 100%
+        background: #fff
+        padding: 0
+        margin: -1px 0 0
+        border: 1px solid #ddd
+
+
+    &--inline
+        display: inline-block
+        vertical-align: middle
+        margin: 0 5px
+
+    &--filter
+        margin: 4px
+        font-size: 13px
+        .selector
+            &__option-current
+                border-radius: 4px
+
+            &__options-list
+                border-radius: 0 0 4px 4px
+
+        &._open
+            .selector
+                &__option-current
+                    border-radius: 4px 4px 0 0
+
+
+
 
 // ----------------------------------------------------------------------
 //

@@ -22,5 +22,6 @@
     "nselect": "latest",
     "jquery-touchswipe": "~1.6.12",
     "jquery-validation": "~1.14.0"
-  }
+  },
+  "devDependencies": {}
 }

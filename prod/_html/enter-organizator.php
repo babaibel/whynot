@@ -14,7 +14,7 @@
 					<div class="wr">
 						<div class="org-enter__left">
 							<form>
-								<h2 class="h2-inner">Войти</h4>
+								<h2 class="h2-inner">Войти</h2>
 								<div class="form-gr">
 									<div class="form-row">
 										<div class="form-row__name-col">
@@ -52,7 +52,7 @@
 						<div class="org-enter__right">
 							<form>
 								<div class="form-gr">
-									<h2 class="h2-inner">Зарегистрироваться</h4>
+									<h2 class="h2-inner">Зарегистрироваться</h2>
 									<div class="form-row">
 										<div class="form-row__name-col">
 											<div class="form-row__name">Email</div>
@@ -91,6 +91,7 @@
 
 		<?php include 'base/footer.php'; ?>
 	</div>
+	<?php include 'base/popups.php'; ?>
 	<?php include 'base/scripts.php'; ?>
 </body>
 </html>

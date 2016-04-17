@@ -29,13 +29,30 @@ $(function () {
 });*/
 
 
-
 $(function () {
 	var $btn = $('.js-bookmark');
 	if (!$btn.length) return;
 
 	$btn.on('click', function() {
 		$(this).toggleClass('active');
+	});
+});
+
+$(function () {
+	var $btn = $('.js-bookmark-remove');
+	if (!$btn.length) return;
+
+	$btn.on('click', function() {
+		$(this).next('.js-bookmark-tooltip').fadeIn(50);
+	});
+});
+
+$(function () {
+	var $btn = $('.js-close-tooltip');
+	if (!$btn.length) return;
+
+	$btn.on('click', function() {
+		$(this).closest('.js-bookmark-tooltip').fadeOut(50);
 	});
 });
 

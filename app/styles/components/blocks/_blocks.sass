@@ -1,5 +1,100 @@
 @import "find-event"
 
+
+.materials-grid
+	display: flex
+	flex-wrap: wrap
+	justify-content: flex-start
+	margin-left: -15px
+	margin-right: -15px
+
+	.card, .actions-sl
+		margin-bottom: 0
+
+	&__col
+		width: 25%
+		flex-grow: 0
+		flex-shrink: 0
+		padding-left: 15px
+		padding-right: 15px
+		display: flex
+		margin-bottom: 30px
+
+		&--slider
+			display: block !important
+			width: 100% !important
+
+		&--info
+			flex-direction: column
+
+			> * + *
+				margin-top: 25px
+
+
+	+max-screen($screenLL)
+		margin-left: -8px
+		margin-right: -8px
+		&__col
+			padding-left: 8px
+			padding-right: 8px
+
+	+max-screen($screenM)
+		&__col
+			width: (100% / 3)
+			order: 999
+
+			&--info
+				display: none
+
+			&--slider
+				order: 6
+
+			&:nth-child(1)
+				order: 0
+			&:nth-child(2)
+				order: 1
+			&:nth-child(3)
+				order: 2
+
+			// 4ый скрыт
+
+			&:nth-child(5)
+				order: 3
+			&:nth-child(6)
+				order: 4
+			&:nth-child(7)
+				order: 5
+
+	+max-screen($screenS)
+		&__col
+			width: 50%
+
+			&--slider
+				order: 5
+
+			//&:nth-child(1)
+				order: 0
+			//&:nth-child(2)
+				order: 1
+			//&:nth-child(3)
+				order: 2
+
+			// 4ый скрыт
+
+			&:nth-child(5)
+				order: 4
+			&:nth-child(6)
+				order: 6
+			&:nth-child(7)
+				order: 7
+
+	+max-screen($screenXS)
+		&__col
+			width: 100%
+
+
+
+
 .social
 	@extend .cf
 
@@ -44,16 +139,16 @@
 			background-color: #4c75a3
 			font-size: 18px
 			color: #fff
-			@extend .iconic--vk
+			@extend .iconic--soc-vk
 		&--tw
 			background-color: #2aa9e0
 			font-size: 17px
 			color: #fff
-			@extend .iconic--tw
+			@extend .iconic--soc-tw
 		&--fb
 			background-color: #3b5998
 			color: #fff
-			@extend .iconic--fb
+			@extend .iconic--soc-fb
 		&--gplus
 			background-color: #df4a32
 			color: #fff
@@ -64,6 +159,77 @@
 			@extend .iconic--soc-mail
 
 
+.add-event
+	display: block
+	//min-height: 210px
+	flex-shrink: 0
+	background-color: #fff
+	border: 5px solid $cSecondary
+	padding: 15px 25px
+	text-align: center
+	color: #000
+	transition: $t150
+
+	&__plus
+		display: inline-block
+		width: 50px
+		height: 50px
+		line-height:  50px
+		border-radius: 50%
+		margin: 10px auto 13px
+		background-color: #f05c35
+		color: #fff
+		font-weight: 100
+		font-size: 34px
+
+	&__title
+		font-family: $ffNarrow
+		font-size: 16px
+		line-height: 24px
+		text-transform: uppercase
+		margin: 0 0 10px
+
+
+	&__txt
+		font-size: 13px
+		line-height: 20px
+		color: #6c6c6c
+		margin: 10px 0
+
+	&:hover
+		background-color: #f6f6f6
+
+.bug-note
+	flex-grow: 1
+	background-color: #fff
+	display: flex
+	flex-direction: column
+
+	justify-content: center
+	text-align: center
+	padding: 25px 20px
+
+
+	&__ico
+		color: #b5b5b5
+		font-size: 38px
+		line-height: normal
+		margin-bottom: 20px
+
+	&__title
+		font-family: $ffNarrow
+		font-size: 16px
+		line-height: 24px
+		text-transform: uppercase
+		margin: 0 0 5px
+		//font-weight: bold
+
+	&__txt
+		font-size: 13px
+		line-height: 20px
+		color: #454545
+		margin: 5px 0
+
 
 .grid-right-fix
 	@extend .cf
@@ -73,16 +239,16 @@
 		width: 100%
 
 	&__left-inner
-		margin-right: 300px
+		margin-right: 320px
 
 		+max-screen($screenMM)
 			margin-right: 0
 
 	&__right
-		width: 300px
-		padding-left: 35px
+		width: 320px
+		padding-left: 40px
 		float: left
-		margin-left: -300px
+		margin-left: -320px
 
 		+max-screen($screenMM)
 			padding: 15px 0 0
@@ -94,24 +260,56 @@
 	&__header
 		display: flex
 		justify-content: space-between
-		margin-bottom: 15px
+		flex-wrap: wrap
+		//margin-bottom: 15px
 
-		H1,H2,H3
+		H1,H2,H3, H4
 			margin-bottom: 0
 			line-height: 35px
 
-		+max-screen($screenXS)
+		//+screen()
+		+max-screen($screenS)
 			display: block
 
 	&__header-title
-		padding: 0 20px 0 5px
+		margin: 0 15px 15px 5px
 		flex-grow: 1
 
+		//+max-screen($screenS)
+			margin-bottom: 10px
 		+max-screen($screenXS)
-			padding: 0 0 10px 0
+			.h3-bold
+				font-size: 24px
+
+	&__header-right
+		flex-shrink: 0
+		//flex-grow: 1
+		text-align: right
+		//display: flex
+		//+max-screen($screenMM)
+			text-align: left
+			margin-top: 15px
+
+		+max-screen($screenS)
+			text-align: left
+
+	&__header-sort
+		display: inline-block
+		white-space: nowrap
+		margin: 0 7px 15px
+		color: #242527
+		font-size: 12px
+
+		.selector
+			margin: 0 4px
+
+		+max-screen($screenXS)
+			margin-bottom: 15px
 
 	&__header-btn
+		display: inline-block
 		flex-shrink: 0
+		margin-bottom: 15px
 
 		+max-screen($screenXS)
 			margin-bottom: 15px
@@ -121,7 +319,7 @@
 
 .comment
 	padding: 12px 20px 18px
-	border-bottom: 1px solid #f4f4f4
+	border-bottom: 3px solid #f9f9f9
 	margin-bottom: 6px
 	@extend .cf
 
@@ -161,6 +359,16 @@
 		font-size: 14px
 		position: relative
 		top: 1px
+
+.rating-static
+	display: inline-block
+	vertical-align: middle
+	margin: 0 8px 4px 0
+
+	.icon
+		color: $cYellow
+		font-size: 13px
+		line-height: 1
 
 $star-size: 16px
 .rating
@@ -224,3 +432,125 @@ $star-size: 16px
 			.rating__active-stars
 				opacity: 1
 				width: ($star-size + 3px) * $i
+
+.sidebar
+	margin-bottom: 40px
+	background: #fff
+	
+	&--green
+		border: 5px solid $cSecondary
+
+	&__item
+		border-bottom: 1px solid #e3e3e3
+		padding: 15px 25px
+
+		&:last-child
+			border-bottom: 0
+
+	&__img
+		IMG
+			max-width: 100%
+
+.sidebar-text
+
+	&__inner
+		margin-bottom: 20px
+		color: #333333
+
+.social-share
+	&--mrg
+		margin: 40px 0 0
+
+		+max-screen($screenMM)
+			margin: 20px 0 0
+
+.materials-row
+	padding: 40px 0
+
+	+max-screen($screenMM)
+		padding: 20px 0
+
+.materials-header
+	margin: 0 0 20px
+
+.materials-nav
+	list-style: none
+	padding: 0
+	margin: 0
+
+	&__item
+		display: inline-block
+		margin-right: 30px
+
+		+max-screen($screenSS)
+			margin: 0 15px 5px 0
+
+		&:last-child
+			margin-right: 0
+
+		A
+			font: 24px/1.2 $ffNarrow
+			color: $cPrimary
+			border-bottom: 1px dotted rgba($cGreen-d,0.3)
+			transition: border-color $t150 ease-out
+
+			+max-screen($screenSS)
+				font: 20px/1.2 $ffNarrow
+
+			&:hover
+				border-color: transparent
+
+		&.active
+
+			A
+				color: #000
+				border-color: transparent
+
+
+.lk-menu
+	background: #fff
+	border-top: 1px solid #e6e6e6
+	border-bottom: 1px solid #e6e6e6
+
+	&__row
+		display: flex
+		justify-content: space-between
+
+	&__nav
+		flex-grow: 1
+
+		+max-screen($screenSS)
+			margin-left: -15px
+
+	&__btn
+		flex-shrink: 0
+		line-height: 50px
+
+.lk-nav
+	list-style: none
+	padding: 0
+	margin: 0
+
+	&__item
+		float: left
+		border-right: 1px solid #e6e6e6
+
+		&:first-child
+			border-left: 1px solid #e6e6e6
+
+			+max-screen($screenSS)
+				border-left: 0
+
+		A
+			font: 18px/1.2 $baseFont
+			padding: 15px 25px
+			display: block
+			color: #000
+
+			+max-screen($screenSS)
+				padding: 15px
+
+		&.active
+
+			A
+				background-color: $cSecondaryL

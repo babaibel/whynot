@@ -69,13 +69,13 @@
 				<div class="footer-bot__item footer-bot__item--left">
 					<div class="footer-soc">
 						<a href="#!">
-							<span class="icon iconic--vk-v"></span>
+							<span class="icon iconic--soc-vk-v"></span>
 						</a>
 						<a href="#!">
-							<span class="icon iconic--fb"></span>
+							<span class="icon iconic--soc-fb"></span>
 						</a>
 						<a href="#!">
-							<span class="icon iconic--tw"></span>
+							<span class="icon iconic--soc-tw"></span>
 						</a>
 					</div>
 				</div>

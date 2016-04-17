@@ -27,6 +27,7 @@
         border-radius: 4px
         padding: 12px 25px
         color: #000
+        background-color: #fff
         font: 14px/1 $baseFont
 
         .iconic
@@ -99,9 +100,62 @@
             &--arr-r-light
                 margin: 0 -40px 0 35px
 
+    &--bold
+        font-weight: bold
+
     &--md
         font-size: 15px
         padding: 10px 20px
+
+    &--nr
+        border-radius: 0
+
+    &--lime-brd
+        border: 1px solid #dbdbdb
+        border-radius: 4px
+        font: 14px/1 $baseFont
+        color: $cBlack-d
+        background: $cSecondaryL
+        transition: background $t150 ease-out
+        padding: 10px 15px
+
+        &:hover
+            background: $cSecondary
+
+    &--more
+        font-size: 14px
+        .btn__more-ico
+            margin: 0 8px 0 0
+
+        &._anim
+            color: #ccc
+            .btn__more-ico
+                opacity: 0.8
+                animation-duration: 1.3s
+                animation-name: rotate360
+                animation-iteration-count: infinite
+                animation-timing-function: linear
+
+
+    &__more-ico
+        display: inline-block
+        vertical-align: middle
+        width: 19px
+        height: 21px
+        background: url('../images/arr-round.png') no-repeat
+        background-size: cover
+
+
+
+    &--round
+        border-radius: 23px
+        font-weight: bold
+
+        &.btn--white
+            border: 0
+
+
+
 
     .tooltip
         +max-screen($screenSM)
@@ -116,6 +170,7 @@
             color: inherit !important
             font-weight: inherit !important
 
+
 .btn-flex-wr
     display: flex
     .btn
@@ -124,3 +179,11 @@
 
     .form-tip
         padding-left: 13px
+
+
+
+@keyframes rotate360
+    from
+        transform: rotate(360deg)
+    to
+        transform: rotate(0deg)
