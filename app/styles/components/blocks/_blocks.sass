@@ -436,6 +436,7 @@ $star-size: 16px
 .sidebar
 	margin-bottom: 40px
 	background: #fff
+	display: block
 	
 	&--green
 		border: 5px solid $cSecondary
@@ -546,9 +547,16 @@ $star-size: 16px
 			padding: 15px 25px
 			display: block
 			color: #000
+			transition: background $t150 ease-out
+
+			&:hover
+				background-color: rgba($cSecondaryL,0.5)
 
 			+max-screen($screenSS)
 				padding: 15px
+
+			+max-screen($screenXS)
+				font: 16px/1.3 $baseFont
 
 		&.active
 
