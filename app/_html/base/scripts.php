@@ -26,6 +26,8 @@
 
 <script src="../scripts/formElements.js"></script>
 
+<script src="../scripts/forms.js"></script>
+
 <script src="../scripts/headerController.js"></script>
 
 <script src="../scripts/main.js"></script>
