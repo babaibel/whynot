@@ -10,6 +10,19 @@
 
 			<?php include 'blocks/lk-menu-org.php'; ?>
 
+			<section class="alert-wr alert--green js-alert">
+				<div class="wr">
+					<div class="alert__row">
+						<div class="alert__btn">
+							<a href="#!" class="btn btn--circle-big js-alert-close"> <span class="icon iconic--cross"></span> </a>
+						</div>
+						<div class="alert__text">
+							Мы создали удобную систему редактирования информации ваших проектов.  Вся информация в полях сохраняется автоматически, если вы не завершили создание проекта, он автоматически окажется в черновиках. Если какие-то блоки будут пустыми или неотредактированными (содержать нашу тестовую информацию), они будут скрыты при публикации.
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<section class="lk-organizator">
 				<div class="wr">
 
@@ -19,28 +32,73 @@
 							<div class="grid-right-fix__left-inner">
 
 								<form>
-									<h2 class="h2-inner">Данные об организаторе</h2>
+									<h2 class="h2-inner">Добавление/редактирование мероприятия <a href="#!"><sup class="text--red">Удалить мероприятие</sup></a></h2>
 									<div class="form-gr">
 										<div class="form-row form-row--half">
 											<div class="form-row__name-col">
-												<div class="form-row__name">Название компании</div>
+												<div class="form-row__name">Название мероприятия*</div>
 											</div>
 											<div class="form-row__content-col">
 												<div class="form-row__content">
 													<div class="input-cont">
-														<input class="input" type="text" value="Quest Reality">
+														<input class="input" type="text" value="Quest Темнота" required>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-row form-row--half">
+											<div class="form-row__col-wr">
+												<div class="form-row__col form-row__col--w60">
+													<div class="form-row__name-col">
+														<div class="form-row__name">Дата проведения*</div>
+													</div>
+													<div class="form-row__content-col">
+														<div class="form-row__content">
+															<div class="input-cont">
+																<input  type="text"
+																		value="06.04.2016 - 09.04.2016" 
+																		class="input datepicker-here"
+																		data-range="true"
+																		data-multiple-dates-separator=" - "
+																		data-position='bottom left'/>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-row__col form-row__col--w40">
+													<div class="form-row__name-col">
+														<div class="form-row__name">Время</div>
+													</div>
+													<div class="form-row__content-col">
+														<div class="form-row__content">
+															<div class="input-cont">
+																<input class="input" type="text">
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="form-row form-row--half">
 											<div class="form-row__name-col">
-												<div class="form-row__name">Адрес страницы</div>
+												<div class="form-row__name">Стоимость*</div>
 											</div>
 											<div class="form-row__content-col">
 												<div class="form-row__content">
 													<div class="input-cont">
-														<input class="input" type="text" value="http://pochemybi.net/questreality">
+														<input class="input" type="text" value="" required>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-row form-row--half">
+											<div class="form-row__name-col">
+												<div class="form-row__name">Ограничения</div>
+											</div>
+											<div class="form-row__content-col">
+												<div class="form-row__content">
+													<div class="input-cont">
+														<input class="input" type="text" value="">
 													</div>
 												</div>
 											</div>
@@ -124,68 +182,6 @@
 											</div>
 										</div>
 									</div>
-									<h2 class="h2-inner">Данные об организаторе</h2>
-									<div class="form-gr">
-										<div class="form-row form-row--half">
-											<div class="form-row__name-col">
-												<div class="form-row__name">Ваше имя*</div>
-											</div>
-											<div class="form-row__content-col">
-												<div class="form-row__content">
-													<div class="input-cont">
-														<input class="input" type="text" required>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="form-row form-row--half">
-											<div class="form-row__name-col">
-												<div class="form-row__name">Ваше имя*</div>
-											</div>
-											<div class="form-row__content-col">
-												<div class="form-row__content">
-													<div class="input-cont">
-														<input class="input" type="text" required>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="form-row form-row--half">
-											<div class="form-row__name-col">
-												<div class="form-row__name">Почта руководителя</div>
-											</div>
-											<div class="form-row__content-col">
-												<div class="form-row__content">
-													<div class="input-cont">
-														<input class="input" type="text">
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<h2 class="h2-inner">Смена пароля</h2>
-									<div class="form-gr">
-										<div class="form-row form-row--multi form-row--half">
-											<div class="form-row__content form-row__content--divided">
-												<div class="input-wr">
-													<span class="input-wr__name"> Старый пароль </span>
-													<div class="input-cont">
-														<input class="input" type="password">
-														<span class="input-error"> Пример ошибки </span>
-													</div>
-												</div>
-												<div class="input-wr">
-													<span class="input-wr__name"> Новый пароль </span>
-													<div class="input-cont">
-														<input class="input" type="password">
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="form-row form-row--submit">
-											<button class="btn btn--green" type="submit">Сохранить изменения</button>
-										</div>
-									</div>
 								</form>
 
 							</div>
@@ -239,7 +235,7 @@
 									</div>
 								</div>
 								<div class="sidebar__item">
-									<a href="#!" class="btn btn--green btn--md btn--long">Обновить информацию</a>
+									<a href="#!" class="btn btn--green btn--md btn--long">Отправить на модерацию</a>
 								</div>
 							</div>
 						</div>

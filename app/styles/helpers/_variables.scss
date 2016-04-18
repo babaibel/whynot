@@ -32,8 +32,10 @@ $wrapper-padd-sm: 15px;
 // ----------------------------------------------------------------------
 // Colors
 // ----------------------------------------------------------------------
-$cGreen: #16ca8c;     // Btn green
-$cGreen-d: #088e60;   // Text green
+// $cGreen: #16ca8c;     // Btn green
+// $cGreen-d: #088e60;   // Text green
+$cGreen: #0ab178;
+$cGreen-d: $cGreen;
 $cLime: #dcf187;      // Btn yellow
 $cLime-l: #ebff9b;      // Menu yellow
 $cYellow: #ffc71e;    // Icon yellow

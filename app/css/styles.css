@@ -1,53 +1,55 @@
 @charset "UTF-8";
 @import url("//hello.myfonts.net/count/303803");
-/* line 64, ../styles/helpers/_variables.scss */
+/* line 66, ../styles/helpers/_variables.scss */
 .iconic--elephant {
   font-size: 16px;
 }
 
-/* line 68, ../styles/helpers/_variables.scss */
+/* line 70, ../styles/helpers/_variables.scss */
 .iconic--mail {
   font-size: 13px;
 }
 
-/* line 72, ../styles/helpers/_variables.scss */
+/* line 74, ../styles/helpers/_variables.scss */
 .iconic--bookmark {
   font-size: 21px;
 }
 
-/* line 76, ../styles/helpers/_variables.scss */
+/* line 78, ../styles/helpers/_variables.scss */
 .iconic--search {
   font-size: 18px;
 }
 
-/* line 80, ../styles/helpers/_variables.scss */
+/* line 82, ../styles/helpers/_variables.scss */
 .iconic--calendar {
   font-size: 12px;
 }
 
-/* line 84, ../styles/helpers/_variables.scss */
+/* line 86, ../styles/helpers/_variables.scss */
 .iconic--pin {
   font-size: 12px;
 }
 
-/* line 88, ../styles/helpers/_variables.scss */
+/* line 90, ../styles/helpers/_variables.scss */
 .iconic--star {
   font-size: 15px;
 }
 
-/* line 92, ../styles/helpers/_variables.scss */
+/* line 94, ../styles/helpers/_variables.scss */
 .iconic--target {
   font-size: 28px;
 }
 
 /* line 4, ../styles/helpers/_helpers.sass */
-.cf:before, .social:before, .grid-right-fix:before, .comment:before, .rating:before, .lk-nav:before, .about-cols:before, .about-cols__item:before, .org-enter .wr:before, .team__row:before, .contacts__row:before, .contacts__emails:before, .lk-settings__row:before,
+.cf:before, .form-row__col-wr:before, .social:before, .grid-right-fix:before, .comment:before, .rating:before, .lk-nav:before, .alert__row:before, .about-cols:before, .about-cols__item:before, .org-enter .wr:before, .team__row:before, .contacts__row:before, .contacts__emails:before, .lk-settings__row:before,
 .cf:after,
+.form-row__col-wr:after,
 .social:after,
 .grid-right-fix:after,
 .comment:after,
 .rating:after,
 .lk-nav:after,
+.alert__row:after,
 .about-cols:after,
 .about-cols__item:after,
 .org-enter .wr:after,
@@ -60,7 +62,7 @@
 }
 
 /* line 9, ../styles/helpers/_helpers.sass */
-.cf:after, .social:after, .grid-right-fix:after, .comment:after, .rating:after, .lk-nav:after, .about-cols:after, .about-cols__item:after, .org-enter .wr:after, .team__row:after, .contacts__row:after, .contacts__emails:after, .lk-settings__row:after {
+.cf:after, .form-row__col-wr:after, .social:after, .grid-right-fix:after, .comment:after, .rating:after, .lk-nav:after, .alert__row:after, .about-cols:after, .about-cols__item:after, .org-enter .wr:after, .team__row:after, .contacts__row:after, .contacts__emails:after, .lk-settings__row:after {
   clear: both;
 }
 
@@ -192,12 +194,12 @@
 
 /* line 9, ../styles/_base.sass */
 ::-moz-selection {
-  background: #088e60;
+  background: #0ab178;
   color: #fff;
   text-shadow: none;
 }
 ::selection {
-  background: #088e60;
+  background: #0ab178;
   color: #fff;
   text-shadow: none;
 }
@@ -214,7 +216,7 @@
 
 /* line 20, ../styles/_base.sass */
 ::-webkit-scrollbar-thumb {
-  background-color: #088e60;
+  background-color: #0ab178;
   cursor: pointer;
 }
 
@@ -324,7 +326,7 @@ a {
   display: none;
   height: 48px;
   width: 48px;
-  background-color: #088e60;
+  background-color: #0ab178;
   color: #fff;
   -webkit-transition: 150ms;
           transition: 150ms;
@@ -347,7 +349,7 @@ a {
 }
 /* line 60, ../styles/layout/_header.sass */
 .header-top__menu-toggle:hover {
-  background-color: #055e3f;
+  background-color: #078157;
 }
 /* line 63, ../styles/layout/_header.sass */
 .header-top__menu-toggle span {
@@ -1108,7 +1110,7 @@ a {
 /* line 178, ../styles/layout/_footer.sass */
 .footer-soc A .icon {
   font-size: 18px;
-  color: #16ca8c;
+  color: #0ab178;
 }
 /* line 182, ../styles/layout/_footer.sass */
 .footer-soc A .icon--vk-v {
@@ -1450,24 +1452,24 @@ MAIN {
 }
 /* line 34, ../styles/components/_buttons.sass */
 .btn--white .iconic--target {
-  color: #16ca8c;
+  color: #0ab178;
 }
 /* line 37, ../styles/components/_buttons.sass */
 .btn--green {
   font: 300 20px/1 "Helvetica Neue", sans-serif;
   color: #fff;
-  background: #16ca8c;
+  background: #0ab178;
   border-radius: 4px;
   padding: 12px 25px;
 }
 /* line 44, ../styles/components/_buttons.sass */
 .btn--green:hover {
-  background: #088e60;
+  background: #0bc988;
 }
 /* line 47, ../styles/components/_buttons.sass */
 .btn--dark {
   font: bold 14px/1 "Helvetica Neue", sans-serif;
-  color: #16ca8c;
+  color: #0ab178;
   border: 1px solid #4a4a4a;
   padding: 16px 18px 14px;
   border-radius: 25px;
@@ -1475,7 +1477,7 @@ MAIN {
 /* line 54, ../styles/components/_buttons.sass */
 .btn--dark:hover {
   border-color: #fff;
-  color: #088e60;
+  color: #0bc988;
   background: #fff;
 }
 /* line 59, ../styles/components/_buttons.sass */
@@ -1489,7 +1491,7 @@ MAIN {
 /* line 66, ../styles/components/_buttons.sass */
 .btn--light:hover {
   border-color: #fff;
-  color: #088e60;
+  color: #0ab178;
   background: #fff;
 }
 /* line 71, ../styles/components/_buttons.sass */
@@ -1566,7 +1568,7 @@ MAIN {
 }
 /* line 125, ../styles/components/_buttons.sass */
 .btn--lime-brd:hover {
-  background: #dcf187;
+  background: #0bc988;
 }
 /* line 128, ../styles/components/_buttons.sass */
 .btn--more {
@@ -1610,8 +1612,17 @@ MAIN {
 .btn--round.btn--white {
   border: 0;
 }
+/* line 160, ../styles/components/_buttons.sass */
+.btn--circle-big {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  width: 56px;
+  height: 56px;
+  line-height: 50px;
+  text-align: center;
+}
 @media screen and (max-width: 669px) {
-  /* line 163, ../styles/components/_buttons.sass */
+  /* line 169, ../styles/components/_buttons.sass */
   .btn .tooltip {
     position: static !important;
     display: inline !important;
@@ -1626,14 +1637,14 @@ MAIN {
   }
 }
 
-/* line 177, ../styles/components/_buttons.sass */
+/* line 183, ../styles/components/_buttons.sass */
 .btn-flex-wr {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 179, ../styles/components/_buttons.sass */
+/* line 185, ../styles/components/_buttons.sass */
 .btn-flex-wr .btn {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -1643,7 +1654,7 @@ MAIN {
       -ms-flex-positive: 0;
           flex-grow: 0;
 }
-/* line 183, ../styles/components/_buttons.sass */
+/* line 189, ../styles/components/_buttons.sass */
 .btn-flex-wr .form-tip {
   padding-left: 13px;
 }
@@ -1683,11 +1694,11 @@ MAIN {
 }
 /* line 10, ../styles/components/_links.sass */
 .link--green {
-  color: #16ca8c;
+  color: #0ab178;
 }
 /* line 12, ../styles/components/_links.sass */
 .link--green:hover {
-  border-color: #16ca8c;
+  border-color: #0ab178;
 }
 /* line 15, ../styles/components/_links.sass */
 .link--white {
@@ -1695,7 +1706,7 @@ MAIN {
 }
 /* line 17, ../styles/components/_links.sass */
 .link--white:hover {
-  color: #16ca8c;
+  color: #0ab178;
 }
 /* line 20, ../styles/components/_links.sass */
 .link--black {
@@ -1733,7 +1744,7 @@ MAIN {
 }
 /* line 46, ../styles/components/_links.sass */
 .link--bookmark {
-  color: #088e60;
+  color: #0ab178;
 }
 /* line 49, ../styles/components/_links.sass */
 .link--bookmark SPAN {
@@ -1749,7 +1760,7 @@ MAIN {
 }
 /* line 58, ../styles/components/_links.sass */
 .link--bookmark:hover SPAN {
-  border-color: #088e60;
+  border-color: #0ab178;
 }
 /* line 61, ../styles/components/_links.sass */
 .link--bookmark:before {
@@ -1769,11 +1780,11 @@ MAIN {
 }
 /* line 77, ../styles/components/_links.sass */
 .link--bookmark:hover:before {
-  color: #088e60;
+  color: #0ab178;
 }
 /* line 80, ../styles/components/_links.sass */
 .link--eye {
-  color: #088e60;
+  color: #0ab178;
 }
 /* line 84, ../styles/components/_links.sass */
 .link--eye SPAN {
@@ -1789,7 +1800,7 @@ MAIN {
 }
 /* line 93, ../styles/components/_links.sass */
 .link--eye:hover SPAN {
-  border-color: #088e60;
+  border-color: #0ab178;
 }
 /* line 96, ../styles/components/_links.sass */
 .link--eye:before {
@@ -1809,7 +1820,7 @@ MAIN {
 }
 /* line 112, ../styles/components/_links.sass */
 .link--eye:hover:before {
-  color: #088e60;
+  color: #0ab178;
 }
 
 /* line 117, ../styles/components/_links.sass */
@@ -1826,8 +1837,8 @@ MAIN {
 }
 /* line 126, ../styles/components/_links.sass */
 .link-und--green-d {
-  color: #088e60;
-  border-bottom: 1px solid rgba(8, 142, 96, 0.3);
+  color: #0ab178;
+  border-bottom: 1px solid rgba(10, 177, 120, 0.3);
 }
 /* line 129, ../styles/components/_links.sass */
 .link-und--green-d:hover {
@@ -1835,7 +1846,7 @@ MAIN {
 }
 /* line 132, ../styles/components/_links.sass */
 .link-und--green2-d {
-  color: #088e60;
+  color: #0ab178;
   border-bottom: 1px solid #b2b2b2;
 }
 /* line 135, ../styles/components/_links.sass */
@@ -1865,7 +1876,7 @@ MAIN {
 .subscribe-link__text {
   display: inline-block;
   font: 14px/16px "Helvetica Neue", sans-serif;
-  color: #088e60;
+  color: #0ab178;
 }
 
 /* line 164, ../styles/components/_links.sass */
@@ -1883,7 +1894,7 @@ MAIN {
 .actions-sl .bookmark-link .slick-next:after, .bookmark-link .recom-sl .slick-next, .recom-sl .bookmark-link .slick-next, .bookmark-link .recom-sl .slick-prev, .recom-sl .bookmark-link .slick-prev {
   vertical-align: middle;
   margin-right: 10px;
-  color: #16ca8c;
+  color: #0ab178;
   font-size: 21px;
   line-height: 1;
 }
@@ -1922,26 +1933,31 @@ h1, h2, h3, h4, h5, h6 {
   font: 24px/1.2 "PT Sans Narrow", sans-serif;
   margin-bottom: 15px;
 }
-
 /* line 22, ../styles/components/_typography.sass */
+.h2-inner SUP {
+  font-size: 60%;
+  white-space: nowrap;
+}
+
+/* line 26, ../styles/components/_typography.sass */
 .h2-bold {
   font: 700 40px/1.2 "PT Sans Narrow", sans-serif;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 @media screen and (max-width: 579px) {
-  /* line 22, ../styles/components/_typography.sass */
+  /* line 26, ../styles/components/_typography.sass */
   .h2-bold {
     font-size: 32px;
   }
 }
 
-/* line 30, ../styles/components/_typography.sass */
+/* line 34, ../styles/components/_typography.sass */
 .h3-bold {
   font: 700 30px/1.2 "Helvetica Neue", sans-serif;
   margin-bottom: 15px;
 }
-/* line 34, ../styles/components/_typography.sass */
+/* line 38, ../styles/components/_typography.sass */
 .h3-bold SUP {
   font-weight: 500;
   font-size: 14px;
@@ -1949,12 +1965,12 @@ h1, h2, h3, h4, h5, h6 {
   top: -0.6em;
 }
 
-/* line 40, ../styles/components/_typography.sass */
+/* line 44, ../styles/components/_typography.sass */
 .h4-bold {
   font: 700 20px/1.2 "Helvetica Neue", sans-serif;
   margin-bottom: 15px;
 }
-/* line 44, ../styles/components/_typography.sass */
+/* line 48, ../styles/components/_typography.sass */
 .h4-bold SUP {
   font-weight: 500;
   font-size: 14px;
@@ -1962,53 +1978,57 @@ h1, h2, h3, h4, h5, h6 {
   top: -0.6em;
 }
 @media screen and (max-width: 579px) {
-  /* line 40, ../styles/components/_typography.sass */
+  /* line 44, ../styles/components/_typography.sass */
   .h4-bold {
     font-size: 24px;
   }
 }
 
-/* line 53, ../styles/components/_typography.sass */
+/* line 57, ../styles/components/_typography.sass */
 .h3, .typography h3 {
   font: 900 20px/1.2 "Helvetica Neue", sans-serif;
   margin-bottom: 25px;
 }
 
-/* line 57, ../styles/components/_typography.sass */
+/* line 61, ../styles/components/_typography.sass */
 .h3-narrow {
   font: 24px/1.2 "PT Sans Narrow", sans-serif;
   margin-bottom: 15px;
 }
 
-/* line 61, ../styles/components/_typography.sass */
+/* line 65, ../styles/components/_typography.sass */
 .h4, .typography h4 {
   font: 900 15px/1.2 "Helvetica Neue", sans-serif;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
-/* line 70, ../styles/components/_typography.sass */
+/* line 74, ../styles/components/_typography.sass */
 .text--big {
   font: 300 20px/1.3 "Helvetica Neue", sans-serif;
 }
-/* line 73, ../styles/components/_typography.sass */
+/* line 77, ../styles/components/_typography.sass */
 .text--big-b {
   font: 700 20px/1.3 "Helvetica Neue", sans-serif;
 }
-/* line 76, ../styles/components/_typography.sass */
+/* line 80, ../styles/components/_typography.sass */
 .text--center {
   text-align: center;
 }
-/* line 79, ../styles/components/_typography.sass */
+/* line 83, ../styles/components/_typography.sass */
 .text--sm {
   font: 300 13px/1.3 "Helvetica Neue", sans-serif;
 }
-/* line 82, ../styles/components/_typography.sass */
+/* line 86, ../styles/components/_typography.sass */
 .text--gray {
   color: #7b7b7b;
 }
+/* line 89, ../styles/components/_typography.sass */
+.text--red {
+  color: #fe101f;
+}
 
-/* line 86, ../styles/components/_typography.sass */
+/* line 93, ../styles/components/_typography.sass */
 .typography {
   /* todo no rdy */
 }
@@ -2182,7 +2202,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 145, ../styles/components/_formElements.sass */
 .img-input--green {
-  background-color: #088e60;
+  background-color: #0ab178;
 }
 /* line 148, ../styles/components/_formElements.sass */
 .img-input--green .img-input__main {
@@ -2196,69 +2216,91 @@ h1, h2, h3, h4, h5, h6 {
 .img-input--green .img-input__txt {
   color: #fff;
 }
-/* line 159, ../styles/components/_formElements.sass */
+/* line 157, ../styles/components/_formElements.sass */
+.img-input--fix {
+  max-width: none;
+}
+/* line 160, ../styles/components/_formElements.sass */
 .img-input--fix .img-input__icon {
   text-align: center;
   display: block;
 }
-/* line 163, ../styles/components/_formElements.sass */
+/* line 164, ../styles/components/_formElements.sass */
 .img-input--fix .img-input__main {
   overflow: none;
   padding-bottom: 0;
+  max-width: none;
 }
-/* line 167, ../styles/components/_formElements.sass */
+/* line 169, ../styles/components/_formElements.sass */
 .img-input--fix .img-input__txt {
   position: static;
   -webkit-transform: none;
           transform: none;
   display: block;
 }
-/* line 174, ../styles/components/_formElements.sass */
+/* line 176, ../styles/components/_formElements.sass */
 .img-input--xs .img-input__txt {
   font: 12px/1.3 "Helvetica Neue", sans-serif;
   padding-top: 0;
 }
-/* line 178, ../styles/components/_formElements.sass */
+/* line 180, ../styles/components/_formElements.sass */
 .img-input--xs .img-input__icon {
   padding: 20px 0 10px;
 }
-/* line 181, ../styles/components/_formElements.sass */
+/* line 183, ../styles/components/_formElements.sass */
 .img-input--xs .img-input__icon:after {
   font-size: 45px;
   line-height: 1;
 }
-/* line 185, ../styles/components/_formElements.sass */
-.img-input--xl {
-  max-width: none;
-}
-/* line 188, ../styles/components/_formElements.sass */
+/* line 189, ../styles/components/_formElements.sass */
 .img-input--xl .img-input__main {
-  max-width: none;
   height: 420px;
 }
-/* line 192, ../styles/components/_formElements.sass */
+/* line 193, ../styles/components/_formElements.sass */
 .img-input--xl .img-input__txt {
   font: 500 20px/1.4 "Helvetica Neue", sans-serif;
   padding-top: 0;
 }
-/* line 196, ../styles/components/_formElements.sass */
+@media screen and (max-width: 579px) {
+  /* line 193, ../styles/components/_formElements.sass */
+  .img-input--xl .img-input__txt {
+    font: 500 18px/1.3 "Helvetica Neue", sans-serif;
+  }
+  /* line 200, ../styles/components/_formElements.sass */
+  .img-input--xl .img-input__txt BR {
+    display: none;
+  }
+}
+/* line 203, ../styles/components/_formElements.sass */
 .img-input--xl .img-input__icon {
   padding: 70px 0 25px;
 }
-/* line 199, ../styles/components/_formElements.sass */
+@media screen and (max-width: 579px) {
+  /* line 203, ../styles/components/_formElements.sass */
+  .img-input--xl .img-input__icon {
+    padding: 40px 0 15px;
+  }
+}
+/* line 209, ../styles/components/_formElements.sass */
 .img-input--xl .img-input__icon:after {
   font-size: 140px;
   line-height: 1;
 }
+@media screen and (max-width: 579px) {
+  /* line 209, ../styles/components/_formElements.sass */
+  .img-input--xl .img-input__icon:after {
+    font-size: 80px;
+  }
+}
 
-/* line 207, ../styles/components/_formElements.sass */
+/* line 220, ../styles/components/_formElements.sass */
 .input-error {
   display: block;
   color: #fe101f;
   margin: 3px 2px 5px;
 }
 
-/* line 220, ../styles/components/_formElements.sass */
+/* line 233, ../styles/components/_formElements.sass */
 .checkbox-label {
   display: table;
   white-space: nowrap;
@@ -2266,17 +2308,17 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   padding: 4px 0;
 }
-/* line 227, ../styles/components/_formElements.sass */
+/* line 240, ../styles/components/_formElements.sass */
 .checkbox-label .checkbox, .checkbox-label__txt {
   display: inline-block;
   vertical-align: top;
 }
-/* line 231, ../styles/components/_formElements.sass */
+/* line 244, ../styles/components/_formElements.sass */
 .checkbox-label .checkbox {
   margin-top: 2px;
   margin-right: -14px;
 }
-/* line 235, ../styles/components/_formElements.sass */
+/* line 248, ../styles/components/_formElements.sass */
 .checkbox-label__txt {
   font-size: 13px;
   line-height: 20px;
@@ -2286,17 +2328,17 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 23px;
 }
 
-/* line 243, ../styles/components/_formElements.sass */
+/* line 256, ../styles/components/_formElements.sass */
 .checkbox {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 247, ../styles/components/_formElements.sass */
+/* line 260, ../styles/components/_formElements.sass */
 .checkbox INPUT {
   display: none;
 }
-/* line 250, ../styles/components/_formElements.sass */
+/* line 263, ../styles/components/_formElements.sass */
 .checkbox__view {
   display: block;
   width: 14px;
@@ -2307,7 +2349,7 @@ h1, h2, h3, h4, h5, h6 {
           transition: 150ms;
   position: relative;
 }
-/* line 261, ../styles/components/_formElements.sass */
+/* line 274, ../styles/components/_formElements.sass */
 .checkbox__view:after {
   color: #000;
   font-size: 15px;
@@ -2321,52 +2363,52 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 150ms;
           transition: 150ms;
 }
-/* line 272, ../styles/components/_formElements.sass */
+/* line 285, ../styles/components/_formElements.sass */
 .checkbox__view:hover, .checkbox__view._active, .checkbox-label:hover .checkbox__view, .checkbox__view._active, input:checked + .checkbox__view {
   background-color: #ebff9b;
 }
-/* line 281, ../styles/components/_formElements.sass */
+/* line 294, ../styles/components/_formElements.sass */
 .checkbox__view._active:after, input:checked + .checkbox__view:after {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
 }
 
-/* line 286, ../styles/components/_formElements.sass */
+/* line 299, ../styles/components/_formElements.sass */
 .sort-chkb-wr {
   font-size: 0;
   margin-left: -5px;
   margin-right: -5px;
 }
-/* line 291, ../styles/components/_formElements.sass */
+/* line 304, ../styles/components/_formElements.sass */
 .sort-chkb-wr .sort-chkb {
   margin: 4px;
 }
 
-/* line 294, ../styles/components/_formElements.sass */
+/* line 307, ../styles/components/_formElements.sass */
 .sort-chkb {
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
   cursor: pointer;
 }
-/* line 300, ../styles/components/_formElements.sass */
+/* line 313, ../styles/components/_formElements.sass */
 .sort-chkb input {
   display: none;
 }
-/* line 304, ../styles/components/_formElements.sass */
+/* line 317, ../styles/components/_formElements.sass */
 .sort-chkb input:checked + .sort-chkb__main {
   background: #000;
-  color: #16ca8c;
+  color: #0ab178;
   border-color: transparent;
 }
-/* line 308, ../styles/components/_formElements.sass */
+/* line 321, ../styles/components/_formElements.sass */
 .sort-chkb input:checked + .sort-chkb__main .iconic, .sort-chkb input:checked + .sort-chkb__main .icon, .sort-chkb input:checked + .sort-chkb__main .link--bookmark:before, .sort-chkb input:checked + .sort-chkb__main .link--eye:before, .sort-chkb input:checked + .sort-chkb__main .checkbox__view, .sort-chkb input:checked + .sort-chkb__main .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .sort-chkb input:checked + .sort-chkb__main .input-cont:after, .sort-chkb input:checked + .sort-chkb__main .popup-closer, .sort-chkb input:checked + .sort-chkb__main .soc-rounds__li, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .filter-tag__cross, .sort-chkb input:checked + .sort-chkb__main .actions-sl .slick-prev:after, .actions-sl .sort-chkb input:checked + .sort-chkb__main .slick-prev:after,
 .sort-chkb input:checked + .sort-chkb__main .actions-sl .slick-next:after,
 .actions-sl .sort-chkb input:checked + .sort-chkb__main .slick-next:after, .sort-chkb input:checked + .sort-chkb__main .recom-sl .slick-next, .recom-sl .sort-chkb input:checked + .sort-chkb__main .slick-next, .sort-chkb input:checked + .sort-chkb__main .recom-sl .slick-prev, .recom-sl .sort-chkb input:checked + .sort-chkb__main .slick-prev {
   color: #fff;
 }
-/* line 312, ../styles/components/_formElements.sass */
+/* line 325, ../styles/components/_formElements.sass */
 .sort-chkb__main {
   display: block;
   border: 1px solid #dfdfdf;
@@ -2380,7 +2422,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 300ms;
           transition: 300ms;
 }
-/* line 324, ../styles/components/_formElements.sass */
+/* line 337, ../styles/components/_formElements.sass */
 .sort-chkb__main .iconic, .sort-chkb__main .icon, .sort-chkb__main .link--bookmark:before, .sort-chkb__main .link--eye:before, .sort-chkb__main .checkbox__view, .sort-chkb__main .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .sort-chkb__main .input-cont:after, .sort-chkb__main .popup-closer, .sort-chkb__main .soc-rounds__li, .sort-chkb__main .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .sort-chkb__main .ya-share2__icon, .sort-chkb__main .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .sort-chkb__main .ya-share2__icon, .sort-chkb__main .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .sort-chkb__main .ya-share2__icon, .sort-chkb__main .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .sort-chkb__main .ya-share2__icon, .sort-chkb__main .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .sort-chkb__main .ya-share2__icon, .sort-chkb__main .filter-tag__cross, .sort-chkb__main .actions-sl .slick-prev:after, .actions-sl .sort-chkb__main .slick-prev:after,
 .sort-chkb__main .actions-sl .slick-next:after,
 .actions-sl .sort-chkb__main .slick-next:after, .sort-chkb__main .recom-sl .slick-next, .recom-sl .sort-chkb__main .slick-next, .sort-chkb__main .recom-sl .slick-prev, .recom-sl .sort-chkb__main .slick-prev {
@@ -2388,64 +2430,64 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 3px 0 7px;
   font-size: 11px;
 }
-/* line 328, ../styles/components/_formElements.sass */
+/* line 341, ../styles/components/_formElements.sass */
 .sort-chkb__main .iconic--placemark {
   font-size: 13px;
   margin: 0 7px 0 4px;
 }
-/* line 332, ../styles/components/_formElements.sass */
+/* line 345, ../styles/components/_formElements.sass */
 .sort-chkb__main:hover {
   border-color: #000;
 }
-/* line 335, ../styles/components/_formElements.sass */
+/* line 348, ../styles/components/_formElements.sass */
 .sort-chkb .iconic, .sort-chkb .icon, .sort-chkb .link--bookmark:before, .sort-chkb .link--eye:before, .sort-chkb .checkbox__view, .sort-chkb .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .sort-chkb .input-cont:after, .sort-chkb .popup-closer, .sort-chkb .soc-rounds__li, .sort-chkb .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .sort-chkb .ya-share2__icon, .sort-chkb .filter-tag__cross, .sort-chkb .actions-sl .slick-prev:after, .actions-sl .sort-chkb .slick-prev:after,
 .sort-chkb .actions-sl .slick-next:after,
 .actions-sl .sort-chkb .slick-next:after, .sort-chkb .recom-sl .slick-next, .recom-sl .sort-chkb .slick-next, .sort-chkb .recom-sl .slick-prev, .recom-sl .sort-chkb .slick-prev, .sort-chkb__main-txt {
   vertical-align: middle;
 }
 @media screen and (max-width: 479px) {
-  /* line 294, ../styles/components/_formElements.sass */
+  /* line 307, ../styles/components/_formElements.sass */
   .sort-chkb {
     text-align: center;
   }
-  /* line 340, ../styles/components/_formElements.sass */
+  /* line 353, ../styles/components/_formElements.sass */
   .sort-chkb .iconic, .sort-chkb .icon, .sort-chkb .link--bookmark:before, .sort-chkb .link--eye:before, .sort-chkb .checkbox__view, .sort-chkb .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .sort-chkb .input-cont:after, .sort-chkb .popup-closer, .sort-chkb .soc-rounds__li, .sort-chkb .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .sort-chkb .ya-share2__icon, .sort-chkb .filter-tag__cross, .sort-chkb .actions-sl .slick-prev:after, .actions-sl .sort-chkb .slick-prev:after,
   .sort-chkb .actions-sl .slick-next:after,
   .actions-sl .sort-chkb .slick-next:after, .sort-chkb .recom-sl .slick-next, .recom-sl .sort-chkb .slick-next, .sort-chkb .recom-sl .slick-prev, .recom-sl .sort-chkb .slick-prev {
     margin: 0;
   }
-  /* line 343, ../styles/components/_formElements.sass */
+  /* line 356, ../styles/components/_formElements.sass */
   .sort-chkb__main {
     width: 42px;
     padding-left: 5px;
     padding-right: 5px;
   }
-  /* line 348, ../styles/components/_formElements.sass */
+  /* line 361, ../styles/components/_formElements.sass */
   .sort-chkb__main-txt {
     display: none;
   }
 }
 
-/* line 354, ../styles/components/_formElements.sass */
+/* line 367, ../styles/components/_formElements.sass */
 .txt-chbox {
   display: inline-block;
 }
-/* line 357, ../styles/components/_formElements.sass */
+/* line 370, ../styles/components/_formElements.sass */
 .txt-chbox input {
   display: none;
 }
-/* line 360, ../styles/components/_formElements.sass */
+/* line 373, ../styles/components/_formElements.sass */
 .txt-chbox._active .txt-chbox__visual, .txt-chbox:hover .txt-chbox__visual,
 .txt-chbox input:checked + .txt-chbox__visual {
   background: #dcf187;
 }
-/* line 364, ../styles/components/_formElements.sass */
+/* line 377, ../styles/components/_formElements.sass */
 .txt-chbox._active .txt-chbox__visual .link, .txt-chbox:hover .txt-chbox__visual .link,
 .txt-chbox input:checked + .txt-chbox__visual .link {
   border-bottom-color: transparent;
   color: #000;
 }
-/* line 368, ../styles/components/_formElements.sass */
+/* line 381, ../styles/components/_formElements.sass */
 .txt-chbox__visual {
   display: block;
   padding: 2px 3px;
@@ -2455,38 +2497,38 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 150ms;
           transition: 150ms;
 }
-/* line 376, ../styles/components/_formElements.sass */
+/* line 389, ../styles/components/_formElements.sass */
 .txt-chbox__visual--md {
   padding: 6px;
   font-size: 18px;
 }
 
-/* line 483, ../styles/components/_formElements.sass */
+/* line 496, ../styles/components/_formElements.sass */
 .chkb-dropdown {
   position: relative;
   margin-bottom: 17px;
 }
-/* line 487, ../styles/components/_formElements.sass */
+/* line 500, ../styles/components/_formElements.sass */
 .chkb-dropdown__title {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 492, ../styles/components/_formElements.sass */
+/* line 505, ../styles/components/_formElements.sass */
 .chkb-dropdown__title--lg-hide {
   display: none;
 }
-/* line 495, ../styles/components/_formElements.sass */
+/* line 508, ../styles/components/_formElements.sass */
 .chkb-dropdown__options-gr {
   position: relative;
 }
-/* line 501, ../styles/components/_formElements.sass */
+/* line 514, ../styles/components/_formElements.sass */
 .chkb-dropdown--dates__options-gr {
   background-color: transparent !important;
   padding: 0 !important;
   border: 0 !important;
 }
-/* line 507, ../styles/components/_formElements.sass */
+/* line 520, ../styles/components/_formElements.sass */
 .chkb-dropdown--dates .datepicker {
   position: relative;
   left: 0 !important;
@@ -2497,14 +2539,14 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
 }
 @media screen and (max-width: 669px) {
-  /* line 483, ../styles/components/_formElements.sass */
+  /* line 496, ../styles/components/_formElements.sass */
   .chkb-dropdown {
     text-align: left;
     position: relative;
     z-index: 1;
     margin-bottom: 15px;
   }
-  /* line 390, ../styles/components/_formElements.sass */
+  /* line 403, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title {
     font-weight: normal;
     display: block !important;
@@ -2517,7 +2559,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 300ms;
             transition: 300ms;
   }
-  /* line 401, ../styles/components/_formElements.sass */
+  /* line 414, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title:after {
     content: "";
     position: absolute;
@@ -2528,11 +2570,11 @@ h1, h2, h3, h4, h5, h6 {
     border-width: 7px 4px;
     border-style: solid;
   }
-  /* line 411, ../styles/components/_formElements.sass */
+  /* line 424, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title:hover {
     border-color: #676767;
   }
-  /* line 414, ../styles/components/_formElements.sass */
+  /* line 427, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr {
     position: absolute;
     top: 100%;
@@ -2554,24 +2596,24 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 300ms;
             transition: 300ms;
   }
-  /* line 434, ../styles/components/_formElements.sass */
+  /* line 447, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar-track {
     background: transparent;
   }
-  /* line 437, ../styles/components/_formElements.sass */
+  /* line 450, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar {
     width: 9px;
   }
-  /* line 440, ../styles/components/_formElements.sass */
+  /* line 453, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar-thumb {
     background-color: #cdeb55;
     cursor: pointer;
   }
-  /* line 445, ../styles/components/_formElements.sass */
+  /* line 458, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title, .chkb-dropdown .txt-chbox__visual {
     padding: 8px 50px 8px 12px;
   }
-  /* line 449, ../styles/components/_formElements.sass */
+  /* line 462, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox {
     display: block;
     margin: 0;
@@ -2579,16 +2621,16 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 150ms;
             transition: 150ms;
   }
-  /* line 455, ../styles/components/_formElements.sass */
+  /* line 468, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox__visual {
     font-size: 15px;
   }
-  /* line 458, ../styles/components/_formElements.sass */
+  /* line 471, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox .link {
     color: #000;
     border-bottom: 0;
   }
-  /* line 465, ../styles/components/_formElements.sass */
+  /* line 478, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox._active .txt-chbox__visual:after, .chkb-dropdown .txt-chbox:hover .txt-chbox__visual:after,
   .chkb-dropdown .txt-chbox input:checked + .txt-chbox__visual:after {
     content: "";
@@ -2598,11 +2640,11 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     border-bottom: 1px solid #e5f5a7;
   }
-  /* line 476, ../styles/components/_formElements.sass */
+  /* line 489, ../styles/components/_formElements.sass */
   .chkb-dropdown._active {
     z-index: 10;
   }
-  /* line 478, ../styles/components/_formElements.sass */
+  /* line 491, ../styles/components/_formElements.sass */
   .chkb-dropdown._active .chkb-dropdown__options-gr {
     opacity: 1;
     visibility: visible;
@@ -2611,7 +2653,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* line 525, ../styles/components/_formElements.sass */
+/* line 538, ../styles/components/_formElements.sass */
 .selector {
   position: relative;
   font-size: 12px;
@@ -2619,11 +2661,11 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 150px;
   text-align: left;
 }
-/* line 531, ../styles/components/_formElements.sass */
+/* line 544, ../styles/components/_formElements.sass */
 .selector._open {
   z-index: 10;
 }
-/* line 534, ../styles/components/_formElements.sass */
+/* line 547, ../styles/components/_formElements.sass */
 .selector__option, .selector__option-current {
   padding: 6px 30px 6px 15px;
   display: block;
@@ -2631,18 +2673,18 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 150ms;
           transition: 150ms;
 }
-/* line 539, ../styles/components/_formElements.sass */
+/* line 552, ../styles/components/_formElements.sass */
 .selector__option:hover, .selector__option-current:hover {
   background-color: #f1f1f1;
 }
-/* line 542, ../styles/components/_formElements.sass */
+/* line 555, ../styles/components/_formElements.sass */
 .selector__option-current {
   position: relative;
   border: 1px solid #ddd;
   font-weight: bold;
   background-color: #fff;
 }
-/* line 547, ../styles/components/_formElements.sass */
+/* line 560, ../styles/components/_formElements.sass */
 .selector__option-current:after {
   content: "";
   position: absolute;
@@ -2653,12 +2695,12 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #959595 transparent transparent transparent;
   margin-top: -3px;
 }
-/* line 557, ../styles/components/_formElements.sass */
+/* line 570, ../styles/components/_formElements.sass */
 .selector._open .selector__option-current:after {
   margin-top: -10px;
   border-color: transparent transparent #959595 transparent;
 }
-/* line 561, ../styles/components/_formElements.sass */
+/* line 574, ../styles/components/_formElements.sass */
 .selector__options-list {
   display: none;
   position: absolute;
@@ -2670,31 +2712,31 @@ h1, h2, h3, h4, h5, h6 {
   margin: -1px 0 0;
   border: 1px solid #ddd;
 }
-/* line 573, ../styles/components/_formElements.sass */
+/* line 586, ../styles/components/_formElements.sass */
 .selector--inline {
   display: inline-block;
   vertical-align: middle;
   margin: 0 5px;
 }
-/* line 578, ../styles/components/_formElements.sass */
+/* line 591, ../styles/components/_formElements.sass */
 .selector--filter {
   margin: 4px;
   font-size: 13px;
 }
-/* line 582, ../styles/components/_formElements.sass */
+/* line 595, ../styles/components/_formElements.sass */
 .selector--filter .selector__option-current {
   border-radius: 4px;
 }
-/* line 585, ../styles/components/_formElements.sass */
+/* line 598, ../styles/components/_formElements.sass */
 .selector--filter .selector__options-list {
   border-radius: 0 0 4px 4px;
 }
-/* line 590, ../styles/components/_formElements.sass */
+/* line 603, ../styles/components/_formElements.sass */
 .selector--filter._open .selector__option-current {
   border-radius: 4px 4px 0 0;
 }
 
-/* line 600, ../styles/components/_formElements.sass */
+/* line 613, ../styles/components/_formElements.sass */
 .form-tip {
   font-size: 13px;
   line-height: normal;
@@ -2717,6 +2759,47 @@ h1, h2, h3, h4, h5, h6 {
   border: none 0 !important;
 }
 /* line 38, ../styles/components/_formLayout.sass */
+.form-row--half {
+  max-width: 625px;
+}
+/* line 41, ../styles/components/_formLayout.sass */
+.form-row--half .form-row__content--divided {
+  width: auto !important;
+}
+/* line 47, ../styles/components/_formLayout.sass */
+.form-row__col {
+  float: left;
+}
+@media screen and (max-width: 479px) {
+  /* line 47, ../styles/components/_formLayout.sass */
+  .form-row__col {
+    float: none;
+  }
+}
+/* line 53, ../styles/components/_formLayout.sass */
+.form-row__col--w60 {
+  width: 60%;
+  padding-right: 15px;
+}
+@media screen and (max-width: 479px) {
+  /* line 53, ../styles/components/_formLayout.sass */
+  .form-row__col--w60 {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 15px;
+  }
+}
+/* line 62, ../styles/components/_formLayout.sass */
+.form-row__col--w40 {
+  width: 40%;
+}
+@media screen and (max-width: 479px) {
+  /* line 62, ../styles/components/_formLayout.sass */
+  .form-row__col--w40 {
+    width: 100%;
+  }
+}
+/* line 68, ../styles/components/_formLayout.sass */
 .form-row__name {
   display: block;
   position: relative;
@@ -2726,7 +2809,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
   color: #7f7f7f;
 }
-/* line 47, ../styles/components/_formLayout.sass */
+/* line 77, ../styles/components/_formLayout.sass */
 .form-row__name-col {
   margin-bottom: 7px;
   padding-right: 30px;
@@ -2735,7 +2818,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-item-align: start;
           align-self: flex-start;
 }
-/* line 55, ../styles/components/_formLayout.sass */
+/* line 85, ../styles/components/_formLayout.sass */
 .form-row__content--divided {
   display: -webkit-box !important;
   display: -webkit-flex !important;
@@ -2746,12 +2829,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 90% !important;
 }
 @media screen and (max-width: 1099px) {
-  /* line 55, ../styles/components/_formLayout.sass */
+  /* line 85, ../styles/components/_formLayout.sass */
   .form-row__content--divided {
     width: 100% !important;
   }
 }
-/* line 63, ../styles/components/_formLayout.sass */
+/* line 93, ../styles/components/_formLayout.sass */
 .form-row__content--divided .input-wr {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -2760,7 +2843,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 20px;
   margin-right: 20px;
 }
-/* line 68, ../styles/components/_formLayout.sass */
+/* line 98, ../styles/components/_formLayout.sass */
 .form-row__content--divided .input-wr + .input-wr .input-cont:after {
   position: absolute;
   top: 0;
@@ -2768,67 +2851,67 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 47px;
 }
 @media screen and (max-width: 479px) {
-  /* line 63, ../styles/components/_formLayout.sass */
+  /* line 93, ../styles/components/_formLayout.sass */
   .form-row__content--divided .input-wr {
     margin-left: 0;
     margin-right: 0;
   }
 }
 @media screen and (max-width: 479px) {
-  /* line 55, ../styles/components/_formLayout.sass */
+  /* line 85, ../styles/components/_formLayout.sass */
   .form-row__content--divided {
     width: 100% !important;
     margin-left: 0;
     margin-right: 0;
     display: block !important;
   }
-  /* line 86, ../styles/components/_formLayout.sass */
+  /* line 116, ../styles/components/_formLayout.sass */
   .form-row__content--divided .input-wr .input-cont:after {
     display: none;
   }
 }
-/* line 89, ../styles/components/_formLayout.sass */
+/* line 119, ../styles/components/_formLayout.sass */
 .form-row__content-col {
   width: 100%;
 }
-/* line 92, ../styles/components/_formLayout.sass */
+/* line 122, ../styles/components/_formLayout.sass */
 .form-row__content-col .checkbox-label {
   margin-left: 2px;
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
 }
-/* line 96, ../styles/components/_formLayout.sass */
+/* line 126, ../styles/components/_formLayout.sass */
 .form-row__content-col--w80 {
   padding-right: 20%;
 }
 @media screen and (max-width: 579px) {
-  /* line 100, ../styles/components/_formLayout.sass */
+  /* line 130, ../styles/components/_formLayout.sass */
   .form-cols .form-row__content-col {
     padding-right: 0;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 89, ../styles/components/_formLayout.sass */
+  /* line 119, ../styles/components/_formLayout.sass */
   .form-row__content-col {
     padding-right: 0;
   }
 }
-/* line 114, ../styles/components/_formLayout.sass */
+/* line 144, ../styles/components/_formLayout.sass */
 .form-row--inline {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 120, ../styles/components/_formLayout.sass */
+/* line 150, ../styles/components/_formLayout.sass */
 .form-row--inline .form-row__name, .form-row--inline .form-row__content {
   width: 100%;
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
 }
-/* line 127, ../styles/components/_formLayout.sass */
+/* line 157, ../styles/components/_formLayout.sass */
 .form-row--inline .form-row__name-col {
   margin-bottom: 0;
   -webkit-flex-shrink: 0;
@@ -2841,7 +2924,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 165px;
   line-height: 47px;
 }
-/* line 134, ../styles/components/_formLayout.sass */
+/* line 164, ../styles/components/_formLayout.sass */
 .form-row--inline .form-row__content-col {
   line-height: 47px;
   -webkit-box-flex: 1;
@@ -2849,17 +2932,17 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-/* line 141, ../styles/components/_formLayout.sass */
+/* line 171, ../styles/components/_formLayout.sass */
 .form-row--inline.form-row--multi .form-row__name-col {
   margin-top: 23px;
 }
 @media screen and (max-width: 669px) {
-  /* line 140, ../styles/components/_formLayout.sass */
+  /* line 170, ../styles/components/_formLayout.sass */
   .form-row--inline.form-row--multi {
     display: block;
     margin-top: 0;
   }
-  /* line 145, ../styles/components/_formLayout.sass */
+  /* line 175, ../styles/components/_formLayout.sass */
   .form-row--inline.form-row--multi .form-row__name-col {
     margin-top: 0px;
   }
@@ -2881,7 +2964,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 114, ../styles/components/_formLayout.sass */
+  /* line 144, ../styles/components/_formLayout.sass */
   .form-row--inline {
     display: block;
     margin-top: 0;
@@ -2903,45 +2986,45 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 20px;
   }
 }
-/* line 155, ../styles/components/_formLayout.sass */
+/* line 185, ../styles/components/_formLayout.sass */
 .form-row--submit {
   margin-top: 25px;
 }
-/* line 157, ../styles/components/_formLayout.sass */
+/* line 187, ../styles/components/_formLayout.sass */
 .form-row--submit .btn--md {
   padding-left: 20px;
   padding-right: 20px;
 }
 @media screen and (max-width: 579px) {
-  /* line 155, ../styles/components/_formLayout.sass */
+  /* line 185, ../styles/components/_formLayout.sass */
   .form-row--submit {
     margin-top: 30px;
   }
-  /* line 163, ../styles/components/_formLayout.sass */
+  /* line 193, ../styles/components/_formLayout.sass */
   .form-row--submit .form-row__name-col {
     display: none;
   }
 }
 
-/* line 167, ../styles/components/_formLayout.sass */
+/* line 197, ../styles/components/_formLayout.sass */
 .input-cont {
   position: relative;
 }
-/* line 169, ../styles/components/_formLayout.sass */
+/* line 199, ../styles/components/_formLayout.sass */
 .input-cont .input {
   width: 100%;
 }
-/* line 172, ../styles/components/_formLayout.sass */
+/* line 202, ../styles/components/_formLayout.sass */
 .input-cont + .checkbox-label {
   margin-top: 13px;
 }
-/* line 175, ../styles/components/_formLayout.sass */
+/* line 205, ../styles/components/_formLayout.sass */
 .input-cont + .link {
   margin-top: 2px;
   display: inline-block;
   font-size: 13px;
 }
-/* line 181, ../styles/components/_formLayout.sass */
+/* line 211, ../styles/components/_formLayout.sass */
 .input-cont--eye .iconic, .input-cont--eye .icon, .input-cont--eye .link--bookmark:before, .input-cont--eye .link--eye:before, .input-cont--eye .checkbox__view, .input-cont--eye .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye .input-cont:after, .input-cont--eye .popup-closer, .input-cont--eye .soc-rounds__li, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon, .input-cont--eye .filter-tag__cross, .input-cont--eye .actions-sl .slick-prev:after, .actions-sl .input-cont--eye .slick-prev:after,
 .input-cont--eye .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye .slick-next:after, .input-cont--eye .recom-sl .slick-next, .recom-sl .input-cont--eye .slick-next, .input-cont--eye .recom-sl .slick-prev, .recom-sl .input-cont--eye .slick-prev {
@@ -2956,20 +3039,20 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: color 150ms;
           transition: color 150ms;
 }
-/* line 190, ../styles/components/_formLayout.sass */
+/* line 220, ../styles/components/_formLayout.sass */
 .input-cont--eye .iconic:hover, .input-cont--eye .icon:hover, .input-cont--eye .link--bookmark:hover:before, .input-cont--eye .link--eye:hover:before, .input-cont--eye .checkbox__view:hover, .input-cont--eye .form-row__content--divided .input-wr + .input-wr .input-cont:hover:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye .input-cont:hover:after, .input-cont--eye .popup-closer:hover, .input-cont--eye .soc-rounds__li:hover, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon:hover, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon:hover, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon:hover, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon:hover, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon:hover, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .filter-tag__cross:hover, .input-cont--eye .actions-sl .slick-prev:hover:after, .actions-sl .input-cont--eye .slick-prev:hover:after,
 .input-cont--eye .actions-sl .slick-next:hover:after,
 .actions-sl .input-cont--eye .slick-next:hover:after, .input-cont--eye .recom-sl .slick-next:hover, .recom-sl .input-cont--eye .slick-next:hover, .input-cont--eye .recom-sl .slick-prev:hover, .recom-sl .input-cont--eye .slick-prev:hover {
   color: #000;
 }
-/* line 195, ../styles/components/_formLayout.sass */
+/* line 225, ../styles/components/_formLayout.sass */
 .input-cont--eye._pass-visible .iconic, .input-cont--eye._pass-visible .icon, .input-cont--eye._pass-visible .link--bookmark:before, .input-cont--eye._pass-visible .link--eye:before, .input-cont--eye._pass-visible .checkbox__view, .input-cont--eye._pass-visible .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye._pass-visible .input-cont:after, .input-cont--eye._pass-visible .popup-closer, .input-cont--eye._pass-visible .soc-rounds__li, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .filter-tag__cross, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
 .input-cont--eye._pass-visible .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next, .recom-sl .input-cont--eye._pass-visible .slick-next, .input-cont--eye._pass-visible .recom-sl .slick-prev, .recom-sl .input-cont--eye._pass-visible .slick-prev {
   font-size: 10px;
 }
 
-/* line 202, ../styles/components/_formLayout.sass */
+/* line 232, ../styles/components/_formLayout.sass */
 .input-wr__name {
   font-size: 13px;
   line-height: 20px;
@@ -2978,39 +3061,39 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 @media screen and (max-width: 479px) {
-  /* line 212, ../styles/components/_formLayout.sass */
+  /* line 242, ../styles/components/_formLayout.sass */
   .input-wr + .input-wr {
     margin-top: 15px;
   }
 }
 
-/* line 218, ../styles/components/_formLayout.sass */
+/* line 248, ../styles/components/_formLayout.sass */
 .form-gr {
   margin-bottom: 40px;
 }
-/* line 221, ../styles/components/_formLayout.sass */
+/* line 251, ../styles/components/_formLayout.sass */
 .form-gr .h3, .form-gr .typography h3, .typography .form-gr h3 {
   line-height: 24px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 579px) {
-  /* line 218, ../styles/components/_formLayout.sass */
+  /* line 248, ../styles/components/_formLayout.sass */
   .form-gr {
     margin-bottom: 25px;
   }
-  /* line 228, ../styles/components/_formLayout.sass */
+  /* line 258, ../styles/components/_formLayout.sass */
   .form-gr .h3, .form-gr .typography h3, .typography .form-gr h3 {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 579px) {
-  /* line 235, ../styles/components/_formLayout.sass */
+  /* line 265, ../styles/components/_formLayout.sass */
   .form-pair {
     margin-left: -10px;
     margin-right: -10px;
   }
-  /* line 239, ../styles/components/_formLayout.sass */
+  /* line 269, ../styles/components/_formLayout.sass */
   .form-pair .form-row {
     display: inline-block;
     vertical-align: top;
@@ -3019,7 +3102,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* line 246, ../styles/components/_formLayout.sass */
+/* line 276, ../styles/components/_formLayout.sass */
 .form-cols {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3035,7 +3118,7 @@ h1, h2, h3, h4, h5, h6 {
           align-items: flex-start;
   margin: 0px -30px 14px;
 }
-/* line 252, ../styles/components/_formLayout.sass */
+/* line 282, ../styles/components/_formLayout.sass */
 .form-cols__col {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -3047,32 +3130,32 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 30px;
   padding-right: 30px;
 }
-/* line 258, ../styles/components/_formLayout.sass */
+/* line 288, ../styles/components/_formLayout.sass */
 .form-cols__col--65 {
   width: 65%;
 }
-/* line 260, ../styles/components/_formLayout.sass */
+/* line 290, ../styles/components/_formLayout.sass */
 .form-cols__col--35 {
   width: 35%;
 }
 @media screen and (max-width: 669px) {
-  /* line 246, ../styles/components/_formLayout.sass */
+  /* line 276, ../styles/components/_formLayout.sass */
   .form-cols {
     margin-left: -15px;
     margin-right: -15px;
   }
-  /* line 266, ../styles/components/_formLayout.sass */
+  /* line 296, ../styles/components/_formLayout.sass */
   .form-cols__col {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 246, ../styles/components/_formLayout.sass */
+  /* line 276, ../styles/components/_formLayout.sass */
   .form-cols {
     display: block;
   }
-  /* line 272, ../styles/components/_formLayout.sass */
+  /* line 302, ../styles/components/_formLayout.sass */
   .form-cols__col {
     width: auto;
   }
@@ -4304,8 +4387,8 @@ h1, h2, h3, h4, h5, h6 {
 /* line 508, ../styles/components/blocks/_blocks.sass */
 .materials-nav__item A {
   font: 24px/1.2 "PT Sans Narrow", sans-serif;
-  color: #088e60;
-  border-bottom: 1px dotted rgba(8, 142, 96, 0.3);
+  color: #0ab178;
+  border-bottom: 1px dotted rgba(10, 177, 120, 0.3);
   -webkit-transition: border-color 150ms ease-out;
           transition: border-color 150ms ease-out;
 }
@@ -4379,42 +4462,43 @@ h1, h2, h3, h4, h5, h6 {
   .lk-menu__btn {
     line-height: 36px;
     margin: 8px 0;
+    text-align: right;
   }
 }
 
-/* line 558, ../styles/components/blocks/_blocks.sass */
+/* line 559, ../styles/components/blocks/_blocks.sass */
 .lk-nav {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 564, ../styles/components/blocks/_blocks.sass */
+/* line 565, ../styles/components/blocks/_blocks.sass */
 .lk-nav__item {
   float: left;
   border-right: 1px solid #e6e6e6;
 }
 @media screen and (max-width: 479px) {
-  /* line 564, ../styles/components/blocks/_blocks.sass */
+  /* line 565, ../styles/components/blocks/_blocks.sass */
   .lk-nav__item {
     border-bottom: 1px solid #e6e6e6;
     width: 50%;
   }
-  /* line 572, ../styles/components/blocks/_blocks.sass */
+  /* line 573, ../styles/components/blocks/_blocks.sass */
   .lk-nav__item:nth-child(even) {
     border-right: 0;
   }
 }
-/* line 575, ../styles/components/blocks/_blocks.sass */
+/* line 576, ../styles/components/blocks/_blocks.sass */
 .lk-nav__item:first-child {
   border-left: 1px solid #e6e6e6;
 }
 @media screen and (max-width: 579px) {
-  /* line 575, ../styles/components/blocks/_blocks.sass */
+  /* line 576, ../styles/components/blocks/_blocks.sass */
   .lk-nav__item:first-child {
     border-left: 0;
   }
 }
-/* line 581, ../styles/components/blocks/_blocks.sass */
+/* line 582, ../styles/components/blocks/_blocks.sass */
 .lk-nav__item A {
   font: 18px/1.2 "Helvetica Neue", sans-serif;
   padding: 15px 25px;
@@ -4423,26 +4507,76 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: background 150ms ease-out;
           transition: background 150ms ease-out;
 }
-/* line 588, ../styles/components/blocks/_blocks.sass */
+/* line 589, ../styles/components/blocks/_blocks.sass */
 .lk-nav__item A:hover {
   background-color: rgba(235, 255, 155, 0.5);
 }
 @media screen and (max-width: 579px) {
-  /* line 581, ../styles/components/blocks/_blocks.sass */
+  /* line 582, ../styles/components/blocks/_blocks.sass */
   .lk-nav__item A {
     padding: 15px;
   }
 }
 @media screen and (max-width: 479px) {
-  /* line 581, ../styles/components/blocks/_blocks.sass */
+  /* line 582, ../styles/components/blocks/_blocks.sass */
   .lk-nav__item A {
     font: 16px/1.3 "Helvetica Neue", sans-serif;
     padding: 12px 15px;
   }
 }
-/* line 600, ../styles/components/blocks/_blocks.sass */
+/* line 601, ../styles/components/blocks/_blocks.sass */
 .lk-nav__item.active A {
   background-color: #ebff9b;
+}
+
+/* line 605, ../styles/components/blocks/_blocks.sass */
+.alert-wr {
+  padding: 30px 0;
+}
+@media screen and (max-width: 479px) {
+  /* line 605, ../styles/components/blocks/_blocks.sass */
+  .alert-wr {
+    padding: 15px 0;
+  }
+}
+/* line 611, ../styles/components/blocks/_blocks.sass */
+.alert--green {
+  background-color: #0ab178;
+  color: #fff;
+}
+/* line 618, ../styles/components/blocks/_blocks.sass */
+.alert__btn {
+  float: left;
+  width: 70px;
+  margin: 0 0 0 8px;
+}
+@media screen and (max-width: 479px) {
+  /* line 618, ../styles/components/blocks/_blocks.sass */
+  .alert__btn {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+/* line 630, ../styles/components/blocks/_blocks.sass */
+.alert__btn .icon {
+  color: #fff;
+  font-size: 17px;
+}
+/* line 634, ../styles/components/blocks/_blocks.sass */
+.alert__text {
+  margin-left: 95px;
+  font: 14px/1.45 "Helvetica Neue", sans-serif;
+}
+@media screen and (max-width: 479px) {
+  /* line 634, ../styles/components/blocks/_blocks.sass */
+  .alert__text {
+    margin-left: 0;
+    padding-bottom: 70px;
+  }
 }
 
 /* line 14, ../styles/components/__components.sass */
@@ -4706,6 +4840,37 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   line-height: 44px;
   font-weight: bold;
+}
+
+/* line 249, ../styles/components/__components.sass */
+.datepicker--cell.-selected-,
+.datepicker--cell.-selected-.-current-,
+.datepicker--cell.-selected-.-focus-,
+.datepicker--cell.-range-to-.-focus-.-selected- {
+  background-color: #0ab178;
+}
+
+/* line 255, ../styles/components/__components.sass */
+.datepicker--cell.-in-range- {
+  background-color: rgba(10, 177, 120, 0.1);
+}
+
+/* line 258, ../styles/components/__components.sass */
+.datepicker--cell.-range-to-,
+.datepicker--cell.-range-from- {
+  border-color: #0ab178;
+}
+
+/* line 262, ../styles/components/__components.sass */
+.datepicker--cell.-range-to-.-focus- {
+  background-color: rgba(10, 177, 120, 0.1);
+}
+
+/* line 266, ../styles/components/__components.sass */
+.datepicker--cell.-current-.-in-range-,
+.datepicker--cell.-current-,
+.datepicker--day-name {
+  color: #0ab178;
 }
 
 /* line 3, ../styles/pages/_index.sass */
@@ -4994,8 +5159,8 @@ h1, h2, h3, h4, h5, h6 {
 /* line 213, ../styles/pages/_index.sass */
 .index-cards__title A {
   display: inline-block;
-  color: #088e60;
-  border-bottom: 1px dashed #088e60;
+  color: #0ab178;
+  border-bottom: 1px dashed #0ab178;
   margin: 0 5px;
   line-height: normal;
   -webkit-transition: background 150ms ease-out, border-color 150ms ease-out, color 150ms ease-out;
@@ -5107,7 +5272,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 300, ../styles/pages/_index.sass */
 .card__bookmark:hover, .card__bookmark.active {
-  background: #16ca8c !important;
+  background: #0ab178 !important;
 }
 /* line 303, ../styles/pages/_index.sass */
 .card__bookmark:hover .icon, .card__bookmark.active .icon {
@@ -5124,7 +5289,7 @@ h1, h2, h3, h4, h5, h6 {
 .card__title {
   font: 20px/1.1 "PT Sans Narrow", sans-serif;
   margin: 15px 0;
-  color: #088e60;
+  color: #0ab178;
 }
 /* line 318, ../styles/pages/_index.sass */
 .card__text {
@@ -5342,7 +5507,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 495, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:hover,
 .actions-sl .slick-next:hover {
-  background: #16ca8c;
+  background: #0ab178;
 }
 /* line 497, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:hover:after,
@@ -5591,7 +5756,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 10px;
   border-radius: 50%;
   margin: 3px 7px;
-  background: #16ca8c;
+  background: #0ab178;
   -webkit-transition: 300ms;
           transition: 300ms;
 }
@@ -6010,7 +6175,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 107, ../styles/pages/_about.sass */
 .team__item-name {
   font: 20px/1.3 "PT Sans Narrow", sans-serif;
-  color: #088e60;
+  color: #0ab178;
   margin-bottom: 5px;
 }
 /* line 112, ../styles/pages/_about.sass */
@@ -6089,7 +6254,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 51, ../styles/pages/_contacts.sass */
 .contacts__info-phone A {
-  color: #088e60;
+  color: #0ab178;
 }
 /* line 56, ../styles/pages/_contacts.sass */
 .contacts__info-soc > SPAN {
@@ -6228,5 +6393,5 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 1, ../styles/pages/_lk-organizator.sass */
 .lk-organizator {
-  padding: 25px 0 40px;
+  padding: 30px 0 40px;
 }
