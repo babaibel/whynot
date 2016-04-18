@@ -1,5 +1,6 @@
 $header-top-h: 86px
 $header-top-h-sm: 48px
+$hsearch-wr-mob-size: 69px
 
 BODY
 	+max-screen($screenSS)
@@ -47,7 +48,7 @@ BODY
 		display: none
 		height: $header-top-h-sm
 		width: $header-top-h-sm
-		background-color: $cPrimary
+		background-color: $cPrimaryL
 		color: #fff
 		transition: $t150
 		position: absolute
@@ -58,7 +59,7 @@ BODY
 		flex-direction: column
 
 		&:hover
-			background-color: darken($cPrimary,10%)
+			background-color: $cPrimary
 
 		span
 			display: block
@@ -176,6 +177,9 @@ BODY
 	position: relative
 
 	&__nav
+		flex-grow: 1
+		max-width: 700px
+
 	&__wr
 		background: #000
 
@@ -200,6 +204,7 @@ BODY
 		display: block
 
 		&__search-wr
+			height: $hsearch-wr-mob-size
 			display: block
 			padding: 15px $wrapper-padd-sm
 			margin: 0 (-$wrapper-padd-sm)

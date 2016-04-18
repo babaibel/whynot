@@ -15,13 +15,320 @@
 
 				<div class="filter js-filter">
 
+					<div class="wr filter__mob-toggle js-filter__mob-toggle">
+						Подбор по параметрам
+					</div>
+
 					<div class="filter-main js-filter_main">
 						<div class="wr">
 
 							<div class="filter-main__params-wr">
-								<div class="filter-main__param">
-									todo
+								<div class="filter-main__param js-filter-param">
+
+									<div class="filter-main__param-head js-filter-param__btn">
+										<span class="filter-main__param-head-txt">
+											Для кого?
+										</span>
+									</div>
+
+									<div class="filter-main__param-body filter-main__param-body--who">
+										<div class="chkb-dropdown chkb-dropdown--filter  js-chkb-dropdown" data-resol="sm">
+											<div class="chkb-dropdown__title   js-chkb-dropdown__btn">
+												Для кого?
+											</div>
+
+											<div class="chkb-dropdown__options-gr">
+
+												<label class="txt-chbox">
+													<input type="radio" name="gr1">
+													<span class="txt-chbox__visual txt-chbox__visual--md">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">Для взрослых</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="radio" name="gr1">
+													<span class="txt-chbox__visual txt-chbox__visual--md">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">Для детей</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="radio" name="gr1">
+													<span class="txt-chbox__visual txt-chbox__visual--md">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">Для всей семьи</span>
+													</span>
+												</label>
+
+											</div>
+										</div>
+									</div>
 								</div>
+
+								<div class="filter-main__param js-filter-param">
+
+									<div class="filter-main__param-head js-filter-param__btn">
+										<span class="filter-main__param-head-txt">
+											По интересам
+										</span>
+									</div>
+
+									<div class="filter-main__param-body filter-main__param-body--interes ">
+										<div class="chkb-dropdown chkb-dropdown--filter  js-chkb-dropdown" data-resol="sm">
+											<div class="chkb-dropdown__title   js-chkb-dropdown__btn">
+												Интересы
+											</div>
+
+											<div class="chkb-dropdown__options-gr">
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Игры в парках
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Мастерклассы
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Квесты
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Подвижные игры
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Пейнтбол
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Картинг
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Семинары
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Экстрим
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Авто/мото
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Полеты
+														</span>
+													</span>
+												</label>
+
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Йога
+														</span>
+													</span>
+												</label>
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Графити
+														</span>
+													</span>
+												</label>
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Игры в парках
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Мастерклассы
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Квесты
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Подвижные игры
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Пейнтбол
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Картинг
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Семинары
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Экстрим
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Авто/мото
+														</span>
+													</span>
+												</label>
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Полеты
+														</span>
+													</span>
+												</label>
+
+
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Йога
+														</span>
+													</span>
+												</label>
+												<label class="txt-chbox">
+													<input type="checkbox" name="gr1">
+													<span class="txt-chbox__visual">
+														<span class="link link--dotted link-und--green2-d link-und--dotted">
+															Графити
+														</span>
+													</span>
+												</label>
+
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="filter-main__param js-filter-param">
+
+									<div class="filter-main__param-head js-filter-param__btn">
+										<span class="filter-main__param-head-txt">
+											По дате
+										</span>
+									</div>
+
+									<div class="filter-main__param-body filter-main__param-body--dates">
+										<div class="chkb-dropdown chkb-dropdown--filter chkb-dropdown--dates js-chkb-dropdown" data-resol="sm">
+											<div class="chkb-dropdown__title chkb-dropdown__title--hide   js-chkb-dropdown__btn">
+												По дате
+											</div>
+
+											<div class="chkb-dropdown__options-gr">
+												<div class="datepicker-wr datepicker-wr--inline  js-datepicker"
+													 data-inline="true"
+													 data-range="true" data-multiple-dates-separator=" - "></div>
+											</div>
+										</div>
+
+
+
+									</div>
+								</div>
+
 							</div>
 
 							<div class="filter-main__sort-gr">
@@ -210,16 +517,7 @@
 
 								<div class="materials-grid__col materials-grid__col--info">
 
-									<a href="#!" class="add-event">
-										<span class="add-event__plus iconic iconic--plus"></span>
-										<p class="add-event__title">
-											Добавьте свое событие
-										</p>
-
-										<p class="add-event__txt">
-											Знаешь о событии, информации о котором нет на портале? Добавь его!
-										</p>
-									</a>
+									<?php include "blocks/add-event.php";?>
 
 									<div class="bug-note">
 										<span class="bug-note__ico iconic iconic--bug"></span>
@@ -635,8 +933,8 @@
 		</main>
 
 		<?php include 'base/footer.php'; ?>
+		<?php include 'base/popups.php'; ?>
 	</div>
-	<?php include 'base/popups.php'; ?>
 	<?php include 'base/scripts.php'; ?>
 </body>
 </html>

@@ -85,8 +85,9 @@
 		</main>
 
 		<?php include 'base/footer.php'; ?>
+		<?php include 'base/popups.php'; ?>
 	</div>
-	<?php include 'base/popups.php'; ?>
+
 	<?php include 'base/scripts.php'; ?>
 </body>
 </html>

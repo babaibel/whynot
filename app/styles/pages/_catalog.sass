@@ -15,12 +15,12 @@
 		&--left
 			right: 50%
 			top: 55px
-			margin-right: ($maxW/2)
+			margin-right: ($maxW/2) + 50px
 
 		&--right
 			left: 50%
 			top: 30px
-			margin-left: ($maxW/2)
+			margin-left: ($maxW/2) + 50px
 
 
 // ----------------------------------------------------------------------
@@ -28,8 +28,6 @@
 // ----------------------------------------------------------------------
 
 .catalog
-
-
 
 	&__footer
 		text-align: center
@@ -45,11 +43,52 @@ $filter_h: 82px
 	position: relative
 
 	&__bottom
-		+max-screen($screenM)
+		+max-screen($screenL)
 			padding-bottom: 43px
 
-	+max-screen($screenM)
+	&__mob-toggle
+		color: #fff
+		background-color: $cPrimaryL
+		cursor: pointer
+		height: 44px
+		padding: 10px ($wrapper-padd-sm + 38px) 10px $wrapper-padd-sm
+		font-size: 18px
+		line-height: 24px
+		font-weight: 500
+		display: none
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		z-index: 91
+		transition: transform $t600
+
+
+		&:after
+			content: ''
+			position: absolute
+			right: 30px
+			top: 50%
+
+			margin-top: -3.5px
+			border-style: solid
+			border-width: 7px 3.5px
+			border-color: #fff transparent transparent transparent
+
+		+max-screen($screenSS)
+			position: fixed
+			top: $header-top-h-sm
+			body._search-open &
+				transform: translateY($hsearch-wr-mob-size)
+
+	+max-screen($screenL)
 		margin-bottom: 15px
+
+
+	+max-screen($screenSM)
+		padding-top: 44px
+		&__mob-toggle
+			display: block
 
 .filter-main
 	background-color: #fff
@@ -64,27 +103,224 @@ $filter_h: 82px
 		padding-top: 15px
 		padding-bottom: 15px
 
-
 	&__info
 		width: 25%
-		padding: 10px
+		padding: 10px 0 10px 10px
 		flex-shrink: 0
 		font-size: 14px
 		line-height: 24px
 		color: #999
 		text-align: center
+		+max-screen($screenL)
+			width: auto
 
 	&__sort-gr
 		flex-shrink: 0
 
-		+max-screen($screenM)
+		+max-screen($screenL)
 			position: absolute
 			bottom: 7px
+			left: $wrapper-padd
+			right: $wrapper-padd
+
+		+max-screen($screenM)
 			left: $wrapper-padd-md
 			right: $wrapper-padd-md
 
+		+max-screen($screenSS)
+			left: $wrapper-padd-sm
+			right: $wrapper-padd-sm
+
+		+max-screen($screenXS)
 			.sort-chkb-wr
 				display: flex
 
 			.selector
 				flex-grow: 1
+
+	&__params-wr
+		flex-grow: 1
+		display: flex
+		justify-content: flex-start
+		position: relative
+		z-index: 2
+
+		.datepicker
+			width: 100%
+
+	&__param
+		//flex-grow: 1
+		//position: relative
+		text-align: center
+		z-index: 2
+
+		& + *
+			border-left: 1px solid #e6e6e6
+
+		&:first-child
+			.filter-main__param-head
+				padding-left: 5px
+
+		&._open
+			.filter-main__param-body
+				opacity: 1
+				visibility: visible
+				transform: translateY(0px)
+
+	&__param-head
+		font-size: 18px
+		line-height: 30px
+		cursor: pointer
+		position: relative
+		padding: 8px 25px
+		&:hover
+			.filter-main__param-head-txt:after
+				border-color: #333
+				color: #333
+
+		+max-screen($screenS)
+			font-size: 16px
+			padding-left: 20px
+			padding-right: 20px
+
+		//+max-screen($screenSM)
+			font-size: 14px
+			padding-left: 15px
+			padding-right: 15px
+
+	&__param-head-txt
+		position: relative
+		padding-right: 30px
+		display: block
+
+		&:after
+			@extend .iconic
+			@extend .iconic--arrow-down
+			border-radius: 3px
+			border: 1px solid #e2e2e2
+			width: 17px
+			height: 17px
+			line-height: 15px
+			font-size: 4px
+			color: #ababab
+			position: absolute
+			top: 50%
+			margin-top: -8.5px
+			right: 0
+			transition: $t300
+
+
+	&__param-body
+		position: absolute
+		top: 100%
+		left: 0
+		padding: 21px 20px 10px
+		text-align: center
+		color: #000
+		background-color: #fff
+		min-width: 150px
+		box-shadow: 3.5px 6.062px 32px 0px rgba(55, 54, 55, 0.24)
+		margin-top: 15px
+		opacity: 0
+		visibility: hidden
+		transform: translateY(-10px)
+		transition: $t300
+
+
+		&:after
+			content: ""
+			position: absolute
+			bottom: 100%
+			left: 50%
+			margin: 0 -10px -1px 0
+			border-width: 7px 10px
+			border-style: solid
+			border-color: transparent transparent #fff transparent
+
+		&--who
+			width: 470px
+			&:after
+				left: 65px
+
+		&--interes
+			width: 720px
+			&:after
+				left: 240px
+
+			+max-screen($screenS)
+				width: 560px
+
+
+		&--dates
+			width: 340px
+			left: 230px
+
+			padding: 0
+			background-color: transparent
+
+
+	+max-screen($screenSM)
+		border: 0
+
+		.wr
+			height: auto
+			display: block
+			padding: 0
+			border: 0
+
+		&__info
+			display: none
+
+		&__params-wr
+			display: none
+			background-color: #fff
+
+			position: absolute
+			top: $header-top-h-sm
+			left: 0
+			right: 0
+			padding: 10px $wrapper-padd-sm
+			///overflow: auto
+			z-index: 90
+			transition: transform $t600
+
+		&__param
+			border-left: 0 // !important
+
+		&__param-head
+			display: none
+
+		&__param-body
+			position: relative
+			top: auto
+			left: auto
+			opacity: 1
+			visibility: visible
+			width: auto
+			transform: none
+			box-shadow: none
+			margin-top: 0
+			padding: 5px $wrapper-padd-sm
+			margin-left: -$wrapper-padd-sm
+			margin-right: -$wrapper-padd-sm
+
+			&:after
+				display: none
+
+		.chkb-dropdown
+			margin-bottom: 0
+
+		body._m-filter-open &
+			.filter-main__params-wr
+				display: block
+
+	+max-screen($screenSS)
+		&__params-wr
+			position: fixed
+			top: $header-top-h-sm
+			margin-top: 44px
+
+
+		body._search-open &
+			.filter-main__params-wr
+				transform: translateY($hsearch-wr-mob-size)

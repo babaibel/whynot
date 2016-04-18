@@ -22,9 +22,13 @@
 <!-- build:js ../scripts/app.js -->
 <!-- inject:js -->
 
+<script src="../scripts/catalogController.js"></script>
+
 <script src="../scripts/fEvent.js"></script>
 
 <script src="../scripts/formElements.js"></script>
+
+<script src="../scripts/forms.js"></script>
 
 <script src="../scripts/headerController.js"></script>
 

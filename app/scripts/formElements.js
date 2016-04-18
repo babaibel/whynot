@@ -10,7 +10,16 @@ $(function () {
         $head.bind('click',function(){
             if($W.width() <= _GLOB.breakpoints[dataResol]){
                 $this.toggleClass('_active');
+
+                $W.bind('click',function(e){
+                    var $target = $(e.target),
+                        checkTarget = !$target.closest('.datepicker--cell').length  && !$target.closest('.datepicker--nav-title').length && !$target.closest('.datepicker--nav-action').length && !$target.closest($this).length;
+                    if( checkTarget ){
+                        $this.removeClass('_active');
+                    }
+                })
             }
+
         })
     })
 
@@ -40,3 +49,18 @@ $(function () {
 
 });
 
+
+$(function () {
+    var $datepicker = $('.js-datepicker');
+    if(!$datepicker.length) return;
+
+    $datepicker.each(function(){
+        var $this = $(this),
+            dataInline = $this.data('inline');
+
+        $this.datepicker({
+            inline: dataInline
+        });
+    })
+
+});

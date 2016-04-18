@@ -10,7 +10,6 @@ $input__shadow: inset 1px 1.732px 5px 0px rgba(55, 54, 55, 0.1)
 $input-smd__height: 42px
 $input-lg__height: 60px
 
-
 =input
     display: block
     width: 100%
@@ -38,20 +37,17 @@ $input-lg__height: 60px
         &.input--lg
             line-height: $input-lg__height - 4px
 
-
     &--brd
         border: 1px solid #d8d8d8
         box-shadow: inset 1px 1.732px 5px 0px rgba(55, 54, 55, 0.1)
         border-radius: 3px
         line-height: $input__height - 2px
 
-
     &--ta-cent
         text-align: center
 
     &--ta-right
         text-align: right
-
 
     &--smd
         height: $input-smd__height
@@ -70,9 +66,6 @@ $input-lg__height: 60px
         &--80perc
             width: 80%
 
-
-
-
 .textarea
     display: block
     width: 100%
@@ -84,7 +77,6 @@ $input-lg__height: 60px
 
     &::placeholder
         color: #9b9b9b
-
 
 .img-input
     display: block
@@ -125,7 +117,7 @@ $input-lg__height: 60px
         left: 0
         right: 0
         transform: translateY(-50%)
-        font-size:  16px
+        font-size: 16px
         line-height: 24px
         text-align: center
         color: #7f7f7f
@@ -135,13 +127,11 @@ $input-lg__height: 60px
     &:hover
         border-color: #5b5b5b
 
-
 .input-error
     display: block
     //+fs-lh('md')
     color: $cRed
     margin: 3px 2px 5px
-
 
 // ----------------------------------------------------------------------
 // Checkboxes and radio
@@ -205,15 +195,14 @@ $checkbox-size: 14px
         &._active,
         .checkbox-label:hover &,
         &._active,
-        input:checked +  &
+        input:checked + &
             background-color: $cLime-l
 
         &._active,
-        input:checked +  &
+        input:checked + &
             &:after
                 transform: translateY(0)
-                opacity:   1
-
+                opacity: 1
 
 .sort-chkb-wr
     font-size: 0
@@ -239,7 +228,6 @@ $checkbox-size: 14px
                 border-color: transparent
                 .iconic
                     color: #fff
-
 
     &__main
         display: block
@@ -280,9 +268,6 @@ $checkbox-size: 14px
         &__main-txt
             display: none
 
-
-
-
 .txt-chbox
     display: inline-block
 
@@ -308,7 +293,6 @@ $checkbox-size: 14px
         &--md
             padding: 6px
             font-size: 18px
-
 
 =chkb-dropdown-adapt
 
@@ -357,7 +341,7 @@ $checkbox-size: 14px
             background-color: #fff
             border: 1px solid #dbdbdb
             border-radius: 4px
-            box-shadow: 0 0 15px  rgba(#000, 0.15)
+            box-shadow: 0 0 15px rgba(#000, 0.15)
             opacity: 0
             visibility: hidden
             transform: scale(0.95)
@@ -370,13 +354,11 @@ $checkbox-size: 14px
                 width: 9px
 
             &::-webkit-scrollbar-thumb
-                background-color: darken($cSecondary,11%)
+                background-color: darken($cSecondary, 11%)
                 cursor: pointer
-
 
     .chkb-dropdown__title, .txt-chbox__visual
         padding: 8px 50px 8px 12px
-
 
     .txt-chbox
         display: block
@@ -400,7 +382,7 @@ $checkbox-size: 14px
                 bottom: 0
                 left: 0
                 right: 0
-                border-bottom: 1px solid lighten($cSecondary,7%)
+                border-bottom: 1px solid lighten($cSecondary, 7%)
 
     //&:hover
         background-color: $cSecondary
@@ -424,31 +406,33 @@ $checkbox-size: 14px
         &--lg-hide
             display: none
 
+        &--hide
+            display: none
+
     &__options-gr
         position: relative
-
+        .datepicker-wr
+            max-width: 100%
+            overflow: hidden
 
     &--dates
-        .chkb-dropdown
-        &__options-gr
+        .chkb-dropdown__options-gr
             background-color: transparent !important
-            //box-shadow: none !important
             padding: 0 !important
             border: 0 !important
 
         .datepicker
-            position: relative
-            left: 0 !important
-            top: 0 !important
-            bottom: 0  !important
-            right: 0  !important
-            opacity: 1 !important
-            width: auto
+            width: 100%
 
+
+    &--filter
+        .chkb-dropdown__title
+            font-size: 24px
+            line-height: 30px
+            font-weight: normal
 
     +max-screen($screenSM)
         +chkb-dropdown-adapt
-
 
 // ----------------------------------------------------------------------
 // Selectors
@@ -501,7 +485,6 @@ $checkbox-size: 14px
         margin: -1px 0 0
         border: 1px solid #ddd
 
-
     &--inline
         display: inline-block
         vertical-align: middle
@@ -522,9 +505,6 @@ $checkbox-size: 14px
                 &__option-current
                     border-radius: 4px 4px 0 0
 
-
-
-
 // ----------------------------------------------------------------------
 //
 // ----------------------------------------------------------------------
@@ -534,3 +514,62 @@ $checkbox-size: 14px
     line-height: normal
     margin: 0
     color: #757575
+
+// ----------------------------------------------------------------------
+// Datepicker
+// ----------------------------------------------------------------------
+
+.datepicker-wr--inline
+    position: relative
+    left: 0 !important
+    top: 0 !important
+    bottom: 0 !important
+    right: 0 !important
+    opacity: 1 !important
+    width: auto
+
+.datepicker--days-names
+    margin: 0
+
+.datepicker--day-name
+    color: #888
+    height: 34px
+
+.datepicker--cells
+    border-left: 1px solid #e8e8e8
+    border-top: 1px solid #e8e8e8
+
+.datepicker--cell
+    background-color: #f8f8f8
+    border: 1px solid #e8e8e8 !important
+    border-top: 0 !important
+    border-left: 0 !important
+    //margin-bottom: -1px
+    //margin-right: -1px
+    border-radius: 0 !important
+    height: 40px
+
+    &.-range-from-
+        background-color: #29ba80 !important //$cPrimary
+        color: #fff
+        &.-focus-
+            background-color: $cPrimary !important
+            color: #fff !important
+
+    &.-range-to-
+        background-color: #d8f36a !important //$cSecondary
+        color: #000 !important
+        &.-focus-
+            background-color: darken(#d8f36a,10%) !important
+
+    &.-in-range-
+        background-color: #f2ffbb !important
+        &.-focus-
+            background-color: darken(#f2ffbb,10%) !important
+
+    &.-current-
+        color: inherit !important
+        font-weight: bold
+
+.datepicker--cells-years, .datepicker--years, .datepicker--cells-months
+    height: auto

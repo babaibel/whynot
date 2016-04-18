@@ -363,7 +363,7 @@
 					</div>
 
 					<div class="chkb-dropdown__options-gr">
-						<div class="datepicker  js-weekrange-datepicker"
+						<div class="datepicker-wr datepicker-wr--inline js-weekrange-datepicker"
 							 data-inline="true"
 							 data-range="true" data-multiple-dates-separator=" - "></div>
 					</div>
