@@ -77,6 +77,41 @@
 			&:before
 				color: $cPrimary
 
+	&--eye
+		color: $cPrimary
+
+
+		SPAN
+			border-bottom-style: solid
+			border-bottom-width: 1px
+			border-color: transparent
+			transition: border-color $t150 ease-out
+
+		&:hover
+			border-color: transparent
+
+			SPAN
+				border-color: $cPrimary
+
+		&:before
+			content: "\E00F"
+			font-size: 15px
+			font-style: normal
+			transition: $t150
+			width: 32px
+			height: 32px
+			margin-right: 14px
+			line-height: 32px
+			background: #f7f7f7
+			border-radius: 50%
+			text-align: center
+			color: #a7a7a7
+			@extend .iconic
+
+		&:hover
+			&:before
+				color: $cPrimary
+
 
 
 .link-und

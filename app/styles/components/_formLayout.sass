@@ -72,8 +72,14 @@ $form-row-bottom-mrg: 15px
                         top: 0
                         left: -23px
                         line-height: $input__height
+                +max-screen($screenXS)
+                    margin-left: 0
+                    margin-right: 0
 
             +max-screen($screenXS)
+                width: 100% !important
+                margin-left: 0
+                margin-right: 0
                 display: block !important
                 .input-wr
                     .input-cont

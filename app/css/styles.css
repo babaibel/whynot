@@ -439,7 +439,7 @@ a {
   line-height: 28px;
 }
 /* line 130, ../styles/layout/_header.sass */
-.header-cabinet__ico-link .iconic, .header-cabinet__ico-link .icon, .header-cabinet__ico-link .link--bookmark:before, .header-cabinet__ico-link .checkbox__view, .header-cabinet__ico-link .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .header-cabinet__ico-link .input-cont:after, .header-cabinet__ico-link .popup-closer, .header-cabinet__ico-link .soc-rounds__li, .header-cabinet__ico-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .filter-tag__cross, .header-cabinet__ico-link .actions-sl .slick-prev:after, .actions-sl .header-cabinet__ico-link .slick-prev:after,
+.header-cabinet__ico-link .iconic, .header-cabinet__ico-link .icon, .header-cabinet__ico-link .link--bookmark:before, .header-cabinet__ico-link .link--eye:before, .header-cabinet__ico-link .checkbox__view, .header-cabinet__ico-link .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .header-cabinet__ico-link .input-cont:after, .header-cabinet__ico-link .popup-closer, .header-cabinet__ico-link .soc-rounds__li, .header-cabinet__ico-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .header-cabinet__ico-link .ya-share2__icon, .header-cabinet__ico-link .filter-tag__cross, .header-cabinet__ico-link .actions-sl .slick-prev:after, .actions-sl .header-cabinet__ico-link .slick-prev:after,
 .header-cabinet__ico-link .actions-sl .slick-next:after,
 .actions-sl .header-cabinet__ico-link .slick-next:after, .header-cabinet__ico-link .recom-sl .slick-next, .recom-sl .header-cabinet__ico-link .slick-next, .header-cabinet__ico-link .recom-sl .slick-prev, .recom-sl .header-cabinet__ico-link .slick-prev {
   font-size: 19px;
@@ -1196,7 +1196,7 @@ MAIN {
   src: url("../fonts/iconic.eot?#iefix") format("eot"), url("../fonts/iconic.woff") format("woff"), url("../fonts/iconic.ttf") format("truetype"), url("../fonts/iconic.svg#iconic") format("svg");
 }
 /* line 24, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic, .icon, .link--bookmark:before, .checkbox__view, .form-row__content--divided .input-wr + .input-wr .input-cont:after, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .filter-tag__cross, .actions-sl .slick-prev:after,
+.iconic, .icon, .link--bookmark:before, .link--eye:before, .checkbox__view, .form-row__content--divided .input-wr + .input-wr .input-cont:after, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .filter-tag__cross, .actions-sl .slick-prev:after,
 .actions-sl .slick-next:after, .recom-sl .slick-next, .recom-sl .slick-prev {
   font-family: "iconic";
   -webkit-font-smoothing: antialiased;
@@ -1209,171 +1209,176 @@ MAIN {
   color: #000;
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arr-l-light:after, .recom-sl .slick-prev:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arr-r-light:after, .recom-sl .slick-next:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arrow-left:after, .actions-sl .slick-prev:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--arrow-right:after, .actions-sl .slick-next:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--attraction:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--bookmark:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--bug:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--calendar:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--chevron2-r:after, .form-row__content--divided .input-wr + .input-wr .input-cont:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--closed-eye:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--coctail:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
 .iconic--cross:after, .popup-closer:after, .filter-tag__cross:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--elephant:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--download:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--eye:after, .input-cont--eye._pass-visible .iconic:after, .input-cont--eye._pass-visible .icon:after, .input-cont--eye._pass-visible .checkbox__view:after, .input-cont--eye._pass-visible .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye._pass-visible .input-cont:after, .input-cont--eye._pass-visible .popup-closer:after, .input-cont--eye._pass-visible .soc-rounds__li:after, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon:after, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon:after, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon:after, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon:after, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon:after, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .filter-tag__cross:after, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
-.input-cont--eye._pass-visible .actions-sl .slick-next:after,
-.actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next:after, .recom-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-prev:after, .recom-sl .input-cont--eye._pass-visible .slick-prev:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--elephant:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--favorite:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--eye:after, .input-cont--eye._pass-visible .iconic:after, .input-cont--eye._pass-visible .icon:after, .input-cont--eye._pass-visible .checkbox__view:after, .input-cont--eye._pass-visible .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye._pass-visible .input-cont:after, .input-cont--eye._pass-visible .popup-closer:after, .input-cont--eye._pass-visible .soc-rounds__li:after, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon:after, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon:after, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon:after, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon:after, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon:after, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon:after, .input-cont--eye._pass-visible .filter-tag__cross:after, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
+.input-cont--eye._pass-visible .actions-sl .slick-next:after,
+.actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next:after, .recom-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-prev:after, .recom-sl .input-cont--eye._pass-visible .slick-prev:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--grid:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--favorite:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--lion:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--grid:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--mail--old:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--lion:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--mail:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--mail--old:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--person:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--mail:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--pin:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--person:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--placemark:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--pin:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--plus:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--placemark:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--search:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--plus:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-fb:after, .soc-rounds__li--fb:after, .ya-share2__item_service_facebook .ya-share2__icon:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--search:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-gplus:after, .soc-rounds__li--gplus:after, .ya-share2__item_service_gplus .ya-share2__icon:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-fb:after, .soc-rounds__li--fb:after, .ya-share2__item_service_facebook .ya-share2__icon:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-mail:after, .soc-rounds__li--mail:after, .ya-share2__item_service_moimir .ya-share2__icon:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-gplus:after, .soc-rounds__li--gplus:after, .ya-share2__item_service_gplus .ya-share2__icon:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-tw:after, .soc-rounds__li--tw:after, .ya-share2__item_service_twitter .ya-share2__icon:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-mail:after, .soc-rounds__li--mail:after, .ya-share2__item_service_moimir .ya-share2__icon:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-vk-v:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-tw:after, .soc-rounds__li--tw:after, .ya-share2__item_service_twitter .ya-share2__icon:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--soc-vk:after, .soc-rounds__li--vk:after, .ya-share2__item_service_vkontakte .ya-share2__icon:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-vk-v:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--star:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--soc-vk:after, .soc-rounds__li--vk:after, .ya-share2__item_service_vkontakte .ya-share2__icon:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--target:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--star:after {
   content: "";
 }
 
-/* line 135, ../styles/components/svg-fonts/_iconfont.scss */
-.iconic--tick:after, .checkbox__view:after {
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--target:after {
   content: "";
+}
+
+/* line 138, ../styles/components/svg-fonts/_iconfont.scss */
+.iconic--tick:after, .checkbox__view:after {
+  content: "";
 }
 
 /* line 4, ../styles/components/_icons.sass */
@@ -1386,7 +1391,7 @@ MAIN {
 }
 
 /* line 11, ../styles/components/_icons.sass */
-.iconic, .icon, .link--bookmark:before, .checkbox__view, .form-row__content--divided .input-wr + .input-wr .input-cont:after, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .filter-tag__cross, .actions-sl .slick-prev:after,
+.iconic, .icon, .link--bookmark:before, .link--eye:before, .checkbox__view, .form-row__content--divided .input-wr + .input-wr .input-cont:after, .popup-closer, .soc-rounds__li, .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_gplus .ya-share2__icon, .filter-tag__cross, .actions-sl .slick-prev:after,
 .actions-sl .slick-next:after, .recom-sl .slick-next, .recom-sl .slick-prev, .icon {
   display: inline-block;
   vertical-align: middle;
@@ -1427,7 +1432,7 @@ MAIN {
   margin-bottom: 10px;
 }
 /* line 20, ../styles/components/_buttons.sass */
-.btn .iconic, .btn .icon, .btn .link--bookmark:before, .btn .checkbox__view, .btn .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .btn .input-cont:after, .btn .popup-closer, .btn .soc-rounds__li, .btn .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn .ya-share2__icon, .btn .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn .ya-share2__icon, .btn .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn .ya-share2__icon, .btn .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn .ya-share2__icon, .btn .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn .ya-share2__icon, .btn .filter-tag__cross, .btn .actions-sl .slick-prev:after, .actions-sl .btn .slick-prev:after,
+.btn .iconic, .btn .icon, .btn .link--bookmark:before, .btn .link--eye:before, .btn .checkbox__view, .btn .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .btn .input-cont:after, .btn .popup-closer, .btn .soc-rounds__li, .btn .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn .ya-share2__icon, .btn .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn .ya-share2__icon, .btn .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn .ya-share2__icon, .btn .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn .ya-share2__icon, .btn .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn .ya-share2__icon, .btn .filter-tag__cross, .btn .actions-sl .slick-prev:after, .actions-sl .btn .slick-prev:after,
 .btn .actions-sl .slick-next:after,
 .actions-sl .btn .slick-next:after, .btn .recom-sl .slick-next, .recom-sl .btn .slick-next, .btn .recom-sl .slick-prev, .recom-sl .btn .slick-prev {
   font-size: inherit;
@@ -1504,7 +1509,7 @@ MAIN {
   padding-left: 10px;
 }
 /* line 82, ../styles/components/_buttons.sass */
-.btn--icon .icon, .btn--icon .iconic, .btn--icon .icon, .btn--icon .link--bookmark:before, .btn--icon .checkbox__view, .btn--icon .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .btn--icon .input-cont:after, .btn--icon .popup-closer, .btn--icon .soc-rounds__li, .btn--icon .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn--icon .ya-share2__icon, .btn--icon .filter-tag__cross, .btn--icon .actions-sl .slick-prev:after, .actions-sl .btn--icon .slick-prev:after,
+.btn--icon .icon, .btn--icon .iconic, .btn--icon .icon, .btn--icon .link--bookmark:before, .btn--icon .link--eye:before, .btn--icon .checkbox__view, .btn--icon .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .btn--icon .input-cont:after, .btn--icon .popup-closer, .btn--icon .soc-rounds__li, .btn--icon .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .btn--icon .ya-share2__icon, .btn--icon .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .btn--icon .ya-share2__icon, .btn--icon .filter-tag__cross, .btn--icon .actions-sl .slick-prev:after, .actions-sl .btn--icon .slick-prev:after,
 .btn--icon .actions-sl .slick-next:after,
 .actions-sl .btn--icon .slick-next:after, .btn--icon .recom-sl .slick-next, .recom-sl .btn--icon .slick-next, .btn--icon .recom-sl .slick-prev, .recom-sl .btn--icon .slick-prev {
   vertical-align: middle;
@@ -1545,6 +1550,10 @@ MAIN {
   border-radius: 0;
 }
 /* line 113, ../styles/components/_buttons.sass */
+.btn--long {
+  width: 100%;
+}
+/* line 116, ../styles/components/_buttons.sass */
 .btn--lime-brd {
   border: 1px solid #dbdbdb;
   border-radius: 4px;
@@ -1555,23 +1564,23 @@ MAIN {
           transition: background 150ms ease-out;
   padding: 10px 15px;
 }
-/* line 122, ../styles/components/_buttons.sass */
+/* line 125, ../styles/components/_buttons.sass */
 .btn--lime-brd:hover {
   background: #dcf187;
 }
-/* line 125, ../styles/components/_buttons.sass */
+/* line 128, ../styles/components/_buttons.sass */
 .btn--more {
   font-size: 14px;
 }
-/* line 127, ../styles/components/_buttons.sass */
+/* line 130, ../styles/components/_buttons.sass */
 .btn--more .btn__more-ico {
   margin: 0 8px 0 0;
 }
-/* line 130, ../styles/components/_buttons.sass */
+/* line 133, ../styles/components/_buttons.sass */
 .btn--more._anim {
   color: #ccc;
 }
-/* line 132, ../styles/components/_buttons.sass */
+/* line 135, ../styles/components/_buttons.sass */
 .btn--more._anim .btn__more-ico {
   opacity: 0.8;
   -webkit-animation-duration: 1.3s;
@@ -1583,7 +1592,7 @@ MAIN {
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
-/* line 140, ../styles/components/_buttons.sass */
+/* line 143, ../styles/components/_buttons.sass */
 .btn__more-ico {
   display: inline-block;
   vertical-align: middle;
@@ -1592,17 +1601,17 @@ MAIN {
   background: url("../images/arr-round.png") no-repeat;
   background-size: cover;
 }
-/* line 150, ../styles/components/_buttons.sass */
+/* line 153, ../styles/components/_buttons.sass */
 .btn--round {
   border-radius: 23px;
   font-weight: bold;
 }
-/* line 154, ../styles/components/_buttons.sass */
+/* line 157, ../styles/components/_buttons.sass */
 .btn--round.btn--white {
   border: 0;
 }
 @media screen and (max-width: 669px) {
-  /* line 160, ../styles/components/_buttons.sass */
+  /* line 163, ../styles/components/_buttons.sass */
   .btn .tooltip {
     position: static !important;
     display: inline !important;
@@ -1617,14 +1626,14 @@ MAIN {
   }
 }
 
-/* line 174, ../styles/components/_buttons.sass */
+/* line 177, ../styles/components/_buttons.sass */
 .btn-flex-wr {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 176, ../styles/components/_buttons.sass */
+/* line 179, ../styles/components/_buttons.sass */
 .btn-flex-wr .btn {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -1634,7 +1643,7 @@ MAIN {
       -ms-flex-positive: 0;
           flex-grow: 0;
 }
-/* line 180, ../styles/components/_buttons.sass */
+/* line 183, ../styles/components/_buttons.sass */
 .btn-flex-wr .form-tip {
   padding-left: 13px;
 }
@@ -1762,8 +1771,48 @@ MAIN {
 .link--bookmark:hover:before {
   color: #088e60;
 }
+/* line 80, ../styles/components/_links.sass */
+.link--eye {
+  color: #088e60;
+}
+/* line 84, ../styles/components/_links.sass */
+.link--eye SPAN {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: transparent;
+  -webkit-transition: border-color 150ms ease-out;
+          transition: border-color 150ms ease-out;
+}
+/* line 90, ../styles/components/_links.sass */
+.link--eye:hover {
+  border-color: transparent;
+}
+/* line 93, ../styles/components/_links.sass */
+.link--eye:hover SPAN {
+  border-color: #088e60;
+}
+/* line 96, ../styles/components/_links.sass */
+.link--eye:before {
+  content: "";
+  font-size: 15px;
+  font-style: normal;
+  -webkit-transition: 150ms;
+          transition: 150ms;
+  width: 32px;
+  height: 32px;
+  margin-right: 14px;
+  line-height: 32px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  text-align: center;
+  color: #a7a7a7;
+}
+/* line 112, ../styles/components/_links.sass */
+.link--eye:hover:before {
+  color: #088e60;
+}
 
-/* line 82, ../styles/components/_links.sass */
+/* line 117, ../styles/components/_links.sass */
 .link-und {
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -1771,55 +1820,55 @@ MAIN {
           transition: border-color 150ms ease-out;
   cursor: pointer;
 }
-/* line 88, ../styles/components/_links.sass */
+/* line 123, ../styles/components/_links.sass */
 .link-und:hover {
   border-color: transparent;
 }
-/* line 91, ../styles/components/_links.sass */
+/* line 126, ../styles/components/_links.sass */
 .link-und--green-d {
   color: #088e60;
   border-bottom: 1px solid rgba(8, 142, 96, 0.3);
 }
-/* line 94, ../styles/components/_links.sass */
+/* line 129, ../styles/components/_links.sass */
 .link-und--green-d:hover {
   border-color: transparent;
 }
-/* line 97, ../styles/components/_links.sass */
+/* line 132, ../styles/components/_links.sass */
 .link-und--green2-d {
   color: #088e60;
   border-bottom: 1px solid #b2b2b2;
 }
-/* line 100, ../styles/components/_links.sass */
+/* line 135, ../styles/components/_links.sass */
 .link-und--green2-d:hover {
   border-color: transparent;
 }
-/* line 103, ../styles/components/_links.sass */
+/* line 138, ../styles/components/_links.sass */
 .link-und--dotted {
   border-bottom-style: dotted;
 }
 
-/* line 108, ../styles/components/_links.sass */
+/* line 143, ../styles/components/_links.sass */
 .subscribe-link {
   text-align: left;
   display: inline-block;
   position: relative;
   padding-left: 35px;
 }
-/* line 114, ../styles/components/_links.sass */
+/* line 149, ../styles/components/_links.sass */
 .subscribe-link .icon {
   color: #696969;
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 120, ../styles/components/_links.sass */
+/* line 155, ../styles/components/_links.sass */
 .subscribe-link__text {
   display: inline-block;
   font: 14px/16px "Helvetica Neue", sans-serif;
   color: #088e60;
 }
 
-/* line 129, ../styles/components/_links.sass */
+/* line 164, ../styles/components/_links.sass */
 .bookmark-link {
   text-align: left;
   display: inline-block;
@@ -1828,8 +1877,8 @@ MAIN {
   color: #333;
   font: 14px/1.2 "Helvetica Neue", sans-serif;
 }
-/* line 136, ../styles/components/_links.sass */
-.bookmark-link .iconic, .bookmark-link .icon, .bookmark-link .link--bookmark:before, .bookmark-link .checkbox__view, .bookmark-link .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .bookmark-link .input-cont:after, .bookmark-link .popup-closer, .bookmark-link .soc-rounds__li, .bookmark-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .bookmark-link .ya-share2__icon, .bookmark-link .filter-tag__cross, .bookmark-link .actions-sl .slick-prev:after, .actions-sl .bookmark-link .slick-prev:after,
+/* line 171, ../styles/components/_links.sass */
+.bookmark-link .iconic, .bookmark-link .icon, .bookmark-link .link--bookmark:before, .bookmark-link .link--eye:before, .bookmark-link .checkbox__view, .bookmark-link .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .bookmark-link .input-cont:after, .bookmark-link .popup-closer, .bookmark-link .soc-rounds__li, .bookmark-link .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .bookmark-link .ya-share2__icon, .bookmark-link .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .bookmark-link .ya-share2__icon, .bookmark-link .filter-tag__cross, .bookmark-link .actions-sl .slick-prev:after, .actions-sl .bookmark-link .slick-prev:after,
 .bookmark-link .actions-sl .slick-next:after,
 .actions-sl .bookmark-link .slick-next:after, .bookmark-link .recom-sl .slick-next, .recom-sl .bookmark-link .slick-next, .bookmark-link .recom-sl .slick-prev, .recom-sl .bookmark-link .slick-prev {
   vertical-align: middle;
@@ -1838,7 +1887,7 @@ MAIN {
   font-size: 21px;
   line-height: 1;
 }
-/* line 144, ../styles/components/_links.sass */
+/* line 179, ../styles/components/_links.sass */
 .bookmark-link:hover .icon {
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
@@ -2045,11 +2094,19 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   border: 1px solid #d8d8d8;
   background-color: #fff;
-  font-size: 13px;
-  line-height: 22px;
-  padding: 8px 9px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 13px;
+  border-radius: 3px;
+  box-shadow: inset 1px 1.732px 5px 0px rgba(55, 54, 55, 0.1);
+  min-height: 120px;
+  resize: vertical;
 }
-/* line 85, ../styles/components/_formElements.sass */
+/* line 89, ../styles/components/_formElements.sass */
+.textarea--big {
+  min-height: 500px;
+}
+/* line 92, ../styles/components/_formElements.sass */
 .textarea::-webkit-input-placeholder {
   color: #9b9b9b;
 }
@@ -2063,18 +2120,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #9b9b9b;
 }
 
-/* line 89, ../styles/components/_formElements.sass */
+/* line 96, ../styles/components/_formElements.sass */
 .img-input {
   display: block;
   max-width: 400px;
 }
 @media screen and (max-width: 767px) {
-  /* line 89, ../styles/components/_formElements.sass */
+  /* line 96, ../styles/components/_formElements.sass */
   .img-input {
     max-width: 200px;
   }
 }
-/* line 95, ../styles/components/_formElements.sass */
+/* line 102, ../styles/components/_formElements.sass */
 .img-input__main {
   border: 1px solid #dbdbdb;
   padding-bottom: 100%;
@@ -2089,11 +2146,11 @@ h1, h2, h3, h4, h5, h6 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-/* line 110, ../styles/components/_formElements.sass */
+/* line 117, ../styles/components/_formElements.sass */
 .img-input__main._loaded .img-input__txt {
   color: transparent;
 }
-/* line 113, ../styles/components/_formElements.sass */
+/* line 120, ../styles/components/_formElements.sass */
 .img-input__main INPUT {
   position: absolute;
   top: 0;
@@ -2103,7 +2160,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   cursor: pointer;
 }
-/* line 122, ../styles/components/_formElements.sass */
+/* line 129, ../styles/components/_formElements.sass */
 .img-input__txt {
   position: absolute;
   top: 50%;
@@ -2119,19 +2176,89 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 150ms;
           transition: 150ms;
 }
-/* line 135, ../styles/components/_formElements.sass */
+/* line 142, ../styles/components/_formElements.sass */
 .img-input:hover {
   border-color: #5b5b5b;
 }
+/* line 145, ../styles/components/_formElements.sass */
+.img-input--green {
+  background-color: #088e60;
+}
+/* line 148, ../styles/components/_formElements.sass */
+.img-input--green .img-input__main {
+  border: none 0;
+}
+/* line 151, ../styles/components/_formElements.sass */
+.img-input--green .img-input__icon {
+  color: #fff;
+}
+/* line 154, ../styles/components/_formElements.sass */
+.img-input--green .img-input__txt {
+  color: #fff;
+}
+/* line 159, ../styles/components/_formElements.sass */
+.img-input--fix .img-input__icon {
+  text-align: center;
+  display: block;
+}
+/* line 163, ../styles/components/_formElements.sass */
+.img-input--fix .img-input__main {
+  overflow: none;
+  padding-bottom: 0;
+}
+/* line 167, ../styles/components/_formElements.sass */
+.img-input--fix .img-input__txt {
+  position: static;
+  -webkit-transform: none;
+          transform: none;
+  display: block;
+}
+/* line 174, ../styles/components/_formElements.sass */
+.img-input--xs .img-input__txt {
+  font: 12px/1.3 "Helvetica Neue", sans-serif;
+  padding-top: 0;
+}
+/* line 178, ../styles/components/_formElements.sass */
+.img-input--xs .img-input__icon {
+  padding: 20px 0 10px;
+}
+/* line 181, ../styles/components/_formElements.sass */
+.img-input--xs .img-input__icon:after {
+  font-size: 45px;
+  line-height: 1;
+}
+/* line 185, ../styles/components/_formElements.sass */
+.img-input--xl {
+  max-width: none;
+}
+/* line 188, ../styles/components/_formElements.sass */
+.img-input--xl .img-input__main {
+  max-width: none;
+  height: 420px;
+}
+/* line 192, ../styles/components/_formElements.sass */
+.img-input--xl .img-input__txt {
+  font: 500 20px/1.4 "Helvetica Neue", sans-serif;
+  padding-top: 0;
+}
+/* line 196, ../styles/components/_formElements.sass */
+.img-input--xl .img-input__icon {
+  padding: 70px 0 25px;
+}
+/* line 199, ../styles/components/_formElements.sass */
+.img-input--xl .img-input__icon:after {
+  font-size: 140px;
+  line-height: 1;
+}
 
-/* line 139, ../styles/components/_formElements.sass */
+/* line 207, ../styles/components/_formElements.sass */
 .input-error {
   display: block;
   color: #fe101f;
   margin: 3px 2px 5px;
 }
 
-/* line 152, ../styles/components/_formElements.sass */
+/* line 220, ../styles/components/_formElements.sass */
 .checkbox-label {
   display: table;
   white-space: nowrap;
@@ -2139,17 +2266,17 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   padding: 4px 0;
 }
-/* line 159, ../styles/components/_formElements.sass */
+/* line 227, ../styles/components/_formElements.sass */
 .checkbox-label .checkbox, .checkbox-label__txt {
   display: inline-block;
   vertical-align: top;
 }
-/* line 163, ../styles/components/_formElements.sass */
+/* line 231, ../styles/components/_formElements.sass */
 .checkbox-label .checkbox {
   margin-top: 2px;
   margin-right: -14px;
 }
-/* line 167, ../styles/components/_formElements.sass */
+/* line 235, ../styles/components/_formElements.sass */
 .checkbox-label__txt {
   font-size: 13px;
   line-height: 20px;
@@ -2159,17 +2286,17 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 23px;
 }
 
-/* line 175, ../styles/components/_formElements.sass */
+/* line 243, ../styles/components/_formElements.sass */
 .checkbox {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 179, ../styles/components/_formElements.sass */
+/* line 247, ../styles/components/_formElements.sass */
 .checkbox INPUT {
   display: none;
 }
-/* line 182, ../styles/components/_formElements.sass */
+/* line 250, ../styles/components/_formElements.sass */
 .checkbox__view {
   display: block;
   width: 14px;
@@ -2180,7 +2307,7 @@ h1, h2, h3, h4, h5, h6 {
           transition: 150ms;
   position: relative;
 }
-/* line 193, ../styles/components/_formElements.sass */
+/* line 261, ../styles/components/_formElements.sass */
 .checkbox__view:after {
   color: #000;
   font-size: 15px;
@@ -2194,52 +2321,52 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 150ms;
           transition: 150ms;
 }
-/* line 204, ../styles/components/_formElements.sass */
+/* line 272, ../styles/components/_formElements.sass */
 .checkbox__view:hover, .checkbox__view._active, .checkbox-label:hover .checkbox__view, .checkbox__view._active, input:checked + .checkbox__view {
   background-color: #ebff9b;
 }
-/* line 213, ../styles/components/_formElements.sass */
+/* line 281, ../styles/components/_formElements.sass */
 .checkbox__view._active:after, input:checked + .checkbox__view:after {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
 }
 
-/* line 218, ../styles/components/_formElements.sass */
+/* line 286, ../styles/components/_formElements.sass */
 .sort-chkb-wr {
   font-size: 0;
   margin-left: -5px;
   margin-right: -5px;
 }
-/* line 223, ../styles/components/_formElements.sass */
+/* line 291, ../styles/components/_formElements.sass */
 .sort-chkb-wr .sort-chkb {
   margin: 4px;
 }
 
-/* line 226, ../styles/components/_formElements.sass */
+/* line 294, ../styles/components/_formElements.sass */
 .sort-chkb {
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
   cursor: pointer;
 }
-/* line 232, ../styles/components/_formElements.sass */
+/* line 300, ../styles/components/_formElements.sass */
 .sort-chkb input {
   display: none;
 }
-/* line 236, ../styles/components/_formElements.sass */
+/* line 304, ../styles/components/_formElements.sass */
 .sort-chkb input:checked + .sort-chkb__main {
   background: #000;
   color: #16ca8c;
   border-color: transparent;
 }
-/* line 240, ../styles/components/_formElements.sass */
-.sort-chkb input:checked + .sort-chkb__main .iconic, .sort-chkb input:checked + .sort-chkb__main .icon, .sort-chkb input:checked + .sort-chkb__main .link--bookmark:before, .sort-chkb input:checked + .sort-chkb__main .checkbox__view, .sort-chkb input:checked + .sort-chkb__main .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .sort-chkb input:checked + .sort-chkb__main .input-cont:after, .sort-chkb input:checked + .sort-chkb__main .popup-closer, .sort-chkb input:checked + .sort-chkb__main .soc-rounds__li, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .filter-tag__cross, .sort-chkb input:checked + .sort-chkb__main .actions-sl .slick-prev:after, .actions-sl .sort-chkb input:checked + .sort-chkb__main .slick-prev:after,
+/* line 308, ../styles/components/_formElements.sass */
+.sort-chkb input:checked + .sort-chkb__main .iconic, .sort-chkb input:checked + .sort-chkb__main .icon, .sort-chkb input:checked + .sort-chkb__main .link--bookmark:before, .sort-chkb input:checked + .sort-chkb__main .link--eye:before, .sort-chkb input:checked + .sort-chkb__main .checkbox__view, .sort-chkb input:checked + .sort-chkb__main .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .sort-chkb input:checked + .sort-chkb__main .input-cont:after, .sort-chkb input:checked + .sort-chkb__main .popup-closer, .sort-chkb input:checked + .sort-chkb__main .soc-rounds__li, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .sort-chkb input:checked + .sort-chkb__main .ya-share2__icon, .sort-chkb input:checked + .sort-chkb__main .filter-tag__cross, .sort-chkb input:checked + .sort-chkb__main .actions-sl .slick-prev:after, .actions-sl .sort-chkb input:checked + .sort-chkb__main .slick-prev:after,
 .sort-chkb input:checked + .sort-chkb__main .actions-sl .slick-next:after,
 .actions-sl .sort-chkb input:checked + .sort-chkb__main .slick-next:after, .sort-chkb input:checked + .sort-chkb__main .recom-sl .slick-next, .recom-sl .sort-chkb input:checked + .sort-chkb__main .slick-next, .sort-chkb input:checked + .sort-chkb__main .recom-sl .slick-prev, .recom-sl .sort-chkb input:checked + .sort-chkb__main .slick-prev {
   color: #fff;
 }
-/* line 244, ../styles/components/_formElements.sass */
+/* line 312, ../styles/components/_formElements.sass */
 .sort-chkb__main {
   display: block;
   border: 1px solid #dfdfdf;
@@ -2253,72 +2380,72 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 300ms;
           transition: 300ms;
 }
-/* line 256, ../styles/components/_formElements.sass */
-.sort-chkb__main .iconic, .sort-chkb__main .icon, .sort-chkb__main .link--bookmark:before, .sort-chkb__main .checkbox__view, .sort-chkb__main .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .sort-chkb__main .input-cont:after, .sort-chkb__main .popup-closer, .sort-chkb__main .soc-rounds__li, .sort-chkb__main .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .sort-chkb__main .ya-share2__icon, .sort-chkb__main .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .sort-chkb__main .ya-share2__icon, .sort-chkb__main .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .sort-chkb__main .ya-share2__icon, .sort-chkb__main .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .sort-chkb__main .ya-share2__icon, .sort-chkb__main .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .sort-chkb__main .ya-share2__icon, .sort-chkb__main .filter-tag__cross, .sort-chkb__main .actions-sl .slick-prev:after, .actions-sl .sort-chkb__main .slick-prev:after,
+/* line 324, ../styles/components/_formElements.sass */
+.sort-chkb__main .iconic, .sort-chkb__main .icon, .sort-chkb__main .link--bookmark:before, .sort-chkb__main .link--eye:before, .sort-chkb__main .checkbox__view, .sort-chkb__main .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .sort-chkb__main .input-cont:after, .sort-chkb__main .popup-closer, .sort-chkb__main .soc-rounds__li, .sort-chkb__main .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .sort-chkb__main .ya-share2__icon, .sort-chkb__main .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .sort-chkb__main .ya-share2__icon, .sort-chkb__main .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .sort-chkb__main .ya-share2__icon, .sort-chkb__main .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .sort-chkb__main .ya-share2__icon, .sort-chkb__main .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .sort-chkb__main .ya-share2__icon, .sort-chkb__main .filter-tag__cross, .sort-chkb__main .actions-sl .slick-prev:after, .actions-sl .sort-chkb__main .slick-prev:after,
 .sort-chkb__main .actions-sl .slick-next:after,
 .actions-sl .sort-chkb__main .slick-next:after, .sort-chkb__main .recom-sl .slick-next, .recom-sl .sort-chkb__main .slick-next, .sort-chkb__main .recom-sl .slick-prev, .recom-sl .sort-chkb__main .slick-prev {
   color: #ababab;
   margin: 0 3px 0 7px;
   font-size: 11px;
 }
-/* line 260, ../styles/components/_formElements.sass */
+/* line 328, ../styles/components/_formElements.sass */
 .sort-chkb__main .iconic--placemark {
   font-size: 13px;
   margin: 0 7px 0 4px;
 }
-/* line 264, ../styles/components/_formElements.sass */
+/* line 332, ../styles/components/_formElements.sass */
 .sort-chkb__main:hover {
   border-color: #000;
 }
-/* line 267, ../styles/components/_formElements.sass */
-.sort-chkb .iconic, .sort-chkb .icon, .sort-chkb .link--bookmark:before, .sort-chkb .checkbox__view, .sort-chkb .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .sort-chkb .input-cont:after, .sort-chkb .popup-closer, .sort-chkb .soc-rounds__li, .sort-chkb .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .sort-chkb .ya-share2__icon, .sort-chkb .filter-tag__cross, .sort-chkb .actions-sl .slick-prev:after, .actions-sl .sort-chkb .slick-prev:after,
+/* line 335, ../styles/components/_formElements.sass */
+.sort-chkb .iconic, .sort-chkb .icon, .sort-chkb .link--bookmark:before, .sort-chkb .link--eye:before, .sort-chkb .checkbox__view, .sort-chkb .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .sort-chkb .input-cont:after, .sort-chkb .popup-closer, .sort-chkb .soc-rounds__li, .sort-chkb .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .sort-chkb .ya-share2__icon, .sort-chkb .filter-tag__cross, .sort-chkb .actions-sl .slick-prev:after, .actions-sl .sort-chkb .slick-prev:after,
 .sort-chkb .actions-sl .slick-next:after,
 .actions-sl .sort-chkb .slick-next:after, .sort-chkb .recom-sl .slick-next, .recom-sl .sort-chkb .slick-next, .sort-chkb .recom-sl .slick-prev, .recom-sl .sort-chkb .slick-prev, .sort-chkb__main-txt {
   vertical-align: middle;
 }
 @media screen and (max-width: 479px) {
-  /* line 226, ../styles/components/_formElements.sass */
+  /* line 294, ../styles/components/_formElements.sass */
   .sort-chkb {
     text-align: center;
   }
-  /* line 272, ../styles/components/_formElements.sass */
-  .sort-chkb .iconic, .sort-chkb .icon, .sort-chkb .link--bookmark:before, .sort-chkb .checkbox__view, .sort-chkb .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .sort-chkb .input-cont:after, .sort-chkb .popup-closer, .sort-chkb .soc-rounds__li, .sort-chkb .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .sort-chkb .ya-share2__icon, .sort-chkb .filter-tag__cross, .sort-chkb .actions-sl .slick-prev:after, .actions-sl .sort-chkb .slick-prev:after,
+  /* line 340, ../styles/components/_formElements.sass */
+  .sort-chkb .iconic, .sort-chkb .icon, .sort-chkb .link--bookmark:before, .sort-chkb .link--eye:before, .sort-chkb .checkbox__view, .sort-chkb .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .sort-chkb .input-cont:after, .sort-chkb .popup-closer, .sort-chkb .soc-rounds__li, .sort-chkb .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .sort-chkb .ya-share2__icon, .sort-chkb .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .sort-chkb .ya-share2__icon, .sort-chkb .filter-tag__cross, .sort-chkb .actions-sl .slick-prev:after, .actions-sl .sort-chkb .slick-prev:after,
   .sort-chkb .actions-sl .slick-next:after,
   .actions-sl .sort-chkb .slick-next:after, .sort-chkb .recom-sl .slick-next, .recom-sl .sort-chkb .slick-next, .sort-chkb .recom-sl .slick-prev, .recom-sl .sort-chkb .slick-prev {
     margin: 0;
   }
-  /* line 275, ../styles/components/_formElements.sass */
+  /* line 343, ../styles/components/_formElements.sass */
   .sort-chkb__main {
     width: 42px;
     padding-left: 5px;
     padding-right: 5px;
   }
-  /* line 280, ../styles/components/_formElements.sass */
+  /* line 348, ../styles/components/_formElements.sass */
   .sort-chkb__main-txt {
     display: none;
   }
 }
 
-/* line 286, ../styles/components/_formElements.sass */
+/* line 354, ../styles/components/_formElements.sass */
 .txt-chbox {
   display: inline-block;
 }
-/* line 289, ../styles/components/_formElements.sass */
+/* line 357, ../styles/components/_formElements.sass */
 .txt-chbox input {
   display: none;
 }
-/* line 292, ../styles/components/_formElements.sass */
+/* line 360, ../styles/components/_formElements.sass */
 .txt-chbox._active .txt-chbox__visual, .txt-chbox:hover .txt-chbox__visual,
 .txt-chbox input:checked + .txt-chbox__visual {
   background: #dcf187;
 }
-/* line 296, ../styles/components/_formElements.sass */
+/* line 364, ../styles/components/_formElements.sass */
 .txt-chbox._active .txt-chbox__visual .link, .txt-chbox:hover .txt-chbox__visual .link,
 .txt-chbox input:checked + .txt-chbox__visual .link {
   border-bottom-color: transparent;
   color: #000;
 }
-/* line 300, ../styles/components/_formElements.sass */
+/* line 368, ../styles/components/_formElements.sass */
 .txt-chbox__visual {
   display: block;
   padding: 2px 3px;
@@ -2328,38 +2455,38 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 150ms;
           transition: 150ms;
 }
-/* line 308, ../styles/components/_formElements.sass */
+/* line 376, ../styles/components/_formElements.sass */
 .txt-chbox__visual--md {
   padding: 6px;
   font-size: 18px;
 }
 
-/* line 415, ../styles/components/_formElements.sass */
+/* line 483, ../styles/components/_formElements.sass */
 .chkb-dropdown {
   position: relative;
   margin-bottom: 17px;
 }
-/* line 419, ../styles/components/_formElements.sass */
+/* line 487, ../styles/components/_formElements.sass */
 .chkb-dropdown__title {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 424, ../styles/components/_formElements.sass */
+/* line 492, ../styles/components/_formElements.sass */
 .chkb-dropdown__title--lg-hide {
   display: none;
 }
-/* line 427, ../styles/components/_formElements.sass */
+/* line 495, ../styles/components/_formElements.sass */
 .chkb-dropdown__options-gr {
   position: relative;
 }
-/* line 433, ../styles/components/_formElements.sass */
+/* line 501, ../styles/components/_formElements.sass */
 .chkb-dropdown--dates__options-gr {
   background-color: transparent !important;
   padding: 0 !important;
   border: 0 !important;
 }
-/* line 439, ../styles/components/_formElements.sass */
+/* line 507, ../styles/components/_formElements.sass */
 .chkb-dropdown--dates .datepicker {
   position: relative;
   left: 0 !important;
@@ -2370,14 +2497,14 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
 }
 @media screen and (max-width: 669px) {
-  /* line 415, ../styles/components/_formElements.sass */
+  /* line 483, ../styles/components/_formElements.sass */
   .chkb-dropdown {
     text-align: left;
     position: relative;
     z-index: 1;
     margin-bottom: 15px;
   }
-  /* line 322, ../styles/components/_formElements.sass */
+  /* line 390, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title {
     font-weight: normal;
     display: block !important;
@@ -2390,7 +2517,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 300ms;
             transition: 300ms;
   }
-  /* line 333, ../styles/components/_formElements.sass */
+  /* line 401, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title:after {
     content: "";
     position: absolute;
@@ -2401,11 +2528,11 @@ h1, h2, h3, h4, h5, h6 {
     border-width: 7px 4px;
     border-style: solid;
   }
-  /* line 343, ../styles/components/_formElements.sass */
+  /* line 411, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title:hover {
     border-color: #676767;
   }
-  /* line 346, ../styles/components/_formElements.sass */
+  /* line 414, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr {
     position: absolute;
     top: 100%;
@@ -2427,24 +2554,24 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 300ms;
             transition: 300ms;
   }
-  /* line 366, ../styles/components/_formElements.sass */
+  /* line 434, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar-track {
     background: transparent;
   }
-  /* line 369, ../styles/components/_formElements.sass */
+  /* line 437, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar {
     width: 9px;
   }
-  /* line 372, ../styles/components/_formElements.sass */
+  /* line 440, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__options-gr::-webkit-scrollbar-thumb {
     background-color: #cdeb55;
     cursor: pointer;
   }
-  /* line 377, ../styles/components/_formElements.sass */
+  /* line 445, ../styles/components/_formElements.sass */
   .chkb-dropdown .chkb-dropdown__title, .chkb-dropdown .txt-chbox__visual {
     padding: 8px 50px 8px 12px;
   }
-  /* line 381, ../styles/components/_formElements.sass */
+  /* line 449, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox {
     display: block;
     margin: 0;
@@ -2452,16 +2579,16 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 150ms;
             transition: 150ms;
   }
-  /* line 387, ../styles/components/_formElements.sass */
+  /* line 455, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox__visual {
     font-size: 15px;
   }
-  /* line 390, ../styles/components/_formElements.sass */
+  /* line 458, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox .link {
     color: #000;
     border-bottom: 0;
   }
-  /* line 397, ../styles/components/_formElements.sass */
+  /* line 465, ../styles/components/_formElements.sass */
   .chkb-dropdown .txt-chbox._active .txt-chbox__visual:after, .chkb-dropdown .txt-chbox:hover .txt-chbox__visual:after,
   .chkb-dropdown .txt-chbox input:checked + .txt-chbox__visual:after {
     content: "";
@@ -2471,11 +2598,11 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     border-bottom: 1px solid #e5f5a7;
   }
-  /* line 408, ../styles/components/_formElements.sass */
+  /* line 476, ../styles/components/_formElements.sass */
   .chkb-dropdown._active {
     z-index: 10;
   }
-  /* line 410, ../styles/components/_formElements.sass */
+  /* line 478, ../styles/components/_formElements.sass */
   .chkb-dropdown._active .chkb-dropdown__options-gr {
     opacity: 1;
     visibility: visible;
@@ -2484,7 +2611,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* line 457, ../styles/components/_formElements.sass */
+/* line 525, ../styles/components/_formElements.sass */
 .selector {
   position: relative;
   font-size: 12px;
@@ -2492,11 +2619,11 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 150px;
   text-align: left;
 }
-/* line 463, ../styles/components/_formElements.sass */
+/* line 531, ../styles/components/_formElements.sass */
 .selector._open {
   z-index: 10;
 }
-/* line 466, ../styles/components/_formElements.sass */
+/* line 534, ../styles/components/_formElements.sass */
 .selector__option, .selector__option-current {
   padding: 6px 30px 6px 15px;
   display: block;
@@ -2504,18 +2631,18 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 150ms;
           transition: 150ms;
 }
-/* line 471, ../styles/components/_formElements.sass */
+/* line 539, ../styles/components/_formElements.sass */
 .selector__option:hover, .selector__option-current:hover {
   background-color: #f1f1f1;
 }
-/* line 474, ../styles/components/_formElements.sass */
+/* line 542, ../styles/components/_formElements.sass */
 .selector__option-current {
   position: relative;
   border: 1px solid #ddd;
   font-weight: bold;
   background-color: #fff;
 }
-/* line 479, ../styles/components/_formElements.sass */
+/* line 547, ../styles/components/_formElements.sass */
 .selector__option-current:after {
   content: "";
   position: absolute;
@@ -2526,12 +2653,12 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #959595 transparent transparent transparent;
   margin-top: -3px;
 }
-/* line 489, ../styles/components/_formElements.sass */
+/* line 557, ../styles/components/_formElements.sass */
 .selector._open .selector__option-current:after {
   margin-top: -10px;
   border-color: transparent transparent #959595 transparent;
 }
-/* line 493, ../styles/components/_formElements.sass */
+/* line 561, ../styles/components/_formElements.sass */
 .selector__options-list {
   display: none;
   position: absolute;
@@ -2543,31 +2670,31 @@ h1, h2, h3, h4, h5, h6 {
   margin: -1px 0 0;
   border: 1px solid #ddd;
 }
-/* line 505, ../styles/components/_formElements.sass */
+/* line 573, ../styles/components/_formElements.sass */
 .selector--inline {
   display: inline-block;
   vertical-align: middle;
   margin: 0 5px;
 }
-/* line 510, ../styles/components/_formElements.sass */
+/* line 578, ../styles/components/_formElements.sass */
 .selector--filter {
   margin: 4px;
   font-size: 13px;
 }
-/* line 514, ../styles/components/_formElements.sass */
+/* line 582, ../styles/components/_formElements.sass */
 .selector--filter .selector__option-current {
   border-radius: 4px;
 }
-/* line 517, ../styles/components/_formElements.sass */
+/* line 585, ../styles/components/_formElements.sass */
 .selector--filter .selector__options-list {
   border-radius: 0 0 4px 4px;
 }
-/* line 522, ../styles/components/_formElements.sass */
+/* line 590, ../styles/components/_formElements.sass */
 .selector--filter._open .selector__option-current {
   border-radius: 4px 4px 0 0;
 }
 
-/* line 532, ../styles/components/_formElements.sass */
+/* line 600, ../styles/components/_formElements.sass */
 .form-tip {
   font-size: 13px;
   line-height: normal;
@@ -2641,57 +2768,67 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 47px;
 }
 @media screen and (max-width: 479px) {
+  /* line 63, ../styles/components/_formLayout.sass */
+  .form-row__content--divided .input-wr {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 479px) {
   /* line 55, ../styles/components/_formLayout.sass */
   .form-row__content--divided {
+    width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
     display: block !important;
   }
-  /* line 80, ../styles/components/_formLayout.sass */
+  /* line 86, ../styles/components/_formLayout.sass */
   .form-row__content--divided .input-wr .input-cont:after {
     display: none;
   }
 }
-/* line 83, ../styles/components/_formLayout.sass */
+/* line 89, ../styles/components/_formLayout.sass */
 .form-row__content-col {
   width: 100%;
 }
-/* line 86, ../styles/components/_formLayout.sass */
+/* line 92, ../styles/components/_formLayout.sass */
 .form-row__content-col .checkbox-label {
   margin-left: 2px;
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
 }
-/* line 90, ../styles/components/_formLayout.sass */
+/* line 96, ../styles/components/_formLayout.sass */
 .form-row__content-col--w80 {
   padding-right: 20%;
 }
 @media screen and (max-width: 579px) {
-  /* line 94, ../styles/components/_formLayout.sass */
+  /* line 100, ../styles/components/_formLayout.sass */
   .form-cols .form-row__content-col {
     padding-right: 0;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 83, ../styles/components/_formLayout.sass */
+  /* line 89, ../styles/components/_formLayout.sass */
   .form-row__content-col {
     padding-right: 0;
   }
 }
-/* line 108, ../styles/components/_formLayout.sass */
+/* line 114, ../styles/components/_formLayout.sass */
 .form-row--inline {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 114, ../styles/components/_formLayout.sass */
+/* line 120, ../styles/components/_formLayout.sass */
 .form-row--inline .form-row__name, .form-row--inline .form-row__content {
   width: 100%;
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
 }
-/* line 121, ../styles/components/_formLayout.sass */
+/* line 127, ../styles/components/_formLayout.sass */
 .form-row--inline .form-row__name-col {
   margin-bottom: 0;
   -webkit-flex-shrink: 0;
@@ -2704,7 +2841,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 165px;
   line-height: 47px;
 }
-/* line 128, ../styles/components/_formLayout.sass */
+/* line 134, ../styles/components/_formLayout.sass */
 .form-row--inline .form-row__content-col {
   line-height: 47px;
   -webkit-box-flex: 1;
@@ -2712,17 +2849,17 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-/* line 135, ../styles/components/_formLayout.sass */
+/* line 141, ../styles/components/_formLayout.sass */
 .form-row--inline.form-row--multi .form-row__name-col {
   margin-top: 23px;
 }
 @media screen and (max-width: 669px) {
-  /* line 134, ../styles/components/_formLayout.sass */
+  /* line 140, ../styles/components/_formLayout.sass */
   .form-row--inline.form-row--multi {
     display: block;
     margin-top: 0;
   }
-  /* line 139, ../styles/components/_formLayout.sass */
+  /* line 145, ../styles/components/_formLayout.sass */
   .form-row--inline.form-row--multi .form-row__name-col {
     margin-top: 0px;
   }
@@ -2744,7 +2881,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 108, ../styles/components/_formLayout.sass */
+  /* line 114, ../styles/components/_formLayout.sass */
   .form-row--inline {
     display: block;
     margin-top: 0;
@@ -2766,46 +2903,46 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 20px;
   }
 }
-/* line 149, ../styles/components/_formLayout.sass */
+/* line 155, ../styles/components/_formLayout.sass */
 .form-row--submit {
   margin-top: 25px;
 }
-/* line 151, ../styles/components/_formLayout.sass */
+/* line 157, ../styles/components/_formLayout.sass */
 .form-row--submit .btn--md {
   padding-left: 20px;
   padding-right: 20px;
 }
 @media screen and (max-width: 579px) {
-  /* line 149, ../styles/components/_formLayout.sass */
+  /* line 155, ../styles/components/_formLayout.sass */
   .form-row--submit {
     margin-top: 30px;
   }
-  /* line 157, ../styles/components/_formLayout.sass */
+  /* line 163, ../styles/components/_formLayout.sass */
   .form-row--submit .form-row__name-col {
     display: none;
   }
 }
 
-/* line 161, ../styles/components/_formLayout.sass */
+/* line 167, ../styles/components/_formLayout.sass */
 .input-cont {
   position: relative;
 }
-/* line 163, ../styles/components/_formLayout.sass */
+/* line 169, ../styles/components/_formLayout.sass */
 .input-cont .input {
   width: 100%;
 }
-/* line 166, ../styles/components/_formLayout.sass */
+/* line 172, ../styles/components/_formLayout.sass */
 .input-cont + .checkbox-label {
   margin-top: 13px;
 }
-/* line 169, ../styles/components/_formLayout.sass */
+/* line 175, ../styles/components/_formLayout.sass */
 .input-cont + .link {
   margin-top: 2px;
   display: inline-block;
   font-size: 13px;
 }
-/* line 175, ../styles/components/_formLayout.sass */
-.input-cont--eye .iconic, .input-cont--eye .icon, .input-cont--eye .link--bookmark:before, .input-cont--eye .checkbox__view, .input-cont--eye .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye .input-cont:after, .input-cont--eye .popup-closer, .input-cont--eye .soc-rounds__li, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon, .input-cont--eye .filter-tag__cross, .input-cont--eye .actions-sl .slick-prev:after, .actions-sl .input-cont--eye .slick-prev:after,
+/* line 181, ../styles/components/_formLayout.sass */
+.input-cont--eye .iconic, .input-cont--eye .icon, .input-cont--eye .link--bookmark:before, .input-cont--eye .link--eye:before, .input-cont--eye .checkbox__view, .input-cont--eye .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye .input-cont:after, .input-cont--eye .popup-closer, .input-cont--eye .soc-rounds__li, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon, .input-cont--eye .filter-tag__cross, .input-cont--eye .actions-sl .slick-prev:after, .actions-sl .input-cont--eye .slick-prev:after,
 .input-cont--eye .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye .slick-next:after, .input-cont--eye .recom-sl .slick-next, .recom-sl .input-cont--eye .slick-next, .input-cont--eye .recom-sl .slick-prev, .recom-sl .input-cont--eye .slick-prev {
   position: absolute;
@@ -2819,20 +2956,20 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: color 150ms;
           transition: color 150ms;
 }
-/* line 184, ../styles/components/_formLayout.sass */
-.input-cont--eye .iconic:hover, .input-cont--eye .icon:hover, .input-cont--eye .link--bookmark:hover:before, .input-cont--eye .checkbox__view:hover, .input-cont--eye .form-row__content--divided .input-wr + .input-wr .input-cont:hover:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye .input-cont:hover:after, .input-cont--eye .popup-closer:hover, .input-cont--eye .soc-rounds__li:hover, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon:hover, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon:hover, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon:hover, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon:hover, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon:hover, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .filter-tag__cross:hover, .input-cont--eye .actions-sl .slick-prev:hover:after, .actions-sl .input-cont--eye .slick-prev:hover:after,
+/* line 190, ../styles/components/_formLayout.sass */
+.input-cont--eye .iconic:hover, .input-cont--eye .icon:hover, .input-cont--eye .link--bookmark:hover:before, .input-cont--eye .link--eye:hover:before, .input-cont--eye .checkbox__view:hover, .input-cont--eye .form-row__content--divided .input-wr + .input-wr .input-cont:hover:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye .input-cont:hover:after, .input-cont--eye .popup-closer:hover, .input-cont--eye .soc-rounds__li:hover, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon:hover, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon:hover, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon:hover, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon:hover, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon:hover, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .filter-tag__cross:hover, .input-cont--eye .actions-sl .slick-prev:hover:after, .actions-sl .input-cont--eye .slick-prev:hover:after,
 .input-cont--eye .actions-sl .slick-next:hover:after,
 .actions-sl .input-cont--eye .slick-next:hover:after, .input-cont--eye .recom-sl .slick-next:hover, .recom-sl .input-cont--eye .slick-next:hover, .input-cont--eye .recom-sl .slick-prev:hover, .recom-sl .input-cont--eye .slick-prev:hover {
   color: #000;
 }
-/* line 189, ../styles/components/_formLayout.sass */
-.input-cont--eye._pass-visible .iconic, .input-cont--eye._pass-visible .icon, .input-cont--eye._pass-visible .link--bookmark:before, .input-cont--eye._pass-visible .checkbox__view, .input-cont--eye._pass-visible .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye._pass-visible .input-cont:after, .input-cont--eye._pass-visible .popup-closer, .input-cont--eye._pass-visible .soc-rounds__li, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .filter-tag__cross, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
+/* line 195, ../styles/components/_formLayout.sass */
+.input-cont--eye._pass-visible .iconic, .input-cont--eye._pass-visible .icon, .input-cont--eye._pass-visible .link--bookmark:before, .input-cont--eye._pass-visible .link--eye:before, .input-cont--eye._pass-visible .checkbox__view, .input-cont--eye._pass-visible .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye._pass-visible .input-cont:after, .input-cont--eye._pass-visible .popup-closer, .input-cont--eye._pass-visible .soc-rounds__li, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .filter-tag__cross, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
 .input-cont--eye._pass-visible .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next, .recom-sl .input-cont--eye._pass-visible .slick-next, .input-cont--eye._pass-visible .recom-sl .slick-prev, .recom-sl .input-cont--eye._pass-visible .slick-prev {
   font-size: 10px;
 }
 
-/* line 196, ../styles/components/_formLayout.sass */
+/* line 202, ../styles/components/_formLayout.sass */
 .input-wr__name {
   font-size: 13px;
   line-height: 20px;
@@ -2841,39 +2978,39 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 @media screen and (max-width: 479px) {
-  /* line 206, ../styles/components/_formLayout.sass */
+  /* line 212, ../styles/components/_formLayout.sass */
   .input-wr + .input-wr {
     margin-top: 15px;
   }
 }
 
-/* line 212, ../styles/components/_formLayout.sass */
+/* line 218, ../styles/components/_formLayout.sass */
 .form-gr {
   margin-bottom: 40px;
 }
-/* line 215, ../styles/components/_formLayout.sass */
+/* line 221, ../styles/components/_formLayout.sass */
 .form-gr .h3, .form-gr .typography h3, .typography .form-gr h3 {
   line-height: 24px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 579px) {
-  /* line 212, ../styles/components/_formLayout.sass */
+  /* line 218, ../styles/components/_formLayout.sass */
   .form-gr {
     margin-bottom: 25px;
   }
-  /* line 222, ../styles/components/_formLayout.sass */
+  /* line 228, ../styles/components/_formLayout.sass */
   .form-gr .h3, .form-gr .typography h3, .typography .form-gr h3 {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 579px) {
-  /* line 229, ../styles/components/_formLayout.sass */
+  /* line 235, ../styles/components/_formLayout.sass */
   .form-pair {
     margin-left: -10px;
     margin-right: -10px;
   }
-  /* line 233, ../styles/components/_formLayout.sass */
+  /* line 239, ../styles/components/_formLayout.sass */
   .form-pair .form-row {
     display: inline-block;
     vertical-align: top;
@@ -2882,7 +3019,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* line 240, ../styles/components/_formLayout.sass */
+/* line 246, ../styles/components/_formLayout.sass */
 .form-cols {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2898,7 +3035,7 @@ h1, h2, h3, h4, h5, h6 {
           align-items: flex-start;
   margin: 0px -30px 14px;
 }
-/* line 246, ../styles/components/_formLayout.sass */
+/* line 252, ../styles/components/_formLayout.sass */
 .form-cols__col {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -2910,32 +3047,32 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 30px;
   padding-right: 30px;
 }
-/* line 252, ../styles/components/_formLayout.sass */
+/* line 258, ../styles/components/_formLayout.sass */
 .form-cols__col--65 {
   width: 65%;
 }
-/* line 254, ../styles/components/_formLayout.sass */
+/* line 260, ../styles/components/_formLayout.sass */
 .form-cols__col--35 {
   width: 35%;
 }
 @media screen and (max-width: 669px) {
-  /* line 240, ../styles/components/_formLayout.sass */
+  /* line 246, ../styles/components/_formLayout.sass */
   .form-cols {
     margin-left: -15px;
     margin-right: -15px;
   }
-  /* line 260, ../styles/components/_formLayout.sass */
+  /* line 266, ../styles/components/_formLayout.sass */
   .form-cols__col {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 240, ../styles/components/_formLayout.sass */
+  /* line 246, ../styles/components/_formLayout.sass */
   .form-cols {
     display: block;
   }
-  /* line 266, ../styles/components/_formLayout.sass */
+  /* line 272, ../styles/components/_formLayout.sass */
   .form-cols__col {
     width: auto;
   }
@@ -5163,6 +5300,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 465, ../styles/pages/_index.sass */
 .actions-sl--inner .actions-sl__item {
   height: 420px;
+  padding: 0;
 }
 @media screen and (max-width: 859px) {
   /* line 465, ../styles/pages/_index.sass */
@@ -5177,7 +5315,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 240px;
   }
 }
-/* line 475, ../styles/pages/_index.sass */
+/* line 476, ../styles/pages/_index.sass */
 .actions-sl .slick-prev,
 .actions-sl .slick-next {
   width: 39px;
@@ -5196,42 +5334,42 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all 150ms ease-out;
           transition: all 150ms ease-out;
 }
-/* line 491, ../styles/pages/_index.sass */
+/* line 492, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:before,
 .actions-sl .slick-next:before {
   display: none;
 }
-/* line 494, ../styles/pages/_index.sass */
+/* line 495, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:hover,
 .actions-sl .slick-next:hover {
   background: #16ca8c;
 }
-/* line 496, ../styles/pages/_index.sass */
+/* line 497, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:hover:after,
 .actions-sl .slick-next:hover:after {
   color: #fff;
   -webkit-transition: all 150ms ease-out;
           transition: all 150ms ease-out;
 }
-/* line 500, ../styles/pages/_index.sass */
+/* line 501, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:after,
 .actions-sl .slick-next:after {
   opacity: 1;
   font-size: 23px;
 }
-/* line 507, ../styles/pages/_index.sass */
+/* line 508, ../styles/pages/_index.sass */
 .actions-sl .slick-prev {
   right: 60px;
 }
-/* line 510, ../styles/pages/_index.sass */
+/* line 511, ../styles/pages/_index.sass */
 .actions-sl .slick-prev:after {
   margin-left: -5px;
 }
-/* line 515, ../styles/pages/_index.sass */
+/* line 516, ../styles/pages/_index.sass */
 .actions-sl .slick-next:after {
   margin-left: 5px;
 }
-/* line 518, ../styles/pages/_index.sass */
+/* line 519, ../styles/pages/_index.sass */
 .actions-sl .slick-dots {
   position: absolute;
   left: 0;
@@ -5239,18 +5377,18 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 @media screen and (max-width: 859px) {
-  /* line 518, ../styles/pages/_index.sass */
+  /* line 519, ../styles/pages/_index.sass */
   .actions-sl .slick-dots {
     display: none !important;
   }
 }
-/* line 529, ../styles/pages/_index.sass */
+/* line 530, ../styles/pages/_index.sass */
 .actions-sl .slick-dots LI BUTTON:before {
   color: rgba(255, 255, 255, 0.65);
   font-size: 9px;
   opacity: 1;
 }
-/* line 536, ../styles/pages/_index.sass */
+/* line 537, ../styles/pages/_index.sass */
 .actions-sl .slick-dots LI.slick-active BUTTON:before {
   color: #34d761;
   font-size: 11px;
@@ -5261,12 +5399,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: -20px;
     margin-right: -20px;
   }
-  /* line 545, ../styles/pages/_index.sass */
+  /* line 546, ../styles/pages/_index.sass */
   .actions-sl__item {
     padding: 60px 120px 50px 50px;
     min-height: 340px;
   }
-  /* line 549, ../styles/pages/_index.sass */
+  /* line 550, ../styles/pages/_index.sass */
   .actions-sl__title {
     margin-bottom: 20px;
   }
@@ -5277,54 +5415,54 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: -15px;
     margin-right: -15px;
   }
-  /* line 556, ../styles/pages/_index.sass */
+  /* line 557, ../styles/pages/_index.sass */
   .actions-sl__item {
     padding: 40px 30px 85px 20px;
   }
-  /* line 559, ../styles/pages/_index.sass */
+  /* line 560, ../styles/pages/_index.sass */
   .actions-sl__title {
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 10px;
   }
-  /* line 564, ../styles/pages/_index.sass */
+  /* line 565, ../styles/pages/_index.sass */
   .actions-sl__subtitle {
     font-size: 15px;
     line-height: 24px;
     margin-bottom: 20px;
   }
-  /* line 569, ../styles/pages/_index.sass */
+  /* line 570, ../styles/pages/_index.sass */
   .actions-sl .slick-prev {
     right: auto;
     left: 20px;
   }
-  /* line 573, ../styles/pages/_index.sass */
+  /* line 574, ../styles/pages/_index.sass */
   .actions-sl .slick-next {
     right: auto;
     left: 65px;
   }
 }
 
-/* line 603, ../styles/pages/_index.sass */
+/* line 604, ../styles/pages/_index.sass */
 .recom-sl-wr {
   padding: 0 65px 40px;
   position: relative;
 }
 @media screen and (max-width: 669px) {
-  /* line 603, ../styles/pages/_index.sass */
+  /* line 604, ../styles/pages/_index.sass */
   .recom-sl-wr {
     padding: 0 0 20px;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 603, ../styles/pages/_index.sass */
+  /* line 604, ../styles/pages/_index.sass */
   .recom-sl-wr {
     margin-left: -15px;
     margin-right: -15px;
   }
 }
 
-/* line 615, ../styles/pages/_index.sass */
+/* line 616, ../styles/pages/_index.sass */
 .recom-sl {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5340,13 +5478,13 @@ h1, h2, h3, h4, h5, h6 {
   background: #f9f9f9;
 }
 @media screen and (max-width: 669px) {
-  /* line 615, ../styles/pages/_index.sass */
+  /* line 616, ../styles/pages/_index.sass */
   .recom-sl {
     max-width: 400px;
     display: block;
   }
 }
-/* line 627, ../styles/pages/_index.sass */
+/* line 628, ../styles/pages/_index.sass */
 .recom-sl__col {
   width: 50%;
   -webkit-box-flex: 0;
@@ -5364,33 +5502,33 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 15px;
   padding-bottom: 10px;
 }
-/* line 636, ../styles/pages/_index.sass */
+/* line 637, ../styles/pages/_index.sass */
 .recom-sl__col .card {
   margin-bottom: 0;
 }
 @media screen and (max-width: 669px) {
-  /* line 627, ../styles/pages/_index.sass */
+  /* line 628, ../styles/pages/_index.sass */
   .recom-sl__col {
     width: 100%;
   }
 }
-/* line 642, ../styles/pages/_index.sass */
+/* line 643, ../styles/pages/_index.sass */
 .recom-sl .slick-list {
   z-index: 2;
 }
-/* line 645, ../styles/pages/_index.sass */
+/* line 646, ../styles/pages/_index.sass */
 .recom-sl .slick-track {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 648, ../styles/pages/_index.sass */
+/* line 649, ../styles/pages/_index.sass */
 .recom-sl .slick-slide {
   float: none;
   height: auto;
 }
-/* line 652, ../styles/pages/_index.sass */
+/* line 653, ../styles/pages/_index.sass */
 .recom-sl .slick-arrow2 {
   top: 50%;
   border-radius: 50%;
@@ -5407,7 +5545,7 @@ h1, h2, h3, h4, h5, h6 {
           transition: 300ms;
   z-index: 1;
 }
-/* line 668, ../styles/pages/_index.sass */
+/* line 669, ../styles/pages/_index.sass */
 .recom-sl .slick-arrow2:before {
   content: "";
   position: absolute;
@@ -5415,38 +5553,38 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   background: #f9f9f9;
 }
-/* line 676, ../styles/pages/_index.sass */
+/* line 677, ../styles/pages/_index.sass */
 .recom-sl .slick-arrow2:hover {
   background-color: #c8e942;
 }
-/* line 679, ../styles/pages/_index.sass */
+/* line 680, ../styles/pages/_index.sass */
 .recom-sl .slick-next {
   left: auto;
   right: -85px;
   padding-left: 105px;
 }
-/* line 685, ../styles/pages/_index.sass */
+/* line 686, ../styles/pages/_index.sass */
 .recom-sl .slick-next:before {
   right: 105px;
   left: 0;
 }
-/* line 689, ../styles/pages/_index.sass */
+/* line 690, ../styles/pages/_index.sass */
 .recom-sl .slick-prev {
   left: -85px;
   padding-right: 105px;
 }
-/* line 694, ../styles/pages/_index.sass */
+/* line 695, ../styles/pages/_index.sass */
 .recom-sl .slick-prev:after {
   left: 105px;
   right: 0;
 }
-/* line 584, ../styles/pages/_index.sass */
+/* line 585, ../styles/pages/_index.sass */
 .recom-sl .slick-dots {
   text-align: center;
   margin: 12px 0;
   line-height: 0;
 }
-/* line 588, ../styles/pages/_index.sass */
+/* line 589, ../styles/pages/_index.sass */
 .recom-sl .slick-dots LI {
   vertical-align: middle;
   width: 10px;
@@ -5457,15 +5595,15 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 300ms;
           transition: 300ms;
 }
-/* line 596, ../styles/pages/_index.sass */
+/* line 597, ../styles/pages/_index.sass */
 .recom-sl .slick-dots LI button {
   display: none;
 }
-/* line 599, ../styles/pages/_index.sass */
+/* line 600, ../styles/pages/_index.sass */
 .recom-sl .slick-dots LI.slick-active {
   box-shadow: 0 0 0 6px #dcf187;
 }
-/* line 700, ../styles/pages/_index.sass */
+/* line 701, ../styles/pages/_index.sass */
 .recom-sl .slick-dots {
   position: relative;
   left: 0;
@@ -6086,4 +6224,9 @@ h1, h2, h3, h4, h5, h6 {
   .lk-settings__form {
     margin-left: 0;
   }
+}
+
+/* line 1, ../styles/pages/_lk-organizator.sass */
+.lk-organizator {
+  padding: 25px 0 40px;
 }
