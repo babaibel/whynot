@@ -42,7 +42,7 @@
         padding: 12px 25px
 
         &:hover
-            background: $cGreen-d
+            background: lighten($cGreen,5%)
 
     &--dark
         font: bold 14px/1 $baseFont
@@ -53,7 +53,7 @@
 
         &:hover
             border-color: #fff
-            color: $cGreen-d
+            color: lighten($cGreen,5%)
             background: #fff
 
     &--light
@@ -110,6 +110,9 @@
     &--nr
         border-radius: 0
 
+    &--long
+        width: 100%
+
     &--lime-brd
         border: 1px solid #dbdbdb
         border-radius: 4px
@@ -120,7 +123,7 @@
         padding: 10px 15px
 
         &:hover
-            background: $cSecondary
+            background: lighten($cGreen,5%)
 
     &--more
         font-size: 14px
@@ -154,7 +157,13 @@
         &.btn--white
             border: 0
 
-
+    &--circle-big
+        border-radius: 50%
+        border: 3px solid #fff
+        width: 56px
+        height: 56px
+        line-height: 50px
+        text-align: center
 
 
     .tooltip

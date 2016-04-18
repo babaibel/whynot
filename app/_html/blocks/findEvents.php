@@ -351,7 +351,6 @@
 
 						</div>
 
-
 						<!--<input type="hidden" class="js-f-events-date-max">-->
 					</div>
 

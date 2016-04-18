@@ -504,6 +504,10 @@
 											</div>
 										</div>
 									</div>
+									<button type="button" class="btn btn--more btn--round btn--white">
+										<span class="btn__more-ico"></span>
+										<span class="btn__txt">Показать еще</span>
+									</button>
 								</div>
 
 							</div>

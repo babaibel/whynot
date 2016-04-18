@@ -70,68 +70,71 @@
     @if $filename == cross {
     $char: "\E00E";
 }
-    @if $filename == elephant {
+    @if $filename == download {
     $char: "\E00F";
 }
-    @if $filename == eye {
+    @if $filename == elephant {
     $char: "\E010";
 }
-    @if $filename == favorite {
+    @if $filename == eye {
     $char: "\E011";
 }
-    @if $filename == grid {
+    @if $filename == favorite {
     $char: "\E012";
 }
-    @if $filename == lion {
+    @if $filename == grid {
     $char: "\E013";
 }
-    @if $filename == mail--old {
+    @if $filename == lion {
     $char: "\E014";
 }
-    @if $filename == mail {
+    @if $filename == mail--old {
     $char: "\E015";
 }
-    @if $filename == person {
+    @if $filename == mail {
     $char: "\E016";
 }
-    @if $filename == pin {
+    @if $filename == person {
     $char: "\E017";
 }
-    @if $filename == placemark {
+    @if $filename == pin {
     $char: "\E018";
 }
-    @if $filename == plus {
+    @if $filename == placemark {
     $char: "\E019";
 }
-    @if $filename == search {
+    @if $filename == plus {
     $char: "\E01A";
 }
-    @if $filename == soc-fb {
+    @if $filename == search {
     $char: "\E01B";
 }
-    @if $filename == soc-gplus {
+    @if $filename == soc-fb {
     $char: "\E01C";
 }
-    @if $filename == soc-mail {
+    @if $filename == soc-gplus {
     $char: "\E01D";
 }
-    @if $filename == soc-tw {
+    @if $filename == soc-mail {
     $char: "\E01E";
 }
-    @if $filename == soc-vk-v {
+    @if $filename == soc-tw {
     $char: "\E01F";
 }
-    @if $filename == soc-vk {
+    @if $filename == soc-vk-v {
     $char: "\E020";
 }
-    @if $filename == star {
+    @if $filename == soc-vk {
     $char: "\E021";
 }
-    @if $filename == target {
+    @if $filename == star {
     $char: "\E022";
 }
-    @if $filename == tick {
+    @if $filename == target {
     $char: "\E023";
+}
+    @if $filename == tick {
+    $char: "\E024";
 }
 
 @return $char;
@@ -185,6 +188,9 @@
 }
 .iconic--cross {
     @include iconic(cross);
+}
+.iconic--download {
+    @include iconic(download);
 }
 .iconic--elephant {
     @include iconic(elephant);
