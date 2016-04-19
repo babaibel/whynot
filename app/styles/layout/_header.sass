@@ -6,21 +6,37 @@ BODY
 	+max-screen($screenSS)
 		padding-top: $header-top-h-sm
 
+	&._stycky-header
+
+		+min-screen($screenSS)
+
+			.header-top-wr
+				padding-bottom: 68px
+
+			.header-bot-wr
+				position: fixed
+				z-index: 301
+				top: 0
+				left: 0
+				right: 0
+
 .header
+	background-color: #fff
+	position: relative
+	+max-screen($screenSS)
+		position: static
+
+.header-top-wr
 	background-color: #fff
 	position: relative
 	z-index: 100
 
 	+max-screen($screenSS)
 		position: fixed
-		top: 0
 		left: 0
+		top: 0
 		right: 0
-
-.header-top-wr
-	background-color: #fff
-	position: relative
-	z-index: 10
+		box-shadow: 0 2px 3px rgba(0,0,0,0.2)
 
 .header-top
 	display: flex
@@ -34,6 +50,10 @@ BODY
 
 		&--left
 			margin-bottom: 6px
+			+max-screen($screenSS)
+				flex-grow: 1
+				text-align: center
+				margin-bottom: 0
 
 		&--center
 			text-align: center
@@ -43,6 +63,8 @@ BODY
 
 		&--right
 			text-align: right
+			+max-screen($screenSS)
+				line-height: 48px
 
 	&__menu-toggle
 		display: none
@@ -57,6 +79,7 @@ BODY
 		align-items: center
 		justify-content: center
 		flex-direction: column
+		cursor: pointer
 
 		&:hover
 			background-color: $cPrimary
@@ -95,6 +118,8 @@ BODY
 		+max-screen($screenSS)
 			font-size: 26px
 			white-space: nowrap
+			line-height: 48px
+			padding-top: 2px
 
 .logo-question
 	text-align: center
@@ -118,6 +143,9 @@ BODY
 	white-space: nowrap
 	font-weight: 500
 
+	+max-screen($screenSS)
+		margin-left: 0
+
 	&__sep
 		display: inline-block
 		font: 500 14px/1.2 $baseFont
@@ -127,21 +155,23 @@ BODY
 	&__ico-link
 		margin-left: 12px
 		line-height: 28px
+		cursor: pointer
 
 		.iconic
-			font-size: 19px
+			font-size: 22px
 			line-height: normal
 
 		&--round
 			display: inline-block
+			vertical-align: middle
 			text-align: center
 			height: 28px
 			width: 28px
-			background-color: $cSecondaryL
+			background-color: $cSecondary
 			border-radius: 50%
 			.iconic--person
 				vertical-align: top
-				margin-top: 2px
+				margin-top: -1px
 
 	&__main
 		display: block
@@ -159,13 +189,7 @@ BODY
 	background: #000
 	//border-bottom: 1px solid #e6e6e6
 	position: relative
-	z-index: 1
-
-	+max-screen($screenSS)
-		position: absolute
-		top: 100%
-		left: 0
-		right: 0
+	z-index: 98
 
 
 .header-bot
@@ -187,33 +211,41 @@ BODY
 		flex-grow: 1
 
 	&__search-wr
-		width: auto
-		flex-shrink: 1
-		padding-left: 40px
+		flex-grow: 1
+		padding-left: 80px
+
+		+max-screen($screenM)
+			padding-left: 40px
 
 	+screen($screenSS + 1,$screenMM)
-		&__nav
-			padding-right: 60px
 
 		&__search-wr
-			width: 0
+			width: 80px
 			padding-left: 0
+			flex-grow: 0
+			flex-shrink: 1
 
 	+max-screen($screenSS)
-		height: 0
+		// height: 0
 		display: block
 
 		&__search-wr
+			top: -50px
 			height: $hsearch-wr-mob-size
 			display: block
 			padding: 15px $wrapper-padd-sm
 			margin: 0 (-$wrapper-padd-sm)
 			background-color: #000
-			transition: transform $t600
-			transform: translateY(-100%)
+			transition: top $t300
+			// transform: translateY(-100%)
 
 			BODY._search-open &
 				transform: translateY(0%)
+				position: fixed
+				left: 0
+				right: 0
+				top: 48px
+				margin: 0
 
 
 

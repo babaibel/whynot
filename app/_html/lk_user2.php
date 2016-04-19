@@ -24,8 +24,7 @@
 							</ul>
 						</div>
 					</div>
-					<?php include "blocks/materialsRowFav.php";?>
-					<?php include "blocks/materialsRowFav.php";?>
+					<?php include "blocks/materialsRowFavLong.php";?>
 				</div>
 			</section>
 

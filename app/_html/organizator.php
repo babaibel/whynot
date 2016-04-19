@@ -79,7 +79,7 @@
 									</div>
 								</div>
 								<div class="sidebar__item">
-									<a class="subscribe-link link js-popup-btn" data-popup-name="subscribe" href="#!">
+									<a class="subscribe-link link js-popup-btn" data-popup-name="subscribe2" href="#!">
 										<span class="subscribe-link__icon icon iconic--mail"></span>
 										<span class="subscribe-link__text">
 											<span class="link link-und link-und--dotted link-und--green2-d">

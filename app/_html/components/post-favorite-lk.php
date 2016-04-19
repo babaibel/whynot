@@ -8,7 +8,7 @@
 		</div>
 		<div class="tooltip__text">Вы действительно хотите удалить Организатора из избранного?</div>
 		<div class="tooltip__btn">
-			<span class="btn btn--green btn--md">Да, удалить</span>
+			<span class="btn btn--green btn--md js-delete-card">Да, удалить</span>
 		</div>
 	</div>
 </div>

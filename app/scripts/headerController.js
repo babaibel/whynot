@@ -21,7 +21,7 @@ $(function () {
     $W.scroll(function(){
         var newScroll = $W.scrollTop();
 
-        if( newScroll <= scroll  && newScroll > 200){
+        if( newScroll <= scroll  && newScroll > 0){
             $B.addClass('_search-open');
         }else{
             $B.removeClass('_search-open');
@@ -50,4 +50,23 @@ $(function () {
 
         e.stopPropagation();
     });
+});
+
+$(function () {
+    var $hSearch = $('.js-sticky-header')
+    if(!$hSearch.length) return;
+
+    var scroll = $W.scrollTop();
+
+    $W.scroll(function(){
+        var newScroll = $W.scrollTop();
+
+        if( newScroll > 86){
+            $B.addClass('_stycky-header');
+        }else{
+            $B.removeClass('_stycky-header');
+        }
+        scroll = newScroll;
+    });
+
 });

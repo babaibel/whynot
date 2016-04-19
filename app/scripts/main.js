@@ -43,7 +43,7 @@ $(function () {
 	if (!$btn.length) return;
 
 	$btn.on('click', function() {
-		$(this).next('.js-bookmark-tooltip').fadeIn(50);
+		$(this).next('.js-bookmark-tooltip').addClass('_active');
 	});
 });
 
@@ -52,7 +52,7 @@ $(function () {
 	if (!$btn.length) return;
 
 	$btn.on('click', function() {
-		$(this).closest('.js-bookmark-tooltip').fadeOut(50);
+		$(this).closest('.js-bookmark-tooltip').removeClass('_active');
 	});
 });
 
@@ -77,4 +77,23 @@ $(function () {
 	});
 });
 
+$(function () {
+	var $btn = $('.js-delete-card');
+	if (!$btn.length) return;
+
+	$btn.on('click', function() {
+		$this = $(this);
+		$this.closest('.materials-grid__col').addClass("_deleting");
+		setTimeout(function() { 
+			$this.closest('.materials-grid__col').remove();
+		}, 250);
+	});
+});
+
+//org-enter
+$(function () {
+    var $pOrgEnter = $('.js-org-enter');
+    if (!$pOrgEnter.length) return;
+    $pOrgEnter.addClass('_animation');
+});
 

@@ -19,6 +19,13 @@
 		padding-right: 15px
 		display: flex
 		margin-bottom: 30px
+		transition: transform $t300 ease, opacity $t300 ease, visibility $t300 ease
+
+		&._deleting
+			transform: scale(1.1)
+			visibility: hidden
+			opacity: 0
+			z-index: 2
 
 		&--slider
 			display: block !important

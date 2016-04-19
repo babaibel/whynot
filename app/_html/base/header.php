@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header js-sticky-header">
 	<div class="header-top-wr">
 		<div class="wr">
 			<div class="header-top">
@@ -38,7 +38,7 @@
 						</div>
 
 						<div class="header-cabinet__hidden">
-							<span class="header-cabinet__ico-link header-cabinet__ico-link--round">
+							<span class="header-cabinet__ico-link header-cabinet__ico-link--round js-popup-btn" data-popup-name="login">
 								<span class="iconic iconic--person"></span>
 							</span>
 						</div>

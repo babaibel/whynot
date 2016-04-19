@@ -192,6 +192,13 @@ $(function () {
         vertical: ['top','out']
     });
 
+    _POPUPS['subscribe2'] = new StickPopup($('.js-popup-subs2'),{
+        toStick: $('.js-popup-btn[data-popup-name="subscribe2"]'),
+        //closeSelector: '.js-popup-disabler',
+        horizontal: ['right','in'],
+        vertical: ['top','out']
+    });
+
 /*
     _POPUPS['login'] = new StickPopup('.js-popup-login',{
         toStick: $('#stick-for-popup-login'),

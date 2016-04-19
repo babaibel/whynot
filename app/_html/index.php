@@ -32,7 +32,7 @@
 
 						<div class="about-cols__item">
 							<div class="about-cols__icon">
-								<span class="icon"></span>
+								<span class="icon" style="background-image: url(../images/svg/about1.svg);"></span>
 							</div>
 							<div class="about-cols__inner">
 								<h4 class="h4">интересные и необычные мероприятия</h4>
@@ -44,7 +44,7 @@
 
 						<div class="about-cols__item">
 							<div class="about-cols__icon">
-								<span class="icon"></span>
+								<span class="icon" style="background-image: url(../images/svg/about2.svg);"></span>
 							</div>
 							<div class="about-cols__inner">
 								<h4 class="h4">умный и простой фильтр поиска</h4>
@@ -56,7 +56,7 @@
 
 						<div class="about-cols__item">
 							<div class="about-cols__icon">
-								<span class="icon"></span>
+								<span class="icon" style="background-image: url(../images/svg/about3.svg);"></span>
 							</div>
 							<div class="about-cols__inner">
 								<h4 class="h4">мероприятия, подходящие именно вам</h4>

@@ -2,13 +2,22 @@
 	padding: 110px 0 100px
 
 	+max-screen($screenLL)
-		padding: 40px 0 30px
+		padding: 20px 0 30px
 
 	+max-screen($screenSS)
 		padding: 0 0 20px
 
 	.wr
 		@extend .cf
+
+	&._animation
+		.org-enter__left,
+		.org-enter__right,
+		.org-enter__bg
+			transform: translateY(0)
+			transform: translateX(0)
+			opacity: 1
+			visibility: visible
 
 	&__inner
 		position: relative
@@ -27,6 +36,11 @@
 		width: 25%
 		color: #fff
 		padding-top: 55px
+		transition: transform $t600 ease, opacity $t600 ease, visibility $t600 ease
+		transform: translateX(-50%)
+		opacity: 0
+		visibility: hidden
+
 		+max-screen($screenLL)
 			width: 35%
 		
@@ -46,6 +60,11 @@
 		width: 50%
 		min-height: 1px
 		text-align: center
+		transition: transform $t600 ease $t300, opacity $t600 ease $t300, visibility $t600 ease $t300
+		transform: translateY(30%)
+		opacity: 0
+		visibility: hidden
+
 		+max-screen($screenLL)
 			display: none
 
@@ -59,6 +78,10 @@
 		width: 25%
 		padding-top: 55px
 		color: #fff
+		transition: transform $t600 ease, opacity $t600 ease, visibility $t600 ease
+		transform: translateX(50%)
+		opacity: 0
+		visibility: hidden
 
 		.form-row__name
 			color: #fff

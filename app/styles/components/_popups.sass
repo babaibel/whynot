@@ -110,6 +110,48 @@ $popup-side-offset: 8px
                 .btn
                     width: 100%
 
+    &--subs2
+        margin: 15px -35px 0 0
+        .popup
+            &__main
+                padding-top: 30px
+
+        &:after
+            left: 60%
+
+        +screen($screenS+1,$screenMM)
+            margin: 15px 0 0 0
+            left: 20px!important
+            right: auto!important
+            &:after
+                left: 37%!important
+
+        // +screen($popup-size-md + ( $popup-side-offset * 2) + 1px,$screenS)
+        //     left: 50% !important
+        //     margin: 0 0 0 (-$popup-size-md/2)
+
+
+        +max-screen($screenS)
+            position: fixed
+            top: 95px !important
+            left: 50% !important
+            margin: 0 0 0 (-$popup-size-md/2)
+            &:after
+                display: none
+
+        +max-screen($popup-size-md + ( $popup-side-offset * 2) + 1px)
+            left: 15px !important
+            right: 15px !important
+            margin: 0 !important
+
+            .btn-flex-wr
+                display: block
+                .form-tip
+                    margin-top: 10px
+                    padding-left: 0
+                .btn
+                    width: 100%
+
     &--login
         margin: 20px -105px 0 0
         &:after
@@ -121,7 +163,7 @@ $popup-side-offset: 8px
 
         +max-screen($screenSS)
             z-index: 99
-            //position: fixed
+            position: fixed
             top: $header-top-h-sm + 10px !important
             &:after
                 display: none

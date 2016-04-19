@@ -59,7 +59,10 @@
 		.icon
 			width: 77px
 			height: 77px
-			background: #ebebeb
+			background-color: #ebebeb
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: cover
 			border-radius: 50%
 
 		+max-screen($screenLL)
@@ -256,7 +259,8 @@
 	//margin: 0 1% 30px
 	margin-bottom: 30px
 	background: #fff
-	box-shadow: 0 12px 18px -14px rgba(0,0,0,0.3), 0 16px 16px -20px rgba(220,241,135,0.7)
+	box-shadow: 0 16px 16px -20px rgba(220,241,135,0.7), 0 12px 18px -14px rgba(0,0,0,0.3)
+	-webkit-box-shadow: 0 16px 16px -16px rgba(220,241,135,0.7), 0 12px 18px -14px rgba(0,0,0,0.4)
 	border-radius: 4px
 	// overflow: hidden
 	position: relative
@@ -271,11 +275,13 @@
 	&:active
 		@media not handheld
 			transform: translateY(-3px)
-			box-shadow: 0 12px 22px -14px rgba(0,0,0,0.4), 0 19px 19px -20px rgba(220,241,135,0.9)
+			box-shadow: 0 16px 16px -20px rgba(220,241,135,0.9), 0 12px 18px -14px rgba(0,0,0,0.4)
+			-webkit-box-shadow: 0 16px 16px -16px rgba(220,241,135,0.9), 0 12px 18px -14px rgba(0,0,0,0.5)
 
 		.page-body--lk &
 			transform: none
 			box-shadow: 0 12px 18px -14px rgba(0,0,0,0.3), 0 16px 16px -20px rgba(220,241,135,0.7)
+			-webkit-box-shadow: 0 16px 16px -16px rgba(220,241,135,0.7), 0 12px 18px -14px rgba(0,0,0,0.4)
 
 	&__img
 		height: 195px
@@ -320,7 +326,17 @@
 		color: #7b7b7b
 
 	&__tooltip
-		display: none
+		// display: none
+		visibility: hidden
+		opacity: 0
+		transform: scale(1.1)
+		transition: transform $t300 ease, opacity $t300 ease, visibility $t300 ease
+		z-index: 1
+
+		&._active
+			visibility: visible
+			opacity: 1
+			transform: scale(1)
 
 	&__subscribe
 		padding-top: 10px
@@ -427,6 +443,7 @@
 	margin-bottom: 30px
 	position: relative
 	box-shadow: 0 12px 18px -14px rgba(0,0,0,0.5), 0 16px 16px -20px rgba(220,241,135,0.7)
+	-webkit-box-shadow: 0 14px 18px -14px rgba(0,0,0,0.6), 0 16px 18px -20px rgba(220,241,135,0.8)
 
 	&__item
 		display: block
