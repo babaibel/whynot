@@ -1,5 +1,12 @@
 .contacts
-	
+
+	&._animation
+
+		.contacts__bg
+			transform: translateX(0)
+			visibility: visible
+			opacity: 1
+
 	.wr
 		padding-top: 25px
 		padding-bottom: 70px
@@ -26,6 +33,18 @@
 
 		+max-screen($screenSS)
 			font-size: 30px
+
+	&__bg
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		width: 360px
+		transition: transform $t600 ease-out $t300, opacity $t600 ease $t300, visibility $t600 ease $t300
+		transform: translateX(150%)
+		visibility: hidden
+		opacity: 0
+		z-index: 2
 
 	&__row
 		@extend .cf

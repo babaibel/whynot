@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<?php $pageTitle = 'Главная страница'; ?>
+<?php $pageTitle = 'ЛК - пользователь 3'; ?>
 <?php include 'base/head.php';?>
 <body>
 	<div class="layout">

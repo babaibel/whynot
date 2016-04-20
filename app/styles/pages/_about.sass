@@ -3,6 +3,13 @@
 	background-position: 50% 50%
 	background-repeat: no-repeat
 	background-size: cover
+	background-attachment: fixed
+
+	+max-screen-height($screenMM)
+		height: 500px
+
+	+max-screen-height($screenS)
+		height: 400px
 
 	+max-screen($screenLL)
 		height: 500px
@@ -31,6 +38,15 @@
 
 	&__inner
 		padding: 0 115px
+		transition: transform $t600 ease, opacity $t600 ease, visibility $t600 ease
+		transform: translateY(50%)
+		opacity: 0
+		visibility: hidden
+
+		&._animation
+			transform: translateY(0)
+			opacity: 1
+			visibility: visible
 
 		+max-screen($screenS)
 			padding: 0 5%
@@ -59,6 +75,13 @@
 
 .team
 
+	&._animation
+
+		.team__item
+			transform: scale(1)
+			opacity: 1
+			visibility: visible
+
 	&__row
 		@extend .cf 
 		margin: 40px 0
@@ -72,6 +95,10 @@
 		width: 25%
 		text-align: center
 		padding: 0 10px
+		transition: transform $t600 ease, opacity $t600 ease, visibility $t600 ease
+		transform: scale(1.2)
+		opacity: 0
+		visibility: hidden
 
 		+max-screen($screenMM)
 			width: 50%

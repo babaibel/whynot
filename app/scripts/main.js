@@ -3,7 +3,7 @@ var $W = $(window),
 	$H = $('html'),
 	$B = $('body'),
 	_POPUPS = {},
-    _GLOB = {
+	_GLOB = {
 		breakpoints: {
 			'xxl':1920,
 			'xl':1599,
@@ -38,6 +38,7 @@ $(function () {
 	});
 });
 
+// Открытие тултипа удаления карточки товара из избранного
 $(function () {
 	var $btn = $('.js-bookmark-remove');
 	if (!$btn.length) return;
@@ -47,6 +48,7 @@ $(function () {
 	});
 });
 
+// Закрытие тултипа карточки товара
 $(function () {
 	var $btn = $('.js-close-tooltip');
 	if (!$btn.length) return;
@@ -67,6 +69,7 @@ $(function () {
 	});
 });
 
+// Закрытие большой информационной подсказки
 $(function () {
 	var $wr = $('.js-alert');
 	if (!$wr.length) return;
@@ -77,6 +80,8 @@ $(function () {
 	});
 });
 
+
+//Анимация удаление карточки из избранного 
 $(function () {
 	var $btn = $('.js-delete-card');
 	if (!$btn.length) return;
@@ -84,16 +89,117 @@ $(function () {
 	$btn.on('click', function() {
 		$this = $(this);
 		$this.closest('.materials-grid__col').addClass("_deleting");
-		setTimeout(function() { 
+		setTimeout(function() {
+
+			// заглушка удаления
 			$this.closest('.materials-grid__col').remove();
 		}, 250);
 	});
 });
 
-//org-enter
+//Анимация страницы входа организатора
 $(function () {
-    var $pOrgEnter = $('.js-org-enter');
-    if (!$pOrgEnter.length) return;
-    $pOrgEnter.addClass('_animation');
+	var $pOrgEnter = $('.js-org-enter');
+	if (!$pOrgEnter.length) return;
+	$pOrgEnter.addClass('_animation');
 });
 
+//Анимация страницы контакты
+$(function () {
+	var $pContacts = $('.js-contacts');
+	if (!$pContacts.length) return;
+	$pContacts.addClass('_animation');
+});
+
+$(function () {
+	var $parallax = $('.js-parallax');
+	if (!$parallax.length) return;
+	$parallax.each(function(){
+		var $bgobj = $(this); // создаем объект
+		$(window).scroll(function() {
+			var yPos = -($W.scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент 
+			// Присваиваем значение background-position
+			var coords = 'center '+ yPos + 'px';
+			// Создаем эффект Parallax Scrolling
+			$bgobj.css({ backgroundPosition: coords });
+		});
+	});
+});
+
+setTimeout(function(){
+    scrollingTrigger();
+}, 500)
+
+function scrollingTrigger(options) {
+    var defaults = {
+        offset : 1.5,
+        animClass: '_animation',
+        afterScroll: function() {}
+    };
+    var options = $.extend({}, defaults, options || {});
+
+    var $target = $('.js-scroll-trigger');
+
+    $W.on('scroll', function(e) {
+        $target.each(function(index, el) {
+            var wScroll = $W.scrollTop();
+            var wHeight = $W.height();
+            var pTop = $(el).offset().top;
+            var pHeight = $(el).height();
+
+            if (wScroll > pTop - wHeight + pHeight/options.offset) {
+
+                if ( !$(el).hasClass(options.animClass) ) {
+                    $(el).addClass(options.animClass);
+                }
+            }
+        });
+
+    });
+    $W.scroll();
+}
+
+
+// Плавная подгрузка комментириев
+$(function () {
+	var $btn = $('.js-show-comment');
+	if (!$btn.length) return;
+
+	$btn.on('click', function() {
+		$this = $(this);
+		$this.addClass('_animation');
+
+		// Заглушка на время загрузки
+		setTimeout(function() {
+			$this.removeClass('_animation');
+			$('.js-comment-hidden ._hidden').css('display','block');
+
+			// Для плавного появления
+			setTimeout(function() {
+				$('.js-comment-hidden ._hidden').removeClass('_hidden');
+			}, 100);
+		}, 1500);
+	});
+});
+
+// Плавная подгрузка карточек товара
+$(function () {
+	var $btn = $('.js-show-cards');
+	if (!$btn.length) return;
+
+	$btn.on('click', function() {
+		$this = $(this);
+		$this.addClass('_animation');
+
+		// Заглушка на время загрузки
+		setTimeout(function() {
+			$this.removeClass('_animation');
+			$('.js-cards-hidden ._hidden').css('display','flex');
+
+			// Для плавного появления
+			setTimeout(function() {
+				$('.js-cards-hidden ._hidden').removeClass('_hidden');
+			}, 100);
+		}, 1500);
+	});
+});

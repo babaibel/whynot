@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<?php $pageTitle = 'Главная страница'; ?>
+<?php $pageTitle = 'Вход для организаторов'; ?>
 <?php include 'base/head.php';?>
 <body>
 	<div class="layout page page-org-enter">

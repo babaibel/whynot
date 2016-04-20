@@ -19,7 +19,16 @@
 		padding-right: 15px
 		display: flex
 		margin-bottom: 30px
-		transition: transform $t300 ease, opacity $t300 ease, visibility $t300 ease
+		transition: transform $t600 ease, opacity $t600 ease, visibility $t600 ease
+		transform: translateY(0)
+		visibility: visible
+		opacity: 1
+
+		&._hidden
+			transform: translateY(50%)
+			visibility: hidden
+			opacity: 0
+			display: none
 
 		&._deleting
 			transform: scale(1.1)
@@ -113,11 +122,14 @@
 			width: 32px
 			height: 32px
 			line-height: 32px
-			background: $cBlack-d
+			background-color: $cBlack-d
 			border-radius: 50%
 			text-align: center
 			color: #fff
 			font-size: 15px
+
+			&:hover
+				background-color: $cPrimary
 
 .soc-rounds
 	margin-left: -3px
@@ -328,14 +340,22 @@
 		+max-screen($screenXS)
 			margin-bottom: 15px
 
-	&__body
-		background: #fff
-
 .comment
 	padding: 12px 20px 18px
-	border-bottom: 3px solid #f9f9f9
+	// border-bottom: 3px solid #f9f9f9
 	margin-bottom: 6px
+	background: #fff
+	transition: transform $t600 ease, opacity $t600 ease, visibility $t600 ease
+	transform: translateY(0)
+	visibility: visible
+	opacity: 1
 	@extend .cf
+
+	&._hidden
+		transform: translateY(100%)
+		visibility: hidden
+		opacity: 0
+		display: none
 
 	&__img
 		float: left

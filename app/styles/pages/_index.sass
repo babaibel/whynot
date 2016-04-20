@@ -140,6 +140,15 @@
 		top: 0
 		bottom: 0
 		max-height: 360px
+		transition: transform $t600 ease, opacity $t600 ease, visibility $t600 ease
+		transform: scale(1.1) rotate(15deg)
+		opacity: 0
+		visibility: hidden
+
+		&._animation
+			transform: scale(1) rotate(0)
+			opacity: 1
+			visibility: visible
 
 		+max-screen($screenLL)
 			background-position: left center
@@ -177,8 +186,18 @@
 		// .ymaps-2-1-35-ground-pane
 		// 	filter: hue-rotate(28deg)
 
+		+max-screen($screenM)
+			max-height: 515px
+
+		+max-screen($screenS)
+			max-height: 415px
+
+		+max-screen($screenXS)
+			max-height: 315px
+
 	+max-screen($screenS)
 		padding: 15px 0
+
 		.title-header
 			margin-bottom: 10px
 
@@ -187,9 +206,6 @@
 
 		.btn
 			margin: 10px auto
-
-		&__container
-			max-height: 515px
 
 
 .index-cards
