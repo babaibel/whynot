@@ -9,6 +9,9 @@
     position: relative
     overflow: hidden
 
+    +max-screen($screenSS)
+        display: block
+
 .header,
 .footer
     flex: 0 0 auto
@@ -36,5 +39,7 @@
         padding-top: 0
 
 MAIN
-    padding-bottom: 40px
     flex: 1 0 auto
+
+    +max-screen($screenSS)
+        display: block

@@ -132,7 +132,7 @@ setTimeout(function(){
 
 function scrollingTrigger(options) {
     var defaults = {
-        offset : 1.5,
+        offset : 1.4,
         animClass: '_animation',
         afterScroll: function() {}
     };
@@ -202,4 +202,106 @@ $(function () {
 			}, 100);
 		}, 1500);
 	});
+});
+
+
+//Ширина скроллбара с глобальной переменной
+var scrollbarW = 0;
+var scrollbarWidth = function () {
+    if ( $H.hasClass('no-touch')){
+        var block = $('<div>').css({'height':'50px','width':'50px'}),
+            indicator = $('<div>').css({'height':'200px'});
+
+        $('body').append(block.append(indicator));
+        var w1 = $('div', block).innerWidth();    
+        block.css('overflow-y', 'scroll');
+        var w2 = $('div', block).innerWidth();
+        $(block).remove();
+        scrollbarW = (w1 - w2);
+    }
+}();
+
+// открытие основных попапов
+$(function () {
+    var $btn = $('.js-popup-mid-btn');
+    if (!$btn.length) return;
+
+    $btn.magnificPopup({
+        preloader: false,
+        mainClass: 'mfp-zoom-out',
+        removalDelay: 300,
+        type: $(this).data('type') || 'inline',
+        callbacks: {
+            open: function () {
+		        $B.addClass('_popup');
+		        $('._stycky-header .header-bot-wr').css({'width':'auto','right':scrollbarW})
+		    },
+		    close: function () {
+		        $B.removeClass('_popup');
+		        $('._stycky-header .header-bot-wr').css({'width':'100%','right':'auto'})
+		    },
+		    afterClose: function () {
+		    	$('#popup-sps').removeClass("_animation");
+		    }
+        }
+    });
+});
+
+// показ спасибо после отправки формы
+$(function () {
+	var $form = $('#feedback-form');
+    if (!$form.length) return;
+
+    $form.submit(function(){
+    	$.magnificPopup.open({
+			items: {
+				src: '#popup-sps'
+			},
+			type: 'inline'
+		});
+		setTimeout(function() {
+			$('#popup-sps').addClass("_animation");
+		}, 100);
+
+		setTimeout(function() {
+			$.magnificPopup.close();
+		}, 3000);
+		
+		
+    	return false;
+    });
+
+});
+
+// Плавная подгрузка комментириев
+$(function () {
+	var $btn = $('.js-filter-tag-close');
+	if (!$btn.length) return;
+
+	$btn.on('click', function() {
+		$this = $(this);
+		$this.closest('.filter-tag').addClass("_deleting");
+		setTimeout(function() {
+
+			// заглушка удаления
+			$this.closest('.filter-tag').remove();
+		}, 250);
+	});
+});
+
+//паралакс картинки
+$(function () {
+    var $imgPromo = $('.js-promo:last');
+
+    if (!$imgPromo.length) return;
+
+    var $afterPromoContent = $('.js-after-promo:last');
+    var headerHeight = $('.js-sticky-header').outerHeight();
+    var imgPromoHeight = $imgPromo.outerHeight() - headerHeight;
+    $afterPromoContent.css('marginTop', imgPromoHeight);
+
+    $W.on('resize', function () {
+        imgPromoHeight = $imgPromo.outerHeight() - headerHeight;
+        $afterPromoContent.css('marginTop', imgPromoHeight);
+    });
 });

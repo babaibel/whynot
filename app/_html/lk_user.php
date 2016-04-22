@@ -164,6 +164,7 @@
 
 		<?php include 'base/footer.php'; ?>
 		<?php include 'base/popups.php'; ?>
+		<?php include 'components/feedback-popup.php'; ?>
 	</div>
 	<?php include 'base/scripts.php'; ?>
 </body>

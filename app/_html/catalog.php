@@ -392,21 +392,21 @@
 									<span class="filter-tag__txt">
 										С детьми
 									</span>
-									<span class="filter-tag__cross"></span>
+									<span class="filter-tag__cross js-filter-tag-close"></span>
 								</div>
 
 								<div class="filter-tag">
 									<span class="filter-tag__txt">
 										Спорт/Экстрим
 									</span>
-									<span class="filter-tag__cross"></span>
+									<span class="filter-tag__cross js-filter-tag-close"></span>
 								</div>
 
 								<div class="filter-tag">
 									<span class="filter-tag__txt">
 										15 фев — 18 фев
 									</span>
-									<span class="filter-tag__cross"></span>
+									<span class="filter-tag__cross js-filter-tag-close"></span>
 								</div>
 							</div>
 
@@ -1056,6 +1056,7 @@
 
 		<?php include 'base/footer.php'; ?>
 		<?php include 'base/popups.php'; ?>
+		<?php include 'components/feedback-popup.php'; ?>
 	</div>
 	<?php include 'base/scripts.php'; ?>
 </body>

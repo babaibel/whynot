@@ -1,0 +1,425 @@
+      
+// Настройки попапа
+.mfp-container
+    padding-left: 20px
+    padding-right: 20px
+
+    +max-screen($screenSS)
+        padding-left: 10px
+        padding-right: 10px
+
+.mfp-close
+    width: 65px
+    height: 65px
+    line-height: 65px 
+    font-size: 0 
+    transition: opacity $t300
+    
+    &:after
+        content: '\E00E'
+        font-size: 23px
+        font-family: "iconic"   
+         
+.popup-base
+    box-shadow: 0 0 120px 0px rgba(0, 0, 0, 0.15) 
+    background: #FFF 
+    width: auto 
+    max-width: 600px 
+    min-width: 300px
+    margin: 0 auto 
+    position: relative
+
+    .form-gr,
+    .form-row--submit
+        margin-bottom: 0
+    
+    &__title
+        padding: 12px 60px 8px 29px
+        border-bottom: 1px solid #e2e2e2 
+        
+    &__text
+        padding: 15px 29px 40px
+        
+        P
+            font-size: 15px
+            line-height: 20px
+            margin-bottom: 15px
+            
+            &:last-child
+                margin-bottom: 0 
+
+    IMG
+        max-width: 100%
+        
+
+    iframe
+        display: block
+        width: 100%
+        //height: auto
+
+    &--post
+        max-width: 800px
+
+    &--video
+        width: auto
+
+.feedback-popup
+    
+    .h2
+        font-size: 42px
+        line-height: 42px
+        margin-bottom: 15px
+        text-align: left
+
+        +max-screen($screenSS)
+            font-size: 32px
+            line-height: 42px
+            margin-bottom: 5px
+    
+.mfp-bg
+    background: #04251a
+
+.popup-sps
+    width: 0
+    height: 0
+    border-radius: 50%
+    position: relative
+    margin: 0 auto
+    background-color: $cLime
+    transition: all $t600 ease!important
+
+    +max-screen($screenSM)
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)!important
+
+
+    // .mfp-ready &
+    //     width: 575px
+    //     height: 575px
+
+    &._animation
+        width: 575px
+        height: 575px
+        .popup-sps__bg,
+        .popup-sps__title
+            visibility: visible
+            opacity: 1
+            transform: translateY(0)!important
+
+        +max-screen($screenSM)
+            width: 425px
+            height: 425px
+
+        +max-screen($screenXS)
+            width: 280px
+            height: 280px
+
+    &__bg
+        padding-top: 40px
+        text-align: center
+        visibility: hidden
+        opacity: 0
+        transform: translateY(-30%)
+        transition: transform $t600 ease $t600, opacity $t600 ease $t600, visibility $t600 ease $t600!important
+
+        +max-screen($screenXS)
+            padding-top: 20px
+
+        IMG
+            max-width: 100%
+            display: inline-block
+            +max-screen($screenSM)
+                max-width: 60%
+
+    &__title
+        visibility: hidden
+        opacity: 0
+        transform: translateY(10%)
+        transition: transform $t600 ease $t900, opacity $t600 ease $t900, visibility $t600 ease $t900!important
+
+
+    .h2
+        font-size: 106px
+        line-height: 120px
+
+        +max-screen($screenSM)
+            font-size: 80px
+            line-height: 85px
+
+        +max-screen($screenXS)
+            font-size: 60px
+            line-height: 40px
+
+    .mfp-close
+        display: none
+ 
+// Zoom effect 
+.mfp-zoom-in 
+    
+    .mfp-with-anim 
+        opacity: 1
+        transition: all 0.7s ease 
+        transform: scale(0.1) 
+    
+    
+    &.mfp-bg 
+        opacity: 0
+            transition: all 0.3s ease-out
+    
+    
+    &.mfp-ready 
+        .mfp-with-anim 
+            opacity: 1
+            transform: scale(1) 
+        
+        &.mfp-bg 
+            opacity: 0.4
+        
+    
+    
+    &.mfp-removing 
+        
+        .mfp-with-anim 
+            transform: scale(0.1) 
+            opacity: 0
+        
+        &.mfp-bg 
+            opacity: 0
+
+// Zoom out effect 
+.mfp-zoom-out 
+    
+    .mfp-with-anim 
+        opacity: 0
+        transition: all 0.2s ease-in-out 
+        transform: scale(1.2) 
+    
+    
+    &.mfp-bg 
+        opacity: 0
+            transition: all 0.3s ease-out
+    
+    
+    &.mfp-ready 
+        .mfp-with-anim 
+            opacity: 1
+            transform: scale(1) 
+        
+        &.mfp-bg 
+            opacity: 0.4
+        
+    
+    
+    &.mfp-removing 
+        
+        .mfp-with-anim 
+            transform: scale(1.2) 
+            opacity: 0
+        
+        &.mfp-bg 
+            opacity: 0
+
+// Newspaper effect 
+
+
+.mfp-newspaper 
+    
+    .mfp-with-anim 
+        opacity: 0
+        -webkit-transition: all 0.2s ease-in-out 
+        transition: all 0.5s
+        
+        transform: scale(0) rotate(500deg)
+    
+    
+    &.mfp-bg 
+        opacity: 0
+        transition: all 0.5s
+    
+    
+    &.mfp-ready 
+        .mfp-with-anim 
+            opacity: 1
+            transform: scale(1) rotate(0deg)
+        
+        &.mfp-bg 
+            opacity: 0.8
+        
+    
+    
+    &.mfp-removing 
+        
+        .mfp-with-anim 
+            transform: scale(0) rotate(500deg)
+            opacity: 0
+        
+        &.mfp-bg 
+            opacity: 0
+        
+        
+    
+    
+
+
+
+
+ 
+
+// Move-horizontal effect 
+
+
+.mfp-move-horizontal 
+    
+    .mfp-with-anim 
+        opacity: 0
+        transition: all 0.3s
+        
+        transform: translateX(-50px)
+    
+    
+    &.mfp-bg 
+        opacity: 0
+        transition: all 0.3s
+    
+    
+    &.mfp-ready 
+        .mfp-with-anim 
+            opacity: 1
+            transform: translateX(0)
+        
+        &.mfp-bg 
+            opacity: 0.8
+        
+    
+    
+    &.mfp-removing 
+        
+        .mfp-with-anim 
+            transform: translateX(50px)
+            opacity: 0
+        
+        &.mfp-bg 
+            opacity: 0
+        
+        
+    
+    
+
+
+
+ 
+
+// Move-from-top effect 
+
+
+.mfp-move-from-top 
+    
+    .mfp-content 
+        vertical-align:top 
+    
+    
+    .mfp-with-anim 
+        opacity: 0
+        transition: all 0.2s
+        
+        transform: translateY(-100px)
+    
+    
+    &.mfp-bg 
+        opacity: 0
+        transition: all 0.2s
+    
+    
+    &.mfp-ready 
+        .mfp-with-anim 
+            opacity: 1
+            transform: translateY(0)
+        
+        &.mfp-bg 
+            opacity: 0.8
+        
+    
+    
+    &.mfp-removing 
+        
+        .mfp-with-anim 
+            transform: translateY(-50px)
+            opacity: 0
+        
+        &.mfp-bg 
+            opacity: 0
+        
+        
+    
+    
+
+
+
+ 
+
+// 3d unfold 
+
+
+.mfp-3d-unfold 
+    
+ 
+    .mfp-content 
+        perspective: 2000px 
+    
+    
+    .mfp-with-anim 
+        opacity: 0
+        transition: all 0.3s ease-in-out
+        transform-style: preserve-3d
+        transform: rotateY(-60deg)
+    
+    
+    
+    &.mfp-bg 
+        opacity: 0
+        transition: all 0.5s
+    
+    
+    &.mfp-ready 
+        .mfp-with-anim 
+            opacity: 1
+            transform: rotateY(0deg)
+        
+        &.mfp-bg 
+            opacity: 0.8
+        
+    
+    
+    &.mfp-removing 
+        
+        .mfp-with-anim 
+            transform: rotateY(60deg)
+            opacity: 0
+        
+        &.mfp-bg 
+            opacity: 0
+        
+
+        
+.mfp-fade.mfp-bg 
+    opacity: 0
+    transition: all $t300 ease
+
+.mfp-fade.mfp-bg.mfp-ready 
+    opacity: 0.8
+
+.mfp-fade.mfp-bg.mfp-removing 
+    opacity: 0
+
+
+.mfp-fade.mfp-wrap .mfp-content 
+    opacity: 0
+    transition: all $t300 ease
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content 
+    opacity: 1
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content 
+    opacity: 0

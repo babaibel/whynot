@@ -1,24 +1,62 @@
 .promo-img
-	height: 670px
-	background-position: 50% 50%
-	background-repeat: no-repeat
-	background-size: cover
-	background-attachment: fixed
+	// height: 670px
+	// background-position: 50% 50%
+	// background-repeat: no-repeat
+	// background-size: cover
+	// background-attachment: fixed
 
-	+max-screen-height($screenMM)
-		height: 500px
+	// +max-screen-height($screenMM)
+	// 	height: 500px
 
-	+max-screen-height($screenS)
-		height: 400px
+	// +max-screen-height($screenS)
+	// 	height: 400px
 
-	+max-screen($screenLL)
-		height: 500px
+	// +max-screen($screenLL)
+	// 	height: 500px
+
+	// +max-screen($screenS)
+	// 	height: 400px
+
+	// +max-screen($screenSS)
+	// 	height: 300px
+
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: -1
 
 	+max-screen($screenS)
-		height: 400px
+		position: relative
 
-	+max-screen($screenSS)
-		height: 300px
+	IMG
+		display: block
+		max-width: 100%
+
+		+max-screen($screenM)
+			max-width: 130%
+
+		+max-screen($screenS)
+			max-width: 150%
+
+		+max-screen($screenS)
+			position: relative
+			left: -50%
+			max-width: 200%
+
+		+max-screen($screenXS)
+			position: relative
+			left: -100%
+			max-width: 300%
+
+.after-promo
+	position: relative
+	background-color: #fff
+	+max-screen($screenS)
+		margin-top: 0!important
+	.about-info
+		margin-top: 0
+		padding-top: 50px
 
 .philosophy
 	margin: 55px 0
@@ -26,6 +64,12 @@
 
 	+max-screen($screenSS)
 		margin: 25px 0
+
+	&._animation
+		.philosophy__inner
+			transform: translateY(0)
+			opacity: 1
+			visibility: visible
 
 	.wr
 		padding-top: 65px
@@ -50,6 +94,9 @@
 
 		+max-screen($screenS)
 			padding: 0 5%
+			transform: translateY(0)
+			opacity: 1
+			visibility: visible
 
 		+max-screen($screenSS)
 			padding: 0
@@ -74,20 +121,16 @@
 		font: 900 15px/1.2 $baseFont
 
 .team
+	padding-bottom: 40px
 
-	&._animation
-
-		.team__item
-			transform: scale(1)
-			opacity: 1
-			visibility: visible
+	
 
 	&__row
 		@extend .cf 
-		margin: 40px 0
+		padding: 40px 0
 
 		+max-screen($screenSS)
-			margin: 30px 0
+			padding: 30px 0
 
 
 	&__item
@@ -99,6 +142,16 @@
 		transform: scale(1.2)
 		opacity: 0
 		visibility: hidden
+
+		&._animation
+			transform: scale(1)
+			opacity: 1
+			visibility: visible
+
+		+max-screen($screenS)
+			transform: scale(1)
+			opacity: 1
+			visibility: visible
 
 		+max-screen($screenMM)
 			width: 50%

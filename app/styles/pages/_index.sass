@@ -108,7 +108,7 @@
 
 .about-info
 	padding: 10px 0
-	margin-top: 50px
+	margin: 50px 0
 	position: relative
 
 	+max-screen($screenSS)
@@ -150,6 +150,11 @@
 			opacity: 1
 			visibility: visible
 
+		+max-screen($screenS)
+			transform: scale(1) rotate(0)
+			opacity: 1
+			visibility: visible
+
 		+max-screen($screenLL)
 			background-position: left center
 			background-size:  auto 100%
@@ -166,6 +171,9 @@
 			margin: 0 auto
 			height: 370px
 			margin-bottom: 20px
+			transform: scale(1) rotate(0)
+			opacity: 1
+			visibility: visible
 
 	P
 		margin: 0 0 25px 0

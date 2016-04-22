@@ -26,6 +26,8 @@
 
 <script src="../scripts/fEvent.js"></script>
 
+<script src="../scripts/formControllers.js"></script>
+
 <script src="../scripts/formElements.js"></script>
 
 <script src="../scripts/forms.js"></script>

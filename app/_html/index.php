@@ -71,7 +71,7 @@
 
 			<div class="about-info">
 				<div class="wr">
-					<div class="about-info__bg" style="background-image: url(../images/userfiles/people2.png);"></div>
+					<div class="about-info__bg js-scroll-trigger" style="background-image: url(../images/userfiles/people2.png);"></div>
 					<div class="about-info__inner">
 						<h3 class="h3">Почему бы нет – сервис, который поможет легко спланировать свой досуг интересными мероприятиями.</h3>
 						<p>Основными территориальными зонами наших проектов являются Москва, Московская область, а также ряд других крупных городов Российской Федерации.</p>
