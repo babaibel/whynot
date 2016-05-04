@@ -7239,23 +7239,32 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* line 1, ../styles/pages/_org-enter.sass */
+@media screen and (max-width: 579px) {
+  /* line 2, ../styles/pages/_org-enter.sass */
+  .page-org-enter .h2, .page-org-enter .typography h2, .typography .page-org-enter h2 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+}
+
+/* line 7, ../styles/pages/_org-enter.sass */
 .org-enter {
   padding: 110px 0 100px;
 }
 @media screen and (max-width: 1099px) {
-  /* line 1, ../styles/pages/_org-enter.sass */
+  /* line 7, ../styles/pages/_org-enter.sass */
   .org-enter {
-    padding: 20px 0 30px;
+    padding: 20px 0 50px;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 1, ../styles/pages/_org-enter.sass */
+  /* line 7, ../styles/pages/_org-enter.sass */
   .org-enter {
-    padding: 0 0 20px;
+    padding: 0;
+    border-bottom: 1px solid #a3a3a3;
   }
 }
-/* line 14, ../styles/pages/_org-enter.sass */
+/* line 21, ../styles/pages/_org-enter.sass */
 .org-enter._animation .org-enter__left,
 .org-enter._animation .org-enter__right,
 .org-enter._animation .org-enter__bg {
@@ -7266,7 +7275,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   visibility: visible;
 }
-/* line 22, ../styles/pages/_org-enter.sass */
+/* line 29, ../styles/pages/_org-enter.sass */
 .org-enter__inner {
   position: relative;
   height: 380px;
@@ -7276,13 +7285,13 @@ h1, h2, h3, h4, h5, h6 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16ca8c', endColorstr='#171718',GradientType=1 );
 }
 @media screen and (max-width: 579px) {
-  /* line 22, ../styles/pages/_org-enter.sass */
+  /* line 29, ../styles/pages/_org-enter.sass */
   .org-enter__inner {
     height: auto;
     background: none;
   }
 }
-/* line 34, ../styles/pages/_org-enter.sass */
+/* line 41, ../styles/pages/_org-enter.sass */
 .org-enter__left {
   float: left;
   width: 25%;
@@ -7296,20 +7305,20 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
 }
 @media screen and (max-width: 1099px) {
-  /* line 34, ../styles/pages/_org-enter.sass */
+  /* line 41, ../styles/pages/_org-enter.sass */
   .org-enter__left {
     width: 35%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 34, ../styles/pages/_org-enter.sass */
+  /* line 41, ../styles/pages/_org-enter.sass */
   .org-enter__left {
     width: 50%;
     padding-right: 20px;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 34, ../styles/pages/_org-enter.sass */
+  /* line 41, ../styles/pages/_org-enter.sass */
   .org-enter__left {
     width: auto;
     padding: 35px 15px 15px;
@@ -7318,7 +7327,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #16ca8c;
   }
 }
-/* line 58, ../styles/pages/_org-enter.sass */
+/* line 65, ../styles/pages/_org-enter.sass */
 .org-enter__bg {
   float: left;
   width: 50%;
@@ -7332,18 +7341,18 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
 }
 @media screen and (max-width: 1099px) {
-  /* line 58, ../styles/pages/_org-enter.sass */
+  /* line 65, ../styles/pages/_org-enter.sass */
   .org-enter__bg {
     display: none;
   }
 }
-/* line 71, ../styles/pages/_org-enter.sass */
+/* line 78, ../styles/pages/_org-enter.sass */
 .org-enter__bg IMG {
   max-width: 100%;
   margin-top: -120px;
   display: inline-block;
 }
-/* line 76, ../styles/pages/_org-enter.sass */
+/* line 83, ../styles/pages/_org-enter.sass */
 .org-enter__right {
   float: right;
   width: 25%;
@@ -7356,25 +7365,25 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
 }
-/* line 86, ../styles/pages/_org-enter.sass */
+/* line 93, ../styles/pages/_org-enter.sass */
 .org-enter__right .form-row__name {
   color: #fff;
 }
 @media screen and (max-width: 1099px) {
-  /* line 76, ../styles/pages/_org-enter.sass */
+  /* line 83, ../styles/pages/_org-enter.sass */
   .org-enter__right {
     width: 35%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 76, ../styles/pages/_org-enter.sass */
+  /* line 83, ../styles/pages/_org-enter.sass */
   .org-enter__right {
     width: 50%;
     padding-left: 20px;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 76, ../styles/pages/_org-enter.sass */
+  /* line 83, ../styles/pages/_org-enter.sass */
   .org-enter__right {
     width: auto;
     padding: 35px 15px 15px;

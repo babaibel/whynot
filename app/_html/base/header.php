@@ -64,7 +64,7 @@
 										<a class="submenu-mob__link" href="#!">Квесты в реальности</a>
 									</li>
 									<li class="submenu-mob__item">
-										<a class="submenu-mob__link" href="#!">Пейнтбол/лазертаг</a>
+										<a class="submenu-mob__link" href="http://frontender.info/a-guide-to-flexbox/">Пейнтбол/лазертаг</a>
 									</li>
 									<li class="submenu-mob__item">
 										<a class="submenu-mob__link" href="#!">Настольные игры</a>

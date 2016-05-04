@@ -71,13 +71,15 @@ $(function () {
 });
 
 $(function () {
-    var $hSubmenu = $('.js-header-submenu')
+    var $hSubmenu = $('.js-header-submenu');
     if(!$hSubmenu.length) return;
 
-    $hSubmenu.bind('click',function(){
+    var $hSubmenuLink = $hSubmenu.children('.header-nav__link');
+
+    $hSubmenuLink.bind('click',function(){
         if ($W.outerWidth() <= 579){
-            $hSubmenu.not(this).removeClass('_open');
-            $(this).toggleClass('_open');
+            $hSubmenuLink.not(this).closest('.js-header-submenu').removeClass('_open');
+            $(this).closest('.js-header-submenu').toggleClass('_open');
             return false;
         } else{
             var url = $(this).children('.header-nav__link').attr('href');

@@ -1,11 +1,18 @@
+.page-org-enter
+	.h2
+		+max-screen($screenSS)
+			margin-bottom: 20px
+			margin-top: 10px
+
 .org-enter
 	padding: 110px 0 100px
 
 	+max-screen($screenLL)
-		padding: 20px 0 30px
+		padding: 20px 0 50px
 
 	+max-screen($screenSS)
-		padding: 0 0 20px
+		padding: 0
+		border-bottom: 1px solid #a3a3a3
 
 	.wr
 		@extend .cf
