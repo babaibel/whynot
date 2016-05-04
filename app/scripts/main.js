@@ -305,3 +305,71 @@ $(function () {
         $afterPromoContent.css('marginTop', imgPromoHeight);
     });
 });
+
+// Редактировать текст
+$(function () {
+	var $btn = $('.js-text-edit-btn');
+	if (!$btn.length) return;
+
+	$btn.on('click', function() {
+		var $this = $(this),
+			text = $this.text(),
+			$wr = $this.closest('.js-text-edit'),
+			$hide = $wr.find('.js-text-edit-hide'),
+			$input = $hide .find('.js-text-edit-input');
+
+		$wr.addClass('_editing');
+		$input.val(text).focus();
+
+	});
+});
+
+// Сохранить текст
+$(function () {
+	var $btn = $('.js-text-edit-save');
+	if (!$btn.length) return;
+
+	$btn.on('click', function() {
+		var $this = $(this),
+			$wr = $this.closest('.js-text-edit'),
+			$link = $wr.find('.js-text-edit-btn'),
+			$hide = $wr.find('.js-text-edit-hide'),
+			inputText = $hide .find('.js-text-edit-input').val();
+
+		$wr.removeClass('_editing');
+		if( inputText == ""){
+			inputText = "Изменить"
+		}
+		$link.text(inputText);
+
+	});
+});
+
+// Отменить изменения
+$(function () {
+	var $btn = $('.js-text-edit-close');
+	if (!$btn.length) return;
+
+	$btn.on('click', function() {
+		var $this = $(this),
+			$wr = $this.closest('.js-text-edit')
+
+		$wr.removeClass('_editing');
+
+	});
+});
+
+$(function () {
+    var $phone = $('.js-phone-validate');
+    if (!$phone.length) return;
+
+    $phone.inputmask({"mask": "+7 (999) 999-9999"}); 
+});
+
+$(function () {
+    var $url = $('.js-url-validate');
+    if (!$url.length) return;
+
+    $url.inputmask("http://pochemybi.net/aaaaaaaaaaaaaaa"); 
+});
+

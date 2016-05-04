@@ -492,6 +492,9 @@ $star-size: 16px
 		margin-bottom: 20px
 		color: #333333
 
+		&:last-child
+			margin-bottom: 0
+
 .social-share
 	&--mrg
 		margin: 40px 0 0
@@ -672,3 +675,64 @@ $star-size: 16px
 		+max-screen($screenXS)
 			margin-left: 0
 			padding-bottom: 70px
+
+.sidebar-edit
+	&._editing
+		.sidebar-edit__hide
+			display: flex
+		.sidebar-edit__show-text
+			opacity: 0
+			visibility: hidden
+
+	&__show
+		display: flex
+		margin-bottom: 5px
+
+	&__show-title
+		flex-shrink: 0
+		padding-right: 5px
+		font-weight: bold
+
+	&__show-text
+		flex-grow: 1
+		opacity: 1
+		visibility: visible
+		transition: opacity $t150 ease, visibility $t150 ease
+		overflow: hidden
+		white-space: nowrap
+		text-overflow: ellipsis
+
+	&__hide
+		display: none
+
+	&__hide-input
+		flex-grow: 1
+
+		.input
+			line-height: 30px
+			height: 32px
+			font-size: 14px
+
+	&__hide-save,
+	&__hide-close
+		flex-shrink: 0
+
+		.icon
+			line-height: 32px
+			width: 22px
+			margin-left: 5px
+			text-align: center
+			cursor: pointer
+			&:after
+				font-size: 15px
+
+	&__hide-save
+		.icon
+			&:after
+				color: $cPrimary
+				font-size: 16px
+
+	&__hide-close
+		.icon
+			&:after
+				color: $cRed

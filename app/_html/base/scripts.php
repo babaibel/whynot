@@ -15,6 +15,7 @@
 <script src="../../bower_components/nselect/build/jquery.mCustomScrollbar.min.js"></script>
 <script src="../../bower_components/jquery-touchswipe/jquery.touchSwipe.js"></script>
 <script src="../../bower_components/jquery-validation/dist/jquery.validate.js"></script>
+<script src="../../bower_components/jquery.inputmask/dist/jquery.inputmask.bundle.js"></script>
 <!-- endbower -->
 
 <!-- endbuild -->

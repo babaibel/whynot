@@ -40,7 +40,7 @@
 											<div class="form-row__content-col">
 												<div class="form-row__content">
 													<div class="input-cont">
-														<input class="input" type="text" value="http://pochemybi.net/questreality">
+														<input class="input js-url-validate" type="text" value="http://pochemybi.net/questreality">
 													</div>
 												</div>
 											</div>
@@ -216,25 +216,211 @@
 											<p class="text--sm text--gray">Незаполненные поля не будут отражены в карточке мероприятия.</p>
 										</div>
 										<div class="sidebar-text__inner">
-											<b>Сайт:</b> <a href="#!" class="link link-und link-und--green-d">questreality.ru</a>
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														Сайт:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">questreality.ru</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="sidebar-text__inner">
-											<b>Телефон:</b> <a href="tel:+7 495 565-32-13" class="link link-und link-und--green-d">+7 495 565-32-13</a>
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														Телефон:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">+7 495 565-32-13</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="sidebar-text__inner">
-											<b>Почта:</b> <a href="mailto: mail@questreality.ru" class="link link-und link-und--green-d">mail@questreality.ru</a>
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														Почта:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">mail@questreality.ru</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="sidebar-text__inner">
-											<b>Скайп:</b> <a href="skype: quest-reality" class="link link-und link-und--green-d">quest-reality</a>
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														Скайп:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">quest-reality</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="sidebar-text__inner">
-											<b>WatsApp:</b> <a href="tel:+7 495 565-32-13" class="link link-und link-und--green-d">+7 495 565-32-13</a>
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														WatsApp:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">+7 495 565-32-13</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="sidebar-text__inner">
-											<b>Адрес:</b> <a href="#!" class="link link-und link-und--green-d">Москва, Арбат 24</a>
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														Адрес:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">Москва, Длинный переулок и номер дома</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="sidebar-text__inner">
-											<b>Название:</b> <a href="#!" class="link link-und link-und--green-d">Парк Сокольники</a>
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														Название:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">Парк Сокольники</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="sidebar-text__inner">
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														Facebook:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">questreality</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="sidebar-text__inner">
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														vk.com:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">questreality</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
