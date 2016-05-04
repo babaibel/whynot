@@ -250,25 +250,51 @@ BODY
 
 
 .header-nav
-	margin-left: -7px
-	margin-right: -7px
+	margin-left: -10px
+	margin-right: -10px
+	+max-screen($screenSM)
+		margin-left: -7px
+		margin-right: -7px
 
-	UL
+	&__menu
 		display: flex
 		flex-flow: row nowrap
 		justify-content: space-between
 
-	A
-		font: 23px/1.1 $ffNarrow
+	&__item
+		&.active,
+		&._open
+
+			> A
+				background-color: $cPrimary
+				color: #fff
+				SPAN
+					border-color: transparent
+
+		&._open
+			.submenu-mob
+				display: block
+
+	&__link
+		font: 23px/68px $ffNarrow
 		text-decoration: none
-		margin: 0 7px
+		padding: 0 10px
 		color: #fff
-		border-bottom: 1px solid #4d4d4d
-		display: inline-block
 		white-space: nowrap
+		text-align: center
+		display: block
+
+		+max-screen($screenSM)
+			padding: 0 7px
+
+		SPAN
+			border-bottom: 1px solid #4d4d4d
+			display: inline-block
+			line-height: 26px
 
 		&:hover
-			border-color: transparent
+			SPAN
+				border-color: transparent
 
 		+max-screen($screenS)
 			font-size: 20px
@@ -286,16 +312,17 @@ BODY
 		z-index: 10
 
 
-		UL
+		&__menu
 			flex-wrap: wrap
 
-			LI
-				width: 50%
-				padding-right: 15px
-				margin: 6px 0
-				+max-screen(400px)
-					width: 100%
+		&__item
+			margin: 0 0 4px 0
+			width: 100%
+			padding-right: 0
 
+		&__link
+			text-align: left
+			line-height: 2
 			//display: block
 
 		BODY._header-menu-open &
@@ -393,6 +420,67 @@ $hsearch-padd: 0 48px 0 10px
 
 	+max-screen($screenSS)
 
+.header-submenu-wr
 
+	+max-screen($screenSS)
+		display: none
+
+.header-submenu
+	padding: 18px 0 10px
+
+	&__nav
+		padding: 0
+		margin: 0
+		list-style: none
+
+		&:after
+			content: ""
+			display: table
+			clear: both
+
+		LI
+			display: inline-block
+			margin: 0 25px 8px 0
+
+			&:last-child
+				margin-right: 0
+
+			&.active
+				A
+					color: $cPrimary
+
+			A
+				font: 18px/1.2 $ffHelvetica
+				color: #000
+				text-decoration: none
+
+				+max-screen($screenMM)
+					font-size: 16px
+
+				&:hover
+					color: $cPrimary
+
+.submenu-mob
+	display: none
+	background-color: #f9f9f9
+	list-style: none
+	padding: 5px 0
+	margin: 0
+
+	&__item
+		display: block
+		float: none
+
+		&.active
+			.submenu-mob__link
+				color: $cPrimary
+
+	&__link
+		display: block
+		color: #000
+		padding: 4px 7px
+
+	+min-screen($screenSS+1)
+		display: none!important
 
 //+max-screen()

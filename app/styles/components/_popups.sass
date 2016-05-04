@@ -168,4 +168,19 @@ $popup-side-offset: 8px
             &:after
                 display: none
 
+    &--reg
+        margin: 20px 0 0 0
+        &:after
+            left: 83%
+
+        +screen($popup-size-sm + ( $popup-side-offset * 2) + 1px,$screenSS)
+            left: 50% !important
+            margin: 0 0 0 (-$popup-size-sm/2)
+
+        +max-screen($screenSS)
+            z-index: 99
+            position: fixed
+            top: $header-top-h-sm + 10px !important
+            &:after
+                display: none
 

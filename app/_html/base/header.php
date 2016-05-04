@@ -34,7 +34,7 @@
 						<div class="header-cabinet__main">
 							<a href="#!" class="link link--black link--dotted js-popup-btn" data-popup-name="login">Вход</a>
 							<span class="header-cabinet__sep">/</span>
-							<a href="#!" class="link link--black link--dotted">Регистрация</a>
+							<a href="#!" class="link link--black link--dotted js-popup-btn" data-popup-name="reg">Регистрация</a>
 						</div>
 
 						<div class="header-cabinet__hidden">
@@ -54,13 +54,53 @@
 			<div class="header-bot">
 				<div class="header-bot__nav">
 					<nav class="header-nav js-header-menu">
-						<ul class="list-clear">
-							<li><a href="#!">Погулять</a></li>
-							<li><a href="#!">Посмотреть</a></li>
-							<li><a href="#!">Поиграть</a></li>
-							<li><a href="#!">Позаниматься</a></li>
-							<li><a href="#!">Дети</a></li>
-							<li><a href="#!">Спорт-экстрим</a></li>
+						<ul class="header-nav__menu list-clear">
+							<li class="header-nav__item"><a class="header-nav__link" href="#!"><span>Погулять</span></a></li>
+							<li class="header-nav__item"><a class="header-nav__link" href="#!"><span>Посмотреть</span></a></li>
+							<li class="header-nav__item js-header-submenu active">
+								<a class="header-nav__link" href="http://frontender.info/a-guide-to-flexbox/"><span>Поиграть</span></a>
+								<ul class="submenu-mob">
+									<li class="submenu-mob__item active">
+										<a class="submenu-mob__link" href="#!">Квесты в реальности</a>
+									</li>
+									<li class="submenu-mob__item">
+										<a class="submenu-mob__link" href="#!">Пейнтбол/лазертаг</a>
+									</li>
+									<li class="submenu-mob__item">
+										<a class="submenu-mob__link" href="#!">Настольные игры</a>
+									</li>
+									<li class="submenu-mob__item">
+										<a class="submenu-mob__link" href="#!">Атракционы</a>
+									</li>
+									<li class="submenu-mob__item">
+										<a class="submenu-mob__link" href="#!">Другое</a>
+									</li>
+								</ul>
+							</li>
+							<li class="header-nav__item js-header-submenu">
+								<a class="header-nav__link" href="#!">
+									<span>Позаниматься</span>
+								</a>
+								<ul class="submenu-mob">
+									<li class="submenu-mob__item active">
+										<a class="submenu-mob__link" href="#!">Квесты в реальности</a>
+									</li>
+									<li class="submenu-mob__item">
+										<a class="submenu-mob__link" href="#!">Пейнтбол/лазертаг</a>
+									</li>
+									<li class="submenu-mob__item">
+										<a class="submenu-mob__link" href="#!">Настольные игры</a>
+									</li>
+									<li class="submenu-mob__item">
+										<a class="submenu-mob__link" href="#!">Атракционы</a>
+									</li>
+									<li class="submenu-mob__item">
+										<a class="submenu-mob__link" href="#!">Другое</a>
+									</li>
+								</ul>
+							</li>
+							<li class="header-nav__item"><a class="header-nav__link" href="#!"><span>Дети</span></a></li>
+							<li class="header-nav__item"><a class="header-nav__link" href="#!"><span>Спорт-экстрим</span></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -80,4 +120,10 @@
 			</div>
 		</div>
 	</div>
+
+	<?php
+		if(isset($headerInner) == 'true' ){
+		include "base/headerInner.php";
+		}
+	?>
 </header>

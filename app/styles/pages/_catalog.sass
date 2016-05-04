@@ -37,7 +37,7 @@
 // ----------------------------------------------------------------------
 // Filter
 // ----------------------------------------------------------------------
-$filter_h: 82px
+$filter_h: 96px
 
 .filter
 	position: relative
@@ -81,18 +81,18 @@ $filter_h: 82px
 			body._search-open &
 				transform: translateY($hsearch-wr-mob-size)
 
-	+max-screen($screenL)
-		margin-bottom: 15px
+	// +max-screen($screenL)
+	// 	margin-bottom: 15px
 
 
-	+max-screen($screenSM)
-		padding-top: 44px
-		&__mob-toggle
-			display: block
+	// +max-screen($screenSM)
+	// 	padding-top: 44px
+	// 	&__mob-toggle
+	// 		display: block
 
 .filter-main
-	background-color: #fff
 	border: 1px solid #e6e6e6
+
 
 	.wr
 		height: $filter_h
@@ -100,36 +100,69 @@ $filter_h: 82px
 		justify-content: space-between
 		align-items: center
 		position: static
-		padding-top: 15px
-		padding-bottom: 15px
-
-	&__info
-		width: 25%
-		padding: 10px 0 10px 10px
-		flex-shrink: 0
-		font-size: 14px
-		line-height: 24px
-		color: #999
-		text-align: center
-		+max-screen($screenL)
-			width: auto
-
-	&__sort-gr
-		flex-shrink: 0
-
-		+max-screen($screenL)
-			position: absolute
-			bottom: 7px
-			left: $wrapper-padd
-			right: $wrapper-padd
+		padding-top: 35px
+		padding-bottom: 25px
 
 		+max-screen($screenM)
-			left: $wrapper-padd-md
-			right: $wrapper-padd-md
+			display: block
+			height: auto
+			padding-top: 25px
+			padding-bottom: 15px
 
-		+max-screen($screenSS)
-			left: $wrapper-padd-sm
-			right: $wrapper-padd-sm
+
+	&--line2
+		border: 0 none
+
+		.wr
+			padding-top: 18px
+			padding-bottom: 18px
+			display: block
+			height: 86px
+
+			+max-screen($screenSM)
+				padding-top: 0
+
+	&__info
+		padding: 10px 60px 10px 0
+		flex-shrink: 0
+		font: bold 32px/1 $ffNarrow
+		text-transform: uppercase
+		color: #2c2c2c
+		white-space: nowrap
+		+max-screen($screenM)
+			padding-bottom: 20px
+			padding-right: 0
+
+		+max-screen($screenSM)
+			font-size: 24px
+
+	.chkb-dropdown
+		display: none
+		+max-screen($screenSM)
+			display: block
+
+	.weekrange
+		display: block
+		+max-screen($screenSM)
+			display: none
+
+	&__sort-gr
+		.selector
+			float: right
+
+		// +max-screen($screenL)
+		// 	position: absolute
+		// 	bottom: 7px
+		// 	left: $wrapper-padd
+		// 	right: $wrapper-padd
+
+		// +max-screen($screenM)
+		// 	left: $wrapper-padd-md
+		// 	right: $wrapper-padd-md
+
+		// +max-screen($screenSS)
+		// 	left: $wrapper-padd-sm
+		// 	right: $wrapper-padd-sm
 
 		+max-screen($screenXS)
 			.sort-chkb-wr
@@ -263,11 +296,11 @@ $filter_h: 82px
 		.wr
 			height: auto
 			display: block
-			padding: 0
-			border: 0
+			// padding: 0
+			// border: 0
 
-		&__info
-			display: none
+		// &__info
+		// 	display: none
 
 		&__params-wr
 			display: none

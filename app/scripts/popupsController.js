@@ -185,6 +185,13 @@ $(function () {
         vertical: ['top','out']
     });
 
+    _POPUPS['reg'] = new StickPopup($('.js-popup-reg'),{
+        toStick: $('.js-popup-btn[data-popup-name="reg"]'),
+        //closeSelector: '.js-popup-disabler',
+        horizontal: ['right','in'],
+        vertical: ['top','out']
+    });
+
     _POPUPS['subscribe'] = new StickPopup($('.js-popup-subs'),{
         toStick: $('.js-popup-btn[data-popup-name="subscribe"]'),
         //closeSelector: '.js-popup-disabler',
@@ -227,10 +234,6 @@ $(function () {
         }
     });*/
 
-
-
-
-
 });
 
 $(function(){
@@ -242,6 +245,10 @@ $(function(){
             popupName = $this.data('popup-name');
 
         $this.bind('click',function(e){
+            _POPUPS['login'].close();
+            _POPUPS['reg'].close();
+            _POPUPS['subscribe'].close();
+            _POPUPS['subscribe2'].close();
             _POPUPS[popupName].toggle(e);
         });
     });
