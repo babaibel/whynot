@@ -1,4 +1,4 @@
-<section class="index-cards bg--gray">
+<section class="index-cards bg--gradient-gray">
 	<div class="wr">
 		<div class="index-cards__title js-cards-filter">
 			Рекомендуем <a href="#!" class="active">Сегодня</a>, <a href="#!">На этой неделе</a>, <a href="#!">В этом месяце</a>
