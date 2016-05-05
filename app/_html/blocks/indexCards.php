@@ -1,14 +1,27 @@
-<section class="index-cards bg--gradient-gray">
+<section class="index-cards bg--gradient-gray js-catalog-tabs">
 	<div class="wr">
-		<div class="index-cards__title js-cards-filter">
-			Рекомендуем <a href="#!" class="active">Сегодня</a>, <a href="#!">На этой неделе</a>, <a href="#!">В этом месяце</a>
+		<div class="index-cards__title">
+			Рекомендуем 
+			<ul class="index-cards__title-nav">
+				<li><a href="#!" class="js-mr-cat-btn _active">Сегодня</a>, </li>
+				<li><a href="#!" class="js-mr-cat-btn">На этой неделе</a>, </li>
+				<li><a href="#!" class="js-mr-cat-btn">В этом месяце</a></li>
+			</ul>
 		</div>
 
-		<?php include "blocks/materialsRow.php";?>
-
-		<?php include "blocks/actionsSlider.php";?>
-
-		<?php include "blocks/materialsRow.php";?>
+		<div class="materials-wr">
+			<div class="materials-wr__tab js-mr-cat-tab material-anim-cont _active">
+				<?php include "blocks/materialsRowLoadOut.php";?>
+				<?php include "blocks/actionsSlider.php";?>
+				<?php include "blocks/materialsRowLoadOut.php";?>
+			</div>
+			<div class="materials-wr__tab js-mr-cat-tab material-anim-cont">
+				<?php include "blocks/materialsRowLoadOut.php";?>
+			</div>
+			<div class="materials-wr__tab js-mr-cat-tab material-anim-cont">
+				<?php include "blocks/materialsRowLoadOut.php";?>
+			</div>
+		</div>
 
 		<a href="#!" class="btn btn--green btn--arr">
 			Все мероприятия

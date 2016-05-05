@@ -29,22 +29,39 @@ $(function () {
 });*/
 
 
+// $(function () {
+// 	var $btn = $('.js-bookmark');
+// 	if (!$btn.length) return;
+
+// 	$btn.on('click', function() {
+// 		$(this).toggleClass('active');
+// 	});
+// });
+
+// Открытие тултипа добавления и удаление для обычных страниц
 $(function () {
 	var $btn = $('.js-bookmark');
 	if (!$btn.length) return;
 
 	$btn.on('click', function() {
-		$(this).toggleClass('active');
+		if( $(this).hasClass('_active')){
+			$(this).removeClass('_active');
+			$(this).next('.js-bookmark-tooltip').removeClass('_active');
+		} else{
+			$(this).addClass('_active');
+			$(this).next('.js-bookmark-tooltip').addClass('_active');
+		}
+		
 	});
 });
 
-// Открытие тултипа удаления карточки товара из избранного
+// Открытие тултипа удаления карточки товара из избранного в ЛК
 $(function () {
-	var $btn = $('.js-bookmark-remove');
+	var $btn = $('.js-bookmark-lk');
 	if (!$btn.length) return;
 
 	$btn.on('click', function() {
-		$(this).next('.js-bookmark-tooltip').addClass('_active');
+		$(this).next('.js-bookmark-tooltip').toggleClass('_active');
 	});
 });
 
@@ -157,6 +174,24 @@ function scrollingTrigger(options) {
 
     });
     $W.scroll();
+}
+
+function elemInView(selector, pPercents) {
+    if ($(selector).length) {
+        var s = $(selector),
+            percents = pPercents || 0.9,
+            scroll = $(document).scrollTop(),
+            offs = s.offset().top,
+            win = $(window).height(),
+            start = offs - (win * percents),
+            stop = offs + (s.height() * percents);
+
+        if (scroll > start && scroll < stop) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
 
 

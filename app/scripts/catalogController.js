@@ -1,3 +1,94 @@
+;(function ($) {
+    $.fn.catTabs = function () {
+        $(this).each(function () {
+            var $this = $(this),
+                $btns = $this.find('.js-mr-cat-btn'),
+                $tabs = $this.find('.js-mr-cat-tab');
+
+            function onScroll(pPercent) {
+                var scroll = $W.scrollTop(),
+                    $actTab = $tabs.filter('._active'),
+                    $actTabCards = $actTab.find('.js-card'),
+                    $actTabSliders = $actTab.find('.js-actions-sl'),
+                    percent = pPercent || 0.8;
+
+                $actTabCards.each(function () {
+                    var $thisCard = $(this);
+
+                    if (elemInView($thisCard.parent(), percent) || scroll > $thisCard.offset().top) $thisCard.addClass('_animated')
+                });
+
+                $actTabSliders.each(function () {
+                    var $thisSlider = $(this);
+
+                    if (elemInView($thisSlider, percent) || scroll > $thisSlider.offset().top) $thisSlider.addClass('_animated')
+                });
+            }
+
+
+            $btns.bind('click', function (e) {
+                var $this = $(this),
+                    i = $this.parent().index(),
+                    $targetTab = $tabs.eq(i),
+                    productsHtml;
+
+                $tabs.removeClass('_active').find('.js-card').removeClass('_animated');
+                $tabs.removeClass('_active').find('.js-actions-sl').removeClass('_animated');
+                $targetTab.addClass('_active');
+                $btns.removeClass('_active').parent().removeClass('_active');
+                $this.addClass('_active').parent().addClass('_active');
+
+                $W.scroll();
+            });
+
+
+            $W.scroll(function () {
+                onScroll();
+            });
+
+            onScroll(1);
+
+        })
+    }
+})(jQuery);
+
+$(function () {
+    var $catTabs = $('.js-catalog-tabs');
+    if (!$catTabs.length) return;
+    $catTabs.catTabs();
+});
+
+// $(function () {
+//     var $cardHidden = $('.js-cards-hidden');
+//     if (!$cardHidden.length) return;
+
+//     function onScroll(pPercent) {
+//         var scroll = $W.scrollTop(),
+//             $actTabCards = $cardHidden.find('.js-card'),
+//             $actTabSliders = $cardHidden.find('.js-actions-sl'),
+//             percent = pPercent || 0.8;
+
+//         $actTabCards.each(function () {
+//             var $thisCard = $(this);
+
+//             if (elemInView($thisCard.parent(), percent) || scroll > $thisCard.offset().top) $thisCard.addClass('_animated')
+//         });
+
+//         $actTabSliders.each(function () {
+//             var $thisSlider = $(this);
+
+//             if (elemInView($thisSlider, percent) || scroll > $thisSlider.offset().top) $thisSlider.addClass('_animated')
+//         });
+//     }
+
+//     $W.scroll(function () {
+//         onScroll();
+//     });
+
+//     onScroll(1);
+// });
+
+
 
 $(function () {
     var $filterParam = $('.js-filter-param');

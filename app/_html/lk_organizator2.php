@@ -10,22 +10,22 @@
 
 			<?php include 'blocks/lk-menu-org.php'; ?>
 
-			<section class="materials-row">
+			<section class="materials-row js-catalog-tabs">
 				<div class="wr">
 					<div class="materials-header materials-header--flex">
 						<div class="materials-header__item">
 							<ul class="materials-nav">
-								<li class="materials-nav__item active">
-									<a class="materials-header__item active" href="#!">Текущие мероприятия</a>
+								<li class="materials-nav__item">
+									<a class="materials-header__item js-mr-cat-btn _active" href="#!">Текущие мероприятия</a>
 								</li>
 								<li class="materials-nav__item">
-									<a class="materials-header__item" href="#!">Прошедшие мероприятия</a>
+									<a class="materials-header__item js-mr-cat-btn" href="#!">Прошедшие мероприятия</a>
 								</li>
 								<li class="materials-nav__item">
-									<a class="materials-header__item" href="#!">На модерации</a>
+									<a class="materials-header__item js-mr-cat-btn" href="#!">На модерации</a>
 								</li>
 								<li class="materials-nav__item">
-									<a class="materials-header__item" href="#!">Черновик</a>
+									<a class="materials-header__item js-mr-cat-btn" href="#!">Черновик</a>
 								</li>
 							</ul>
 						</div>
@@ -33,7 +33,20 @@
 							<a href="#!" class="btn btn--green btn--md">Добавить новое</a>
 						</div>
 					</div>
-					<?php include "blocks/materialsRow.php";?>
+					<div class="materials-wr">
+						<div class="materials-wr__tab js-mr-cat-tab material-anim-cont _active">
+							<?php include "blocks/materialsRowLoadOutLk.php";?>
+						</div>
+						<div class="materials-wr__tab js-mr-cat-tab material-anim-cont">
+							<?php include "blocks/materialsRowLoadOutLk.php";?>
+						</div>
+						<div class="materials-wr__tab js-mr-cat-tab material-anim-cont">
+							<?php include "blocks/materialsRowLoadOutLk.php";?>
+						</div>
+						<div class="materials-wr__tab js-mr-cat-tab material-anim-cont">
+							<?php include "blocks/materialsRowLoadOutLk.php";?>
+						</div>
+					</div>
 				</div>
 			</section>
 

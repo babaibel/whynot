@@ -239,6 +239,15 @@
 		.actions-sl
 			margin-bottom: 0
 
+	&__title-nav
+		display: inline
+		list-style: none
+		padding: 0 0 0 10px
+		margin: 0
+
+		LI
+			display: inline
+
 	&__title
 		font: 700 32px/1 $ffNarrow
 		text-transform: uppercase
@@ -256,7 +265,7 @@
 			&:hover
 				border-color: transparent
 
-			&.active
+			&._active
 				padding: 0 5px
 				margin: 0
 				background: $cLime
@@ -297,7 +306,15 @@
 	// overflow: hidden
 	position: relative
 	padding: 0 15px
-	transition: $t150
+	transition: all 0.5s ease-out 0s
+	opacity: 0
+	overflow: hidden
+	transform: translate(-20%, 2%) scale(0.95)
+
+	&._animated
+		opacity: 1
+		overflow: visible
+		transform: translate(0, 0) scale(1)
 
 	&:hover
 		.link, .link-und
@@ -306,7 +323,7 @@
 			text-decoration: none
 	&:active
 		@media not handheld
-			transform: translateY(-3px)
+			// transform: translateY(-3px)
 			box-shadow: 0 16px 16px -20px rgba(220,241,135,0.9), 0 12px 18px -14px rgba(0,0,0,0.4)
 			-webkit-box-shadow: 0 16px 16px -16px rgba(220,241,135,0.9), 0 12px 18px -14px rgba(0,0,0,0.5)
 
@@ -336,7 +353,7 @@
 		transition: all $t150 ease-out
 
 		&:hover,
-		&.active
+		&._active
 			background: $cGreen !important
 			.icon
 				color: #fff !important

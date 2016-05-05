@@ -1,4 +1,4 @@
-<div class="card__bookmark active js-bookmark-remove">
+<div class="card__bookmark _active js-bookmark-lk">
 	<span class="icon iconic--bookmark"></span>
 </div>
 <div class="card__tooltip js-bookmark-tooltip">
