@@ -31,10 +31,26 @@
 					<a href="#!" class="bookmark-link"><span class="icon iconic--bookmark"></span>Избранное</a>
 
 					<div class="header-cabinet">
+
 						<div class="header-cabinet__main">
-							<a href="#!" class="link link--black link--dotted js-popup-btn" data-popup-name="login">Вход</a>
-							<span class="header-cabinet__sep">/</span>
-							<a href="#!" class="link link--black link--dotted js-popup-btn" data-popup-name="reg">Регистрация</a>
+
+							<?php
+								if(isset($headerCabinet) == 'true' ){
+								include "base/cabinet/mainCabinet.php";
+								}
+							?>
+
+							<?php
+								if(isset($headerCabinetUser) == 'true' ){
+								include "base/cabinet/userCabinet.php";
+								}
+							?>
+
+							<?php
+								if(isset($headerCabinetOrg) == 'true' ){
+								include "base/cabinet/orgCabinet.php";
+								}
+							?>
 						</div>
 
 						<div class="header-cabinet__hidden">

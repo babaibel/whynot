@@ -4,7 +4,9 @@
 <?php include 'base/head.php';?>
 <body>
 	<div class="layout">
-		<?php include 'base/header.php'; ?>
+		<?php
+			$headerCabinet = 'true';
+			include 'base/header.php';?>
 
 		<main class="page-body">
 

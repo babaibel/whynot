@@ -6,6 +6,7 @@
 	<div class="layout">
 		<?php
 			$headerInner = 'true';
+			$headerCabinet = 'true';
 			include 'base/header.php';?>
 
 		<main class="catalog-page">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<?php $pageTitle = 'Мероприятие'; ?>
+<?php $pageTitle = 'Мероприятие архивное'; ?>
 <?php include 'base/head.php';?>
 <body>
 	<div class="layout">
@@ -21,7 +21,7 @@
 						<div class="grid-right-fix__left">
 							<div class="grid-right-fix__left-inner">
 
-								<div class="actions-sl actions-sl--inner js-actions-sl2">
+								<div class="actions-sl actions-sl--inner js-actions-sl2 status-archive">
 									<a class="actions-sl__item" href="#!" style="background-image: url(../images/userfiles/slide1.jpg);">
 									</a>
 									<a class="actions-sl__item" href="#!" style="background-image: url(../images/userfiles/slide1.jpg);">
@@ -38,10 +38,8 @@
 						<div class="grid-right-fix__right">
 							
 							<div class="sidebar sidebar--green">
-								<div class="sidebar__item">
-									<a href="#!" class="link link--bookmark link--icon">
-										<span>Добавить в избранное</span>
-									</a>
+								<div class="sidebar__item sidebar__item--archive">
+									Мероприятие завершено
 								</div>
 								<div class="sidebar__item">
 									<div class="sidebar-text sidebar-text--item">
