@@ -4,8 +4,8 @@
 			Рекомендуем 
 			<ul class="index-cards__title-nav">
 				<li><a href="#!" class="js-mr-cat-btn _active">Сегодня</a>, </li>
-				<li><a href="#!" class="js-mr-cat-btn">На этой неделе</a>, </li>
-				<li><a href="#!" class="js-mr-cat-btn">В этом месяце</a></li>
+				<li><a href="#!" class="js-mr-cat-btn">Завтра</a>, </li>
+				<li><a href="#!" class="js-mr-cat-btn">На выходных</a></li>
 			</ul>
 		</div>
 
@@ -16,6 +16,7 @@
 				<?php include "blocks/materialsRowLoadOut.php";?>
 			</div>
 			<div class="materials-wr__tab js-mr-cat-tab material-anim-cont">
+				<?php include "blocks/materialsRowLoadOut.php";?>
 				<?php include "blocks/materialsRowLoadOut.php";?>
 			</div>
 			<div class="materials-wr__tab js-mr-cat-tab material-anim-cont">

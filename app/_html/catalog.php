@@ -228,7 +228,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -261,7 +261,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -291,7 +291,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -337,7 +337,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -367,7 +367,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -382,38 +382,38 @@
 
 								<div class="materials-grid__col">
 									<a class="card card--full js-card" href="#!">
-										<div class="card__top">
-											<div class="card__img-full"
-												 style="background-image: url(../images/userfiles/card-full1.jpg);">
-											</div>
-											<span class="card__label">
-												Выбор редакции
-											</span>
-											<?php include "components/post-favorite.php";?>
-											<div class="card__title">
-												<span class="link link--lime">
-													ЭКСКУРСИЯ
-													С ДИГГЕРОМ
-													«ТАЙНЫ ПОДЗЕМНОЙ
-													МОСКВЫ»
-												</span>
-											</div>
+									<div class="card__top">
+										<div class="card__img-full"
+											 style="background-image: url(../images/userfiles/card-full1.jpg);">
+											 <?php include "components/post-favorite.php";?>
 										</div>
-										<div class="card__bottom">
-											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
-											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
-											<div class="card__rating">
-												<div class="rating">
+										<span class="card__label">
+											Выбор редакции
+										</span>
+										<div class="card__title">
+											<span class="link link--lime">
+												ЭКСКУРСИЯ
+												С ДИГГЕРОМ
+												«ТАЙНЫ ПОДЗЕМНОЙ
+												МОСКВЫ»
+											</span>
+										</div>
+									</div>
+									<div class="card__bottom">
+										<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
+										<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
+										<div class="card__rating">
+											<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 												</div>
-												13 отзывов
-											</div>
+											13 отзывов
 										</div>
-									</a>
+									</div>
+								</a>
 								</div>
 
 								<div class="materials-grid__col">
@@ -433,7 +433,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -468,7 +468,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -483,38 +483,38 @@
 
 								<div class="materials-grid__col">
 									<a class="card card--full js-card" href="#!">
-										<div class="card__top">
-											<div class="card__img-full"
-												 style="background-image: url(../images/userfiles/card-full2.jpg);">
-											</div>
-											<span class="card__label">
-												Выбор редакции
-											</span>
-											<?php include "components/post-favorite.php";?>
-											<div class="card__title">
-												<span class="link link--lime">
-													КУРСЫ ПО СТРЕЛЬБЕ
-													ИЗ СПОРТИВНОГО
-													ЛУКА В ПАВИЛЬОНЕ
-													В ЦЕНТРЕ МОСКВЫ
-												</span>
-											</div>
+									<div class="card__top">
+										<div class="card__img-full"
+											 style="background-image: url(../images/userfiles/card-full1.jpg);">
+											 <?php include "components/post-favorite.php";?>
 										</div>
-										<div class="card__bottom">
-											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
-											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
-											<div class="card__rating">
-												<div class="rating">
+										<span class="card__label">
+											Выбор редакции
+										</span>
+										<div class="card__title">
+											<span class="link link--lime">
+												ЭКСКУРСИЯ
+												С ДИГГЕРОМ
+												«ТАЙНЫ ПОДЗЕМНОЙ
+												МОСКВЫ»
+											</span>
+										</div>
+									</div>
+									<div class="card__bottom">
+										<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
+										<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
+										<div class="card__rating">
+											<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 												</div>
-												13 отзывов
-											</div>
+											13 отзывов
 										</div>
-									</a>
+									</div>
+								</a>
 								</div>
 
 								<div class="materials-grid__col">
@@ -537,7 +537,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -567,7 +567,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -597,7 +597,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -627,7 +627,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -660,7 +660,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -690,7 +690,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -720,7 +720,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -750,7 +750,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -783,7 +783,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
@@ -813,7 +813,7 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating">
+												<div class="rating-static">
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>
 													<span class="icon iconic--star"></span>

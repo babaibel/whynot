@@ -35,6 +35,8 @@
 
 <script src="../scripts/headerController.js"></script>
 
+<script src="../scripts/item.js"></script>
+
 <script src="../scripts/main.js"></script>
 
 <script src="../scripts/mapsController.js"></script>

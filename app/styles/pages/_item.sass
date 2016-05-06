@@ -1,0 +1,97 @@
+.item-page
+	padding: 10px 0 30px
+
+	+max-screen($screenMM)
+		padding: 0
+		margin-top: -25px
+
+.item-map
+	border: 1px solid #dbdbdb
+	box-shadow: 0 7px 32px rgba(0,0,0,0.11)
+	margin: 40px 0
+
+	&__inner
+		padding: 35px 40px 30px
+		background-color: #fff
+
+		+max-screen($screenM)
+			padding: 25px 25px 20px
+
+	&__header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-bottom: 25px
+
+		+max-screen($screenSS)
+			display: block
+
+		&-title
+			flex-grow: 1
+			.h4-bold
+				margin: 0 0 5px
+
+		&-rout
+			flex-grow: 1
+			text-align: right
+			.btn
+				border-radius: 0
+				font-weight: 500
+
+			+max-screen($screenSS)
+				margin-top: 20px
+
+		&-search
+			position: relative
+			display: none
+
+	&__map-wr
+		margin: 0 -40px
+		height: 300px
+
+		+max-screen($screenM)
+			margin: 0 -25px
+
+		+max-screen($screenSS)
+			height: 220px
+
+	&__info
+		padding-top: 30px
+
+		&-row
+			margin-top: 20px
+			display: flex
+
+			+max-screen($screenLL)
+				flex-flow: row wrap
+
+		&-col
+			padding-right: 3%
+			padding-left: 3%
+			flex-grow: 1
+
+			+max-screen($screenLL)
+				width: 50%
+
+				&:nth-child(2)
+					padding-right: 0
+
+				&:nth-child(3)
+					padding-left: 0
+
+			+max-screen($screenSS)
+				width: 100%
+				padding-left: 0!important
+				padding-right: 0!important
+
+			&:first-child
+				padding-left: 0
+
+			&:last-child
+				padding-right: 0
+		
+		&-item
+			margin-bottom: 15px
+
+			&--nowrap
+				white-space: nowrap
