@@ -4,12 +4,16 @@
 <?php include 'base/head.php';?>
 <body>
 	<div class="layout">
-		<?php include 'base/header.php'; ?>
+		<?php
+			$headerInner = 'true';
+			include 'base/header.php';?>
 
 		<main class="page-body page-body--gray-l">
 
 			<section class="item-page">
 				<div class="wr">
+
+					<h1 class="h3-bold-narrow">Катание на воздушных шарах в Московской области</h1>
 
 					<div class="grid-right-fix">
 						
@@ -80,8 +84,6 @@
 						
 						<div class="grid-right-fix__left">
 							<div class="grid-right-fix__left-inner">
-
-								<h1 class="h3-bold-narrow">Катание на воздушных шарах в Московской области</h1>
 
 								<p class="text--big-b">Полет на воздушном шаре с обрядом посвящения в воздухоплаватели и вручением сертификата в клубе «Аэронавтика» со скидкой до 64%</p>
 								<p>Романтика воздушных полетов никогда еще не была такой близкой. Посмотрите на свою жизнь с высоты птичьего полета, полюбуйтесь окрестностями, полюбите жизнь еще больше. </p>
@@ -164,7 +166,72 @@
 											</div>
 
 											<div class="comments__header-btn">
-												<a class="btn btn--green btn--md" href="#!">Оставить отзыв</a>
+												<a class="btn btn--green btn--md js-comment-new-btn" href="#!">Оставить отзыв</a>
+											</div>
+										</div>
+									</div>
+									<div class="comments__new js-comment-new">
+										<div class="comment">
+											<div class="comment__img">
+												<img src="../images/userfiles/avatar1.jpg" alt="">
+											</div>
+											<div class="comment__inner">
+												<form>
+													<div class="comment__textarea">
+														<textarea placeholder="Что вы думаете об этом?" class="textarea"></textarea>
+													</div>
+													<div class="comment__rating">
+														<div class="rating-wrap">
+
+															<div class="rating">
+
+																<div class="rating__star rating__star1">
+																	<span class="iconic iconic--star rating__star-inactive"></span>
+																</div>
+
+																<div class="rating__star rating__star2">
+																	<span class="iconic iconic--star rating__star-inactive"></span>
+																</div>
+
+																<div class="rating__star rating__star3">
+																	<span class="iconic iconic--star rating__star-inactive"></span>
+																</div>
+
+																<div class="rating__star rating__star4">
+																	<span class="iconic iconic--star rating__star-inactive"></span>
+																</div>
+
+																<div class="rating__star rating__star5">
+																	<span class="iconic iconic--star rating__star-inactive"></span>
+																</div>
+
+																<div class="rating__active-stars">
+																	<div class="rating__star">
+																		<span class="iconic iconic--star rating__star-active"></span>
+																	</div>
+																	<div class="rating__star">
+																		<span class="iconic iconic--star rating__star-active"></span>
+																	</div>
+																	<div class="rating__star">
+																		<span class="iconic iconic--star rating__star-active"></span>
+																	</div>
+																	<div class="rating__star">
+																		<span class="iconic iconic--star rating__star-active"></span>
+																	</div>
+																	<div class="rating__star">
+																		<span class="iconic iconic--star rating__star-active"></span>
+																	</div>
+																</div>
+
+															</div>
+
+														</div>
+													</div>
+
+													<div class="comment__btn">
+														<button class="btn btn--green" type="submit">отправить</button>
+													</div>
+												</form>
 											</div>
 										</div>
 									</div>

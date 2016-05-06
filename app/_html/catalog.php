@@ -4,7 +4,6 @@
 <?php include 'base/head.php';?>
 <body>
 	<div class="layout">
-		<!-- <?php include 'base/header.php'; ?> -->
 		<?php
 			$headerInner = 'true';
 			include 'base/header.php';?>

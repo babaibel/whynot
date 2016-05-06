@@ -5,7 +5,7 @@ $(function () {
 
 	$btn.on('click', function() {
 		$(this).hide();
-		$(this).siblings('.js-item-map-input').show().find('.js-roadmap-input').focus();
+		$(this).siblings('.js-item-map-input').fadeIn().find('.js-roadmap-input').focus();
 		return false;
 	});
 });

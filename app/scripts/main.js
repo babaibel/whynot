@@ -195,6 +195,17 @@ function elemInView(selector, pPercents) {
 }
 
 
+// Добавление комментария
+$(function () {
+	var $btn = $('.js-comment-new-btn');
+	if (!$btn.length) return;
+
+	$btn.on('click', function() {
+		$this = $(this);
+		$this.closest('.comments-wr').find('.js-comment-new').slideDown(300);
+	});
+});
+
 // Плавная подгрузка комментириев
 $(function () {
 	var $btn = $('.js-show-comment');
