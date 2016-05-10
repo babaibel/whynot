@@ -419,3 +419,33 @@ $(function () {
     $url.inputmask("http://pochemybi.net/aaaaaaaaaaaaaaa"); 
 });
 
+$(function () {
+    var $metro = $('#metro');
+    if (!$metro.length) return;
+
+	var $metroList = $metro.find('option[data-color]'),
+		metroListOpt=[];
+
+	console.log($metroList);
+
+	$metroList.each(function() {
+		color = $(this).data('color');
+		name = $(this).val();
+		metroListOpt.push({color,name})
+	});
+
+	$metro.selectize({
+		openOnFocus: false,
+		options: metroListOpt,
+		render: {
+		    option: function (item, escape) {
+		        return '<div class="option">' +
+		                '<div class="option__text">' +
+		                    '<span class="option__color option__color-' + escape(item.color) + '"></span>' + escape(item.name) +
+		               '</div>' +
+		            '</div>';
+		    }
+		}
+	});
+});
+

@@ -655,3 +655,92 @@ $checkbox-size: 14px
 
 .datepicker--cells-years, .datepicker--years, .datepicker--cells-months
     height: auto
+
+
+// ----------------------------------------------------------------------
+// Selectize metro
+// ----------------------------------------------------------------------
+
+SELECT.select
+    +input()
+
+.selectize-input
+    +input()
+
+.selectize-input > *
+    vertical-align: top
+
+.selectize-input,
+.selectize-control.single .selectize-input.input-active
+    display: block
+
+.selectize-dropdown .active
+    background-color: #f9f9f9
+    color: #000
+
+.selectize-dropdown [data-selectable],
+.selectize-dropdown .optgroup-header
+    padding: 6px 13px
+    font-size: 15px
+
+.selectize-dropdown 
+    .option
+
+        &__color
+            &:before
+                content: ""
+                display: inline-block
+                vertical-align: middle
+                width: 8px
+                height: 8px
+                border-radius: 50%
+                margin-right: 8px
+                margin-top: -1px
+
+            &-blue
+                &:before
+                    background-color: #0252A2
+
+            &-purple
+                &:before
+                    background-color: #B61D8E
+
+            &-green
+                &:before
+                    background-color: #029A55
+
+            &-lime
+                &:before
+                    background-color: #B1D332
+
+            &-grey
+                &:before
+                    background-color: #ACADAF
+
+            &-red
+                &:before
+                    background-color: #EF1E25
+
+            &-orange
+                &:before
+                    background-color: #FBAA33
+
+            &-brown
+                &:before
+                    background-color: #745C2F
+
+            &-yellow
+                &:before
+                    background-color: #FFD803
+
+            &-teal
+                &:before
+                    background-color: #5091BB
+
+            &-lblue
+                &:before
+                    background-color: #019EE0
+
+            &-blue-grey
+                &:before
+                    background-color: #019EE0

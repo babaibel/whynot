@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="../../bower_components/air-datepicker/dist/css/datepicker.min.css" />
     <link rel="stylesheet" href="../../bower_components/nselect/build/jquery.nselect.css" />
     <link rel="stylesheet" href="../../bower_components/nselect/build/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" href="../../bower_components/selectize/dist/css/selectize.css" />
     <!-- endbower-->
     <!-- endbuild -->
 

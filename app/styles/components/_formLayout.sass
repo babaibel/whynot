@@ -27,6 +27,9 @@ $form-row-bottom-mrg: 15px
     display: block
     margin: 5px 0 $form-row-bottom-mrg
 
+    .txt-chbox__visual
+        font-size: 15px
+
     &--clear
         .form-row__name
             color: #000
@@ -64,6 +67,12 @@ $form-row-bottom-mrg: 15px
 
             +max-screen($screenXS)
                 width: 100%
+    &__title
+        display: block
+        position: relative
+        font: 20px/1.2 $ffNarrow
+        color: #000
+        padding: 5px 0 10px 0
 
     &__name
         display: block

@@ -16,6 +16,9 @@
 <script src="../../bower_components/jquery-touchswipe/jquery.touchSwipe.js"></script>
 <script src="../../bower_components/jquery-validation/dist/jquery.validate.js"></script>
 <script src="../../bower_components/jquery.inputmask/dist/jquery.inputmask.bundle.js"></script>
+<script src="../../bower_components/sifter/sifter.js"></script>
+<script src="../../bower_components/microplugin/src/microplugin.js"></script>
+<script src="../../bower_components/selectize/dist/js/selectize.js"></script>
 <!-- endbower -->
 
 <!-- endbuild -->
