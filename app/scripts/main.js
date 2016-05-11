@@ -449,3 +449,33 @@ $(function () {
 	});
 });
 
+$(function () {
+    var $input = $('.js-date-add');
+    if (!$input.length) return;
+
+    var $inputWr = $input.closest('.js-date-wr');
+
+    $input.datepicker({
+		onSelect: function(formattedDate, date, inst) {
+			if (date.length > 1) {
+				var days = ((date[1] - date[0])/1000/60/60/24) + 1;
+				var day = date[0];
+				
+				console.log(date[1]);
+				console.log(day);
+				var i;
+				var allDays = [];
+
+				for (i = 0; i < days; i++) {
+				  day.setDate(day.getDate() + 1);
+				  console.log(day);
+				}
+
+				$inputWr.addClass('_show-date-table');
+			} else{
+				$inputWr.removeClass('_show-date-table');
+			}
+		}
+	})
+});
+

@@ -27,6 +27,14 @@ $form-row-bottom-mrg: 15px
     display: block
     margin: 5px 0 $form-row-bottom-mrg
 
+    &._show-date-table
+        > .form-row__col-wr
+            .form-row__col--w40
+                display: none
+
+        .form-row__dates
+            display: block
+
     .txt-chbox__visual
         font-size: 15px
 
@@ -47,8 +55,20 @@ $form-row-bottom-mrg: 15px
     &__col-wr
         @extend .cf
 
+    &__dates
+        margin-top: 10px
+        display: none
+
+        .form-row__col-wr
+            margin-bottom: 10px
+
     &__col
         float: left
+
+        + .checkbox-label
+            margin-top: 5px
+            float: left
+            width: 100%
 
         +max-screen($screenXS)
             float: none

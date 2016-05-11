@@ -48,7 +48,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="form-row form-row--half">
+										<div class="form-row form-row--half js-date-wr">
 											<div class="form-row__col-wr">
 												<div class="form-row__col form-row__col--w60">
 													<div class="form-row__name-col">
@@ -58,8 +58,7 @@
 														<div class="form-row__content">
 															<div class="input-cont">
 																<input  type="text"
-																		value="06.04.2016 - 09.04.2016" 
-																		class="input datepicker-here"
+																		class="input datepicker-here js-date-add"
 																		data-range="true"
 																		data-multiple-dates-separator=" - "
 																		data-position='bottom left'/>
@@ -80,6 +79,136 @@
 													</div>
 												</div>
 											</div>
+											<div class="form-row__dates">
+												<div class="form-row__col-wr">
+													<div class="form-row__col form-row__col--w60">
+														<div class="form-row__name-col">
+															<div class="form-row__name">Дата*</div>
+														</div>
+														<div class="form-row__content-col">
+															<div class="form-row__content">
+																<div class="input-cont">
+																	<input  type="text"
+																			class="input datepicker-here"
+																			data-range="false"
+																			data-position='bottom left'/>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="form-row__col form-row__col--w40">
+														<div class="form-row__name-col">
+															<div class="form-row__name">Время*</div>
+														</div>
+														<div class="form-row__content-col">
+															<div class="form-row__content">
+																<div class="input-cont">
+																	<input class="input" type="text">
+																</div>
+															</div>
+														</div>
+													</div>
+													<label class="checkbox-label">
+														<span class="checkbox">
+															<input type="checkbox" checked>
+															<span class="checkbox__view"></span>
+														</span>
+														<span class="checkbox-label__txt">Время всегда одинаковое</span>
+													</label>
+												</div>
+												<div class="form-row__col-wr">
+													<div class="form-row__col form-row__col--w60">
+														<div class="form-row__content-col">
+															<div class="form-row__content">
+																<div class="input-cont">
+																	<input  type="text"
+																			class="input datepicker-here"
+																			data-range="false"
+																			data-position='bottom left'/>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="form-row__col form-row__col--w40">
+														<div class="form-row__content-col">
+															<div class="form-row__content">
+																<div class="input-cont">
+																	<input class="input" type="text">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-row__col-wr">
+													<div class="form-row__col form-row__col--w60">
+														<div class="form-row__content-col">
+															<div class="form-row__content">
+																<div class="input-cont">
+																	<input  type="text"
+																			class="input datepicker-here"
+																			data-range="false"
+																			data-position='bottom left'/>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="form-row__col form-row__col--w40">
+														<div class="form-row__content-col">
+															<div class="form-row__content">
+																<div class="input-cont">
+																	<input class="input" type="text">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-row__col-wr">
+													<div class="form-row__col form-row__col--w60">
+														<div class="form-row__content-col">
+															<div class="form-row__content">
+																<div class="input-cont">
+																	<input  type="text"
+																			class="input datepicker-here"
+																			data-range="false"
+																			data-position='bottom left'/>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="form-row__col form-row__col--w40">
+														<div class="form-row__content-col">
+															<div class="form-row__content">
+																<div class="input-cont">
+																	<input class="input" type="text">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-row__col-wr">
+													<div class="form-row__col form-row__col--w60">
+														<div class="form-row__content-col">
+															<div class="form-row__content">
+																<div class="input-cont">
+																	<input  type="text"
+																			class="input datepicker-here"
+																			data-range="false"
+																			data-position='bottom left'/>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="form-row__col form-row__col--w40">
+														<div class="form-row__content-col">
+															<div class="form-row__content">
+																<div class="input-cont">
+																	<input class="input" type="text">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="form-row form-row--half">
 											<div class="form-row__name-col">
@@ -95,19 +224,19 @@
 										</div>
 										<div class="form-row form-row--half">
 											<div class="form-row__name-col">
-												<div class="form-row__name">Название места*</div>
+												<div class="form-row__name">Название места</div>
 											</div>
 											<div class="form-row__content-col">
 												<div class="form-row__content">
 													<div class="input-cont">
-														<input class="input" type="text" required>
+														<input class="input" type="text">
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="form-row form-row--half">
 											<div class="form-row__name-col">
-												<div class="form-row__name">Ближайшее метро*</div>
+												<div class="form-row__name">Ближайшее метро</div>
 											</div>
 											<div class="form-row__content-col">
 												<div class="form-row__content">
@@ -627,19 +756,8 @@
 							<div class="sidebar sidebar--green">
 								<div class="sidebar__item">
 									<a href="#!" class="link link--eye link--icon">
-										<span>Смотреть мою страницу</span>
+										<span>Показать мероприятие</span>
 									</a>
-								</div>
-								<div class="sidebar__item">
-									<label class="img-input img-input--green img-input--fix img-input--xs">
-										<div class="img-input__main js-ava-upload" data-min-h="50" data-min-w="50">
-										<input type="file">
-										<span class="img-input__icon icon iconic--download"></span>
-										<span class="img-input__txt"> 
-											Логотип организатора, не <br> менее 230 пикс по ширине</span>
-										</div>
-									</label>
-									<!-- todo upload script-->
 								</div>
 								<div class="sidebar__item">
 									<div class="sidebar-text">
@@ -648,19 +766,119 @@
 											<p class="text--sm text--gray">Незаполненные поля не будут отражены в карточке мероприятия.</p>
 										</div>
 										<div class="sidebar-text__inner">
-											<b>Сайт:</b> <a href="#!" class="link link-und link-und--green-d">questreality.ru</a>
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														Сайт:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">questreality.ru</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="sidebar-text__inner">
-											<b>Телефон:</b> <a href="tel:+7 495 565-32-13" class="link link-und link-und--green-d">+7 495 565-32-13</a>
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														Телефон:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">+7 495 565-32-13</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="sidebar-text__inner">
-											<b>Почта:</b> <a href="mailto: mail@questreality.ru" class="link link-und link-und--green-d">mail@questreality.ru</a>
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														Почта:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">mail@questreality.ru</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="sidebar-text__inner">
-											<b>Скайп:</b> <a href="skype: quest-reality" class="link link-und link-und--green-d">quest-reality</a>
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														Скайп:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">quest-reality</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="sidebar-text__inner">
-											<b>WatsApp:</b> <a href="tel:+7 495 565-32-13" class="link link-und link-und--green-d">+7 495 565-32-13</a>
+											<div class="sidebar-edit js-text-edit">
+												<div class="sidebar-edit__show js-text-edit-show">
+													<div class="sidebar-edit__show-title">
+														WatsApp:
+													</div>
+													<div class="sidebar-edit__show-text">
+														<a href="#!" class="js-text-edit-btn link link-und link-und--green-d link-und--dotted">+7 495 565-32-13</a>
+													</div>
+												</div>
+												<div class="sidebar-edit__hide js-text-edit-hide">
+													<div class="sidebar-edit__hide-input">
+														<input type="text" class="js-text-edit-input input">
+													</div>
+													<div class="sidebar-edit__hide-save">
+														<span class="js-text-edit-save icon iconic--tick"></span>
+													</div>
+													<div class="sidebar-edit__hide-close">
+														<span class="js-text-edit-close icon iconic--cross"></span>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>

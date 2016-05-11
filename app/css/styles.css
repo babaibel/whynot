@@ -3492,7 +3492,7 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 0 !important;
   border-left: 0 !important;
   border-radius: 0 !important;
-  height: 40px;
+  height: 36px;
 }
 /* line 634, ../styles/components/_formElements.sass */
 .datepicker--cell.-range-from- {
@@ -3677,61 +3677,84 @@ SELECT.select::placeholder {
   display: block;
   margin: 5px 0 15px;
 }
-/* line 30, ../styles/components/_formLayout.sass */
+/* line 32, ../styles/components/_formLayout.sass */
+.form-row._show-date-table > .form-row__col-wr .form-row__col--w40 {
+  display: none;
+}
+/* line 35, ../styles/components/_formLayout.sass */
+.form-row._show-date-table .form-row__dates {
+  display: block;
+}
+/* line 38, ../styles/components/_formLayout.sass */
 .form-row .txt-chbox__visual {
   font-size: 15px;
 }
-/* line 34, ../styles/components/_formLayout.sass */
+/* line 42, ../styles/components/_formLayout.sass */
 .form-row--clear .form-row__name {
   color: #000;
 }
-/* line 37, ../styles/components/_formLayout.sass */
+/* line 45, ../styles/components/_formLayout.sass */
 .form-row--clear .input {
   box-shadow: none !important;
   border: none 0 !important;
 }
-/* line 41, ../styles/components/_formLayout.sass */
+/* line 49, ../styles/components/_formLayout.sass */
 .form-row--half {
   max-width: 625px;
 }
-/* line 44, ../styles/components/_formLayout.sass */
+/* line 52, ../styles/components/_formLayout.sass */
 .form-row--half .form-row__content--divided {
   width: auto !important;
 }
-/* line 50, ../styles/components/_formLayout.sass */
+/* line 58, ../styles/components/_formLayout.sass */
+.form-row__dates {
+  margin-top: 10px;
+  display: none;
+}
+/* line 62, ../styles/components/_formLayout.sass */
+.form-row__dates .form-row__col-wr {
+  margin-bottom: 10px;
+}
+/* line 65, ../styles/components/_formLayout.sass */
 .form-row__col {
   float: left;
 }
+/* line 68, ../styles/components/_formLayout.sass */
+.form-row__col + .checkbox-label {
+  margin-top: 5px;
+  float: left;
+  width: 100%;
+}
 @media screen and (max-width: 479px) {
-  /* line 50, ../styles/components/_formLayout.sass */
+  /* line 65, ../styles/components/_formLayout.sass */
   .form-row__col {
     float: none;
   }
 }
-/* line 56, ../styles/components/_formLayout.sass */
+/* line 76, ../styles/components/_formLayout.sass */
 .form-row__col--w60 {
   width: 60%;
   padding-right: 15px;
 }
 @media screen and (max-width: 479px) {
-  /* line 56, ../styles/components/_formLayout.sass */
+  /* line 76, ../styles/components/_formLayout.sass */
   .form-row__col--w60 {
     width: 100%;
     padding-right: 0;
     margin-bottom: 15px;
   }
 }
-/* line 65, ../styles/components/_formLayout.sass */
+/* line 85, ../styles/components/_formLayout.sass */
 .form-row__col--w40 {
   width: 40%;
 }
 @media screen and (max-width: 479px) {
-  /* line 65, ../styles/components/_formLayout.sass */
+  /* line 85, ../styles/components/_formLayout.sass */
   .form-row__col--w40 {
     width: 100%;
   }
 }
-/* line 70, ../styles/components/_formLayout.sass */
+/* line 90, ../styles/components/_formLayout.sass */
 .form-row__title {
   display: block;
   position: relative;
@@ -3739,7 +3762,7 @@ SELECT.select::placeholder {
   color: #000;
   padding: 5px 0 10px 0;
 }
-/* line 77, ../styles/components/_formLayout.sass */
+/* line 97, ../styles/components/_formLayout.sass */
 .form-row__name {
   display: block;
   position: relative;
@@ -3749,7 +3772,7 @@ SELECT.select::placeholder {
   line-height: normal;
   color: #7f7f7f;
 }
-/* line 86, ../styles/components/_formLayout.sass */
+/* line 106, ../styles/components/_formLayout.sass */
 .form-row__name-col {
   margin-bottom: 7px;
   padding-right: 30px;
@@ -3758,7 +3781,7 @@ SELECT.select::placeholder {
       -ms-flex-item-align: start;
           align-self: flex-start;
 }
-/* line 94, ../styles/components/_formLayout.sass */
+/* line 114, ../styles/components/_formLayout.sass */
 .form-row__content--divided {
   display: -webkit-box !important;
   display: -webkit-flex !important;
@@ -3769,12 +3792,12 @@ SELECT.select::placeholder {
   width: 90% !important;
 }
 @media screen and (max-width: 1099px) {
-  /* line 94, ../styles/components/_formLayout.sass */
+  /* line 114, ../styles/components/_formLayout.sass */
   .form-row__content--divided {
     width: 100% !important;
   }
 }
-/* line 102, ../styles/components/_formLayout.sass */
+/* line 122, ../styles/components/_formLayout.sass */
 .form-row__content--divided .input-wr {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -3783,7 +3806,7 @@ SELECT.select::placeholder {
   margin-left: 20px;
   margin-right: 20px;
 }
-/* line 107, ../styles/components/_formLayout.sass */
+/* line 127, ../styles/components/_formLayout.sass */
 .form-row__content--divided .input-wr + .input-wr .input-cont:after {
   position: absolute;
   top: 0;
@@ -3791,67 +3814,67 @@ SELECT.select::placeholder {
   line-height: 47px;
 }
 @media screen and (max-width: 479px) {
-  /* line 102, ../styles/components/_formLayout.sass */
+  /* line 122, ../styles/components/_formLayout.sass */
   .form-row__content--divided .input-wr {
     margin-left: 0;
     margin-right: 0;
   }
 }
 @media screen and (max-width: 479px) {
-  /* line 94, ../styles/components/_formLayout.sass */
+  /* line 114, ../styles/components/_formLayout.sass */
   .form-row__content--divided {
     width: 100% !important;
     margin-left: 0;
     margin-right: 0;
     display: block !important;
   }
-  /* line 125, ../styles/components/_formLayout.sass */
+  /* line 145, ../styles/components/_formLayout.sass */
   .form-row__content--divided .input-wr .input-cont:after {
     display: none;
   }
 }
-/* line 128, ../styles/components/_formLayout.sass */
+/* line 148, ../styles/components/_formLayout.sass */
 .form-row__content-col {
   width: 100%;
 }
-/* line 131, ../styles/components/_formLayout.sass */
+/* line 151, ../styles/components/_formLayout.sass */
 .form-row__content-col .checkbox-label {
   margin-left: 2px;
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
 }
-/* line 135, ../styles/components/_formLayout.sass */
+/* line 155, ../styles/components/_formLayout.sass */
 .form-row__content-col--w80 {
   padding-right: 20%;
 }
 @media screen and (max-width: 579px) {
-  /* line 139, ../styles/components/_formLayout.sass */
+  /* line 159, ../styles/components/_formLayout.sass */
   .form-cols .form-row__content-col {
     padding-right: 0;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 128, ../styles/components/_formLayout.sass */
+  /* line 148, ../styles/components/_formLayout.sass */
   .form-row__content-col {
     padding-right: 0;
   }
 }
-/* line 153, ../styles/components/_formLayout.sass */
+/* line 173, ../styles/components/_formLayout.sass */
 .form-row--inline {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 159, ../styles/components/_formLayout.sass */
+/* line 179, ../styles/components/_formLayout.sass */
 .form-row--inline .form-row__name, .form-row--inline .form-row__content {
   width: 100%;
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
 }
-/* line 166, ../styles/components/_formLayout.sass */
+/* line 186, ../styles/components/_formLayout.sass */
 .form-row--inline .form-row__name-col {
   margin-bottom: 0;
   -webkit-flex-shrink: 0;
@@ -3864,7 +3887,7 @@ SELECT.select::placeholder {
   width: 165px;
   line-height: 47px;
 }
-/* line 173, ../styles/components/_formLayout.sass */
+/* line 193, ../styles/components/_formLayout.sass */
 .form-row--inline .form-row__content-col {
   line-height: 47px;
   -webkit-box-flex: 1;
@@ -3872,17 +3895,17 @@ SELECT.select::placeholder {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-/* line 180, ../styles/components/_formLayout.sass */
+/* line 200, ../styles/components/_formLayout.sass */
 .form-row--inline.form-row--multi .form-row__name-col {
   margin-top: 23px;
 }
 @media screen and (max-width: 669px) {
-  /* line 179, ../styles/components/_formLayout.sass */
+  /* line 199, ../styles/components/_formLayout.sass */
   .form-row--inline.form-row--multi {
     display: block;
     margin-top: 0;
   }
-  /* line 184, ../styles/components/_formLayout.sass */
+  /* line 204, ../styles/components/_formLayout.sass */
   .form-row--inline.form-row--multi .form-row__name-col {
     margin-top: 0px;
   }
@@ -3904,7 +3927,7 @@ SELECT.select::placeholder {
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 153, ../styles/components/_formLayout.sass */
+  /* line 173, ../styles/components/_formLayout.sass */
   .form-row--inline {
     display: block;
     margin-top: 0;
@@ -3926,45 +3949,45 @@ SELECT.select::placeholder {
     line-height: 20px;
   }
 }
-/* line 194, ../styles/components/_formLayout.sass */
+/* line 214, ../styles/components/_formLayout.sass */
 .form-row--submit {
   margin-top: 25px;
 }
-/* line 196, ../styles/components/_formLayout.sass */
+/* line 216, ../styles/components/_formLayout.sass */
 .form-row--submit .btn--md {
   padding-left: 20px;
   padding-right: 20px;
 }
 @media screen and (max-width: 579px) {
-  /* line 194, ../styles/components/_formLayout.sass */
+  /* line 214, ../styles/components/_formLayout.sass */
   .form-row--submit {
     margin-top: 30px;
   }
-  /* line 202, ../styles/components/_formLayout.sass */
+  /* line 222, ../styles/components/_formLayout.sass */
   .form-row--submit .form-row__name-col {
     display: none;
   }
 }
 
-/* line 206, ../styles/components/_formLayout.sass */
+/* line 226, ../styles/components/_formLayout.sass */
 .input-cont {
   position: relative;
 }
-/* line 208, ../styles/components/_formLayout.sass */
+/* line 228, ../styles/components/_formLayout.sass */
 .input-cont .input {
   width: 100%;
 }
-/* line 211, ../styles/components/_formLayout.sass */
+/* line 231, ../styles/components/_formLayout.sass */
 .input-cont + .checkbox-label {
   margin-top: 13px;
 }
-/* line 214, ../styles/components/_formLayout.sass */
+/* line 234, ../styles/components/_formLayout.sass */
 .input-cont + .link {
   margin-top: 2px;
   display: inline-block;
   font-size: 13px;
 }
-/* line 220, ../styles/components/_formLayout.sass */
+/* line 240, ../styles/components/_formLayout.sass */
 .input-cont--eye .iconic, .input-cont--eye .icon, .input-cont--eye .link--bookmark:before, .input-cont--eye .link--eye:before, .input-cont--eye .checkbox__view, .input-cont--eye .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye .input-cont:after, .input-cont--eye .popup-closer, .input-cont--eye .soc-rounds__li, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon, .input-cont--eye .filter-tag__cross, .input-cont--eye .actions-sl .slick-prev:after, .actions-sl .input-cont--eye .slick-prev:after,
 .input-cont--eye .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye .slick-next:after, .input-cont--eye .recom-sl .slick-next, .recom-sl .input-cont--eye .slick-next, .input-cont--eye .recom-sl .slick-prev, .recom-sl .input-cont--eye .slick-prev, .input-cont--eye .filter-main__param-head-txt:after {
@@ -3979,20 +4002,20 @@ SELECT.select::placeholder {
   -webkit-transition: color 150ms;
           transition: color 150ms;
 }
-/* line 229, ../styles/components/_formLayout.sass */
+/* line 249, ../styles/components/_formLayout.sass */
 .input-cont--eye .iconic:hover, .input-cont--eye .icon:hover, .input-cont--eye .link--bookmark:hover:before, .input-cont--eye .link--eye:hover:before, .input-cont--eye .checkbox__view:hover, .input-cont--eye .form-row__content--divided .input-wr + .input-wr .input-cont:hover:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye .input-cont:hover:after, .input-cont--eye .popup-closer:hover, .input-cont--eye .soc-rounds__li:hover, .input-cont--eye .ya-share2__item_service_vkontakte .ya-share2__icon:hover, .ya-share2__item_service_vkontakte .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_facebook .ya-share2__icon:hover, .ya-share2__item_service_facebook .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_twitter .ya-share2__icon:hover, .ya-share2__item_service_twitter .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_moimir .ya-share2__icon:hover, .ya-share2__item_service_moimir .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .ya-share2__item_service_gplus .ya-share2__icon:hover, .ya-share2__item_service_gplus .input-cont--eye .ya-share2__icon:hover, .input-cont--eye .filter-tag__cross:hover, .input-cont--eye .actions-sl .slick-prev:hover:after, .actions-sl .input-cont--eye .slick-prev:hover:after,
 .input-cont--eye .actions-sl .slick-next:hover:after,
 .actions-sl .input-cont--eye .slick-next:hover:after, .input-cont--eye .recom-sl .slick-next:hover, .recom-sl .input-cont--eye .slick-next:hover, .input-cont--eye .recom-sl .slick-prev:hover, .recom-sl .input-cont--eye .slick-prev:hover, .input-cont--eye .filter-main__param-head-txt:hover:after {
   color: #000;
 }
-/* line 234, ../styles/components/_formLayout.sass */
+/* line 254, ../styles/components/_formLayout.sass */
 .input-cont--eye._pass-visible .iconic, .input-cont--eye._pass-visible .icon, .input-cont--eye._pass-visible .link--bookmark:before, .input-cont--eye._pass-visible .link--eye:before, .input-cont--eye._pass-visible .checkbox__view, .input-cont--eye._pass-visible .form-row__content--divided .input-wr + .input-wr .input-cont:after, .form-row__content--divided .input-wr + .input-wr .input-cont--eye._pass-visible .input-cont:after, .input-cont--eye._pass-visible .popup-closer, .input-cont--eye._pass-visible .soc-rounds__li, .input-cont--eye._pass-visible .ya-share2__item_service_vkontakte .ya-share2__icon, .ya-share2__item_service_vkontakte .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_facebook .ya-share2__icon, .ya-share2__item_service_facebook .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_twitter .ya-share2__icon, .ya-share2__item_service_twitter .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_moimir .ya-share2__icon, .ya-share2__item_service_moimir .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .ya-share2__item_service_gplus .ya-share2__icon, .ya-share2__item_service_gplus .input-cont--eye._pass-visible .ya-share2__icon, .input-cont--eye._pass-visible .filter-tag__cross, .input-cont--eye._pass-visible .actions-sl .slick-prev:after, .actions-sl .input-cont--eye._pass-visible .slick-prev:after,
 .input-cont--eye._pass-visible .actions-sl .slick-next:after,
 .actions-sl .input-cont--eye._pass-visible .slick-next:after, .input-cont--eye._pass-visible .recom-sl .slick-next, .recom-sl .input-cont--eye._pass-visible .slick-next, .input-cont--eye._pass-visible .recom-sl .slick-prev, .recom-sl .input-cont--eye._pass-visible .slick-prev, .input-cont--eye._pass-visible .filter-main__param-head-txt:after {
   font-size: 10px;
 }
 
-/* line 241, ../styles/components/_formLayout.sass */
+/* line 261, ../styles/components/_formLayout.sass */
 .input-wr__name {
   font-size: 13px;
   line-height: 20px;
@@ -4001,39 +4024,39 @@ SELECT.select::placeholder {
   display: block;
 }
 @media screen and (max-width: 479px) {
-  /* line 251, ../styles/components/_formLayout.sass */
+  /* line 271, ../styles/components/_formLayout.sass */
   .input-wr + .input-wr {
     margin-top: 15px;
   }
 }
 
-/* line 257, ../styles/components/_formLayout.sass */
+/* line 277, ../styles/components/_formLayout.sass */
 .form-gr {
   margin-bottom: 40px;
 }
-/* line 260, ../styles/components/_formLayout.sass */
+/* line 280, ../styles/components/_formLayout.sass */
 .form-gr .h3, .form-gr .typography h3, .typography .form-gr h3 {
   line-height: 24px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 579px) {
-  /* line 257, ../styles/components/_formLayout.sass */
+  /* line 277, ../styles/components/_formLayout.sass */
   .form-gr {
     margin-bottom: 25px;
   }
-  /* line 267, ../styles/components/_formLayout.sass */
+  /* line 287, ../styles/components/_formLayout.sass */
   .form-gr .h3, .form-gr .typography h3, .typography .form-gr h3 {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 579px) {
-  /* line 274, ../styles/components/_formLayout.sass */
+  /* line 294, ../styles/components/_formLayout.sass */
   .form-pair {
     margin-left: -10px;
     margin-right: -10px;
   }
-  /* line 278, ../styles/components/_formLayout.sass */
+  /* line 298, ../styles/components/_formLayout.sass */
   .form-pair .form-row {
     display: inline-block;
     vertical-align: top;
@@ -4042,7 +4065,7 @@ SELECT.select::placeholder {
   }
 }
 
-/* line 285, ../styles/components/_formLayout.sass */
+/* line 305, ../styles/components/_formLayout.sass */
 .form-cols {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4058,7 +4081,7 @@ SELECT.select::placeholder {
           align-items: flex-start;
   margin: 0px -30px 14px;
 }
-/* line 291, ../styles/components/_formLayout.sass */
+/* line 311, ../styles/components/_formLayout.sass */
 .form-cols__col {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -4070,32 +4093,32 @@ SELECT.select::placeholder {
   padding-left: 30px;
   padding-right: 30px;
 }
-/* line 297, ../styles/components/_formLayout.sass */
+/* line 317, ../styles/components/_formLayout.sass */
 .form-cols__col--65 {
   width: 65%;
 }
-/* line 299, ../styles/components/_formLayout.sass */
+/* line 319, ../styles/components/_formLayout.sass */
 .form-cols__col--35 {
   width: 35%;
 }
 @media screen and (max-width: 669px) {
-  /* line 285, ../styles/components/_formLayout.sass */
+  /* line 305, ../styles/components/_formLayout.sass */
   .form-cols {
     margin-left: -15px;
     margin-right: -15px;
   }
-  /* line 305, ../styles/components/_formLayout.sass */
+  /* line 325, ../styles/components/_formLayout.sass */
   .form-cols__col {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 285, ../styles/components/_formLayout.sass */
+  /* line 305, ../styles/components/_formLayout.sass */
   .form-cols {
     display: block;
   }
-  /* line 311, ../styles/components/_formLayout.sass */
+  /* line 331, ../styles/components/_formLayout.sass */
   .form-cols__col {
     width: auto;
   }
