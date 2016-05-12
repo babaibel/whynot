@@ -449,33 +449,127 @@ $(function () {
 	});
 });
 
+
+/* изменение дат и времени мероприятия */
 $(function () {
     var $input = $('.js-date-add');
     if (!$input.length) return;
 
-    var $inputWr = $input.closest('.js-date-wr');
+    var $inputWr = $input.closest('.js-date-wr'),
+    	$dateTableWr = $inputWr.find('.js-date-table');
+
+    /* заголовоки */
+	var firstRowStr = '<div class="form-row__col-wr form-row__col-wr--title">' + 
+						'<div class="form-row__col form-row__col--w60">' +
+							'<div class="form-row__name-co l">' +
+								'<div class="form-row__name">Дата*</div>' + 
+							'</div>'+
+						'</div>'+
+						'<div class="form-row__col form-row__col--w40">' +
+							'<div class="form-row__name-col">' +
+								'<div class="form-row__name">Время*</div>' + 
+							'</div>'+
+						'</div>' +
+					'</div>';
+	/* строка с чекбоксом */
+	var checkRowStr = '<div class="form-row__col-wr js-date-checkbox"><label class="checkbox-label">'+
+							'<span class="checkbox"><input type="checkbox"><span class="checkbox__view"></span></span>'+
+							'<span class="checkbox-label__txt">Время всегда одинаковое</span>'+
+						'</label></div>';
 
     $input.datepicker({
 		onSelect: function(formattedDate, date, inst) {
 			if (date.length > 1) {
+				/* кол-во дней в выбранном диапазоне*/
 				var days = ((date[1] - date[0])/1000/60/60/24) + 1;
 				var day = date[0];
-				
-				console.log(date[1]);
-				console.log(day);
 				var i;
-				var allDays = [];
+
+				/* очищаем контейнер*/
+				$dateTableWr.empty();
 
 				for (i = 0; i < days; i++) {
-				  day.setDate(day.getDate() + 1);
-				  console.log(day);
-				}
+					/* перебираем все дни*/
+					if ( i==0){
+						day.setDate(day.getDate());
+					} else{
+						day.setDate(day.getDate() + 1);
+					}
 
-				$inputWr.addClass('_show-date-table');
+					/* приводим дату к формату дд.мм.гггг*/
+					var dayN = day.getDate();
+					var monthN = day.getMonth() + 1;
+					var yearN = day.getFullYear();
+					if (dayN < 10) {
+						dayN = "0" + dayN;
+					}
+					if (monthN < 10) {
+						monthN = "0" + monthN;
+					}
+					var dateN = dayN + "." + monthN + "." + yearN;
+
+					/*строка с переменной даты*/
+					var rowStr = '<div class="form-row__col-wr">' + 
+									'<div class="form-row__col form-row__col--w60">' +
+										'<div class="form-row__content-col">' +
+											'<div class="form-row__content">' + 
+												'<div class="input-cont">'+ 
+													'<input  type="text" class="input" disabled value="' + dateN +  '">' +
+												'</div>'+
+											'</div>'+
+										'</div>'+
+									'</div>'+
+									'<div class="form-row__col form-row__col--w40">' +
+										'<div class="form-row__content-col">' +
+											'<div class="form-row__content">'+
+												'<div class="input-cont">' +
+													'<input class="input js-date-time" type="text">'+
+												'</div>' +
+											'</div>' +
+										'</div>' +
+									'</div>' +
+								'</div>';
+
+					var firstRow = firstRowStr + rowStr + checkRowStr;
+					/* добавляем к первойстроке заголовки и чекбокс */
+					if ( i==0){
+						$dateTableWr.append(firstRow);
+					} else{
+						$dateTableWr.append(rowStr);
+					}
+				}
+				/* прячем первое поле с вренем*/
+				$inputWr.addClass('_hide-time');
 			} else{
-				$inputWr.removeClass('_show-date-table');
+				$inputWr.removeClass('_hide-time');
+				$dateTableWr.empty();
 			}
 		}
 	})
+
+	$B.on("change", ".js-date-time", function() {
+		if($('.js-date-checkbox input').is(':checked')){
+			var timeVal = $(this).val();
+			$('.js-date-time').not(this).val(timeVal);
+		}
+	});
+
+	$B.on("change", ".js-date-checkbox input", function() {
+		if($(this).is(':checked')){
+			var $timeVals = $inputWr.find('.js-date-time'),
+				timeVal;
+			console.log($timeVals);
+			$timeVals.each(function(){
+				if ( !$(this).val() == ""){
+					timeVal = $(this).val();
+					console.log(timeVal);
+					return false;
+				}
+			})
+			$('.js-date-time').val(timeVal);
+		}
+	});
+
+
 });
 
