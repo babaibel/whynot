@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-<?php $pageTitle = 'Главная страница'; ?>
+<?php $pageTitle = 'Контакты'; ?>
 <?php include 'base/head.php';?>
 <body>
 	<div class="layout">
-		<?php include 'base/header.php'; ?>
+		<?php
+			$headerCabinet = 'true';
+			include 'base/header.php';?>
 
 		<main class="page-body">
 
-			<section class="contacts">
-				<div class="wr"
-					 style="background: url(../images/userfiles/people15.png) no-repeat 100% 50%;">
+			<section class="contacts js-contacts">
+				<div class="wr">
 					<h1 class="h2">Контактная информация</h1>
 					<div class="contacts__row">
 						<div class="contacts__info">
@@ -78,6 +79,7 @@
 							</div>
 						</div>
 					</div>
+					<div class="contacts__bg" style="background: url(../images/userfiles/people15.png) no-repeat 100% 50%;"></div>
 				</div>
 			</section>
 
@@ -101,9 +103,9 @@
 													Сортировать
 												</span>
 												<div class="selector selector--inline js-selector">
-									<span class="selector__option-current js-selector-current">
-										 По рейтингу
-									</span>
+													<span class="selector__option-current js-selector-current">
+														 По рейтингу
+													</span>
 													<ul class="selector__options-list js-selector-options">
 														<li class="selector__option js-selector-option">
 															По рейтингу
@@ -120,11 +122,76 @@
 											</div>
 
 											<div class="comments__header-btn">
-												<a class="btn btn--green btn--md" href="#!">Оставить отзыв</a>
+												<a class="btn btn--green btn--md js-comment-new-btn" href="#!">Оставить отзыв</a>
 											</div>
 										</div>
 									</div>
-									<div class="comments__body">
+									<div class="comments__new js-comment-new">
+										<div class="comment">
+											<div class="comment__img">
+												<img src="../images/userfiles/avatar1.jpg" alt="">
+											</div>
+											<div class="comment__inner">
+												<form>
+													<div class="comment__textarea">
+														<textarea placeholder="Что вы думаете об этом?" class="textarea"></textarea>
+													</div>
+													<div class="comment__rating">
+														<div class="rating-wrap">
+
+															<div class="rating">
+
+																<div class="rating__star rating__star1">
+																	<span class="iconic iconic--star rating__star-inactive"></span>
+																</div>
+
+																<div class="rating__star rating__star2">
+																	<span class="iconic iconic--star rating__star-inactive"></span>
+																</div>
+
+																<div class="rating__star rating__star3">
+																	<span class="iconic iconic--star rating__star-inactive"></span>
+																</div>
+
+																<div class="rating__star rating__star4">
+																	<span class="iconic iconic--star rating__star-inactive"></span>
+																</div>
+
+																<div class="rating__star rating__star5">
+																	<span class="iconic iconic--star rating__star-inactive"></span>
+																</div>
+
+																<div class="rating__active-stars">
+																	<div class="rating__star">
+																		<span class="iconic iconic--star rating__star-active"></span>
+																	</div>
+																	<div class="rating__star">
+																		<span class="iconic iconic--star rating__star-active"></span>
+																	</div>
+																	<div class="rating__star">
+																		<span class="iconic iconic--star rating__star-active"></span>
+																	</div>
+																	<div class="rating__star">
+																		<span class="iconic iconic--star rating__star-active"></span>
+																	</div>
+																	<div class="rating__star">
+																		<span class="iconic iconic--star rating__star-active"></span>
+																	</div>
+																</div>
+
+															</div>
+
+														</div>
+													</div>
+
+													<div class="comment__btn">
+														<button class="btn btn--green" type="submit">отправить</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="comments__body js-comment-hidden">
 										<div class="comment">
 											<div class="comment__img">
 												<img src="../images/userfiles/avatar1.jpg" alt="">
@@ -441,6 +508,321 @@
 											</div>
 										</div>
 										<div class="comment">
+											<div class="comment__img">
+												<img src="../images/userfiles/avatar1.jpg" alt="">
+											</div>
+											<div class="comment__inner">
+												<div class="comment__title">
+													Какая-то херня...
+												</div>
+												<div class="comment__rating">
+													<div class="rating-wrap">
+
+														<form class="rating rating--3">
+
+															<div class="rating__star rating__star1">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star2">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star3">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star4">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star5">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__active-stars">
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+															</div>
+
+														</form>
+
+													</div>
+												</div>
+												<div class="comment__text">
+													Завершить это знакомство Вы можете подъемом на Эйфелеву башню, вх.билеты на которую я смогу Вам выкупить заранее!
+												</div>
+												<div class="comment__date">
+													Мигель  18.02.2015 в 15:14
+												</div>
+											</div>
+										</div>
+										<div class="comment _hidden">
+											<div class="comment__img">
+												<img src="../images/userfiles/avatar1.jpg" alt="">
+											</div>
+											<div class="comment__inner">
+												<div class="comment__title">
+													Какая-то херня...
+												</div>
+												<div class="comment__rating">
+													<div class="rating-wrap">
+
+														<form class="rating rating--3">
+
+															<div class="rating__star rating__star1">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star2">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star3">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star4">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star5">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__active-stars">
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+															</div>
+
+														</form>
+
+													</div>
+												</div>
+												<div class="comment__text">
+													Завершить это знакомство Вы можете подъемом на Эйфелеву башню, вх.билеты на которую я смогу Вам выкупить заранее!
+												</div>
+												<div class="comment__date">
+													Мигель  18.02.2015 в 15:14
+												</div>
+											</div>
+										</div>
+										<div class="comment _hidden">
+											<div class="comment__img">
+												<img src="../images/userfiles/avatar1.jpg" alt="">
+											</div>
+											<div class="comment__inner">
+												<div class="comment__title">
+													Мне очень понравилось!
+												</div>
+												<div class="comment__rating">
+													<div class="rating-wrap">
+
+														<form class="rating rating--5">
+
+															<div class="rating__star rating__star1">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star2">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star3">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star4">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star5">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__active-stars">
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+															</div>
+
+														</form>
+
+													</div>
+												</div>
+												<div class="comment__text">
+													Это идеальная обзорная экскурсия для ознакомления
+												</div>
+												<div class="comment__date">
+													Мигель  18.02.2015 в 15:14
+												</div>
+											</div>
+										</div>
+										<div class="comment _hidden">
+											<div class="comment__img">
+												<img src="../images/userfiles/avatar1.jpg" alt="">
+											</div>
+											<div class="comment__inner">
+												<div class="comment__title">
+													Какая-то херня...
+												</div>
+												<div class="comment__rating">
+													<div class="rating-wrap">
+
+														<form class="rating rating--3">
+
+															<div class="rating__star rating__star1">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star2">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star3">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star4">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star5">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__active-stars">
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+															</div>
+
+														</form>
+
+													</div>
+												</div>
+												<div class="comment__text">
+													Завершить это знакомство Вы можете подъемом на Эйфелеву башню, вх.билеты на которую я смогу Вам выкупить заранее!
+												</div>
+												<div class="comment__date">
+													Мигель  18.02.2015 в 15:14
+												</div>
+											</div>
+										</div>
+										<div class="comment _hidden">
+											<div class="comment__img">
+												<img src="../images/userfiles/avatar1.jpg" alt="">
+											</div>
+											<div class="comment__inner">
+												<div class="comment__title">
+													Мне очень понравилось!
+												</div>
+												<div class="comment__rating">
+													<div class="rating-wrap">
+
+														<form class="rating rating--5">
+
+															<div class="rating__star rating__star1">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star2">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star3">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star4">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__star rating__star5">
+																<span class="iconic iconic--star rating__star-inactive"></span>
+															</div>
+
+															<div class="rating__active-stars">
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+																<div class="rating__star">
+																	<span class="iconic iconic--star rating__star-active"></span>
+																</div>
+															</div>
+
+														</form>
+
+													</div>
+												</div>
+												<div class="comment__text">
+													Это идеальная обзорная экскурсия для ознакомления
+												</div>
+												<div class="comment__date">
+													Мигель  18.02.2015 в 15:14
+												</div>
+											</div>
+										</div>
+										<div class="comment _hidden">
 											<div class="comment__img">
 												<img src="../images/userfiles/avatar1.jpg" alt="">
 											</div>
@@ -504,7 +886,7 @@
 											</div>
 										</div>
 									</div>
-									<button type="button" class="btn btn--more btn--round btn--white">
+									<button type="button" class="btn btn--more btn--round btn--white js-show-comment">
 										<span class="btn__more-ico"></span>
 										<span class="btn__txt">Показать еще</span>
 									</button>

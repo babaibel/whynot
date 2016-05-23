@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-<?php $pageTitle = 'Главная страница'; ?>
+<?php $pageTitle = 'ЛК - пользователь'; ?>
 <?php include 'base/head.php';?>
 <body>
 	<div class="layout">
-		<?php include 'base/header.php'; ?>
+		<?php
+			$headerCabinetUser = 'true';
+			include 'base/header.php';?>
 
 		<main class="page-body page-body--gray-l page-body--lk">
 
@@ -50,7 +52,7 @@
 													<div class="form-row__content-col">
 														<div class="form-row__content">
 															<div class="input-cont">
-																<input class="input" type="password" value="org@pochemybi.net">
+																<input class="input" type="text" value="org@pochemybi.net">
 															</div>
 														</div>
 													</div>
@@ -164,6 +166,7 @@
 
 		<?php include 'base/footer.php'; ?>
 		<?php include 'base/popups.php'; ?>
+		<?php include 'components/feedback-popup.php'; ?>
 	</div>
 	<?php include 'base/scripts.php'; ?>
 </body>

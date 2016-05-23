@@ -206,6 +206,13 @@ $(function () {
         vertical: ['top','out']
     });
 
+    _POPUPS['catMap'] = new StickPopup($('.js-popup-cat-map'),{
+
+    });
+
+
+
+
 /*
     _POPUPS['login'] = new StickPopup('.js-popup-login',{
         toStick: $('#stick-for-popup-login'),
@@ -252,6 +259,22 @@ $(function(){
             _POPUPS[popupName].toggle(e);
         });
     });
+
+});
+
+$(function () {
+    var $mapCatPopup = $('.js-catalog-map');
+    if (!$mapCatPopup.length) return;
+
+
+    $mapCatPopup.each(function(){
+        var $this = $(this),
+            pluginObj = $this.catalogMap({
+                url: $this.data('url')
+            });
+
+        _POPUPS['catMap'].map = pluginObj;
+    })
 
 });
 

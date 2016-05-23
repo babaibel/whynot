@@ -41,6 +41,7 @@ $popup-side-offset: 8px
 
 .popup-closer
     position: absolute
+    z-index: 10
     top: 10px
     right: 10px
     font-size: 10px
@@ -184,3 +185,40 @@ $popup-side-offset: 8px
             &:after
                 display: none
 
+
+.popup-map
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 9999
+    overflow: hidden
+    opacity: 0
+    visibility: hidden
+    transform: scale(1.4) //scale(0.6)
+    transition: 0.6s ease-in-out
+
+    &__map
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        z-index: 1
+
+    .popup-closer
+        color: #2E2C2C
+        font-size: 30px
+        top: 30px
+        right: 30px
+        transition: 0.5s ease-out 0.6s
+        transform: translate3d(70px,0,0)
+
+    &._active
+        opacity: 1
+        visibility: visible
+        transform: scale(1)
+
+        .popup-closer
+            transform: translate3d(0,0,0)

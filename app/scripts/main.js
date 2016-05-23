@@ -409,7 +409,8 @@ $(function () {
     var $phone = $('.js-phone-validate');
     if (!$phone.length) return;
 
-    $phone.inputmask({"mask": "+7 (999) 999-9999"}); 
+	// TODO
+    //$phone.inputmask({"mask": "+7 (999) 999-9999"});
 });
 
 $(function () {
