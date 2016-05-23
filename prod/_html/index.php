@@ -30,7 +30,7 @@
 				<div class="wr">
 
 					<h2 class="h2">О сервисе</h2>
-					<div class="about-cols">
+					<div class="about-cols js-scroll-trigger">
 
 						<div class="about-cols__item">
 							<div class="about-cols__icon">

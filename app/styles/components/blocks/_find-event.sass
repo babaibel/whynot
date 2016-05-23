@@ -7,6 +7,7 @@
 	background: url("../images/f-events-bg.jpg") no-repeat center
 	background-repeat: no-repeat
 	text-align: center
+	position: relative
 
 	+max-screen($screenSM)
 		padding: 10px 0
@@ -58,6 +59,112 @@
 
 			+max-screen(380px)
 				font-size: 16px
+
+	&__left-bg
+		position: absolute
+		right: 50%
+		margin-right: 400px
+		top: 120px
+		width: 500px
+
+		&--img3
+			position: absolute
+			z-index: 1
+			top: 0
+			right: 205px
+			overflow: hidden
+			opacity: 0
+			transform: translate(-130%,-25%) scale(0.6)
+			transition: all 0.8s cubic-bezier(.64,.01,.73,.99) 1.3s
+
+			._animation &
+				overflow: visible
+				opacity: 1
+				transform: translate(0,0) scale(1)
+
+		&--img2
+			position: absolute
+			z-index: 2
+			top: 65px
+			right: 115px
+			overflow: hidden
+			opacity: 0
+			transform: rotateX(-90deg)
+			transition: all 0.3s cubic-bezier(.72,.98,.83,1.28) 1.5s
+			transform-origin: 50% 50% -100px
+			transform-style: preserve-3d
+
+			._animation &
+				overflow: visible
+				opacity: 1
+				transform: rotateX(0)
+
+		&--img1
+			position: absolute
+			z-index: 3
+			top: 15px
+			right: 0
+			overflow: hidden
+			opacity: 0
+			transition: all 0.7s ease-out 1s
+
+			._animation &
+				overflow: visible
+				opacity: 1
+
+	&__right-bg
+		position: absolute
+		left: 50%
+		margin-left: 400px
+		top: 120px
+		width: 500px
+
+		&--img1
+			position: absolute
+			z-index: 3
+			top: 50px
+			left: 15px
+			overflow: hidden
+			opacity: 0
+			transform: translate(100%,0) scale(0.8)
+			transition: all 0.3s cubic-bezier(.64,.01,.73,.99) 1s
+
+			._animation &
+				overflow: visible
+				opacity: 1
+				transform: translate(0,0) scale(1)
+
+		&--img2
+			position: absolute
+			z-index: 2
+			top: 0
+			left: 150px
+			opacity: 0
+			overflow: hidden
+			transform: translate(-180%,0)
+			transition: all 0.5s cubic-bezier(.64,.01,.73,.99) 1.3s
+
+			._animation &
+				overflow: visible
+				opacity: 1
+				transform: translate(0,0)
+
+		&--img3
+			position: absolute
+			z-index: 1
+			top: 60px
+			left: 350px
+			opacity: 0
+			overflow: hidden
+			transform: rotateX(-90deg) rotateY(30deg)
+			transition: 0.3s cubic-bezier(.72,.98,.83,1.28) 1.6s
+			transform-origin: 50% 50% -100px
+			transform-style: preserve-3d
+
+			._animation &
+				overflow: visible
+				opacity: 1
+				transform: rotateX(0) rotateY(0)
 
 
 
