@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-<?php $pageTitle = 'Главная страница'; ?>
+<?php $pageTitle = 'Вход для организаторов'; ?>
 <?php include 'base/head.php';?>
 <body>
 	<div class="layout page page-org-enter">
-		<?php include 'base/header.php'; ?>
+		<?php
+			$headerCabinet = 'true';
+			include 'base/header.php';?>
 
 		<main class="page-body">
 
 			<h1 class="h2">Вход для организаторов</h1>
-			<section class="org-enter">
+			<section class="org-enter js-org-enter">
 				<div class="org-enter__inner">
 					<div class="wr">
 						<div class="org-enter__left">
@@ -67,12 +69,12 @@
 									</div>
 									<div class="form-row form-row--clear">
 										<div class="form-row__name-col">
-											<div class="form-row__name">Пароль</div>
+											<div class="form-row__name">Название компании</div>
 										</div>
 										<div class="form-row__content-col">
 											<div class="form-row__content">
 												<div class="input-cont">
-													<input class="input" type="password">
+													<input class="input" type="text">
 												</div>
 											</div>
 										</div>

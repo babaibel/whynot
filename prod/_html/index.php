@@ -4,7 +4,9 @@
 <?php include 'base/head.php';?>
 <body>
 	<div class="layout">
-		<?php include 'base/header.php'; ?>
+		<?php
+			$headerCabinet = 'true';
+			include 'base/header.php';?>
 
 		<main class="index">
 
@@ -28,11 +30,11 @@
 				<div class="wr">
 
 					<h2 class="h2">О сервисе</h2>
-					<div class="about-cols">
+					<div class="about-cols js-scroll-trigger">
 
 						<div class="about-cols__item">
 							<div class="about-cols__icon">
-								<span class="icon"></span>
+								<span class="icon" style="background-image: url(../images/svg/about1.svg);"></span>
 							</div>
 							<div class="about-cols__inner">
 								<h4 class="h4">интересные и необычные мероприятия</h4>
@@ -44,7 +46,7 @@
 
 						<div class="about-cols__item">
 							<div class="about-cols__icon">
-								<span class="icon"></span>
+								<span class="icon" style="background-image: url(../images/svg/about2.svg);"></span>
 							</div>
 							<div class="about-cols__inner">
 								<h4 class="h4">умный и простой фильтр поиска</h4>
@@ -56,7 +58,7 @@
 
 						<div class="about-cols__item">
 							<div class="about-cols__icon">
-								<span class="icon"></span>
+								<span class="icon" style="background-image: url(../images/svg/about3.svg);"></span>
 							</div>
 							<div class="about-cols__inner">
 								<h4 class="h4">мероприятия, подходящие именно вам</h4>
@@ -71,7 +73,7 @@
 
 			<div class="about-info">
 				<div class="wr">
-					<div class="about-info__bg" style="background-image: url(../images/userfiles/people2.png);"></div>
+					<div class="about-info__bg js-scroll-trigger" style="background-image: url(../images/userfiles/people2.png);"></div>
 					<div class="about-info__inner">
 						<h3 class="h3">Почему бы нет – сервис, который поможет легко спланировать свой досуг интересными мероприятиями.</h3>
 						<p>Основными территориальными зонами наших проектов являются Москва, Московская область, а также ряд других крупных городов Российской Федерации.</p>
