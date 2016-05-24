@@ -227,12 +227,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -260,12 +292,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -290,12 +354,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -336,12 +432,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -366,12 +494,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -402,12 +562,44 @@
 										<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 										<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 										<div class="card__rating">
-											<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+											<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 											13 отзывов
 										</div>
@@ -432,12 +624,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -467,12 +691,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -503,12 +759,44 @@
 										<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 										<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 										<div class="card__rating">
-											<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+											<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 											13 отзывов
 										</div>
@@ -536,12 +824,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -566,12 +886,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -596,12 +948,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -626,12 +1010,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -659,12 +1075,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -689,12 +1137,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -719,12 +1199,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -749,12 +1261,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -782,12 +1326,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>
@@ -812,12 +1388,44 @@
 											<div class="card__date"><span class="icon iconic--calendar"></span>16 января, 11:00–19:00</div>
 											<div class="card__place"><span class="icon iconic--pin"></span>Клуб CrazyDriver</div>
 											<div class="card__rating">
-												<div class="rating-static">
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
-													<span class="icon iconic--star"></span>
+												<div class="rating rating--sm rating--5">
+													<div class="rating__star rating__star1">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="1" name="rating">
+													</div>
+													<div class="rating__star rating__star2">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="2" name="rating">
+													</div>
+													<div class="rating__star rating__star3">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="3" name="rating">
+													</div>
+													<div class="rating__star rating__star4">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="4" name="rating">
+													</div>
+													<div class="rating__star rating__star5">
+														<span class="iconic iconic--star rating__star-inactive"></span>
+														<input type="radio" value="5" name="rating">
+													</div>
+													<div class="rating__active-stars">
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+														<div class="rating__star">
+															<span class="iconic iconic--star rating__star-active"></span>
+														</div>
+													</div>
 												</div>
 												13 отзывов
 											</div>

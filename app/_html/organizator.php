@@ -54,12 +54,44 @@
 											<b>Название: </b> <a href="tel:+7 495 565-32-13" class="link link-und link-und--green-d">Парк Сокольники</a>
 										</div>
 										<div class="sidebar-text__inner">
-											<div class="rating-static">
-												<span class="icon iconic--star"></span>
-												<span class="icon iconic--star"></span>
-												<span class="icon iconic--star"></span>
-												<span class="icon iconic--star"></span>
-												<span class="icon iconic--star"></span>
+											<div class="rating rating--sm rating--5">
+												<div class="rating__star rating__star1">
+													<span class="iconic iconic--star rating__star-inactive"></span>
+													<input type="radio" value="1" name="rating">
+												</div>
+												<div class="rating__star rating__star2">
+													<span class="iconic iconic--star rating__star-inactive"></span>
+													<input type="radio" value="2" name="rating">
+												</div>
+												<div class="rating__star rating__star3">
+													<span class="iconic iconic--star rating__star-inactive"></span>
+													<input type="radio" value="3" name="rating">
+												</div>
+												<div class="rating__star rating__star4">
+													<span class="iconic iconic--star rating__star-inactive"></span>
+													<input type="radio" value="4" name="rating">
+												</div>
+												<div class="rating__star rating__star5">
+													<span class="iconic iconic--star rating__star-inactive"></span>
+													<input type="radio" value="5" name="rating">
+												</div>
+												<div class="rating__active-stars">
+													<div class="rating__star">
+														<span class="iconic iconic--star rating__star-active"></span>
+													</div>
+													<div class="rating__star">
+														<span class="iconic iconic--star rating__star-active"></span>
+													</div>
+													<div class="rating__star">
+														<span class="iconic iconic--star rating__star-active"></span>
+													</div>
+													<div class="rating__star">
+														<span class="iconic iconic--star rating__star-active"></span>
+													</div>
+													<div class="rating__star">
+														<span class="iconic iconic--star rating__star-active"></span>
+													</div>
+												</div>
 											</div>
 											13 отзывов 
 										</div>

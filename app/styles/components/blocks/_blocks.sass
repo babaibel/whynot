@@ -440,12 +440,14 @@
 		line-height: 1
 
 $star-size: 16px
+$star-size-sm: 12px
 .rating
 	font-size: 0
 	line-height: 0
 	position: relative
 	z-index: 1
 	@extend .cf
+
 
 	&__star
 		float: left
@@ -461,6 +463,7 @@ $star-size: 16px
 
 		.iconic--star
 			transition: all $t300
+			font-size: $star-size
 
 		.iconic--star, INPUT
 			position: absolute
@@ -493,14 +496,48 @@ $star-size: 16px
 		z-index: 1
 
 	@for $i from 1 through 5
-		.rating__star#{$i}:hover
-			& ~ .rating__active-stars
-				opacity: 1
-				width: ($star-size + 3px) * $i
 		&--#{$i}
 			.rating__active-stars
 				opacity: 1
 				width: ($star-size + 3px) * $i
+
+	&--active
+
+		@for $i from 1 through 5
+			.rating__star#{$i}:hover
+				& ~ .rating__active-stars
+					opacity: 1
+					width: ($star-size + 3px) * $i
+
+	&--sm
+		.rating__star
+			width: $star-size-sm + 2px
+			height: $star-size-sm
+			font-size: $star-size-sm
+			line-height: $star-size-sm
+			padding-right: 2px
+			INPUT
+				height: $star-size-sm
+				width: $star-size-sm
+			.iconic--star
+				font-size: $star-size-sm
+
+		.rating__active-stars
+			height: $star-size-sm
+
+		@for $i from 1 through 5
+			&.rating--#{$i}
+				.rating__active-stars
+					opacity: 1
+					width: ($star-size-sm + 2px) * $i
+
+		&.rating--active
+
+			@for $i from 1 through 5
+				.rating__star#{$i}:hover
+					& ~ .rating__active-stars
+						opacity: 1
+						width: ($star-size-sm + 2px) * $i
 
 .sidebar
 	margin-bottom: 40px
@@ -535,6 +572,11 @@ $star-size: 16px
 	&__img
 		IMG
 			max-width: 100%
+
+	.rating
+		display: inline-block
+		vertical-align: middle
+		margin: 0 8px 4px 0
 
 .sidebar-text
 
