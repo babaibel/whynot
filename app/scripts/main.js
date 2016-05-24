@@ -430,7 +430,7 @@ $(function () {
     $metroList.each(function() {
         color = $(this).data('color');
         name = $(this).val();
-        // metroListOpt.push({color,name});
+        metroListOpt.push({color: color,name:name});
     });
 
     $metro.selectize({
