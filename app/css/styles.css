@@ -4172,18 +4172,19 @@ SELECT.select::placeholder {
 /* line 42, ../styles/components/_popups.sass */
 .popup-closer {
   position: absolute;
+  z-index: 10;
   top: 10px;
   right: 10px;
   font-size: 10px;
   color: #d6d6d6;
   cursor: pointer;
 }
-/* line 52, ../styles/components/_popups.sass */
+/* line 53, ../styles/components/_popups.sass */
 .popup-closer:hover {
   color: #000;
 }
 
-/* line 55, ../styles/components/_popups.sass */
+/* line 56, ../styles/components/_popups.sass */
 .popup-gen {
   top: 40px;
   background-color: #fff;
@@ -4194,12 +4195,12 @@ SELECT.select::placeholder {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-/* line 63, ../styles/components/_popups.sass */
+/* line 64, ../styles/components/_popups.sass */
 .popup-gen._active {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-/* line 66, ../styles/components/_popups.sass */
+/* line 67, ../styles/components/_popups.sass */
 .popup-gen:after {
   content: "";
   position: absolute;
@@ -4210,171 +4211,220 @@ SELECT.select::placeholder {
   border-style: solid;
   border-color: transparent transparent #fff transparent;
 }
-/* line 76, ../styles/components/_popups.sass */
+/* line 77, ../styles/components/_popups.sass */
 .popup-gen__main {
   padding: 25px 30px;
 }
-/* line 79, ../styles/components/_popups.sass */
+/* line 80, ../styles/components/_popups.sass */
 .popup-gen__footer {
   padding: 20px 30px;
   background-color: #f6f7f7;
 }
-/* line 84, ../styles/components/_popups.sass */
+/* line 85, ../styles/components/_popups.sass */
 .popup-gen--subs {
   margin: 20px 0 0 -55px;
 }
-/* line 87, ../styles/components/_popups.sass */
+/* line 88, ../styles/components/_popups.sass */
 .popup-gen--subs .popup__main {
   padding-top: 30px;
 }
-/* line 90, ../styles/components/_popups.sass */
+/* line 91, ../styles/components/_popups.sass */
 .popup-gen--subs:after {
   left: 31%;
 }
 @media screen and (min-width: 392px) and (max-width: 767px) {
-  /* line 84, ../styles/components/_popups.sass */
+  /* line 85, ../styles/components/_popups.sass */
   .popup-gen--subs {
     left: 50% !important;
     margin: 0 0 0 -187.5px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 84, ../styles/components/_popups.sass */
+  /* line 85, ../styles/components/_popups.sass */
   .popup-gen--subs {
     position: fixed;
     top: 95px !important;
   }
-  /* line 101, ../styles/components/_popups.sass */
+  /* line 102, ../styles/components/_popups.sass */
   .popup-gen--subs:after {
     display: none;
   }
 }
 @media screen and (max-width: 392px) {
-  /* line 105, ../styles/components/_popups.sass */
+  /* line 106, ../styles/components/_popups.sass */
   .popup-gen--subs .btn-flex-wr {
     display: block;
   }
-  /* line 107, ../styles/components/_popups.sass */
+  /* line 108, ../styles/components/_popups.sass */
   .popup-gen--subs .btn-flex-wr .form-tip {
     margin-top: 10px;
     padding-left: 0;
   }
-  /* line 110, ../styles/components/_popups.sass */
+  /* line 111, ../styles/components/_popups.sass */
   .popup-gen--subs .btn-flex-wr .btn {
     width: 100%;
   }
 }
-/* line 113, ../styles/components/_popups.sass */
+/* line 114, ../styles/components/_popups.sass */
 .popup-gen--subs2 {
   margin: 15px -35px 0 0;
 }
-/* line 116, ../styles/components/_popups.sass */
+/* line 117, ../styles/components/_popups.sass */
 .popup-gen--subs2 .popup__main {
   padding-top: 30px;
 }
-/* line 119, ../styles/components/_popups.sass */
+/* line 120, ../styles/components/_popups.sass */
 .popup-gen--subs2:after {
   left: 60%;
 }
 @media screen and (min-width: 768px) and (max-width: 859px) {
-  /* line 113, ../styles/components/_popups.sass */
+  /* line 114, ../styles/components/_popups.sass */
   .popup-gen--subs2 {
     margin: 15px 0 0 0;
     left: 20px !important;
     right: auto !important;
   }
-  /* line 126, ../styles/components/_popups.sass */
+  /* line 127, ../styles/components/_popups.sass */
   .popup-gen--subs2:after {
     left: 37% !important;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 113, ../styles/components/_popups.sass */
+  /* line 114, ../styles/components/_popups.sass */
   .popup-gen--subs2 {
     position: fixed;
     top: 95px !important;
     left: 50% !important;
     margin: 0 0 0 -187.5px;
   }
-  /* line 139, ../styles/components/_popups.sass */
+  /* line 140, ../styles/components/_popups.sass */
   .popup-gen--subs2:after {
     display: none;
   }
 }
 @media screen and (max-width: 392px) {
-  /* line 113, ../styles/components/_popups.sass */
+  /* line 114, ../styles/components/_popups.sass */
   .popup-gen--subs2 {
     left: 15px !important;
     right: 15px !important;
     margin: 0 !important;
   }
-  /* line 147, ../styles/components/_popups.sass */
+  /* line 148, ../styles/components/_popups.sass */
   .popup-gen--subs2 .btn-flex-wr {
     display: block;
   }
-  /* line 149, ../styles/components/_popups.sass */
+  /* line 150, ../styles/components/_popups.sass */
   .popup-gen--subs2 .btn-flex-wr .form-tip {
     margin-top: 10px;
     padding-left: 0;
   }
-  /* line 152, ../styles/components/_popups.sass */
+  /* line 153, ../styles/components/_popups.sass */
   .popup-gen--subs2 .btn-flex-wr .btn {
     width: 100%;
   }
 }
-/* line 155, ../styles/components/_popups.sass */
+/* line 156, ../styles/components/_popups.sass */
 .popup-gen--login {
   margin: 20px -105px 0 0;
 }
-/* line 157, ../styles/components/_popups.sass */
+/* line 158, ../styles/components/_popups.sass */
 .popup-gen--login:after {
   left: 58%;
 }
 @media screen and (min-width: 317px) and (max-width: 579px) {
-  /* line 155, ../styles/components/_popups.sass */
+  /* line 156, ../styles/components/_popups.sass */
   .popup-gen--login {
     left: 50% !important;
     margin: 0 0 0 -150px;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 155, ../styles/components/_popups.sass */
+  /* line 156, ../styles/components/_popups.sass */
   .popup-gen--login {
     z-index: 99;
     position: fixed;
     top: 58px !important;
   }
-  /* line 168, ../styles/components/_popups.sass */
+  /* line 169, ../styles/components/_popups.sass */
   .popup-gen--login:after {
     display: none;
   }
 }
-/* line 171, ../styles/components/_popups.sass */
+/* line 172, ../styles/components/_popups.sass */
 .popup-gen--reg {
   margin: 20px 0 0 0;
 }
-/* line 173, ../styles/components/_popups.sass */
+/* line 174, ../styles/components/_popups.sass */
 .popup-gen--reg:after {
   left: 83%;
 }
 @media screen and (min-width: 317px) and (max-width: 579px) {
-  /* line 171, ../styles/components/_popups.sass */
+  /* line 172, ../styles/components/_popups.sass */
   .popup-gen--reg {
     left: 50% !important;
     margin: 0 0 0 -150px;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 171, ../styles/components/_popups.sass */
+  /* line 172, ../styles/components/_popups.sass */
   .popup-gen--reg {
     z-index: 99;
     position: fixed;
     top: 58px !important;
   }
-  /* line 184, ../styles/components/_popups.sass */
+  /* line 185, ../styles/components/_popups.sass */
   .popup-gen--reg:after {
     display: none;
   }
+}
+
+/* line 189, ../styles/components/_popups.sass */
+.popup-map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: 0.6s ease-in-out;
+          transition: 0.6s ease-in-out;
+}
+/* line 202, ../styles/components/_popups.sass */
+.popup-map__map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+/* line 210, ../styles/components/_popups.sass */
+.popup-map .popup-closer {
+  color: #2E2C2C;
+  font-size: 30px;
+  top: 30px;
+  right: 30px;
+  -webkit-transition: 0.5s ease-out 0.6s;
+          transition: 0.5s ease-out 0.6s;
+  -webkit-transform: translate3d(70px, 0, 0);
+          transform: translate3d(70px, 0, 0);
+}
+/* line 218, ../styles/components/_popups.sass */
+.popup-map._active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/* line 223, ../styles/components/_popups.sass */
+.popup-map._active .popup-closer {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 /* line 5, ../styles/components/blocks/_find-event.sass */

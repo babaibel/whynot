@@ -7,10 +7,12 @@ var gulp = require('gulp'),
     args = require('yargs').argv,
     del = require('del'),
     fs = require('fs'),
+    cleanCSS = require('gulp-clean-css'),
     iconfont = require('gulp-iconfont'),
     iconfontCss = require('gulp-iconfont-css'),
     jsFiles = 0;
-    
+
+$.cleanCSS = cleanCSS;
 
 gulp.task('help', function() {
     log('Hello. This is a list of main tasks.');
@@ -26,8 +28,8 @@ gulp.task('optimize', ['inject'], function () {
     
     return gulp.src(config.allhtml)
         .pipe(assets)
-        .pipe($.if('*.js', $.uglify()))
-        .pipe($.if('*.css', $.minifyCss()))
+        .pipe($.if('*.js', $.uglify() ))
+        .pipe($.if('*.css', $.cleanCSS()))
         .pipe(assets.restore())
         .pipe($.useref())
         .pipe(gulp.dest(config.dist + '_html'));
@@ -121,7 +123,9 @@ gulp.task('images', function() {
             // as hooks for embedding and styling
             svgoPlugins: [{cleanupIDs: false}]
         }))
-        .pipe(gulp.dest(config.dist + 'images'));
+        .pipe(
+            gulp.dest(config.dist + 'images')
+        );
 });
 
 gulp.task('fonts', function() {
@@ -129,7 +133,9 @@ gulp.task('fonts', function() {
 
     return gulp
         .src(config.fonts)
-        .pipe(gulp.dest(config.dist + 'fonts'));
+        .pipe(
+            gulp.dest(config.dist + 'fonts')
+        );
 });
 
 gulp.task('iconfont', function(){
@@ -246,7 +252,7 @@ gulp.task('serve:build', ['php'], function() {
 }).help = 'to preview the production build';
 
 gulp.task('build', ['optimize', 'images', 'fonts', 'extras'], function() {
-    log('Gzipp all files in ' + $.util.colors.yellow('./') + ' folder');
+    log('Gzipp all files in ' + $.util.colors.yellow('./prod') + ' folder');
 
     return gulp.src([
         config.dist + '_html/**/*',

@@ -143,3 +143,10 @@
 	</footer>
 	<span class="popup-closer js-popup-closer"></span>
 </div>
+
+<div class="popup-map js-popup-cat-map" data-popup-name="catMap">
+	<div class="popup-map__map js-catalog-map"  id="catMap"
+		 data-url="queries/catMap.php">
+	</div>
+	<span class="popup-closer js-popup-closer"></span>
+</div>

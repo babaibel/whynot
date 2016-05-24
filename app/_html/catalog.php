@@ -138,15 +138,14 @@
 										</span>
 									</label>
 
-									<label class="sort-chkb">
-										<input type="radio" name="sorting_way">
+									<div class="sort-chkb js-popup-btn" data-popup-name="catMap">
 										<span class="sort-chkb__main">
 											<span class="iconic iconic--placemark"></span>
 											<span class="sort-chkb__main-txt">
 												На карте
 											</span>
 										</span>
-									</label>
+									</div>
 
 									<div class="selector selector--filter selector--inline js-selector">
 										<span class="selector__option-current js-selector-current">

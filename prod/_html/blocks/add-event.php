@@ -1,4 +1,4 @@
-<a href="#!" class="add-event">
+<a href="#feedback-form" class="add-event js-popup-mid-btn">
 	<span class="add-event__plus iconic iconic--plus"></span>
 	<p class="add-event__title">
 		Добавьте свое событие

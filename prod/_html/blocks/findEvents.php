@@ -8,7 +8,7 @@
 	-->
 	<div class="wr">
 		<h2 class="h2">
-			Найти мероприятия
+			Мероприятия по типу:
 		</h2>
 
 		<div class="f-events__inner-wr">
@@ -16,38 +16,7 @@
 
 				<div class="chkb-dropdown chkb-dropdown--sm js-chkb-dropdown" data-resol="sm">
 					<div class="chkb-dropdown__title chkb-dropdown__title--lg-hide js-chkb-dropdown__btn">
-						Для кого?
-					</div>
-
-					<div class="chkb-dropdown__options-gr">
-
-						<label class="txt-chbox">
-							<input type="radio" name="gr1">
-							<span class="txt-chbox__visual txt-chbox__visual--md">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">Для взрослых</span>
-							</span>
-						</label>
-
-						<label class="txt-chbox">
-							<input type="radio" name="gr1">
-						<span class="txt-chbox__visual txt-chbox__visual--md">
-							<span class="link link--dotted link-und--green2-d link-und--dotted">Для детей</span>
-						</span>
-						</label>
-
-						<label class="txt-chbox">
-							<input type="radio" name="gr1">
-						<span class="txt-chbox__visual txt-chbox__visual--md">
-							<span class="link link--dotted link-und--green2-d link-und--dotted">Для всей семьи</span>
-						</span>
-						</label>
-
-					</div>
-				</div>
-
-				<div class="chkb-dropdown chkb-dropdown--sm js-chkb-dropdown" data-resol="sm">
-					<div class="chkb-dropdown__title js-chkb-dropdown__btn">
-						По интересам
+						По типу
 					</div>
 
 					<div class="chkb-dropdown__options-gr">
@@ -55,8 +24,8 @@
 						<label class="txt-chbox">
 							<input type="checkbox" name="gr1">
 							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Игры в парках
+								<span class="link">
+									Романтика
 								</span>
 							</span>
 						</label>
@@ -64,8 +33,8 @@
 						<label class="txt-chbox">
 							<input type="checkbox" name="gr1">
 							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Мастерклассы
+								<span class="link">
+									Острые ощущения 
 								</span>
 							</span>
 						</label>
@@ -73,8 +42,8 @@
 						<label class="txt-chbox">
 							<input type="checkbox" name="gr1">
 							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Квесты
+								<span class="link">
+									Обучение
 								</span>
 							</span>
 						</label>
@@ -82,8 +51,8 @@
 						<label class="txt-chbox">
 							<input type="checkbox" name="gr1">
 							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Подвижные игры
+								<span class="link">
+									Relax
 								</span>
 							</span>
 						</label>
@@ -91,8 +60,8 @@
 						<label class="txt-chbox">
 							<input type="checkbox" name="gr1">
 							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Пейнтбол
+								<span class="link">
+									Головоломки
 								</span>
 							</span>
 						</label>
@@ -100,8 +69,8 @@
 						<label class="txt-chbox">
 							<input type="checkbox" name="gr1">
 							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Картинг
+								<span class="link">
+									Все для деток
 								</span>
 							</span>
 						</label>
@@ -109,8 +78,8 @@
 						<label class="txt-chbox">
 							<input type="checkbox" name="gr1">
 							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Семинары
+								<span class="link">
+									Жизнь без забот
 								</span>
 							</span>
 						</label>
@@ -118,8 +87,8 @@
 						<label class="txt-chbox">
 							<input type="checkbox" name="gr1">
 							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Экстрим
+								<span class="link">
+									Активные игры
 								</span>
 							</span>
 						</label>
@@ -127,8 +96,8 @@
 						<label class="txt-chbox">
 							<input type="checkbox" name="gr1">
 							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Авто/мото
+								<span class="link">
+									В плохую погоду
 								</span>
 							</span>
 						</label>
@@ -136,115 +105,8 @@
 						<label class="txt-chbox">
 							<input type="checkbox" name="gr1">
 							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Полеты
-								</span>
-							</span>
-						</label>
-
-
-						<label class="txt-chbox">
-							<input type="checkbox" name="gr1">
-							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Йога
-								</span>
-							</span>
-						</label>
-						<label class="txt-chbox">
-							<input type="checkbox" name="gr1">
-							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Графити
-								</span>
-							</span>
-						</label>
-						<label class="txt-chbox">
-							<input type="checkbox" name="gr1">
-								<span class="txt-chbox__visual">
-									<span class="link link--dotted link-und--green2-d link-und--dotted">
-										Игры в парках
-									</span>
-								</span>
-						</label>
-
-						<label class="txt-chbox">
-							<input type="checkbox" name="gr1">
-							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Мастерклассы
-								</span>
-							</span>
-						</label>
-
-						<label class="txt-chbox">
-							<input type="checkbox" name="gr1">
-							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Квесты
-								</span>
-							</span>
-						</label>
-
-						<label class="txt-chbox">
-							<input type="checkbox" name="gr1">
-							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Подвижные игры
-								</span>
-							</span>
-						</label>
-
-						<label class="txt-chbox">
-							<input type="checkbox" name="gr1">
-							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Пейнтбол
-								</span>
-							</span>
-						</label>
-
-						<label class="txt-chbox">
-							<input type="checkbox" name="gr1">
-							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Картинг
-								</span>
-							</span>
-						</label>
-
-						<label class="txt-chbox">
-							<input type="checkbox" name="gr1">
-							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Семинары
-								</span>
-							</span>
-						</label>
-
-						<label class="txt-chbox">
-							<input type="checkbox" name="gr1">
-							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Экстрим
-								</span>
-							</span>
-						</label>
-
-						<label class="txt-chbox">
-							<input type="checkbox" name="gr1">
-							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Авто/мото
-								</span>
-							</span>
-						</label>
-
-						<label class="txt-chbox">
-							<input type="checkbox" name="gr1">
-							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Полеты
+								<span class="link">
+									Бесплатное посещение
 								</span>
 							</span>
 						</label>
@@ -253,20 +115,19 @@
 						<label class="txt-chbox">
 							<input type="checkbox" name="gr1">
 							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Йога
+								<span class="link">
+									За городом
 								</span>
 							</span>
 						</label>
 						<label class="txt-chbox">
 							<input type="checkbox" name="gr1">
 							<span class="txt-chbox__visual">
-								<span class="link link--dotted link-und--green2-d link-und--dotted">
-									Графити
+								<span class="link">
+									Для всей семьи
 								</span>
 							</span>
 						</label>
-
 
 					</div>
 				</div>
