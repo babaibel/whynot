@@ -246,4 +246,15 @@
 		</div>
 
 	</div>
+
+	<div class="f-events__left-bg js-scroll-trigger">
+		<img src="../images/index-img-left3.png" alt="" class="f-events__left-bg--img3">
+		<img src="../images/index-img-left2.png" alt="" class="f-events__left-bg--img2">
+		<img src="../images/index-img-left1.png" alt="" class="f-events__left-bg--img1">
+	</div>
+	<div class="f-events__right-bg js-scroll-trigger">
+		<img src="../images/index-img-right1.png" alt="" class="f-events__right-bg--img1">
+		<img src="../images/index-img-right2.png" alt="" class="f-events__right-bg--img2">
+		<img src="../images/index-img-right3.png" alt="" class="f-events__right-bg--img3">
+	</div>
 </section>
