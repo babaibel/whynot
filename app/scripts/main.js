@@ -104,7 +104,7 @@ $(function () {
     if (!$btn.length) return;
 
     $btn.on('click', function() {
-        targetIt = $(this);
+        var targetIt = $(this);
         targetIt.closest('.materials-grid__col').addClass("_deleting");
         setTimeout(function() {
 
@@ -428,9 +428,10 @@ $(function () {
         metroListOpt=[];
 
     $metroList.each(function() {
-        color = $(this).data('color');
-        name = $(this).val();
-        // metroListOpt.push({color,name});
+        var color = $(this).data('color'),
+            name = $(this).val();
+
+        metroListOpt.push({color: color,name:name});
     });
 
     $metro.selectize({

@@ -25,7 +25,7 @@
 			margin-right: 40px
 
 	+max-screen($screenMM)
-		.weekrange
+		.daterange
 			margin-left: -10px
 			margin-right: -10px
 
@@ -169,23 +169,24 @@
 
 
 
-$weekrange-h: 34px
-$weekrange-bradius: 4px
-$weekrange-color: #dcdcdc
+$daterange-h: 34px
+$daterange-bradius: 4px
+$daterange-color: #dcdcdc
+$daterange-rl-offset: 22px
 
 $rangeUiHeight: 30px
 $rangeUiHandleHeight: 40px
 
-.weekrange
+.daterange
 	position: relative
-	padding: 0 ($weekrange-h + 4px)
+	//padding: 0 ($daterange-h + 4px)
 
-	&__arr
-		border-radius: $weekrange-bradius
-		border: 1px solid $weekrange-color
-		width: $weekrange-h
-		height: $weekrange-h
-		line-height: $weekrange-h - 2px
+	//&__arr
+		border-radius: $daterange-bradius
+		border: 1px solid $daterange-color
+		width: $daterange-h
+		height: $daterange-h
+		line-height: $daterange-h - 2px
 		text-align: center
 		background-color: #fff
 		font-size: 10px
@@ -196,11 +197,11 @@ $rangeUiHandleHeight: 40px
 		position: absolute
 
 		&:hover
-			border-color: darken($weekrange-color,30%)
+			border-color: darken($daterange-color,30%)
 
 		&._disabled
 			opacity: 0.5
-			border-color: $weekrange-color !important
+			border-color: $daterange-color !important
 			cursor: default
 
 		&--left
@@ -212,14 +213,14 @@ $rangeUiHandleHeight: 40px
 	&__line-wr
 		position: relative
 		overflow: hidden
-		padding: 10px 0
+		padding: 10px $daterange-rl-offset
 
 	&__line
 		position: relative
-		border-radius: $weekrange-bradius
-		border: 1px solid $weekrange-color
-		height: $weekrange-h
-		line-height: $weekrange-h - 2px
+		border-radius: $daterange-bradius
+		border: 1px solid $daterange-color
+		height: $daterange-h
+		line-height: $daterange-h - 2px
 		font-size: 16px
 
 		small
@@ -242,11 +243,12 @@ $rangeUiHandleHeight: 40px
 		justify-content: space-between
 		align-items: center
 		position: relative
+		width: 100%
 
 	&__line-item
 		flex-shrink: 0
 		flex-grow: 1
-		width: (100%/7)
+		//width: (100%/7)
 		color: #a1a1a1
 		text-align: center
 		position: relative
@@ -264,34 +266,46 @@ $rangeUiHandleHeight: 40px
 
 
 
+	&__visual-line-wr
+		position: absolute
+		left: 4%
+		right: 4%
+		top: 0
+		bottom: 0
+		z-index: 1
+
 	&__visual-line
 		position: absolute
 		left: 0
-		width: 100% - (100%/7)*2
+		width: 100% //- (100%/7)*2
 		top: 2px
 		bottom: 2px
-		margin: 0 45px
+		//margin: 0 45px
 		background-color: $cSecondary
 		opacity: 0.65
 		z-index: 1
 
 	&__ui
 		position: absolute
-		left: 0
+		left: 48px //4% // $daterange-rl-offset
+		right: 48px //4% //$daterange-rl-offset
+		width: auto !important
 		top: 12px
+		//margin: 0 $daterange-rl-offset
 		height: $rangeUiHeight
 		box-shadow: none
 		border: 0
 		background-color: transparent
 		cursor: pointer
 
+
 		.noUi-tooltip
 			white-space: nowrap
 
 		.noUi-base
 			position: absolute
-			left: 4%
-			right: 4%
+			left: 0 // 4%
+			right: 0 //4%
 			width: auto
 
 		.noUi-handle
@@ -299,7 +313,7 @@ $rangeUiHandleHeight: 40px
 			width: 95px
 			border: 0
 			box-shadow: none
-			margin-left: -47.5px
+			margin-left: -47.5px //-72.5px
 			left: 0
 			top: -5px
 			cursor: w-resize
@@ -329,6 +343,7 @@ $rangeUiHandleHeight: 40px
 				padding: 0 10px
 				text-align: left
 				background: url('../images/range-handle-l.png') center no-repeat
+				//margin-left: -22.5px
 
 			&-upper
 				padding: 0 10px
