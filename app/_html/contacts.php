@@ -139,7 +139,7 @@
 													<div class="comment__rating">
 														<div class="rating-wrap">
 
-															<div class="rating">
+															<div class="rating js-rating">
 
 																<div class="rating__star rating__star1">
 																	<span class="iconic iconic--star rating__star-inactive"></span>

@@ -37,6 +37,27 @@ jQuery.validator.addClassRules('js_field_digits', {
     digits: true
 });
 
+
+//rating
+$(function () {
+    var $rating = $('.js-rating');
+    if (!$rating.length) return;
+    var $ratingInputs = $rating.find('input'),
+        initStarVal = $rating.find('input:checked').val();
+
+
+    $ratingInputs.bind('click', function () {
+        var thisStarVal = $(this).val();
+
+        $ratingInputs.prop('checked', false);
+        $(this).prop('checked', true);
+
+        $rating.removeClass('rating--' + initStarVal);
+        $rating.addClass('rating--' + thisStarVal);
+        initStarVal = thisStarVal
+    })
+});
+
 $(function () {
     var $form = $('.js-form');
     if (!$form.length) return;
