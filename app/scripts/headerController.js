@@ -55,12 +55,13 @@ $(function () {
     var $hSearch = $('.js-sticky-header')
     if(!$hSearch.length) return;
 
-    var scroll = $W.scrollTop();
+    var scroll = $W.scrollTop(),
+        offset = $hSearch.height() * 2;
 
     $W.scroll(function(){
         var newScroll = $W.scrollTop();
 
-        if( newScroll > 86){
+        if( newScroll > offset){
             $B.addClass('_stycky-header');
         }else{
             $B.removeClass('_stycky-header');

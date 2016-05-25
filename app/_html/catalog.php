@@ -207,7 +207,7 @@
 					<div class="wr">
 
 						<div class="catalog__main">
-							<div class="materials-grid materials-grid--visible js-cards-hidden">
+							<div class="materials-grid js-cards-hidden">
 
 								<div class="materials-grid__col">
 									<a class="card js-card" href="#!">

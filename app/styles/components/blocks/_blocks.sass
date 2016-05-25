@@ -29,6 +29,8 @@
 		transform: translateY(0)
 		visibility: visible
 		opacity: 1
+		perspective: 1300px
+		perspective-origin: 50% 100%
 
 		&._hidden
 			transform: translateY(50%)
@@ -691,20 +693,24 @@ $star-size-sm: 12px
 
 	&__tab
 		display: none
+		perspective: 1300px
+		perspective-origin: 50%
 
 		&._active
 			display: block
 
 		.actions-sl
-			transition: all 0.5s ease-out 0s
+			// transition: all 0.5s ease-out 0s
 			opacity: 0
 			overflow: hidden
-			transform: translate(-8%, 2%) scale(0.95)
+			transform-origin: 0 0 0
+			transform-style: preserve-3d
 
 			&._animated
+				animation: 0.5s ease-in-out 0s normal forwards 1 running flip
 				opacity: 1
 				overflow: visible
-				transform: translate(0, 0) scale(1)
+				transform: rotateX(-80deg)
 
 .lk-menu
 	background: #fff

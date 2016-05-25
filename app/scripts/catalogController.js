@@ -58,35 +58,35 @@ $(function () {
     $catTabs.catTabs();
 });
 
-// $(function () {
-//     var $cardHidden = $('.js-cards-hidden');
-//     if (!$cardHidden.length) return;
+$(function () {
+    var $cardHidden = $('.js-cards-hidden');
+    if (!$cardHidden.length) return;
 
-//     function onScroll(pPercent) {
-//         var scroll = $W.scrollTop(),
-//             $actTabCards = $cardHidden.find('.js-card'),
-//             $actTabSliders = $cardHidden.find('.js-actions-sl'),
-//             percent = pPercent || 0.8;
+    function onScroll2(pPercent) {
+        var scroll = $W.scrollTop(),
+            $actTabCards = $cardHidden.find('.js-card'),
+            $actTabSliders = $cardHidden.find('.js-actions-sl'),
+            percent = pPercent || 0.8;
 
-//         $actTabCards.each(function () {
-//             var $thisCard = $(this);
+        $actTabCards.each(function () {
+            var $thisCard = $(this);
 
-//             if (elemInView($thisCard.parent(), percent) || scroll > $thisCard.offset().top) $thisCard.addClass('_animated')
-//         });
+            if (elemInView($thisCard.parent(), percent) || scroll > $thisCard.offset().top) $thisCard.addClass('_animated')
+        });
 
-//         $actTabSliders.each(function () {
-//             var $thisSlider = $(this);
+        $actTabSliders.each(function () {
+            var $thisSlider = $(this);
 
-//             if (elemInView($thisSlider, percent) || scroll > $thisSlider.offset().top) $thisSlider.addClass('_animated')
-//         });
-//     }
+            if (elemInView($thisSlider, percent) || scroll > $thisSlider.offset().top) $thisSlider.addClass('_animated')
+        });
+    }
 
-//     $W.scroll(function () {
-//         onScroll();
-//     });
+    $W.scroll(function () {
+        onScroll2();
+    });
 
-//     onScroll(1);
-// });
+    onScroll2(1);
+});
 
 
 

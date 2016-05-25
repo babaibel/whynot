@@ -240,6 +240,7 @@
 .index-cards
 	padding: 45px 0
 	border-top: 1px solid #e6e6e6
+
 	//&__row
 		align-items: stretch
 		display: flex
@@ -304,6 +305,13 @@
 		margin: 15px auto 0
 
 /* todo перенос */
+@keyframes flip
+	0%
+		opacity: 0
+		transform: rotateX(-80deg)
+	100%
+		opacity: 1
+		transform: rotateX(0)
 
 .card
 	display: flex
@@ -319,15 +327,17 @@
 	// overflow: hidden
 	position: relative
 	padding: 0 15px
-	transition: all 0.5s ease-out 0s
+	// transition: all 0.5s ease-out 0s
 	opacity: 0
 	overflow: hidden
-	transform: translate(-20%, 2%) scale(0.95)
+	transform-origin: 0 0 0
+	transform-style: preserve-3d
 
 	&._animated
+		animation: 0.5s ease-in-out 0s normal forwards 1 running flip
 		opacity: 1
 		overflow: visible
-		transform: translate(0, 0) scale(1)
+		transform: rotateX(-80deg)
 
 	&:hover
 		.link, .link-und
