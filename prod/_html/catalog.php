@@ -18,102 +18,105 @@
 
 				<div class="filter js-filter">
 
-					<div class="filter-main js-filter_main">
-						<div class="wr">
+					<form class="js-filter-form">
+						<div class="filter-main js-filter_main">
+							<div class="wr">
 
-							<div class="filter-main__info">
+								<div class="filter-main__info">
 								<span class="filter-main__msg js-filter_msg">
 									Найдено: 23 мероприятия
 								</span>
-							</div>
+								</div>
 
-							<div class="daterange js-daterange" >
+								<div class="daterange js-daterange" >
 
-								<div class="daterange__line-wr">
+									<div class="daterange__line-wr">
 
-									<div class="daterange__line">
+										<div class="daterange__line">
 
-										<div class="daterange__line-tracker js-daterange-tracker">
-											<div class="daterange__visual-line-wr">
-												<div class="daterange__visual-line js-daterange-v-line"></div>
+											<div class="daterange__line-tracker js-daterange-tracker">
+												<div class="daterange__visual-line-wr">
+													<div class="daterange__visual-line js-daterange-v-line"></div>
+												</div>
+
 											</div>
-
 										</div>
+
+										<div class="daterange__ui js-daterange-ui"></div>
+
 									</div>
 
-									<div class="daterange__ui js-daterange-ui"></div>
-
+									<input type="hidden" class="js-daterange_input">
 								</div>
 
-								<input type="hidden" class="js-daterange_input">
+								<div class="chkb-dropdown chkb-dropdown--dates js-chkb-dropdown" data-resol="sm">
+									<div class="chkb-dropdown__title js-chkb-dropdown__btn">
+										По дате
+									</div>
+
+									<div class="chkb-dropdown__options-gr">
+										<div class="datepicker-wr datepicker-wr--inline js-daterange-datepicker"
+											 data-inline="true"
+											 data-range="true" data-multiple-dates-separator=" - "></div>
+									</div>
+								</div>
+
+								<input type="hidden" name="fordate" class="js-f-events-date">
+
 							</div>
-
-							<div class="chkb-dropdown chkb-dropdown--dates js-chkb-dropdown" data-resol="sm">
-								<div class="chkb-dropdown__title js-chkb-dropdown__btn">
-									По дате
-								</div>
-
-								<div class="chkb-dropdown__options-gr">
-									<div class="datepicker-wr datepicker-wr--inline js-daterange-datepicker"
-										 data-inline="true"
-										 data-range="true" data-multiple-dates-separator=" - "></div>
-								</div>
-							</div>
-
-							<input type="hidden" name="fordate" class="js-f-events-date">
-
 						</div>
-					</div>
 
-					<div class="filter-main filter-main--line2">
-						<div class="wr">
+						<div class="filter-main filter-main--line2">
+							<div class="wr">
 
-							<div class="filter-main__sort-gr">
+								<div class="filter-main__sort-gr">
 
-								<div class="sort-chkb-wr">
-									<label class="sort-chkb">
-										<input type="radio" name="sorting_way" checked>
+									<div class="sort-chkb-wr">
+										<label class="sort-chkb">
+											<input type="radio" name="sorting_way" checked>
 										<span class="sort-chkb__main">
 											<span class="iconic iconic--grid"></span>
 											<span class="sort-chkb__main-txt">
 												Списком
 											</span>
 										</span>
-									</label>
+										</label>
 
-									<div class="sort-chkb js-popup-btn" data-popup-name="catMap">
+										<div class="sort-chkb js-popup-btn" data-popup-name="catMap">
 										<span class="sort-chkb__main">
 											<span class="iconic iconic--placemark"></span>
 											<span class="sort-chkb__main-txt">
 												На карте
 											</span>
 										</span>
-									</div>
+										</div>
 
-									<div class="selector selector--filter selector--inline js-selector">
+										<div class="selector selector--filter selector--inline js-selector--in-filter">
 										<span class="selector__option-current js-selector-current">
 											 По рейтингу
 										</span>
-										<ul class="selector__options-list js-selector-options">
-											<li class="selector__option js-selector-option">
-												По рейтингу
-											</li>
-											<li class="selector__option js-selector-option">
-												По отзывам
-											</li>
-											<li class="selector__option js-selector-option">
-												По дате
-											</li>
-										</ul>
-										<input type="hidden" value="" name="">
+											<ul class="selector__options-list js-selector-options">
+												<li class="selector__option js-selector-option">
+													По рейтингу
+												</li>
+												<li class="selector__option js-selector-option">
+													По отзывам
+												</li>
+												<li class="selector__option js-selector-option">
+													По дате
+												</li>
+											</ul>
+											<input type="hidden" value="" name="">
+										</div>
+
 									</div>
 
 								</div>
 
 							</div>
-
 						</div>
-					</div>
+
+					</form>
 
 					<!-- <div class="filter__bottom">
 						<div class="wr">
@@ -150,7 +153,7 @@
 					<div class="wr">
 
 						<div class="catalog__main">
-							<div class="materials-grid materials-grid--visible js-cards-hidden">
+							<div class="materials-grid js-cards-hidden">
 
 								<div class="materials-grid__col">
 									<a class="card js-card" href="#!">

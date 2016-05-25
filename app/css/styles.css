@@ -4467,7 +4467,7 @@ SELECT.select::placeholder {
 }
 @media screen and (max-width: 859px) {
   /* line 28, ../styles/components/blocks/_find-event.sass */
-  .f-events .weekrange {
+  .f-events .daterange {
     margin-left: -10px;
     margin-right: -10px;
   }
@@ -4660,54 +4660,18 @@ SELECT.select::placeholder {
           transform: translate(0, 0);
 }
 
-/* line 177, ../styles/components/blocks/_find-event.sass */
-.weekrange {
+/* line 178, ../styles/components/blocks/_find-event.sass */
+.daterange {
   position: relative;
-  padding: 0 38px;
 }
-/* line 181, ../styles/components/blocks/_find-event.sass */
-.weekrange__arr {
-  border-radius: 4px;
-  border: 1px solid #dcdcdc;
-  width: 34px;
-  height: 34px;
-  line-height: 32px;
-  text-align: center;
-  background-color: #fff;
-  font-size: 10px;
-  color: #4c4c4c;
-  margin: 10px 0;
-  -webkit-transition: 150ms;
-          transition: 150ms;
-  cursor: pointer;
-  position: absolute;
-}
-/* line 196, ../styles/components/blocks/_find-event.sass */
-.weekrange__arr:hover {
-  border-color: #909090;
-}
-/* line 199, ../styles/components/blocks/_find-event.sass */
-.weekrange__arr._disabled {
-  opacity: 0.5;
-  border-color: #dcdcdc !important;
-  cursor: default;
-}
-/* line 204, ../styles/components/blocks/_find-event.sass */
-.weekrange__arr--left {
-  left: 0;
-}
-/* line 207, ../styles/components/blocks/_find-event.sass */
-.weekrange__arr--right {
-  right: 0;
-}
-/* line 210, ../styles/components/blocks/_find-event.sass */
-.weekrange__line-wr {
+/* line 211, ../styles/components/blocks/_find-event.sass */
+.daterange__line-wr {
   position: relative;
   overflow: hidden;
-  padding: 10px 0;
+  padding: 10px 22px;
 }
-/* line 215, ../styles/components/blocks/_find-event.sass */
-.weekrange__line {
+/* line 216, ../styles/components/blocks/_find-event.sass */
+.daterange__line {
   position: relative;
   border-radius: 4px;
   border: 1px solid #dcdcdc;
@@ -4715,22 +4679,22 @@ SELECT.select::placeholder {
   line-height: 32px;
   font-size: 16px;
 }
-/* line 223, ../styles/components/blocks/_find-event.sass */
-.weekrange__line small {
+/* line 224, ../styles/components/blocks/_find-event.sass */
+.daterange__line small {
   font-size: 13px;
 }
 @media screen and (max-width: 859px) {
-  /* line 215, ../styles/components/blocks/_find-event.sass */
-  .weekrange__line {
+  /* line 216, ../styles/components/blocks/_find-event.sass */
+  .daterange__line {
     font-size: 15px;
   }
-  /* line 228, ../styles/components/blocks/_find-event.sass */
-  .weekrange__line small {
+  /* line 229, ../styles/components/blocks/_find-event.sass */
+  .daterange__line small {
     font-size: 11px;
   }
 }
-/* line 231, ../styles/components/blocks/_find-event.sass */
-.weekrange__line {
+/* line 232, ../styles/components/blocks/_find-event.sass */
+.daterange__line {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4746,8 +4710,8 @@ SELECT.select::placeholder {
   padding: 0 5px;
   overflow: hidden;
 }
-/* line 238, ../styles/components/blocks/_find-event.sass */
-.weekrange__line-tracker {
+/* line 239, ../styles/components/blocks/_find-event.sass */
+.daterange__line-tracker {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4761,9 +4725,10 @@ SELECT.select::placeholder {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  width: 100%;
 }
-/* line 244, ../styles/components/blocks/_find-event.sass */
-.weekrange__line-item {
+/* line 246, ../styles/components/blocks/_find-event.sass */
+.daterange__line-item {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -4771,13 +4736,12 @@ SELECT.select::placeholder {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 14.28571%;
   color: #a1a1a1;
   text-align: center;
   position: relative;
 }
-/* line 252, ../styles/components/blocks/_find-event.sass */
-.weekrange__line-item + .weekrange__line-item:after {
+/* line 254, ../styles/components/blocks/_find-event.sass */
+.daterange__line-item + .daterange__line-item:after {
   content: "";
   position: absolute;
   left: -2px;
@@ -4788,22 +4752,35 @@ SELECT.select::placeholder {
   height: 4px;
   width: 4px;
 }
-/* line 265, ../styles/components/blocks/_find-event.sass */
-.weekrange__visual-line {
+/* line 267, ../styles/components/blocks/_find-event.sass */
+.daterange__visual-line-wr {
+  position: absolute;
+  left: 80px;
+  right: 80px;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+/* line 276, ../styles/components/blocks/_find-event.sass */
+.daterange__visual-line {
   position: absolute;
   left: 0;
-  width: 71.42857%;
+  width: 100%;
   top: 2px;
   bottom: 2px;
-  margin: 0 45px;
+  padding: 0 13px;
+  margin: 0 -13px;
+  box-sizing: content-box;
   background-color: #dcf187;
   opacity: 0.65;
   z-index: 1;
 }
-/* line 276, ../styles/components/blocks/_find-event.sass */
-.weekrange__ui {
+/* line 289, ../styles/components/blocks/_find-event.sass */
+.daterange__ui {
   position: absolute;
-  left: 0;
+  left: 105px;
+  right: 105px;
+  width: auto !important;
   top: 12px;
   height: 30px;
   box-shadow: none;
@@ -4811,37 +4788,37 @@ SELECT.select::placeholder {
   background-color: transparent;
   cursor: pointer;
 }
-/* line 286, ../styles/components/blocks/_find-event.sass */
-.weekrange__ui .noUi-tooltip {
+/* line 303, ../styles/components/blocks/_find-event.sass */
+.daterange__ui .noUi-tooltip {
   white-space: nowrap;
 }
-/* line 289, ../styles/components/blocks/_find-event.sass */
-.weekrange__ui .noUi-base {
+/* line 306, ../styles/components/blocks/_find-event.sass */
+.daterange__ui .noUi-base {
   position: absolute;
-  left: 4%;
-  right: 4%;
+  left: 0;
+  right: 0;
   width: auto;
 }
-/* line 295, ../styles/components/blocks/_find-event.sass */
-.weekrange__ui .noUi-handle {
+/* line 312, ../styles/components/blocks/_find-event.sass */
+.daterange__ui .noUi-handle {
   height: 40px;
   width: 95px;
   border: 0;
   box-shadow: none;
-  margin-left: -47.5px;
-  left: 0;
+  position: absolute;
   top: -5px;
+  left: auto;
   cursor: w-resize;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 308, ../styles/components/blocks/_find-event.sass */
-.weekrange__ui .noUi-handle:after, .weekrange__ui .noUi-handle:before {
+/* line 325, ../styles/components/blocks/_find-event.sass */
+.daterange__ui .noUi-handle:after, .daterange__ui .noUi-handle:before {
   display: none;
 }
-/* line 311, ../styles/components/blocks/_find-event.sass */
-.weekrange__ui .noUi-handle .noUi-tooltip {
+/* line 328, ../styles/components/blocks/_find-event.sass */
+.daterange__ui .noUi-handle .noUi-tooltip {
   position: static;
   border: 0;
   box-shadow: none;
@@ -4853,21 +4830,23 @@ SELECT.select::placeholder {
   font-size: 16px;
   color: #000;
 }
-/* line 322, ../styles/components/blocks/_find-event.sass */
-.weekrange__ui .noUi-handle .noUi-tooltip small {
+/* line 339, ../styles/components/blocks/_find-event.sass */
+.daterange__ui .noUi-handle .noUi-tooltip small {
   font-size: 13px;
 }
-/* line 326, ../styles/components/blocks/_find-event.sass */
-.weekrange__ui .noUi-handle-lower {
+/* line 343, ../styles/components/blocks/_find-event.sass */
+.daterange__ui .noUi-handle-lower {
   padding: 0 10px;
   text-align: left;
   background: url("../images/range-handle-l.png") center no-repeat;
+  left: -95px;
 }
-/* line 331, ../styles/components/blocks/_find-event.sass */
-.weekrange__ui .noUi-handle-upper {
+/* line 351, ../styles/components/blocks/_find-event.sass */
+.daterange__ui .noUi-handle-upper {
   padding: 0 10px;
   text-align: right;
   background: url("../images/range-handle-r.png") center no-repeat;
+  left: 0;
 }
 
 /* line 4, ../styles/components/blocks/_blocks.sass */
@@ -7690,7 +7669,7 @@ SELECT.select::placeholder {
 }
 /* line 125, ../styles/pages/_catalog.sass */
 .filter-main__info {
-  padding: 10px 60px 10px 0;
+  padding: 10px 45px 10px 0;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -7723,28 +7702,45 @@ SELECT.select::placeholder {
   }
 }
 /* line 144, ../styles/pages/_catalog.sass */
-.filter-main .weekrange {
+.filter-main .daterange {
   display: block;
+  width: 550px;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
 }
-@media screen and (max-width: 669px) {
-  /* line 144, ../styles/pages/_catalog.sass */
-  .filter-main .weekrange {
+@media screen and (min-width: 980px) {
+  /* line 151, ../styles/pages/_catalog.sass */
+  .filter-main .daterange__line-item .daterange__day-wr {
     display: none;
   }
 }
-/* line 150, ../styles/pages/_catalog.sass */
+@media screen and (max-width: 979px) {
+  /* line 144, ../styles/pages/_catalog.sass */
+  .filter-main .daterange {
+    width: auto;
+    max-width: none;
+  }
+}
+@media screen and (max-width: 669px) {
+  /* line 144, ../styles/pages/_catalog.sass */
+  .filter-main .daterange {
+    display: none;
+  }
+}
+/* line 163, ../styles/pages/_catalog.sass */
 .filter-main__sort-gr .selector {
   float: right;
 }
 @media screen and (max-width: 479px) {
-  /* line 168, ../styles/pages/_catalog.sass */
+  /* line 181, ../styles/pages/_catalog.sass */
   .filter-main__sort-gr .sort-chkb-wr {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
-  /* line 171, ../styles/pages/_catalog.sass */
+  /* line 184, ../styles/pages/_catalog.sass */
   .filter-main__sort-gr .selector {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -7752,7 +7748,7 @@ SELECT.select::placeholder {
             flex-grow: 1;
   }
 }
-/* line 174, ../styles/pages/_catalog.sass */
+/* line 187, ../styles/pages/_catalog.sass */
 .filter-main__params-wr {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -7769,31 +7765,31 @@ SELECT.select::placeholder {
   position: relative;
   z-index: 2;
 }
-/* line 181, ../styles/pages/_catalog.sass */
+/* line 194, ../styles/pages/_catalog.sass */
 .filter-main__params-wr .datepicker {
   width: 100%;
 }
-/* line 184, ../styles/pages/_catalog.sass */
+/* line 197, ../styles/pages/_catalog.sass */
 .filter-main__param {
   text-align: center;
   z-index: 2;
 }
-/* line 190, ../styles/pages/_catalog.sass */
+/* line 203, ../styles/pages/_catalog.sass */
 .filter-main__param + * {
   border-left: 1px solid #e6e6e6;
 }
-/* line 194, ../styles/pages/_catalog.sass */
+/* line 207, ../styles/pages/_catalog.sass */
 .filter-main__param:first-child .filter-main__param-head {
   padding-left: 5px;
 }
-/* line 198, ../styles/pages/_catalog.sass */
+/* line 211, ../styles/pages/_catalog.sass */
 .filter-main__param._open .filter-main__param-body {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
-/* line 203, ../styles/pages/_catalog.sass */
+/* line 216, ../styles/pages/_catalog.sass */
 .filter-main__param-head {
   font-size: 18px;
   line-height: 30px;
@@ -7801,26 +7797,26 @@ SELECT.select::placeholder {
   position: relative;
   padding: 8px 25px;
 }
-/* line 210, ../styles/pages/_catalog.sass */
+/* line 223, ../styles/pages/_catalog.sass */
 .filter-main__param-head:hover .filter-main__param-head-txt:after {
   border-color: #333;
   color: #333;
 }
 @media screen and (max-width: 767px) {
-  /* line 203, ../styles/pages/_catalog.sass */
+  /* line 216, ../styles/pages/_catalog.sass */
   .filter-main__param-head {
     font-size: 16px;
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-/* line 224, ../styles/pages/_catalog.sass */
+/* line 237, ../styles/pages/_catalog.sass */
 .filter-main__param-head-txt {
   position: relative;
   padding-right: 30px;
   display: block;
 }
-/* line 229, ../styles/pages/_catalog.sass */
+/* line 242, ../styles/pages/_catalog.sass */
 .filter-main__param-head-txt:after {
   border-radius: 3px;
   border: 1px solid #e2e2e2;
@@ -7836,7 +7832,7 @@ SELECT.select::placeholder {
   -webkit-transition: 300ms;
           transition: 300ms;
 }
-/* line 246, ../styles/pages/_catalog.sass */
+/* line 259, ../styles/pages/_catalog.sass */
 .filter-main__param-body {
   position: absolute;
   top: 100%;
@@ -7855,7 +7851,7 @@ SELECT.select::placeholder {
   -webkit-transition: 300ms;
           transition: 300ms;
 }
-/* line 263, ../styles/pages/_catalog.sass */
+/* line 276, ../styles/pages/_catalog.sass */
 .filter-main__param-body:after {
   content: "";
   position: absolute;
@@ -7866,29 +7862,29 @@ SELECT.select::placeholder {
   border-style: solid;
   border-color: transparent transparent #fff transparent;
 }
-/* line 273, ../styles/pages/_catalog.sass */
+/* line 286, ../styles/pages/_catalog.sass */
 .filter-main__param-body--who {
   width: 470px;
 }
-/* line 275, ../styles/pages/_catalog.sass */
+/* line 288, ../styles/pages/_catalog.sass */
 .filter-main__param-body--who:after {
   left: 65px;
 }
-/* line 278, ../styles/pages/_catalog.sass */
+/* line 291, ../styles/pages/_catalog.sass */
 .filter-main__param-body--interes {
   width: 720px;
 }
-/* line 280, ../styles/pages/_catalog.sass */
+/* line 293, ../styles/pages/_catalog.sass */
 .filter-main__param-body--interes:after {
   left: 240px;
 }
 @media screen and (max-width: 767px) {
-  /* line 278, ../styles/pages/_catalog.sass */
+  /* line 291, ../styles/pages/_catalog.sass */
   .filter-main__param-body--interes {
     width: 560px;
   }
 }
-/* line 286, ../styles/pages/_catalog.sass */
+/* line 299, ../styles/pages/_catalog.sass */
 .filter-main__param-body--dates {
   width: 340px;
   left: 230px;
@@ -7900,12 +7896,12 @@ SELECT.select::placeholder {
   .filter-main {
     border: 0;
   }
-  /* line 296, ../styles/pages/_catalog.sass */
+  /* line 309, ../styles/pages/_catalog.sass */
   .filter-main .wr {
     height: auto;
     display: block;
   }
-  /* line 305, ../styles/pages/_catalog.sass */
+  /* line 320, ../styles/pages/_catalog.sass */
   .filter-main__params-wr {
     display: none;
     background-color: #fff;
@@ -7918,15 +7914,15 @@ SELECT.select::placeholder {
     -webkit-transition: -webkit-transform 600ms;
             transition: transform 600ms;
   }
-  /* line 318, ../styles/pages/_catalog.sass */
+  /* line 333, ../styles/pages/_catalog.sass */
   .filter-main__param {
     border-left: 0;
   }
-  /* line 321, ../styles/pages/_catalog.sass */
+  /* line 336, ../styles/pages/_catalog.sass */
   .filter-main__param-head {
     display: none;
   }
-  /* line 324, ../styles/pages/_catalog.sass */
+  /* line 339, ../styles/pages/_catalog.sass */
   .filter-main__param-body {
     position: relative;
     top: auto;
@@ -7942,27 +7938,27 @@ SELECT.select::placeholder {
     margin-left: -15px;
     margin-right: -15px;
   }
-  /* line 338, ../styles/pages/_catalog.sass */
+  /* line 353, ../styles/pages/_catalog.sass */
   .filter-main__param-body:after {
     display: none;
   }
-  /* line 341, ../styles/pages/_catalog.sass */
+  /* line 356, ../styles/pages/_catalog.sass */
   .filter-main .chkb-dropdown {
     margin-bottom: 0;
   }
-  /* line 345, ../styles/pages/_catalog.sass */
+  /* line 360, ../styles/pages/_catalog.sass */
   body._m-filter-open .filter-main .filter-main__params-wr {
     display: block;
   }
 }
 @media screen and (max-width: 579px) {
-  /* line 349, ../styles/pages/_catalog.sass */
+  /* line 364, ../styles/pages/_catalog.sass */
   .filter-main__params-wr {
     position: fixed;
     top: 48px;
     margin-top: 44px;
   }
-  /* line 356, ../styles/pages/_catalog.sass */
+  /* line 371, ../styles/pages/_catalog.sass */
   body._search-open .filter-main .filter-main__params-wr {
     -webkit-transform: translateY(69px);
             transform: translateY(69px);
