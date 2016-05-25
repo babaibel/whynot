@@ -137,82 +137,25 @@
 						По дате
 					</div>
 
-					<div class="weekrange js-weekrange">
+					<div class="daterange js-daterange" >
 
-						<div class="weekrange__arr weekrange__arr--left _disabled js-weekrange__arr-l">
-							<span class="iconic iconic--arrow-left"></span>
-						</div>
-						<div class="weekrange__arr weekrange__arr--right js-weekrange__arr-r">
-							<span class="iconic iconic--arrow-right"></span>
-						</div>
+						<div class="daterange__line-wr">
 
-						<div class="weekrange__line-wr">
+							<div class="daterange__line">
 
-							<div class="weekrange__line">
-
-
-								<div class="weekrange__line-tracker js-weekrange-tracker">
-									<div class="weekrange__visual-line js-weekrange-v-line"></div>
-
-									<div class="weekrange__line-item js-weekrange-date">
-										15 <small>фев, пн</small>
-									</div>
-									<div class="weekrange__line-item js-weekrange-date">
-										16 <small>фев, вт</small>
-									</div>
-									<div class="weekrange__line-item js-weekrange-date">
-										17 <small>фев, ср</small>
-									</div>
-									<div class="weekrange__line-item js-weekrange-date">
-										18 <small>фев, чт</small>
-									</div>
-									<div class="weekrange__line-item js-weekrange-date">
-										19 <small>фев, пт</small>
-									</div>
-									<div class="weekrange__line-item js-weekrange-date">
-										20 <small>фев, <span class="h--c-red">сб</span></small>
-									</div>
-									<div class="weekrange__line-item js-weekrange-date">
-										21 <small>фев, <span class="h--c-red">вс</span></small>
-									</div>
-
-
-									<div class="weekrange__line-item js-weekrange-date">
-										22 <small>фев, пн</small>
-									</div>
-
-									<div class="weekrange__line-item js-weekrange-date">
-										23 <small>фев, вт</small>
-									</div>
-
-									<div class="weekrange__line-item js-weekrange-date">
-										24 <small>фев, ср</small>
-									</div>
-
-									<div class="weekrange__line-item js-weekrange-date">
-										25 <small>фев, чт</small>
-									</div>
-
-									<div class="weekrange__line-item js-weekrange-date">
-										26 <small>фев, пт</small>
-									</div>
-
-									<div class="weekrange__line-item js-weekrange-date">
-										27 <small>фев, <span class="h--c-red">сб</span></small>
-									</div>
-
-									<div class="weekrange__line-item js-weekrange-date">
-										28 <small>фев, <span class="h--c-red">вс</span></small>
+								<div class="daterange__line-tracker js-daterange-tracker">
+									<div class="daterange__visual-line-wr">
+										<div class="daterange__visual-line js-daterange-v-line"></div>
 									</div>
 
 								</div>
 							</div>
 
-							<div class="weekrange__ui js-weekrange-ui"></div>
+							<div class="daterange__ui js-daterange-ui"></div>
 
 						</div>
 
-						<!--<input type="hidden" class="js-f-events-date-max">-->
+						<input type="hidden" class="js-daterange_input">
 					</div>
 
 				</div>
@@ -223,7 +166,7 @@
 					</div>
 
 					<div class="chkb-dropdown__options-gr">
-						<div class="datepicker-wr datepicker-wr--inline js-weekrange-datepicker"
+						<div class="datepicker-wr datepicker-wr--inline js-daterange-datepicker"
 							 data-inline="true"
 							 data-range="true" data-multiple-dates-separator=" - "></div>
 					</div>

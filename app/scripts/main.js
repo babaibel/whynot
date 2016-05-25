@@ -104,7 +104,7 @@ $(function () {
     if (!$btn.length) return;
 
     $btn.on('click', function() {
-        targetIt = $(this);
+        var targetIt = $(this);
         targetIt.closest('.materials-grid__col').addClass("_deleting");
         setTimeout(function() {
 
@@ -409,15 +409,14 @@ $(function () {
     var $phone = $('.js-phone-validate');
     if (!$phone.length) return;
 
-    // TODO
-    //$phone.inputmask({"mask": "+7 (999) 999-9999"});
+    $phone.inputmask({"mask": "+7 (999) 999-9999"});
 });
 
 $(function () {
     var $url = $('.js-url-validate');
     if (!$url.length) return;
 
-    $url.inputmask("http://pochemybi.net/aaaaaaaaaaaaaaa"); 
+    $url.inputmask("http://pochemybi.net/aaaaaaaaaaaaaaa");
 });
 
 $(function () {
@@ -428,8 +427,9 @@ $(function () {
         metroListOpt=[];
 
     $metroList.each(function() {
-        color = $(this).data('color');
-        name = $(this).val();
+        var color = $(this).data('color'),
+            name = $(this).val();
+
         metroListOpt.push({color: color,name:name});
     });
 
