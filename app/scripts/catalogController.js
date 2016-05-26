@@ -62,22 +62,22 @@ $(function () {
     var $cardHidden = $('.js-cards-hidden');
     if (!$cardHidden.length) return;
 
-    function onScroll2(pPercent) {
-        var scroll = $W.scrollTop(),
-            $actTabCards = $cardHidden.find('.js-card'),
-            $actTabSliders = $cardHidden.find('.js-actions-sl'),
-            percent = pPercent || 0.8;
+    function onScroll2() {
+        var scroll2 = $W.scrollTop(),
+            $actTabCards = $cardHidden.find('.js-card:not(._animated)'),
+            $actTabSliders = $cardHidden.find('.js-actions-sl:not(._animated)'),
+            percent2 = 0.8;
 
         $actTabCards.each(function () {
             var $thisCard = $(this);
 
-            if (elemInView($thisCard.parent(), percent) || scroll > $thisCard.offset().top) $thisCard.addClass('_animated')
+            if (elemInView($thisCard.parent(), percent2) || scroll2 > $thisCard.offset().top) $thisCard.addClass('_animated')
         });
 
         $actTabSliders.each(function () {
             var $thisSlider = $(this);
 
-            if (elemInView($thisSlider, percent) || scroll > $thisSlider.offset().top) $thisSlider.addClass('_animated')
+            if (elemInView($thisSlider, percent2) || scroll2 > $thisSlider.offset().top) $thisSlider.addClass('_animated')
         });
     }
 
