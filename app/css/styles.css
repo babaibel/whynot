@@ -4755,28 +4755,31 @@ SELECT.select::placeholder {
 /* line 267, ../styles/components/blocks/_find-event.sass */
 .daterange__visual-line-wr {
   position: absolute;
-  left: 4%;
-  right: 4%;
+  left: 80px;
+  right: 80px;
   top: 0;
   bottom: 0;
   z-index: 1;
 }
-/* line 275, ../styles/components/blocks/_find-event.sass */
+/* line 276, ../styles/components/blocks/_find-event.sass */
 .daterange__visual-line {
   position: absolute;
   left: 0;
   width: 100%;
   top: 2px;
   bottom: 2px;
+  padding: 0 13px;
+  margin: 0 -13px;
+  box-sizing: content-box;
   background-color: #dcf187;
   opacity: 0.65;
   z-index: 1;
 }
-/* line 286, ../styles/components/blocks/_find-event.sass */
+/* line 289, ../styles/components/blocks/_find-event.sass */
 .daterange__ui {
   position: absolute;
-  left: 48px;
-  right: 48px;
+  left: 105px;
+  right: 105px;
   width: auto !important;
   top: 12px;
   height: 30px;
@@ -4785,36 +4788,36 @@ SELECT.select::placeholder {
   background-color: transparent;
   cursor: pointer;
 }
-/* line 300, ../styles/components/blocks/_find-event.sass */
+/* line 303, ../styles/components/blocks/_find-event.sass */
 .daterange__ui .noUi-tooltip {
   white-space: nowrap;
 }
-/* line 303, ../styles/components/blocks/_find-event.sass */
+/* line 306, ../styles/components/blocks/_find-event.sass */
 .daterange__ui .noUi-base {
   position: absolute;
   left: 0;
   right: 0;
   width: auto;
 }
-/* line 309, ../styles/components/blocks/_find-event.sass */
+/* line 312, ../styles/components/blocks/_find-event.sass */
 .daterange__ui .noUi-handle {
   height: 40px;
   width: 95px;
   border: 0;
   box-shadow: none;
-  margin-left: -47.5px;
-  left: 0;
+  position: absolute;
   top: -5px;
+  left: auto;
   cursor: w-resize;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 322, ../styles/components/blocks/_find-event.sass */
+/* line 325, ../styles/components/blocks/_find-event.sass */
 .daterange__ui .noUi-handle:after, .daterange__ui .noUi-handle:before {
   display: none;
 }
-/* line 325, ../styles/components/blocks/_find-event.sass */
+/* line 328, ../styles/components/blocks/_find-event.sass */
 .daterange__ui .noUi-handle .noUi-tooltip {
   position: static;
   border: 0;
@@ -4827,21 +4830,23 @@ SELECT.select::placeholder {
   font-size: 16px;
   color: #000;
 }
-/* line 336, ../styles/components/blocks/_find-event.sass */
+/* line 339, ../styles/components/blocks/_find-event.sass */
 .daterange__ui .noUi-handle .noUi-tooltip small {
   font-size: 13px;
 }
-/* line 340, ../styles/components/blocks/_find-event.sass */
+/* line 343, ../styles/components/blocks/_find-event.sass */
 .daterange__ui .noUi-handle-lower {
   padding: 0 10px;
   text-align: left;
   background: url("../images/range-handle-l.png") center no-repeat;
+  left: -95px;
 }
-/* line 346, ../styles/components/blocks/_find-event.sass */
+/* line 351, ../styles/components/blocks/_find-event.sass */
 .daterange__ui .noUi-handle-upper {
   padding: 0 10px;
   text-align: right;
   background: url("../images/range-handle-r.png") center no-repeat;
+  left: 0;
 }
 
 /* line 4, ../styles/components/blocks/_blocks.sass */

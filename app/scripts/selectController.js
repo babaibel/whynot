@@ -73,9 +73,6 @@
     if(!$select.length) return;
 
     $select.customSelector({
-        beforeSelect: function(){
-            console.log('before select')
-        }
     });
 
 })(jQuery);

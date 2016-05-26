@@ -73,19 +73,19 @@ $(function () {
             }
 
             /*itemLayout = ymaps.templateLayoutFactory.createClass(
-                '<div class="mapEvent mapEvent--' + classMod + '"></div>', {
-                    build: function () {
-                        this.constructor.superclass.build.call(this);
-                        this._$element = $('.mapEvent');
-                        //this._$element.find('.js-doc-card-close')
-                        //    .on('click', $.proxy(this.onCloseClick, this));
-                    },
-                    onCloseClick: function (e) {
-                        e.preventDefault();
-                        this.events.fire('userclose');
-                    }
-                }
-            );*/
+             '<div class="mapEvent mapEvent--' + classMod + '"></div>', {
+             build: function () {
+             this.constructor.superclass.build.call(this);
+             this._$element = $('.mapEvent');
+             //this._$element.find('.js-doc-card-close')
+             //    .on('click', $.proxy(this.onCloseClick, this));
+             },
+             onCloseClick: function (e) {
+             e.preventDefault();
+             this.events.fire('userclose');
+             }
+             }
+             );*/
 
             eventPlacemarks[i] = new ymaps.Placemark([elem.lat, elem.lon],
                 {
@@ -99,7 +99,6 @@ $(function () {
                     //balloonLayout: balloonContentLayout,
                     balloonPanelMaxMapArea: 0
                 });
-
 
 
         });
@@ -145,7 +144,7 @@ $(function () {
         myMap.controls.add('zoomControl', {float: 'none', position: {top: 215, right: 20}});
         myMap.behaviors.disable('scrollZoom');
 
-        clusterIcon = function(){
+        clusterIcon = function () {
             return ymaps.templateLayoutFactory.createClass(
                 '<div class="eventsCluster">{{ properties.geoObjects.length }}</div>');
         };
@@ -180,12 +179,11 @@ $(function () {
     })
 });
 
+
 // Catalog map
-
-
 (function ($) {
 
-    function CatalogMap($elem,paramSettings){
+    function CatalogMap($elem, paramSettings) {
         this.elem = $elem;
         this.elemId = $elem.attr('id');
         this.yMap;
@@ -193,7 +191,7 @@ $(function () {
         this.userLocation;
         this.settings = {};
 
-        this.settings = $.extend( this.settings, paramSettings);
+        this.settings = $.extend(this.settings, paramSettings);
 
         // сокращение доступа к параметрам объекта
         var thisObj = this,
@@ -230,7 +228,7 @@ $(function () {
             }).then(function (result) {
                 thisObj.userLocation = result.geoObjects.get(0).geometry._coordinates;
 
-                if(pCreateMap){
+                if (pCreateMap) {
                     thisObj.createMap();
                     thisObj.setData();
                 }
@@ -242,22 +240,31 @@ $(function () {
                 mapStateAutoApply: true
             }).then(function (result) {
                 thisObj.userLocation = result.geoObjects.get(0).geometry._coordinates;
-
-                if(pCreateMap){
+                if (pCreateMap) {
                     thisObj.createMap();
                     thisObj.setData();
                 }
             });
         }
+
+
     };
 
     CatalogMap.prototype.setData = function (pQuery) {
-        var thisObj = this;
+        var thisObj = this,
+            filterData = $('.js-filter-form').serialize(),
+            fullData = filterData + "&lat=" + thisObj.userLocation[0] + "&lon=" + thisObj.userLocation[1];
+
+        if (pQuery) {
+            for (var p in pQuery) {
+                fullData += '&' + p + '=' + pQuery[p];
+            }
+        }
 
         $.ajax({
             url: thisObj.settings.url,
             type: 'GET',
-            data: {'lat': thisObj.userLocation[0],'lon': thisObj.userLocation[1]},
+            data: fullData,
             async: false,
         }).success(function (data) {
             var parsedData = JSON.parse(data);
@@ -267,7 +274,8 @@ $(function () {
     };
 
     CatalogMap.prototype.createMap = function () {
-        var thisObj = this;
+        var thisObj = this,
+            clusterIcon;
 
         thisObj.yMap = new ymaps.Map(thisObj.elemId, {
             center: thisObj.userLocation,
@@ -277,40 +285,13 @@ $(function () {
 
         thisObj.yMap.controls.add('zoomControl',
             {float: 'none', position: {top: 130, left: 20}});
-    };
 
-
-    // Установка точек //, кроме точки пользователя
-    CatalogMap.prototype.setMarks = function () {
-        var thisObj = this,
-            //settings = thisObj.settings,
-            currentMap = thisObj.yMap,
-            placemarksData = thisObj.currentData.marks,
-            placemarksArray = [],
-            userPlacemark,
-            clusterer,
-            clusterIcon;
-
-        userPlacemark = new ymaps.Placemark(thisObj.userLocation,
-            {
-                balloonContentHeader: 'Вы здесь!',
-            }, {
-                iconLayout: 'default#image',
-                iconImageHref: '../images/svg/marker.svg',
-                iconImageSize: [44, 44],
-                iconImageOffset: [-22, -22],
-                balloonPanelMaxMapArea: 0
-            });
-
-        currentMap.geoObjects.add(userPlacemark);
-        //myMap.setCenter(pCoords);
-
-        clusterIcon = function(){
+        clusterIcon = function () {
             return ymaps.templateLayoutFactory.createClass(
                 '<div class="eventsCluster">{{ properties.geoObjects.length }}</div>');
         };
 
-        clusterer = new ymaps.Clusterer({
+        var clusterer = new ymaps.Clusterer({
             //preset: 'twirl#invertedGreenClusterIcons',
             groupByCoordinates: false,
             clusterHideIconOnBalloonOpen: false,
@@ -329,7 +310,35 @@ $(function () {
             )
         });
 
-        //clusterer.removeAll();
+        thisObj.clusterer = clusterer;
+
+        thisObj.yMap.geoObjects.add(thisObj.clusterer);
+    };
+
+
+    // Установка точек //, кроме точки пользователя
+    CatalogMap.prototype.setMarks = function () {
+        var thisObj = this,
+        //settings = thisObj.settings,
+            currentMap = thisObj.yMap,
+            placemarksData = thisObj.currentData.marks,
+            placemarksArray = [],
+            userPlacemark;
+
+        userPlacemark = new ymaps.Placemark(thisObj.userLocation,
+            {
+                balloonContentHeader: 'Вы здесь!',
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: '../images/svg/marker.svg',
+                iconImageSize: [44, 44],
+                iconImageOffset: [-22, -22],
+                balloonPanelMaxMapArea: 0
+            });
+
+        currentMap.geoObjects.add(userPlacemark);
+
+        thisObj.clusterer.removeAll();
 
         $.each(placemarksData, function (i, elem) {
             var item,
@@ -373,15 +382,13 @@ $(function () {
 
         });
 
-        clusterer.add(placemarksArray);
-        thisObj.yMap.geoObjects.add(clusterer);
+        thisObj.clusterer.add(placemarksArray);
+        thisObj.yMap.geoObjects.add(thisObj.clusterer);
 
     };
 
     CatalogMap.prototype.renewData = function (pQuery) {
-        // TODO дописать функционал, добавить ивенты при сортировке и настроить удаление старых меток
         var thisObj = this;
-
         thisObj.setData(pQuery);
     };
 
@@ -389,7 +396,7 @@ $(function () {
     // jquery plugin
     $.fn.catalogMap = function (settings) {
         var $this = $(this),
-            object = new CatalogMap($this,settings);
+            object = new CatalogMap($this, settings);
 
         return object;
     }

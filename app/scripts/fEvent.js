@@ -17,7 +17,7 @@ $(function () {
             url: dataUrl,
             data: $form.serialize(),
             success: function (data) {
-                var parsedData = JSON.parse(data)
+                var parsedData = JSON.parse(data);
 
                 $fEventCounter.text(parsedData.eventsCountStr);
             }

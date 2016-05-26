@@ -124,6 +124,18 @@ $(function () {
         $filterToggle = $('.js-filter__mob-toggle');
     if (!$filter.length && !$filterToggle.length) return;
 
+    var $filterForm = $('.js-filter-form'),
+        $daterangeUI = $filterForm.find('.js-daterange-ui'),
+        $selector = $('.js-selector--in-filter');
+
+
+
+    $selector.customSelector({
+        beforeSelect: function(){
+            _POPUPS['catMap'].map.renewData();
+        }
+    });
+
     $filterToggle.bind('click',function(){
         $B.toggleClass('_m-filter-open');
 
@@ -137,4 +149,10 @@ $(function () {
             }
         })
     })
+
+    $W.on('dateRangesInit',function(){
+        $daterangeUI[0].noUiSlider.on('slide', function (values, handleNumb, numbValues) {
+            _POPUPS['catMap'].map.renewData();
+        });
+    });
 });
