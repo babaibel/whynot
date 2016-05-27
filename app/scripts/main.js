@@ -206,47 +206,32 @@ $(function () {
     });
 });
 
-// Плавная подгрузка комментириев
+// подгрузка комментириев
 $(function () {
-    var $btn = $('.js-show-comment');
-    if (!$btn.length) return;
+    var $moreCommentsBtn = $('.js-show-comment');
+    if (!$moreCommentsBtn.length) return;
 
-    $btn.on('click', function() {
-        targetIt = $(this);
-        targetIt.addClass('_animation');
+    var daraMoreBtnUrl = $moreCommentsBtn.data('url'),
+        $loadOutCont = $('.js-comment-hidden');
 
-        // Заглушка на время загрузки
-        setTimeout(function() {
-            targetIt.removeClass('_animation');
-            $('.js-comment-hidden ._hidden').css('display','block');
+    $moreCommentsBtn.on('click', function() {
 
-            // Для плавного появления
+        $.ajax({
+            type: 'GET',
+            url: daraMoreBtnUrl,
+            success: function (html) {
+
+                $loadOutCont.append(html);
+                showComments();
+            }
+        });
+
+        function showComments() {
+            
             setTimeout(function() {
-                $('.js-comment-hidden ._hidden').removeClass('_hidden');
+                $loadOutCont.find('._hidden').removeClass('_hidden');
             }, 100);
-        }, 1500);
-    });
-});
-
-// Плавная подгрузка карточек товара
-$(function () {
-    var $btn = $('.js-show-cards');
-    if (!$btn.length) return;
-
-    $btn.on('click', function() {
-        targetIt = $(this);
-        targetIt.addClass('_animation');
-
-        // Заглушка на время загрузки
-        setTimeout(function() {
-            targetIt.removeClass('_animation');
-            $('.js-cards-hidden ._hidden').css('display','flex');
-
-            // Для плавного появления
-            setTimeout(function() {
-                $('.js-cards-hidden ._hidden').removeClass('_hidden');
-            }, 100);
-        }, 1500);
+        }
     });
 });
 

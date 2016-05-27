@@ -59,8 +59,12 @@ $(function () {
 });
 
 $(function () {
-    var $cardHidden = $('.js-cards-hidden');
+    var $cardHidden = $('.js-catalog-loadOut');
     if (!$cardHidden.length) return;
+
+    var $moreBtn = $('.js-show-more'),
+        daraMoreBtnUrl = $moreBtn.data('url'),
+        $loadOutCont = $('.js-catalog-loadOut');
 
     function onScroll2() {
         var scroll2 = $W.scrollTop(),
@@ -80,6 +84,20 @@ $(function () {
             if (elemInView($thisSlider, percent2) || scroll2 > $thisSlider.offset().top) $thisSlider.addClass('_animated')
         });
     }
+
+    $moreBtn.on('click', function() {
+
+        $.ajax({
+            type: 'GET',
+            url: daraMoreBtnUrl,
+            success: function (html) {
+
+                $loadOutCont.append(html);
+
+                onScroll2(1);
+            }
+        });
+    });
 
     $W.scroll(function () {
         onScroll2();

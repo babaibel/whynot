@@ -12,7 +12,11 @@
 		<div class="materials-wr">
 			<div class="materials-wr__tab js-mr-cat-tab material-anim-cont _active">
 				<?php include "blocks/materialsRowLoadOut.php";?>
-				<?php include "blocks/actionsSlider.php";?>
+				<div class="materials-grid">
+					<div class="materials-grid__col materials-grid__col--slider">
+						<?php include "blocks/actionsSlider.php";?>
+					</div>
+				</div>
 				<?php include "blocks/materialsRowLoadOut.php";?>
 			</div>
 			<div class="materials-wr__tab js-mr-cat-tab material-anim-cont">

@@ -5,7 +5,17 @@
 		<a class="card js-card" href="#!">
 			<div class="card__top">
 				<div class="card__img" style="background-image: url(../images/userfiles/card1.jpg);">
-					<?php include 'components/post-favorite.php'; ?>
+					<div class="card__bookmark js-bookmark">
+						<span class="icon iconic--bookmark"></span>
+					</div>
+					<div class="card__tooltip js-bookmark-tooltip">
+						<div class="tooltip tooltip--bookmark">
+							<div class="tooltip__close">
+								<span class="icon iconic--cross js-close-tooltip"></span>
+							</div>
+							<div class="tooltip__text">Мероприятие добавлено в избранное</div>
+						</div>
+					</div>
 				</div>
 				<div class="card__title">
 					<span class="link-und link-und--green-d">Катание на багги «Экстрим под рев мотора»</span>
@@ -65,7 +75,17 @@
 		<a class="card js-card" href="#!">
 			<div class="card__top">
 				<div class="card__img" style="background-image: url(../images/userfiles/card2.jpg);">
-					<?php include 'components/post-favorite.php'; ?>
+					<div class="card__bookmark js-bookmark">
+					<span class="icon iconic--bookmark"></span>
+				</div>
+				<div class="card__tooltip js-bookmark-tooltip">
+					<div class="tooltip tooltip--bookmark">
+						<div class="tooltip__close">
+							<span class="icon iconic--cross js-close-tooltip"></span>
+						</div>
+						<div class="tooltip__text">Мероприятие добавлено в избранное</div>
+					</div>
+				</div>
 				</div>
 				<div class="card__title">
 							<span class="link-und link-und--green-d">
@@ -127,7 +147,17 @@
 		<a class="card js-card" href="#!">
 			<div class="card__top">
 				<div class="card__img" style="background-image: url(../images/userfiles/card3.jpg);">
-					<?php include 'components/post-favorite.php'; ?>
+					<div class="card__bookmark js-bookmark">
+						<span class="icon iconic--bookmark"></span>
+					</div>
+					<div class="card__tooltip js-bookmark-tooltip">
+						<div class="tooltip tooltip--bookmark">
+							<div class="tooltip__close">
+								<span class="icon iconic--cross js-close-tooltip"></span>
+							</div>
+							<div class="tooltip__text">Мероприятие добавлено в избранное</div>
+						</div>
+					</div>
 				</div>
 				<div class="card__title">
 							<span class="link-und link-und--green-d">
@@ -189,7 +219,17 @@
 		<a class="card js-card" href="#!">
 			<div class="card__top">
 				<div class="card__img" style="background-image: url(../images/userfiles/card4.jpg);">
-					<?php include 'components/post-favorite.php'; ?>
+					<div class="card__bookmark js-bookmark">
+						<span class="icon iconic--bookmark"></span>
+					</div>
+					<div class="card__tooltip js-bookmark-tooltip">
+						<div class="tooltip tooltip--bookmark">
+							<div class="tooltip__close">
+								<span class="icon iconic--cross js-close-tooltip"></span>
+							</div>
+							<div class="tooltip__text">Мероприятие добавлено в избранное</div>
+						</div>
+					</div>
 				</div>
 				<div class="card__title">
 							<span class="link-und link-und--green-d">
