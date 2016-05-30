@@ -30,7 +30,9 @@ $(function () {
     var $daterange = $('.js-daterange');
     if (!$daterange.length) return;
 
-    var dTevent = new Event('dateRangesInit');
+    // var dTevent = new Event('dateRangesInit');
+    var dTevent = document.createEvent("dateRangesInit");
+    dTevent.initEvent("click", true, true);
 
     $daterange.each(function(){
         var $this = $(this),

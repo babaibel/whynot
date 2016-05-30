@@ -297,8 +297,10 @@
 			font-size: 21px
 			line-height: 30px
 			margin-bottom: 22px
-			
-
+	
+	// .materials-grid__col
+	// 	+max-screen($screenM)
+	// 		width: 50%
 
 	.btn
 		display: table
@@ -796,3 +798,11 @@
 		right: 0
 
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	.card._animated
+		transform: rotateX(0)!important
+		display: block!important
+
+	.materials-grid .actions-sl._animated
+		transform: rotateX(0)!important
+		display: block!important
