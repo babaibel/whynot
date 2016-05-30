@@ -7525,9 +7525,10 @@ SELECT.select::placeholder {
     -webkit-transform: rotateX(0) !important;
             transform: rotateX(0) !important;
     display: block !important;
+    width: 100% !important;
   }
 
-  /* line 806, ../styles/pages/_index.sass */
+  /* line 807, ../styles/pages/_index.sass */
   .materials-grid .actions-sl._animated {
     -webkit-transform: rotateX(0) !important;
             transform: rotateX(0) !important;

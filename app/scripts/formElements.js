@@ -31,8 +31,8 @@ $(function () {
     if (!$daterange.length) return;
 
     // var dTevent = new Event('dateRangesInit');
-    var dTevent = document.createEvent("dateRangesInit");
-    dTevent.initEvent("click", true, true);
+    var dTevent = document.createEvent("Event");
+    dTevent.initEvent("dateRangesInit", false, false);
 
     $daterange.each(function(){
         var $this = $(this),
