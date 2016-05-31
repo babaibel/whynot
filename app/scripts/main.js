@@ -216,22 +216,29 @@ $(function () {
 
     $moreCommentsBtn.on('click', function() {
 
-        $.ajax({
-            type: 'GET',
-            url: daraMoreBtnUrl,
-            success: function (html) {
+        $moreCommentsBtn.addClass('_animation');
 
-                $loadOutCont.append(html);
-                showComments();
+        setTimeout(function() {
+
+            $.ajax({
+                type: 'GET',
+                url: daraMoreBtnUrl,
+                success: function (html) {
+
+                    $loadOutCont.append(html);
+                    showComments();
+                }
+            });
+
+            function showComments() {
+                
+                setTimeout(function() {
+                    $loadOutCont.find('._hidden').removeClass('_hidden');
+                    $moreCommentsBtn.removeClass('_animation');
+                }, 100);
             }
-        });
 
-        function showComments() {
-            
-            setTimeout(function() {
-                $loadOutCont.find('._hidden').removeClass('_hidden');
-            }, 100);
-        }
+        }, 1500);
     });
 });
 

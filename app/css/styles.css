@@ -7534,6 +7534,11 @@ SELECT.select::placeholder {
             transform: rotateX(0) !important;
     display: block !important;
   }
+
+  /* line 811, ../styles/pages/_index.sass */
+  .page-404 .layout {
+    height: 100%;
+  }
 }
 /* line 1, ../styles/pages/_catalog.sass */
 .catalog-page {
