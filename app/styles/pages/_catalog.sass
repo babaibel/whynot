@@ -109,6 +109,16 @@ $filter_h: 96px
 			padding-top: 25px
 			padding-bottom: 15px
 
+	+min-screen($screenM)
+		.daterange__line-item
+			&:nth-child(3n+1)
+				display: none
+
+	+screen($screenSM, $screenMM)
+		.daterange__line-item
+			&:nth-child(3n+1)
+				display: none
+
 
 	&--line2
 		border: 0 none
