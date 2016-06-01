@@ -108,18 +108,25 @@ $(function () {
     }
 
     function setUserLocation() {
+        var status = false;
         // Узнаём и устанавливаем координаты
 
         // засчёт браузера
         if (navigator.geolocation && navigator.geolocation.getCurrentPosition) {
-            geolocation.get({
-                provider: 'browser',
-                mapStateAutoApply: true
-            }).then(function (result) {
-                userCoordinates = result.geoObjects.get(0).geometry._coordinates;
-                setCenter(userCoordinates);
-            });
-        } else {
+            if(!status){
+                geolocation.get({
+                    provider: 'browser',
+                    mapStateAutoApply: true
+                }).then(function (result) {
+                    status = true;
+                    userCoordinates = result.geoObjects.get(0).geometry._coordinates;
+                    setCenter(userCoordinates);
+                    console.log('browser detection')
+                });
+            }
+        }
+
+        if(!status){
             // по IP
             geolocation.get({
                 provider: 'yandex',
@@ -127,6 +134,7 @@ $(function () {
             }).then(function (result) {
                 userCoordinates = result.geoObjects.get(0).geometry._coordinates;
                 setCenter(userCoordinates);
+                console.log('ip detection')
             });
         }
 
@@ -216,24 +224,28 @@ $(function () {
     // Т.к. у ymaps api нет возможности выключить асинхронность, то карта создаётся в этмо методе, после ответа сервера.
     CatalogMap.prototype.setUserLocation = function (pCreateMap) {
         var thisObj = this,
-            geolocation = ymaps.geolocation;
+            geolocation = ymaps.geolocation,
+            status;
 
         // Узнаём и устанавливаем координаты
 
         // засчёт браузера
         if (navigator.geolocation && navigator.geolocation.getCurrentPosition) {
-            geolocation.get({
-                provider: 'browser',
-                mapStateAutoApply: true
-            }).then(function (result) {
-                thisObj.userLocation = result.geoObjects.get(0).geometry._coordinates;
+            if(!status){
+                geolocation.get({
+                    provider: 'browser',
+                    mapStateAutoApply: true
+                }).then(function (result) {
+                    thisObj.userLocation = result.geoObjects.get(0).geometry._coordinates;
 
-                if (pCreateMap) {
-                    thisObj.createMap();
-                    thisObj.setData();
-                }
-            });
-        } else {
+                    if (pCreateMap) {
+                        thisObj.createMap();
+                        thisObj.setData();
+                    }
+                });
+            }
+        }
+        if(!status){
             // по IP
             geolocation.get({
                 provider: 'yandex',
@@ -246,7 +258,6 @@ $(function () {
                 }
             });
         }
-
 
     };
 
