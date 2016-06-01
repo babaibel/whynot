@@ -196,7 +196,9 @@ BODY
 	//border-bottom: 1px solid #e6e6e6
 	position: relative
 	z-index: 98
-	transform: translate3d(0px, 0, 0px)
+
+	+min-screen($screenSS)
+		transform: translate3d(0px, 0, 0px)
 
 
 .header-bot

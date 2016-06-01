@@ -191,10 +191,7 @@ $(function () {
                 }
             }
 
-            resultStr += day + ' <small>' + monthName;
-            resultStr += '<span class="daterange__day-wr">, <span class="daterange__day">' + weekDay + '</span></span>';
-            resultStr +=  '</small>';
-
+            resultStr += day + " " + monthName + ", " + weekDay;
 
             return resultStr;
         }
