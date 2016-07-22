@@ -10,18 +10,17 @@
 <script src="../../bower_components/nouislider/distribute/nouislider.js"></script>
 <script src="../../bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
 <script src="../../bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
-<script src="../../bower_components/air-datepicker/dist/js/datepicker.min.js"></script>
+<script src="../../bower_components/air-datepicker/dist/js/datepicker.js"></script>
 <script src="../../bower_components/nselect/build/jquery.nselect.min.js"></script>
 <script src="../../bower_components/nselect/build/jquery.mCustomScrollbar.min.js"></script>
 <script src="../../bower_components/jquery-touchswipe/jquery.touchSwipe.js"></script>
 <script src="../../bower_components/jquery-validation/dist/jquery.validate.js"></script>
 <script src="../../bower_components/jquery.inputmask/dist/inputmask/inputmask.js"></script>
-<script src="../../bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.js"></script>
 <script src="../../bower_components/sifter/sifter.js"></script>
 <script src="../../bower_components/microplugin/src/microplugin.js"></script>
 <script src="../../bower_components/selectize/dist/js/selectize.js"></script>
 <!-- endbower -->
-
+<script src="../../bower_components/jquery.inputmask/dist/jquery.inputmask.bundle.js"></script>
 <!-- endbuild -->
 
 <!-- build:js ../scripts/app.js -->

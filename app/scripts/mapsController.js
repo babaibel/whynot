@@ -8,11 +8,15 @@ $(function () {
         myPlacemark,
         geolocation,
         userCoordinates,
+        userPlacemarkCollection,
         clusterIcon,
         clusterer;
 
 
     function setCenter(pCoords) {
+
+        if(userPlacemarkCollection) userPlacemarkCollection.removeAll();
+
         myPlacemark = new ymaps.Placemark(pCoords,
             {
                 balloonContentHeader: 'Вы здесь!',
@@ -24,13 +28,13 @@ $(function () {
                 balloonPanelMaxMapArea: 0
             });
 
-        myMap.geoObjects.add(myPlacemark);
+        userPlacemarkCollection.add(myPlacemark);
+        myMap.geoObjects.add(userPlacemarkCollection);
         myMap.setCenter(pCoords);
-
 
         $.ajax({
             type: 'GET',
-            url: 'queries/getClosestOnMap.php', // todo
+            url: 'queries/getClosestOnMap.php',
             data: {lat: pCoords[0], lon: pCoords[1]},
             success: function (data) {
                 var parsedData = JSON.parse(data);
@@ -111,23 +115,7 @@ $(function () {
         var status = false;
         // Узнаём и устанавливаем координаты
 
-        // засчёт браузера
-        if (navigator.geolocation && navigator.geolocation.getCurrentPosition) {
-            if(!status){
-                geolocation.get({
-                    provider: 'browser',
-                    mapStateAutoApply: true
-                }).then(function (result) {
-                    status = true;
-                    userCoordinates = result.geoObjects.get(0).geometry._coordinates;
-                    setCenter(userCoordinates);
-                    console.log('browser detection')
-                });
-            }
-        }
-
-        if(!status){
-            // по IP
+        function yaIPLocation() {
             geolocation.get({
                 provider: 'yandex',
                 mapStateAutoApply: true
@@ -136,6 +124,30 @@ $(function () {
                 setCenter(userCoordinates);
                 console.log('ip detection')
             });
+        }
+        
+        // засчёт браузера
+        if (navigator.geolocation && navigator.geolocation.getCurrentPosition) {
+            navigator.geolocation.getCurrentPosition(
+                // Successful callback
+                function(){
+                    geolocation.get({
+                        provider: 'browser',
+                        mapStateAutoApply: true
+                    }).then(function (result) {
+                        status = true;
+                        userCoordinates = result.geoObjects.get(0).geometry._coordinates;
+                        setCenter(userCoordinates);
+                        console.log('browser detection')
+                    });
+                },
+                //error callback
+                function(){
+                    yaIPLocation();
+                }
+            );
+        }else{
+            yaIPLocation();
         }
 
     }
@@ -151,6 +163,8 @@ $(function () {
 
         myMap.controls.add('zoomControl', {float: 'none', position: {top: 215, right: 20}});
         myMap.behaviors.disable('scrollZoom');
+
+        userPlacemarkCollection = new ymaps.GeoObjectCollection();
 
         clusterIcon = function () {
             return ymaps.templateLayoutFactory.createClass(
@@ -171,7 +185,7 @@ $(function () {
             ],
             clusterIconContentLayout: clusterIcon(),
             clusterBalloonItemContentLayout: ymaps.templateLayoutFactory.createClass(
-                //'<h2>{{ properties.balloonContentHeader|raw }}</h2>' +
+                '<h2>{{ properties.balloonContentHeader|raw }}</h2>' +
                 '<div class="ballon_body">{{ properties.balloonContentBody|raw }}</div>' +
                 '<div class="ballon_footer">{{ properties.balloonContentFooter|raw }}</div>'
             )
@@ -197,6 +211,7 @@ $(function () {
         this.yMap;
         this.currentData;
         this.userLocation;
+        this.userLocationMark;
         this.settings = {};
 
         this.settings = $.extend(this.settings, paramSettings);
@@ -229,24 +244,7 @@ $(function () {
 
         // Узнаём и устанавливаем координаты
 
-        // засчёт браузера
-        if (navigator.geolocation && navigator.geolocation.getCurrentPosition) {
-            if(!status){
-                geolocation.get({
-                    provider: 'browser',
-                    mapStateAutoApply: true
-                }).then(function (result) {
-                    thisObj.userLocation = result.geoObjects.get(0).geometry._coordinates;
-
-                    if (pCreateMap) {
-                        thisObj.createMap();
-                        thisObj.setData();
-                    }
-                });
-            }
-        }
-        if(!status){
-            // по IP
+        function yaIPLocation() {
             geolocation.get({
                 provider: 'yandex',
                 mapStateAutoApply: true
@@ -258,6 +256,34 @@ $(function () {
                 }
             });
         }
+
+        // засчёт браузера
+        if (navigator.geolocation && navigator.geolocation.getCurrentPosition) {
+            navigator.geolocation.getCurrentPosition(
+                // Successful callback
+                function(){
+                    geolocation.get({
+                        provider: 'browser',
+                        mapStateAutoApply: true
+                    }).then(function (result) {
+                        thisObj.userLocation = result.geoObjects.get(0).geometry._coordinates;
+
+                        if (pCreateMap) {
+                            thisObj.createMap();
+                            thisObj.setData();
+                        }
+                    });
+                },
+                //error callback
+                function(){
+                    yaIPLocation();
+                }
+            );
+        }else{
+            yaIPLocation();
+        }
+
+
 
     };
 
@@ -336,6 +362,10 @@ $(function () {
             placemarksArray = [],
             userPlacemark;
 
+        /*if(thisObj.userLocationMark){
+            thisObj.userLocationMark.remove();
+        }*/
+
         userPlacemark = new ymaps.Placemark(thisObj.userLocation,
             {
                 balloonContentHeader: 'Вы здесь!',
@@ -346,6 +376,8 @@ $(function () {
                 iconImageOffset: [-22, -22],
                 balloonPanelMaxMapArea: 0
             });
+
+        //thisObj.userLocationMark = userPlacemark;
 
         currentMap.geoObjects.add(userPlacemark);
 
@@ -392,6 +424,8 @@ $(function () {
                 });
 
         });
+
+        //placemarksArray.push(userPlacemark);
 
         thisObj.clusterer.add(placemarksArray);
         thisObj.yMap.geoObjects.add(thisObj.clusterer);

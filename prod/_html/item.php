@@ -39,9 +39,9 @@
 							
 							<div class="sidebar sidebar--green">
 								<div class="sidebar__item">
-									<a href="#!" class="link link--bookmark link--icon">
+									<span class="link link--bookmark link--icon">
 										<span>Добавить в избранное</span>
-									</a>
+									</span>
 								</div>
 								<div class="sidebar__item">
 									<div class="sidebar-text sidebar-text--item">
@@ -210,32 +210,40 @@
 											</div>
 											<div class="comment__inner">
 												<form>
+                                                    <div class="comment__textarea">
+                                                        <input type="text" placeholder="Заголовок" class="input h--600">
+                                                    </div>
 													<div class="comment__textarea">
 														<textarea placeholder="Что вы думаете об этом?" class="textarea"></textarea>
 													</div>
 													<div class="comment__rating">
 														<div class="rating-wrap">
 
-															<div class="rating">
+															<div class="rating rating--active js-rating">
 
 																<div class="rating__star rating__star1">
 																	<span class="iconic iconic--star rating__star-inactive"></span>
+                                                                    <input type="radio" value="1" name="rating">
 																</div>
 
 																<div class="rating__star rating__star2">
 																	<span class="iconic iconic--star rating__star-inactive"></span>
+                                                                    <input type="radio" value="2" name="rating">
 																</div>
 
 																<div class="rating__star rating__star3">
 																	<span class="iconic iconic--star rating__star-inactive"></span>
+                                                                    <input type="radio" value="3" name="rating">
 																</div>
-
+1
 																<div class="rating__star rating__star4">
 																	<span class="iconic iconic--star rating__star-inactive"></span>
+                                                                    <input type="radio" value="4" name="rating">
 																</div>
 
 																<div class="rating__star rating__star5">
 																	<span class="iconic iconic--star rating__star-inactive"></span>
+                                                                    <input type="radio" value="5" name="rating">
 																</div>
 
 																<div class="rating__active-stars">

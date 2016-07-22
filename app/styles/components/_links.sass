@@ -1,183 +1,179 @@
 .link
-	border-bottom-style: solid
-	border-bottom-width: 1px
-	border-color: transparent
-	transition: border-color $t150 ease-out
+    border-bottom-style: solid
+    border-bottom-width: 1px
+    border-color: transparent
+    transition: border-color $t150 ease-out
+    cursor: pointer
 
-	&:hover
-		border-color: #fff
+    &:hover
+        border-color: #fff
 
-	&--green
-		color: $cGreen
-		&:hover
-			border-color: $cGreen
+    &--green
+        color: $cGreen
+        &:hover
+            border-color: $cGreen
 
-	&--white
-		color: #fff
-		&:hover
-			color: $cGreen
+    &--white
+        color: #fff
+        &:hover
+            color: $cGreen
 
-	&--black
-		color: $cBlack
-		border-bottom-color: rgba($cBlack, 0.3)
-		&:hover
-			border-bottom-color: transparent
+    &--black
+        color: $cBlack
+        border-bottom-color: rgba($cBlack, 0.3)
+        &:hover
+            border-bottom-color: transparent
 
-	&--lime
-		color: $cLime
-		border-bottom-color: rgba($cLime, 0.3)
-		&:hover
-			border-bottom-color: transparent
+    &--lime
+        color: $cLime
+        border-bottom-color: rgba($cLime, 0.3)
+        &:hover
+            border-bottom-color: transparent
 
-	&--upper
-		text-transform: uppercase
+    &--upper
+        text-transform: uppercase
 
-	&--dotted
-		border-bottom-style: dotted
+    &--dotted
+        border-bottom-style: dotted
 
-	&--icon
-		&:hover
-			border-color: transparent
+    &--icon
+        &:hover
+            border-color: transparent
 
-		> SPAN
-			border-color: #fff
+        > SPAN
+            border-color: #fff
 
+    &--bookmark
+        color: $cPrimary
 
-	&--bookmark
-		color: $cPrimary
+        SPAN
+            border-bottom-style: solid
+            border-bottom-width: 1px
+            border-color: transparent
+            transition: border-color $t150 ease-out
 
-		SPAN
-			border-bottom-style: solid
-			border-bottom-width: 1px
-			border-color: transparent
-			transition: border-color $t150 ease-out
+        &:hover
+            border-color: transparent
 
-		&:hover
-			border-color: transparent
+            SPAN
+                border-color: $cPrimary
 
-			SPAN
-				border-color: $cPrimary
+        &:before
+            content: "\E008"
+            font-size: 16px
+            font-style: normal
+            transition: $t150
+            width: 32px
+            height: 32px
+            margin-right: 14px
+            line-height: 32px
+            background: #f7f7f7
+            border-radius: 50%
+            text-align: center
+            color: #a7a7a7
+            @extend .iconic
 
-		&:before
-			content: "\E008"
-			font-size: 16px
-			font-style: normal
-			transition: $t150
-			width: 32px
-			height: 32px
-			margin-right: 14px
-			line-height: 32px
-			background: #f7f7f7
-			border-radius: 50%
-			text-align: center
-			color: #a7a7a7
-			@extend .iconic
+        &:hover
+            &:before
+                color: $cPrimary
 
-		&:hover
-			&:before
-				color: $cPrimary
+    &--eye
+        color: $cPrimary
 
-	&--eye
-		color: $cPrimary
+        SPAN
+            border-bottom-style: solid
+            border-bottom-width: 1px
+            border-color: transparent
+            transition: border-color $t150 ease-out
 
+        &:hover
+            border-color: transparent
 
-		SPAN
-			border-bottom-style: solid
-			border-bottom-width: 1px
-			border-color: transparent
-			transition: border-color $t150 ease-out
+            SPAN
+                border-color: $cPrimary
 
-		&:hover
-			border-color: transparent
+        &:before
+            content: "\E011"
+            font-size: 15px
+            font-style: normal
+            transition: $t150
+            width: 32px
+            height: 32px
+            margin-right: 14px
+            line-height: 32px
+            background: #f7f7f7
+            border-radius: 50%
+            text-align: center
+            color: #a7a7a7
+            @extend .iconic
 
-			SPAN
-				border-color: $cPrimary
-
-		&:before
-			content: "\E011"
-			font-size: 15px
-			font-style: normal
-			transition: $t150
-			width: 32px
-			height: 32px
-			margin-right: 14px
-			line-height: 32px
-			background: #f7f7f7
-			border-radius: 50%
-			text-align: center
-			color: #a7a7a7
-			@extend .iconic
-
-		&:hover
-			&:before
-				color: $cPrimary
-
-
+        &:hover
+            &:before
+                color: $cPrimary
 
 .link-und
-	border-bottom-style: solid
-	border-bottom-width: 1px
-	transition: border-color $t150 ease-out
-	cursor: pointer
+    border-bottom-style: solid
+    border-bottom-width: 1px
+    transition: border-color $t150 ease-out
+    cursor: pointer
 
-	&:hover
-		border-color: transparent
+    &:hover
+        border-color: transparent
 
-	&--green-d
-		color: $cGreen-d
-		border-bottom: 1px solid rgba($cGreen-d,0.3) //#b2b2b2
-		&:hover
-			border-color: transparent
+    &--green-d
+        color: $cGreen-d
+        border-bottom: 1px solid rgba($cGreen-d, 0.3)
+        //#b2b2b2
+        &:hover
+            border-color: transparent
 
-	&--green2-d
-		color: $cGreen-d
-		border-bottom: 1px solid #b2b2b2
-		&:hover
-			border-color: transparent
+    &--green2-d
+        color: $cGreen-d
+        border-bottom: 1px solid #b2b2b2
+        &:hover
+            border-color: transparent
 
-	&--dotted
-		border-bottom-style: dotted
-
-
+    &--dotted
+        border-bottom-style: dotted
 
 .subscribe-link
-	text-align: left
-	display: inline-block
-	position: relative
-	padding-left: 35px
+    text-align: left
+    display: inline-block
+    position: relative
+    padding-left: 35px
 
-	.icon
-		color: #696969
-		position: absolute
-		left: 0
-		top: 0
+    .icon
+        color: #696969
+        position: absolute
+        left: 0
+        top: 0
 
-	&__text
-		display: inline-block
-		font: 14px/16px $baseFont
-		color: $cPrimary
-		//border-bottom-color: #b2b2b2
-		//border-bottom-style: dotted
+    &__text
+        display: inline-block
+        font: 14px/16px $baseFont
+        color: $cPrimary
+//border-bottom-color: #b2b2b2
+//border-bottom-style: dotted
 
 
 
 .bookmark-link
-	text-align: left
-	display: inline-block
-	position: relative
-	text-decoration: none
-	color: $cBlack
-	font: 14px/1.2 $baseFont
-	.icon
-		margin-top: -1px
+    text-align: left
+    display: inline-block
+    position: relative
+    text-decoration: none
+    color: $cBlack
+    font: 14px/1.2 $baseFont
+    .icon
+        margin-top: -1px
 
-	.iconic
-		vertical-align: middle
-		margin-right: 10px
-		color: $cGreen
-		font-size: 21px
-		line-height: 1
+    .iconic
+        vertical-align: middle
+        margin-right: 10px
+        color: $cGreen
+        font-size: 21px
+        line-height: 1
 
-	&:hover
-		.icon
-			transform: translateY(-2px)
+    &:hover
+        .icon
+            transform: translateY(-2px)

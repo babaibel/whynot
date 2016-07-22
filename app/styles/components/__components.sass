@@ -247,6 +247,7 @@
 
 
 // todo
+
 // map
 
 .eventsCluster
@@ -255,6 +256,20 @@
     line-height: 44px
     font-weight: bold
     //background-color: $cGreen
+
+[class*="cluster-tabs__section_type_content"]
+    h2
+        margin-bottom: 10px
+
+[class*="cluster-tabs__menu-item-text"]
+    padding: 4px 0 4px 2px
+    transition: $t150
+
+[class*="cluster-tabs__menu-item_current_yes"]
+    background: $cPrimary !important
+    .link
+        color: #fff
+        border-bottom-color: transparent
 
 .datepicker--cell.-selected-,
 .datepicker--cell.-selected-.-current-,

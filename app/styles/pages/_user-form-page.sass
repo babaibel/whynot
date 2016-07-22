@@ -1,0 +1,60 @@
+.user-form-page
+    margin-top: 20px
+    margin-bottom: 50px
+
+    .wr
+        max-width: 750px
+
+    .h2
+        margin-bottom: 45px
+
+
+    &__cols
+        font-size: 0
+        margin: 25px -15px
+        > *
+            font-size: 14px
+            +max-screen($screenXS)
+                font-size: 12px
+        p
+            margin-top: 0
+
+        &--soc
+            .user-form-page__col--100
+                margin-bottom: 0
+
+    &__col
+        padding: 0 15px
+        margin-bottom: 10px
+        font-size: 14px
+        display: inline-block
+        vertical-align: top
+        //width: 100%
+
+        *:last-child
+            margin-bottom: 0
+
+        &--100
+            width: 100%
+
+        &--50
+            width: 50%
+            +max-screen($screenSS)
+                width: 100%
+
+        +max-screen($screenXS)
+            font-size: 12px
+
+    .soc-rounds-p
+        margin-bottom: 10px
+
+    .soc-rounds
+        margin-bottom: 0px
+
+
+    +max-screen($screenXS)
+        margin-top: 0px
+        margin-bottom: 35px
+
+        .h2
+            margin-bottom: 30px

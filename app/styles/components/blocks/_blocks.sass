@@ -1,876 +1,899 @@
 @import "find-event"
 
-
 .materials-grid
-	display: flex
-	flex-wrap: wrap
-	justify-content: flex-start
-	margin-left: -15px
-	margin-right: -15px
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+    margin-left: -15px
+    margin-right: -15px
 
-	.card, .actions-sl
-		margin-bottom: 0
+    .card, .actions-sl
+        margin-bottom: 0
 
-	.actions-sl
-		// transition: all 0.5s ease-out 0s
-		opacity: 0
-		overflow: hidden
-		transform-origin: 0 0 0
-		transform-style: preserve-3d
+    .actions-sl
+        // transition: all 0.5s ease-out 0s
+        opacity: 0
+        overflow: hidden
+        transform-origin: 0 0 0
+        transform-style: preserve-3d
 
-		&._animated
-			animation-name: flip
-			animation-duration: 0.5s
-			animation-iteration-count: 1
-			animation-timing-function: ease-in-out
-			animation-fill-mode: forwards
-			opacity: 1
-			overflow: visible
-			transform: rotateX(-80deg)
+        &._animated
+            animation-name: flip
+            animation-duration: 0.5s
+            animation-iteration-count: 1
+            animation-timing-function: ease-in-out
+            animation-fill-mode: forwards
+            opacity: 1
+            overflow: visible
+            transform: rotateX(-80deg)
 
-	&__col
-		width: 25%
-		flex-grow: 0
-		flex-shrink: 0
-		padding-left: 15px
-		padding-right: 15px
-		display: flex
-		margin-bottom: 30px
-		transition: transform $t600 ease, opacity $t600 ease, visibility $t600 ease
-		transform: translateY(0)
-		visibility: visible
-		opacity: 1
-		perspective: 1300px
-		perspective-origin: 50% 100%
+    &__col
+        width: 25%
+        flex-grow: 0
+        flex-shrink: 0
+        padding-left: 15px
+        padding-right: 15px
+        display: flex
+        margin-bottom: 30px
+        transition: transform $t600 ease, opacity $t600 ease, visibility $t600 ease
+        transform: translateY(0)
+        visibility: visible
+        opacity: 1
+        perspective: 1300px
+        perspective-origin: 50% 100%
 
-		&._hidden
-			transform: translateY(50%)
-			visibility: hidden
-			opacity: 0
-			display: none
+        &._hidden
+            transform: translateY(50%)
+            visibility: hidden
+            opacity: 0
+            display: none
 
-		&._deleting
-			transform: scale(1.1)
-			visibility: hidden
-			opacity: 0
-			z-index: 2
+        &._deleting
+            transform: scale(1.1)
+            visibility: hidden
+            opacity: 0
+            z-index: 2
 
-		&--slider
-			display: block !important
-			width: 100% !important
+        &--slider
+            display: block !important
+            width: 100% !important
 
-		&--info
-			flex-direction: column
+        &--info
+            flex-direction: column
 
-			> * + *
-				margin-top: 25px
+            > * + *
+                margin-top: 25px
 
+    +max-screen($screenLL)
+        margin-left: -8px
+        margin-right: -8px
+        &__col
+            padding-left: 8px
+            padding-right: 8px
 
-	+max-screen($screenLL)
-		margin-left: -8px
-		margin-right: -8px
-		&__col
-			padding-left: 8px
-			padding-right: 8px
+    +max-screen($screenM)
+        &__col
+            width: (100% / 3)
+            order: 999
 
-	+max-screen($screenM)
-		&__col
-			width: (100% / 3)
-			order: 999
+            &--info
+                display: none
 
-			&--info
-				display: none
+            &--slider
+                order: 6
 
-			&--slider
-				order: 6
+            &:nth-child(1)
+                order: 0
+            &:nth-child(2)
+                order: 1
+            &:nth-child(3)
+                order: 2
 
-			&:nth-child(1)
-				order: 0
-			&:nth-child(2)
-				order: 1
-			&:nth-child(3)
-				order: 2
+            // 4ый скрыт
 
-			// 4ый скрыт
+            &:nth-child(5)
+                order: 3
+            &:nth-child(6)
+                order: 4
+            &:nth-child(7)
+                order: 5
 
-			&:nth-child(5)
-				order: 3
-			&:nth-child(6)
-				order: 4
-			&:nth-child(7)
-				order: 5
+    +max-screen($screenS + 1)
+        &__col
+            width: 50%
 
-	+max-screen($screenS + 1)
-		&__col
-			width: 50%
+            &--slider
+                order: 5
 
-			&--slider
-				order: 5
+            //&:nth-child(1)
+                order: 0
+            //&:nth-child(2)
+                order: 1
+            //&:nth-child(3)
+                order: 2
 
-			//&:nth-child(1)
-				order: 0
-			//&:nth-child(2)
-				order: 1
-			//&:nth-child(3)
-				order: 2
+            // 4ый скрыт
 
-			// 4ый скрыт
+            &:nth-child(5)
+                order: 4
+            &:nth-child(6)
+                order: 6
+            &:nth-child(7)
+                order: 7
 
-			&:nth-child(5)
-				order: 4
-			&:nth-child(6)
-				order: 6
-			&:nth-child(7)
-				order: 7
-
-	+max-screen($screenXS)
-		&__col
-			width: 100%
-
-
-
+    +max-screen($screenXS)
+        &__col
+            width: 100%
 
 .social
-	@extend .cf
+    @extend .cf
 
-	&__item
-		float: left
-		margin-right: 8px
+    &__item
+        float: left
+        margin-right: 8px
 
-		.icon
-			width: 32px
-			height: 32px
-			line-height: 32px
-			background-color: $cBlack-d
-			border-radius: 50%
-			text-align: center
-			color: #fff
-			font-size: 15px
+        .icon
+            width: 32px
+            height: 32px
+            line-height: 32px
+            background-color: $cBlack-d
+            border-radius: 50%
+            text-align: center
+            color: #fff
+            font-size: 15px
 
-			&:hover
-				background-color: $cPrimary
+            &:hover
+                background-color: $cPrimary
 
 .soc-rounds
-	margin-left: -3px
-	margin-right: -3px
-	margin-bottom: 10px
+    margin-left: -3px
+    margin-right: -3px
+    margin-bottom: 10px
 
-	&__li
-		margin: 0 3px 5px
-		display: inline-block
-		vertical-align: top
-		width: 40px
-		height:  40px
-		line-height: 40px
-		border-radius: 50%
-		font-size: 19px
-		text-align: center
-		transition: $t300
-		@extend .iconic
+    &__li
+        margin: 0 3px 5px
+        display: inline-block
+        vertical-align: top
+        width: 40px
+        height: 40px
+        line-height: 40px
+        border-radius: 50%
+        font-size: 19px
+        text-align: center
+        transition: $t300
+        @extend .iconic
 
-		&:hover
-			transform: translateY(-3px)
-		&:active
-			transform: translateY(-3px) scale(0.94)
+        &:hover
+            transform: translateY(-3px)
+        &:active
+            transform: translateY(-3px) scale(0.94)
 
-		&--vk
-			background-color: #4c75a3
-			font-size: 18px
-			color: #fff
-			@extend .iconic--soc-vk
-		&--tw
-			background-color: #2aa9e0
-			font-size: 17px
-			color: #fff
-			@extend .iconic--soc-tw
-		&--fb
-			background-color: #3b5998
-			color: #fff
-			@extend .iconic--soc-fb
-		&--gplus
-			background-color: #df4a32
-			color: #fff
-			@extend .iconic--soc-gplus
-		&--mail
-			background-color: #134785
-			color: #fff
-			@extend .iconic--soc-mail
-
+        &--vk
+            background-color: #4c75a3
+            font-size: 18px
+            color: #fff
+            @extend .iconic--soc-vk
+        &--tw
+            background-color: #2aa9e0
+            font-size: 17px
+            color: #fff
+            @extend .iconic--soc-tw
+        &--fb
+            background-color: #3b5998
+            color: #fff
+            @extend .iconic--soc-fb
+        &--gplus
+            background-color: #df4a32
+            color: #fff
+            @extend .iconic--soc-gplus
+        &--mail
+            background-color: #134785
+            color: #fff
+            @extend .iconic--soc-mail
 
 .add-event
-	display: block
-	//min-height: 210px
-	flex-shrink: 0
-	background-color: #fff
-	border: 5px solid $cSecondary
-	padding: 15px 25px
-	text-align: center
-	color: #000
-	transition: $t150
+    display: block
+    //min-height: 210px
+    flex-shrink: 0
+    background-color: #fff
+    border: 5px solid $cSecondary
+    padding: 15px 25px
+    text-align: center
+    color: #000
+    transition: $t150
 
-	&__plus
-		display: inline-block
-		width: 50px
-		height: 50px
-		line-height:  50px
-		border-radius: 50%
-		margin: 10px auto 13px
-		background-color: #f05c35
-		color: #fff
-		font-weight: 100
-		font-size: 34px
+    &__plus
+        display: inline-block
+        width: 50px
+        height: 50px
+        line-height: 50px
+        border-radius: 50%
+        margin: 10px auto 13px
+        background-color: #f05c35
+        color: #fff
+        font-weight: 100
+        font-size: 34px
 
-	&__title
-		font-family: $ffNarrow
-		font-size: 16px
-		line-height: 24px
-		text-transform: uppercase
-		margin: 0 0 10px
+    &__title
+        font-family: $ffNarrow
+        font-size: 16px
+        line-height: 24px
+        text-transform: uppercase
+        margin: 0 0 10px
 
+    &__txt
+        font-size: 13px
+        line-height: 20px
+        color: #6c6c6c
+        margin: 10px 0
 
-	&__txt
-		font-size: 13px
-		line-height: 20px
-		color: #6c6c6c
-		margin: 10px 0
-
-	&:hover
-		background-color: #f6f6f6
+    &:hover
+        background-color: #f6f6f6
 
 .bug-note
-	flex-grow: 1
-	background-color: #fff
-	display: flex
-	flex-direction: column
+    flex-grow: 1
+    background-color: #fff
+    display: flex
+    flex-direction: column
 
-	justify-content: center
-	text-align: center
-	padding: 25px 20px
+    justify-content: center
+    text-align: center
+    padding: 25px 20px
 
+    &__ico
+        color: #b5b5b5
+        font-size: 38px
+        line-height: normal
+        margin-bottom: 20px
 
-	&__ico
-		color: #b5b5b5
-		font-size: 38px
-		line-height: normal
-		margin-bottom: 20px
+    &__title
+        font-family: $ffNarrow
+        font-size: 16px
+        line-height: 24px
+        text-transform: uppercase
+        margin: 0 0 5px
+    //font-weight: bold
 
-	&__title
-		font-family: $ffNarrow
-		font-size: 16px
-		line-height: 24px
-		text-transform: uppercase
-		margin: 0 0 5px
-		//font-weight: bold
-
-	&__txt
-		font-size: 13px
-		line-height: 20px
-		color: #454545
-		margin: 5px 0
-
+    &__txt
+        font-size: 13px
+        line-height: 20px
+        color: #454545
+        margin: 5px 0
 
 .grid-right-fix
-	@extend .cf
+    @extend .cf
 
-	&__left
-		float: left
-		width: 100%
+    &__left
+        float: left
+        width: 100%
 
-	&__left-inner
-		margin-right: 320px
+    &__left-inner
+        margin-right: 320px
 
-		+max-screen($screenMM)
-			margin-right: 0
+        +max-screen($screenMM)
+            margin-right: 0
 
-	&__right
-		width: 320px
-		padding-left: 40px
-		float: left
-		margin-left: -320px
+    &__right
+        width: 320px
+        padding-left: 40px
+        float: left
+        margin-left: -320px
 
-		+max-screen($screenMM)
-			padding: 15px 0 0
-			width: 100%
-			margin-left: 0
-
+        +max-screen($screenMM)
+            padding: 15px 0 0
+            width: 100%
+            margin-left: 0
 
 .grid-left-fix
-	@extend .cf
+    @extend .cf
 
-	&__right
-		margin-left: 320px
+    &__right
+        margin-left: 320px
 
-		+max-screen($screenMM)
-			margin-left: 0
+        +max-screen($screenMM)
+            margin-left: 0
 
-	&__left
-		width: 320px
-		padding-right: 40px
-		float: left
+    &__left
+        width: 320px
+        padding-right: 40px
+        float: left
 
-		+max-screen($screenMM)
-			float: none
-			padding: 15px 0 0
-			width: 100%
-			margin-left: 0
+        +max-screen($screenMM)
+            float: none
+            padding: 15px 0 0
+            width: 100%
+            margin-left: 0
 
 .comments-wr
-	.btn--more
-		margin: 25px auto 0
-		display: table
-
+    .btn--more
+        margin: 25px auto 0
+        display: table
 
 .comments
-	
-	&__header
-		display: flex
-		justify-content: space-between
-		flex-wrap: wrap
-		//margin-bottom: 15px
 
-		H1,H2,H3, H4
-			margin-bottom: 0
-			line-height: 35px
+    &__header
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        //margin-bottom: 15px
 
-		//+screen()
-		+max-screen($screenS)
-			display: block
+        H1, H2, H3, H4
+            margin-bottom: 0
+            line-height: 35px
 
-	&__header-title
-		margin: 0 15px 15px 5px
-		flex-grow: 1
+        //+screen()
+        +max-screen($screenS)
+            display: block
 
-		//+max-screen($screenS)
-			margin-bottom: 10px
-		+max-screen($screenXS)
-			.h3-bold
-				font-size: 24px
+    &__header-title
+        margin: 0 15px 15px 5px
+        flex-grow: 1
 
-	&__header-right
-		flex-shrink: 0
-		//flex-grow: 1
-		text-align: right
-		//display: flex
-		//+max-screen($screenMM)
-			text-align: left
-			margin-top: 15px
+        //+max-screen($screenS)
+            margin-bottom: 10px
+        +max-screen($screenXS)
+            .h3-bold
+                font-size: 24px
 
-		+max-screen($screenS)
-			text-align: left
+    &__header-right
+        flex-shrink: 0
+        //flex-grow: 1
+        text-align: right
+        //display: flex
+        //+max-screen($screenMM)
+            text-align: left
+            margin-top: 15px
 
-	&__header-sort
-		display: inline-block
-		white-space: nowrap
-		margin: 0 7px 15px
-		color: #242527
-		font-size: 12px
+        +max-screen($screenS)
+            text-align: left
 
-		.selector
-			margin: 0 4px
+    &__header-sort
+        display: inline-block
+        white-space: nowrap
+        margin: 0 7px 15px
+        color: #242527
+        font-size: 12px
 
-		+max-screen($screenXS)
-			margin-bottom: 15px
+        .selector
+            margin: 0 4px
 
-	&__header-btn
-		display: inline-block
-		flex-shrink: 0
-		margin-bottom: 15px
+        +max-screen($screenXS)
+            margin-bottom: 15px
 
-		+max-screen($screenXS)
-			margin-bottom: 15px
+    &__header-btn
+        display: inline-block
+        flex-shrink: 0
+        margin-bottom: 15px
 
-	&__new
-		display: none
+        +max-screen($screenXS)
+            margin-bottom: 15px
+
+    &__new
+        display: none
 
 .comment
-	padding: 12px 20px 18px
-	// border-bottom: 3px solid #f9f9f9
-	margin-bottom: 6px
-	background: #fff
-	transition: transform $t600 ease, opacity $t600 ease, visibility $t600 ease
-	transform: translateY(0)
-	visibility: visible
-	opacity: 1
-	@extend .cf
+    padding: 12px 20px 18px
+    // border-bottom: 3px solid #f9f9f9
+    margin-bottom: 6px
+    background: #fff
+    transition: transform $t600 ease, opacity $t600 ease, visibility $t600 ease
+    transform: translateY(0)
+    visibility: visible
+    opacity: 1
+    @extend .cf
 
-	&._hidden
-		transform: translateY(100%)
-		visibility: hidden
-		opacity: 0
+    &._hidden
+        transform: translateY(100%)
+        visibility: hidden
+        opacity: 0
 
-	&__img
-		float: left
-		width: 44px
+    &__img
+        float: left
+        width: 44px
 
-		IMG
-			display: block
-			max-width: 100%
+        IMG
+            display: block
+            max-width: 100%
 
-	&__inner
-		padding-left: 60px
+    &__inner
+        padding-left: 60px
 
-	&__title
-		font: 700 16px/1.3 $baseFont
+    &__title
+        font: 700 16px/1.3 $baseFont
 
-	&__rating
-		margin-bottom: 15px
+    &__rating
+        margin-bottom: 15px
 
-	&__text
-		font: 14px/1.3 $baseFont
-		margin-bottom: 2px
+    &__text
+        font: 14px/1.3 $baseFont
+        margin-bottom: 2px
 
-	&__date
-		font: 300 12px/1.3 $baseFont
-		color: #7c7c7c
+    &__date
+        font: 300 12px/1.3 $baseFont
+        color: #7c7c7c
 
-	&__textarea
-		margin-bottom: 10px
+    &__textarea
+        margin-bottom: 10px
 
-	&__btn
-		display: block
+    &__btn
+        display: block
 
 .rating-wrap
-	line-height: 20px
-	.rating, .link
-		display: inline-block
-		vertical-align: middle
-		margin-right: 5px
-	.link
-		line-height: normal
-		font-size: 14px
-		position: relative
-		top: 1px
+    line-height: 20px
+    .rating, .link
+        display: inline-block
+        vertical-align: middle
+        margin-right: 5px
+    .link
+        line-height: normal
+        font-size: 14px
+        position: relative
+        top: 1px
 
 .rating-static
-	display: inline-block
-	vertical-align: middle
-	margin: 0 8px 4px 0
+    display: inline-block
+    vertical-align: middle
+    margin: 0 8px 4px 0
 
-	.icon
-		color: $cYellow
-		font-size: 13px
-		line-height: 1
+    .icon
+        color: $cYellow
+        font-size: 13px
+        line-height: 1
 
 $star-size: 16px
 $star-size-sm: 12px
 .rating
-	font-size: 0
-	line-height: 0
-	position: relative
-	z-index: 1
-	@extend .cf
+    font-size: 0
+    line-height: 0
+    position: relative
+    z-index: 1
+    @extend .cf
 
+    &__star
+        float: left
+        width: $star-size + 3px
+        height: $star-size
+        font-size: $star-size
+        line-height: $star-size
+        position: relative
+        display: inline-block
+        vertical-align: top
+        padding-right: 3px
+        cursor: pointer
 
-	&__star
-		float: left
-		width: $star-size + 3px
-		height: $star-size
-		font-size: $star-size
-		line-height: $star-size
-		position: relative
-		display: inline-block
-		vertical-align: top
-		padding-right: 3px
-		cursor: pointer
+        .iconic--star
+            transition: all $t300
+            font-size: $star-size
 
-		.iconic--star
-			transition: all $t300
-			font-size: $star-size
+        .iconic--star, INPUT
+            position: absolute
+            top: 0
+            left: 0
 
-		.iconic--star, INPUT
-			position: absolute
-			top: 0
-			left: 0
+        INPUT
+            height: $star-size + 3px
+            width: $star-size
+            top: 0
+            opacity: 0
+            z-index: 2
+            cursor: pointer
 
-		INPUT
-			height: $star-size + 3px
-			width: $star-size
-			top: 0
-			opacity: 0
-			z-index: 2
-			cursor: pointer
+        &-inactive
+            color: #c4c6c7
+        &-active
+            color: #f8af00
 
-		&-inactive
-			color: #c4c6c7
-		&-active
-			color: #f8af00
+    &__active-stars
+        height: $star-size
+        width: 0
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        transition: opacity $t300
+        overflow: hidden
+        white-space: nowrap
+        z-index: 1
 
-	&__active-stars
-		height: $star-size
-		width: 0
-		position: absolute
-		top: 0
-		left: 0
-		opacity: 0
-		transition: opacity $t300
-		overflow: hidden
-		white-space: nowrap
-		z-index: 1
+    @for $i from 1 through 5
+        &--#{$i}
+            .rating__active-stars
+                opacity: 1
+                width: ($star-size + 3px) * $i
 
-	@for $i from 1 through 5
-		&--#{$i}
-			.rating__active-stars
-				opacity: 1
-				width: ($star-size + 3px) * $i
+    &--active
 
-	&--active
+        @for $i from 1 through 5
+            .rating__star#{$i}:hover
+                & ~ .rating__active-stars
+                    opacity: 1
+                    width: ($star-size + 3px) * $i
 
-		@for $i from 1 through 5
-			.rating__star#{$i}:hover
-				& ~ .rating__active-stars
-					opacity: 1
-					width: ($star-size + 3px) * $i
+    &--sm
+        .rating__star
+            width: $star-size-sm + 2px
+            height: $star-size-sm
+            font-size: $star-size-sm
+            line-height: $star-size-sm
+            padding-right: 2px
+            INPUT
+                height: $star-size-sm
+                width: $star-size-sm
+            .iconic--star
+                font-size: $star-size-sm
 
-	&--sm
-		.rating__star
-			width: $star-size-sm + 2px
-			height: $star-size-sm
-			font-size: $star-size-sm
-			line-height: $star-size-sm
-			padding-right: 2px
-			INPUT
-				height: $star-size-sm
-				width: $star-size-sm
-			.iconic--star
-				font-size: $star-size-sm
+        .rating__active-stars
+            height: $star-size-sm
 
-		.rating__active-stars
-			height: $star-size-sm
+        @for $i from 1 through 5
+            &.rating--#{$i}
+                .rating__active-stars
+                    opacity: 1
+                    width: ($star-size-sm + 2px) * $i
 
-		@for $i from 1 through 5
-			&.rating--#{$i}
-				.rating__active-stars
-					opacity: 1
-					width: ($star-size-sm + 2px) * $i
+        &.rating--active
 
-		&.rating--active
-
-			@for $i from 1 through 5
-				.rating__star#{$i}:hover
-					& ~ .rating__active-stars
-						opacity: 1
-						width: ($star-size-sm + 2px) * $i
+            @for $i from 1 through 5
+                .rating__star#{$i}:hover
+                    & ~ .rating__active-stars
+                        opacity: 1
+                        width: ($star-size-sm + 2px) * $i
 
 .sidebar
-	margin-bottom: 40px
-	background: #fff
-	display: block
+    margin-bottom: 40px
+    background: #fff
+    display: block
 
-	.card
-		opacity: 1
-		overflow: visible
-		transform: translate(0, 0) scale(1)
+    .card
+        opacity: 1
+        overflow: visible
+        transform: translate(0, 0) scale(1)
 
-		&--full
-			min-height: 400px
-	
-	&--green
-		border: 5px solid $cSecondary
+        &--full
+            min-height: 400px
 
-	&__item
-		border-bottom: 1px solid #e3e3e3
-		padding: 15px 25px
+    &--green
+        border: 5px solid $cSecondary
 
-		&--archive
-			background-color: $cPrimary
-			color: #fff
-			text-align: center
-			font: 700 14px/32px $baseFont
-			text-transform: uppercase
+    &__item
+        border-bottom: 1px solid #e3e3e3
+        padding: 15px 25px
 
-		&:last-child
-			border-bottom: 0
+        &--archive
+            background-color: $cPrimary
+            color: #fff
+            text-align: center
+            font: 700 14px/32px $baseFont
+            text-transform: uppercase
 
-	&__img
-		IMG
-			max-width: 100%
+        &:last-child
+            border-bottom: 0
 
-	.rating
-		display: inline-block
-		vertical-align: middle
-		margin: 0 8px 4px 0
+    &__img
+        IMG
+            max-width: 100%
+
+    .rating
+        display: inline-block
+        vertical-align: middle
+        margin: 0 8px 4px 0
 
 .sidebar-text
 
-	&--item
-		min-height: 244px
+    &--item
+        min-height: 244px
 
-	&__inner
-		margin-bottom: 20px
-		color: #333333
+    &__inner
+        margin-bottom: 20px
+        color: #333333
 
-		&:last-child
-			margin-bottom: 0
+        &:last-child
+            margin-bottom: 0
 
-	&__p
-		margin: 0
+    &__p
+        margin: 0
 
-	&__title
-		margin: 0
-		color: #656565
-		font: 12px/1.4 $baseFont
-		text-transform: uppercase
+    &__title
+        margin: 0
+        color: #656565
+        font: 12px/1.4 $baseFont
+        text-transform: uppercase
 
-		&--price
-			font-size: 13px
+        &--price
+            font-size: 13px
 
-	&__subtitle
-		color: #333333
-		font: 15px/1.3 $baseFont
-		margin: 0
+    &__subtitle
+        color: #333333
+        font: 15px/1.3 $baseFont
+        margin: 0
 
-		&--price
-			font-size: 14px
+        &--price
+            font-size: 14px
 
-			SPAN
-				font-size: 18px
-
+            SPAN
+                font-size: 18px
 
 .social-share
-	&--mrg
-		margin: 40px 0 0
+    &--mrg
+        margin: 40px 0 0
 
-		+max-screen($screenMM)
-			margin: 20px 0 0
+        +max-screen($screenMM)
+            margin: 20px 0 0
 
-	&--mrg-all
-		margin: 40px 0
+    &--mrg-all
+        margin: 40px 0
 
-		+max-screen($screenMM)
-			margin: 20px 0
+        +max-screen($screenMM)
+            margin: 20px 0
 
-	+ .comments-wr
-		margin-top: 55px
+    + .comments-wr
+        margin-top: 55px
 
 .materials-row
-	padding: 40px 0
+    padding: 40px 0
 
-	+max-screen($screenMM)
-		padding: 20px 0
+    +max-screen($screenMM)
+        padding: 20px 0
 
 .materials-header
-	margin: 0 0 20px
+    margin: 0 0 20px
 
-	&--flex
-		display: flex
-		justify-content: space-between
+    &--flex
+        display: flex
+        justify-content: space-between
 
-		+max-screen($screenSS)
-			display: block
+        +max-screen($screenSS)
+            display: block
 
-		.materials-header__item
-			flex-grow: 1
+        .materials-header__item
+            flex-grow: 1
 
-		.materials-header__btn
-			flex-shrink: 0
+        .materials-header__btn
+            flex-shrink: 0
 
-			+max-screen($screenSS)
-				margin-top: 10px
+            +max-screen($screenSS)
+                margin-top: 10px
 
 .materials-nav
-	list-style: none
-	padding: 0
-	margin: 0
+    list-style: none
+    padding: 0
+    margin: 0
 
-	&__item
-		display: inline-block
-		margin-right: 30px
+    &__item
+        display: inline-block
+        margin-right: 30px
 
-		+max-screen($screenSS)
-			margin: 0 15px 5px 0
+        +max-screen($screenSS)
+            margin: 0 15px 5px 0
 
-		&:last-child
-			margin-right: 0
+        &:last-child
+            margin-right: 0
 
-		A
-			font: 24px/1.2 $ffNarrow
-			color: $cPrimary
-			border-bottom: 1px dotted rgba($cGreen-d,0.3)
-			transition: border-color $t150 ease-out
+        A
+            font: 24px/1.2 $ffNarrow
+            color: $cPrimary
+            border-bottom: 1px dotted rgba($cGreen-d, 0.3)
+            transition: border-color $t150 ease-out
 
-			+max-screen($screenSS)
-				font: 20px/1.2 $ffNarrow
+            +max-screen($screenSS)
+                font: 20px/1.2 $ffNarrow
 
-			&:hover
-				border-color: transparent
+            &:hover
+                border-color: transparent
 
-			&._active
-				color: #000
-				border-color: transparent
-
+            &._active
+                color: #000
+                border-color: transparent
 
 .materials-wr
 
-	&__tab
-		display: none
+    &__tab
+        display: none
 
-		&._active
-			display: block
-
+        &._active
+            display: block
 
 .lk-menu
-	background: #fff
-	border-top: 1px solid #e6e6e6
-	border-bottom: 1px solid #e6e6e6
+    background: #fff
+    border-top: 1px solid #e6e6e6
+    border-bottom: 1px solid #e6e6e6
 
-	&__row
-		display: flex
-		justify-content: space-between
+    &__row
+        display: flex
+        justify-content: space-between
 
-	&__nav
-		flex-grow: 1
+    &__nav
+        flex-grow: 1
 
-		+max-screen($screenSS)
-			margin-left: -15px
+        +max-screen($screenSS)
+            margin-left: -15px
 
-		+max-screen($screenXS)
-			margin-right: -15px
+        +max-screen($screenXS)
+            margin-right: -15px
 
+    &__btn
+        flex-shrink: 0
+        line-height: 50px
 
-	&__btn
-		flex-shrink: 0
-		line-height: 50px
-
-		+max-screen(360px)
-			.btn
-				padding-left: 7px
-				padding-right: 7px
-
-
+        +max-screen(360px)
+            .btn
+                padding-left: 7px
+                padding-right: 7px
 
 .lk-nav
-	list-style: none
-	padding: 0
-	margin: 0
-	@extend .cf
+    list-style: none
+    padding: 0
+    margin: 0
+    @extend .cf
 
-	&__item
-		float: left
-		border-right: 1px solid #e6e6e6
+    &__item
+        float: left
+        border-right: 1px solid #e6e6e6
 
+        &:first-child
+            border-left: 1px solid #e6e6e6
 
-		&:first-child
-			border-left: 1px solid #e6e6e6
+            +max-screen($screenSS)
+                border-left: 0
 
-			+max-screen($screenSS)
-				border-left: 0
+        A
+            font: 18px/22px $baseFont
+            padding: 15px 25px
+            display: block
+            color: #000
+            transition: background $t150 ease-out
 
-		A
-			font: 18px/22px $baseFont
-			padding: 15px 25px
-			display: block
-			color: #000
-			transition: background $t150 ease-out
+            &:hover
+                background-color: rgba($cSecondaryL, 0.5)
 
-			&:hover
-				background-color: rgba($cSecondaryL,0.5)
+            +max-screen($screenSS)
+                padding: 15px
 
-			+max-screen($screenSS)
-				padding: 15px
+            +max-screen($screenXS)
+                font-size: 14px
 
-			+max-screen($screenXS)
-				font-size: 14px
+        &.active
 
-		&.active
-
-			A
-				background-color: $cSecondaryL
+            A
+                background-color: $cSecondaryL
 
 .alert
-	&-wr
-		padding: 30px 0
+    &-wr
+        padding: 30px 0
 
-		+max-screen($screenXS)
-			padding: 15px 0
+        +max-screen($screenXS)
+            padding: 15px 0
 
-	&--green
-		background-color: $cPrimary
-		color: #fff
+    &--green
+        background-color: $cPrimary
+        color: #fff
 
-	&__row
-		@extend .cf
+    &__row
+        @extend .cf
 
-	&__btn
-		float: left
-		width: 70px
-		margin: 0 0 0 8px
+    &__btn
+        float: left
+        width: 70px
+        margin: 0 0 0 8px
 
-		+max-screen($screenXS)
-			position: absolute
-			margin: 0
-			bottom: 0
-			left: 50%
-			transform: translateX(-50%)
+        +max-screen($screenXS)
+            position: absolute
+            margin: 0
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
 
-		.icon
-			color: #fff
-			font-size: 17px
+        .icon
+            color: #fff
+            font-size: 17px
 
-	&__text
-		margin-left: 95px
-		font: 14px/1.45 $baseFont
+    &__text
+        margin-left: 95px
+        font: 14px/1.45 $baseFont
 
-		+max-screen($screenXS)
-			margin-left: 0
-			padding-bottom: 70px
+        +max-screen($screenXS)
+            margin-left: 0
+            padding-bottom: 70px
 
 .sidebar-edit
-	&._editing
-		.sidebar-edit__hide
-			display: flex
-		.sidebar-edit__show-text
-			opacity: 0
-			visibility: hidden
+    &._editing
+        .sidebar-edit__hide
+            display: flex
+        .sidebar-edit__show-text
+            opacity: 0
+            visibility: hidden
 
-	&__show
-		display: flex
-		margin-bottom: 5px
+    &__show
+        display: flex
+        margin-bottom: 5px
 
-	&__show-title
-		flex-shrink: 0
-		padding-right: 5px
-		font-weight: bold
+    &__show-title
+        flex-shrink: 0
+        padding-right: 5px
+        font-weight: bold
 
-	&__show-text
-		flex-grow: 1
-		opacity: 1
-		visibility: visible
-		transition: opacity $t150 ease, visibility $t150 ease
-		overflow: hidden
-		white-space: nowrap
-		text-overflow: ellipsis
+    &__show-text
+        flex-grow: 1
+        opacity: 1
+        visibility: visible
+        transition: opacity $t150 ease, visibility $t150 ease
+        overflow: hidden
+        white-space: nowrap
+        text-overflow: ellipsis
 
-	&__hide
-		display: none
+    &__hide
+        display: none
 
-	&__hide-input
-		flex-grow: 1
+    &__hide-input
+        flex-grow: 1
 
-		.input
-			line-height: 30px
-			height: 32px
-			font-size: 14px
+        .input
+            line-height: 30px
+            height: 32px
+            font-size: 14px
 
-	&__hide-save,
-	&__hide-close
-		flex-shrink: 0
+    &__hide-save,
+    &__hide-close
+        flex-shrink: 0
 
-		.icon
-			line-height: 32px
-			width: 22px
-			margin-left: 5px
-			text-align: center
-			cursor: pointer
-			&:after
-				font-size: 15px
+        .icon
+            line-height: 32px
+            width: 22px
+            margin-left: 5px
+            text-align: center
+            cursor: pointer
+            &:after
+                font-size: 15px
 
-	&__hide-save
-		.icon
-			&:after
-				color: $cPrimary
-				font-size: 16px
+    &__hide-save
+        .icon
+            &:after
+                color: $cPrimary
+                font-size: 16px
 
-	&__hide-close
-		.icon
-			&:after
-				color: $cRed
+    &__hide-close
+        .icon
+            &:after
+                color: $cRed
+
+
+.system-page-msg
+    text-align: center
+    margin: 80px auto 60px
+    justify-content: center
+    //align-content: center
+    //align-items: center
+    flex-direction: column
+    display: flex
+
+
+    &__title
+        margin: 0 0 25px
+        //font-size: 52px
+        //line-height: 60px
+        //font-family: $ffLh
+        //font-weight: bold
+        //text-transform: uppercase
+
+    .wr
+        max-width: 1000px
+
+    &__txt
+        margin: 25px auto
+        font-size: 20px
+        line-height: 28px
+
+    +max-screen($screenS)
+        &__title
+            font-size: 32px
+
+    +max-screen($screenXS)
+        margin: 45px auto 30px
+
+        &__title
+            font-size: 26px
+            margin-bottom: 15px
+
+        &__txt
+            margin: 15px auto
+            font-size: 16px

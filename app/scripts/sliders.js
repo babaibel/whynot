@@ -1,5 +1,5 @@
-_GLOB.slickArrLeftHtml = '<button class="slick-arrow slick-prev"></button>';
-_GLOB.slickArrRightHtml = '<button class="slick-arrow slick-next"></button>';
+_GLOB.slickArrLeftHtml = '<button type="button" class="slick-arrow slick-prev"></button>';
+_GLOB.slickArrRightHtml = '<button type="button" class="slick-arrow slick-next"></button>';
 
 
 $(function () {

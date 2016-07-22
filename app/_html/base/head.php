@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../../bower_components/slick-carousel/slick/slick-theme.css" />
     <link rel="stylesheet" href="../../bower_components/nouislider/distribute/nouislider.min.css" />
     <link rel="stylesheet" href="../../bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
-    <link rel="stylesheet" href="../../bower_components/air-datepicker/dist/css/datepicker.min.css" />
+    <link rel="stylesheet" href="../../bower_components/air-datepicker/dist/css/datepicker.css" />
     <link rel="stylesheet" href="../../bower_components/nselect/build/jquery.nselect.css" />
     <link rel="stylesheet" href="../../bower_components/nselect/build/jquery.mCustomScrollbar.css" />
     <link rel="stylesheet" href="../../bower_components/selectize/dist/css/selectize.css" />

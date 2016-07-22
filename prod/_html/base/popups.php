@@ -3,7 +3,7 @@
 
 <div class="popup popup-gen popup--size-md  popup-gen--subs js-popup-subs" data-popup-name="subscribe">
 	<div class="popup-gen__main">
-		<form>
+		<form class="js-form">
 			<div class="form-row">
 				<div class="form-row__content-col">
 					<div class="form-row__content">
